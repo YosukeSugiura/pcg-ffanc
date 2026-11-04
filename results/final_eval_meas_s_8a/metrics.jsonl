@@ -1,0 +1,1120 @@
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.4258585165151757, "A2": -3.310178258532301, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.0959639386253628, "A2": -0.9390806318839306, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -0.914389101152876, "A2": -1.1283109279841246, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.2881038748627902, "A2": -1.0291166843857156, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 2.6000373277102367, "A2": -0.6924498775951314, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.6275061988057983, "A2": -3.130297091529462, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 3.720949708482041, "A2": -3.160161698892958, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.4149127709138007, "A2": -0.9599344054055119, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.4068042823848903, "A2": -3.57944662450336, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.0959639386253628, "A2": -0.9390806318839306, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.3743627644562139, "A2": -3.5794473804317435, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.3743627644562139, "A2": -3.5794473804317435, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.3743627644562139, "A2": -3.5794473804317435, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 0.427647187853551, "A2": -3.591336595955739, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.4821091303770215, "A2": -8.344477037936414, "tau9": 0.704, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.668062846764018, "A2": -7.49882615918863, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.519731036991757, "A2": -7.372514597348956, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -5.3057263104819485, "A2": -7.581088925933256, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": 0.46481734559204124, "A2": -7.623224001049264, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.197911839552743, "A2": -8.094380917691431, "tau9": 0.704, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": 3.735821650555487, "A2": -8.140463534663763, "tau9": 0.704, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.513215972199366, "A2": -7.48723339329729, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.4550670653907187, "A2": -8.485880681976111, "tau9": 0.704, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.668062846764018, "A2": -7.49882615918863, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.5135551547299824, "A2": -8.485880950747008, "tau9": 0.704, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.5135551547299824, "A2": -8.485880950747008, "tau9": 0.704, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.5135551547299824, "A2": -8.485880950747008, "tau9": 0.704, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -4.477900137886548, "A2": -8.477148519844102, "tau9": 0.704, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -2.4816426600280193, "A2": -7.5331412321405296, "tau9": 0.72, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.30155674850566, "A2": -5.840419043673136, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.280012781683441, "A2": -5.719247963964054, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -3.8096755925730488, "A2": -5.979583492640939, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": 0.8608820540191109, "A2": -5.708874183739876, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.100854113060558, "A2": -7.1539973492022755, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -1.8024102193280993, "A2": -7.206458177379211, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -3.2616656762876826, "A2": -5.8686981807474305, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.3268754901107105, "A2": -7.6653247759444465, "tau9": 0.672, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.30155674850566, "A2": -5.840419043673136, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.342365166683112, "A2": -7.665325490244509, "tau9": 0.672, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.342365166683112, "A2": -7.665325490244509, "tau9": 0.672, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.342365166683112, "A2": -7.665325490244509, "tau9": 0.672, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -2.475850689017987, "A2": -7.550466959346048, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 1.5354914921424538, "A2": -2.4654190629627175, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 1.1020593837935517, "A2": -0.5907721567536965, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -0.570238023245979, "A2": -0.6844514929849304, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 3.284171023075931, "A2": -2.1530036525191965, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 7.333980985099276, "A2": -2.1823915664629614, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 2.9905246104850853, "A2": -2.6661261394759697, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 2.943969275699647, "A2": -2.666126480942922, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 2.943969275699647, "A2": -2.666126480942922, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 2.943969275699647, "A2": -2.666126480942922, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 1.535894449565337, "A2": -2.664759649247111, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -4.197892308502326, "A2": -7.530020370308193, "tau9": 3.616, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -2.381956758357799, "A2": -6.704864916546141, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -1.3886073706500146, "A2": -6.663420159182181, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.4096453726367235, "A2": -6.897591313184931, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -0.15505336484733903, "A2": -6.464848438849541, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.529544252377348, "A2": -7.152132915249942, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": 3.615475135776708, "A2": -7.212228167044349, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.2794848471514966, "A2": -7.01789730016343, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.8465929359073314, "A2": -7.638650098561227, "tau9": 3.6, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -2.381956758357799, "A2": -6.704864916546141, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.8949235765777224, "A2": -7.6386501379115215, "tau9": 3.6, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.8949235765777224, "A2": -7.6386501379115215, "tau9": 3.6, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -3.8949235765777224, "A2": -7.6386501379115215, "tau9": 3.6, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -4.15640023782207, "A2": -7.340057215219849, "tau9": 3.6, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.7179876653603854, "A2": -6.396126255595483, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.7463762047237488, "A2": -5.221304478949077, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.484883082270916, "A2": -5.054182227504916, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -4.130287050999322, "A2": -5.441824282736586, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": 1.164681032151837, "A2": -5.245798572305267, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -2.4794434159299525, "A2": -6.132679274107213, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -0.10335707032311583, "A2": -6.175357903157962, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.69100278446963, "A2": -5.4105976883460425, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -2.7102546847905016, "A2": -6.5888563148472095, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.7463762047237488, "A2": -5.221304478949077, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -2.745846859669891, "A2": -6.588856358721253, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -2.745846859669891, "A2": -6.588856358721253, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -2.745846859669891, "A2": -6.588856358721253, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -3.717431886064771, "A2": -6.499426452928267, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.6743120298364311, "A2": -3.1513625215795127, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -0.1318864481071069, "A2": -1.2570636378569533, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 0.4360182204303298, "A2": -1.2555853523633163, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -0.9463133053801465, "A2": -1.3717336105236013, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.7852356621437593, "A2": -0.9834556526374063, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.742016760049988, "A2": -2.799128004000856, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 5.833450953596808, "A2": -2.832918469607411, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -0.9342110323664977, "A2": -1.3211182487103788, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.4315109754050683, "A2": -3.312135756317124, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -0.1318864481071069, "A2": -1.2570636378569533, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.3846535941749587, "A2": -3.3121360792778343, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.3846535941749587, "A2": -3.3121360792778343, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.3846535941749587, "A2": -3.3121360792778343, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.676807967108761, "A2": -3.3522184951273597, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.028947072381169, "A2": -5.954801471337522, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -2.731918410570324, "A2": -4.868202580336544, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -2.36744355537248, "A2": -4.838613701453081, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.2633791721040764, "A2": -5.158365413747925, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": 1.2895151054470073, "A2": -4.747422445860275, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.5016379459247124, "A2": -5.685034521448431, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -2.2991916837192443, "A2": -5.727838702138803, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -1.221202982867333, "A2": -5.253990424679198, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.738064153461403, "A2": -6.202360307498715, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -2.731918410570324, "A2": -4.868202580336544, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.7472817202502156, "A2": -6.202360546918042, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.7472817202502156, "A2": -6.202360546918042, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.7472817202502156, "A2": -6.202360546918042, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -3.303989093715212, "A2": -5.704548366109662, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.443690873711828, "A2": -8.404150089023698, "tau9": 0.768, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.228210493951075, "A2": -7.270490854716448, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.21236683573843, "A2": -7.234245684613411, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.063045344920835, "A2": -7.444231116961695, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -1.1421746257682037, "A2": -7.731179226616943, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.541773542712494, "A2": -7.969711540874794, "tau9": 1.376, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -1.8677138427209274, "A2": -8.033353255891226, "tau9": 1.36, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -4.231874461652359, "A2": -7.570233005615304, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.586133847041863, "A2": -8.668865981342899, "tau9": 0.768, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.228210493951075, "A2": -7.270490854716448, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.606175929025073, "A2": -8.66886592427939, "tau9": 0.768, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.606175929025073, "A2": -8.66886592427939, "tau9": 0.768, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.606175929025073, "A2": -8.66886592427939, "tau9": 0.768, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -5.440079168122929, "A2": -8.658075772421949, "tau9": 0.768, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 1.7155425900275882, "A2": -1.8376229199271674, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 3.597499351902638, "A2": -1.5123144016401413, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 7.0044269381167155, "A2": -1.5434154086474337, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 3.3528565490678646, "A2": -2.0790693553802213, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 3.3071069749490105, "A2": -2.0790693953034296, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 3.3071069749490105, "A2": -2.0790693953034296, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 3.3071069749490105, "A2": -2.0790693953034296, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 1.7152172827786372, "A2": -2.1082029911457707, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.514974227087865, "A2": -6.489197292240388, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.4281608128368726, "A2": -4.70383099910062, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.299432454498402, "A2": -4.642152109488973, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.112243459355835, "A2": -4.860451660844129, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -0.3551017679857944, "A2": -4.596924230916709, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.047646112700644, "A2": -6.071401781482127, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -1.2779107982398576, "A2": -6.117564066695137, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.5845017036603726, "A2": -5.121938720767872, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.2980956973456683, "A2": -6.584405678841487, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.4281608128368726, "A2": -4.70383099910062, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.323137324556113, "A2": -6.58440573631803, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.323137324556113, "A2": -6.58440573631803, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -3.323137324556113, "A2": -6.58440573631803, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.507874079970238, "A2": -6.555605255668259, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 3.8589108067561306, "A2": -2.2573465118049914, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.9946223430268325, "A2": -1.2111739880773755, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.8081996359168195, "A2": -1.2430491500995373, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -1.3083715932391027, "A2": -1.277474452166597, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.8844462076378727, "A2": -1.1964802572733642, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.7408797411435497, "A2": -1.998738399576715, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 5.497806865799112, "A2": -2.026390073498296, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -1.3170629259009505, "A2": -1.2308078962285343, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.4203867880914172, "A2": -2.469636619031626, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.9946223430268325, "A2": -1.2111739880773755, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.3719889802438594, "A2": -2.469637094223534, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.3719889802438594, "A2": -2.469637094223534, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.3719889802438594, "A2": -2.469637094223534, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 3.8616560716833614, "A2": -2.4404796497949826, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -1.425774543477647, "A2": -5.2541268231742935, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -2.1343590763001212, "A2": -3.294862769727847, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -1.9447555080520686, "A2": -3.506387726866552, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -2.4426855980275786, "A2": -3.4999927054956457, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": 1.1447050405047456, "A2": -3.2295152904701303, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -0.6738130555161838, "A2": -5.0614316459866515, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": 2.003349869792334, "A2": -5.093272684394283, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -2.4237646373068404, "A2": -3.4353473069091973, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -0.8887141590760262, "A2": -5.473401752619866, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -2.1343590763001212, "A2": -3.294862769727847, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -0.9294845748896797, "A2": -5.473402286869195, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -0.9294845748896797, "A2": -5.473402286869195, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -0.9294845748896797, "A2": -5.473402286869195, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -1.470846200302244, "A2": -5.4582231891144435, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 2.816034516613793, "A2": -1.802428890837079, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.25713045933182077, "A2": -0.9004454717434683, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 4.96526780610665, "A2": -1.4613181517354494, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 10.485673240452929, "A2": -1.4940167898191667, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 4.705400879483894, "A2": -2.0506732492367705, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 4.645796375658826, "A2": -2.0506734384862213, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 4.645796375658826, "A2": -2.0506734384862213, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 4.645796375658826, "A2": -2.0506734384862213, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 2.816268930366173, "A2": -2.0935736245514738, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.0114734093371816, "A2": -6.977858817541163, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.750408120360164, "A2": -6.074870912380881, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.3556778193012953, "A2": -5.946336032055694, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.154078189660634, "A2": -6.30285079588795, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": 0.13185057122914867, "A2": -6.4832505635223345, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.8935285913405444, "A2": -6.79609444450891, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.062619254034357, "A2": -6.837450627868112, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.602455880132733, "A2": -6.450205693810723, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.070938700764077, "A2": -7.237607446945146, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.750408120360164, "A2": -6.074870912380881, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.085099136371648, "A2": -7.237607554204497, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.085099136371648, "A2": -7.237607554204497, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.085099136371648, "A2": -7.237607554204497, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -4.01881679791976, "A2": -6.9592112586097175, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -5.844535438076082, "A2": -8.171105625125536, "tau9": 0.656, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.941033581889353, "A2": -6.050332606599113, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.869607754379391, "A2": -5.9916900453036925, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -5.150069704126428, "A2": -6.259133752822143, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -0.7443130808637013, "A2": -6.899870349184583, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.284752064165719, "A2": -7.966615925378679, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -2.1434993696051032, "A2": -8.02395937835967, "tau9": 0.656, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.776301649784834, "A2": -6.427633691805051, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.471552819328131, "A2": -8.477742522921654, "tau9": 0.656, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.941033581889353, "A2": -6.050332606599113, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.493538511468808, "A2": -8.477742753814022, "tau9": 0.656, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.493538511468808, "A2": -8.477742753814022, "tau9": 0.656, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -4.493538511468808, "A2": -8.477742753814022, "tau9": 0.656, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -5.796457197463885, "A2": -8.12954736218244, "tau9": 0.656, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -5.05154330840066, "A2": -6.6344696417399245, "tau9": 1.6, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.564169257312026, "A2": -5.060686197276018, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.405612501607143, "A2": -4.993820649324299, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.494076616448734, "A2": -5.490535264463457, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": 0.005568481714082252, "A2": -5.892808369566277, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.566849213072944, "A2": -6.322241547357441, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -3.376971088160638, "A2": -6.384634859776233, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.728008101740039, "A2": -5.3542126978174, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.839623254750045, "A2": -6.980768423600827, "tau9": 1.504, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.564169257312026, "A2": -5.060686197276018, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.851250980581733, "A2": -6.980768279745519, "tau9": 1.504, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.851250980581733, "A2": -6.980768279745519, "tau9": 1.504, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -4.851250980581733, "A2": -6.980768279745519, "tau9": 1.504, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -5.0675511581620185, "A2": -6.604393505152817, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.3349308081993785, "A2": -7.980873110566579, "tau9": 0.672, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.22593690948952, "A2": -7.235205309797209, "tau9": 2.912, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.2763123472729845, "A2": -7.228337808434299, "tau9": 3.008, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.770713982554034, "A2": -7.404166919739435, "tau9": 2.912, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -0.8827440097862048, "A2": -6.927105411671056, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.92427253526258, "A2": -7.831952627748367, "tau9": 2.896, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.26376855814172, "A2": -7.866672185523644, "tau9": 2.896, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -4.817908543920183, "A2": -7.4825044415615505, "tau9": 2.912, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.089408550681249, "A2": -8.11590147143263, "tau9": 2.88, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -5.22593690948952, "A2": -7.235205309797209, "tau9": 2.912, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.098844322141904, "A2": -8.115901604091189, "tau9": 2.88, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.098844322141904, "A2": -8.115901604091189, "tau9": 2.88, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.098844322141904, "A2": -8.115901604091189, "tau9": 2.88, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.333489424321791, "A2": -8.065611205170354, "tau9": 0.672, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.681725884923641, "A2": -6.6012824632317475, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -4.065125105476391, "A2": -5.099474957513673, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.8828084608049207, "A2": -5.125674850515947, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.870185147618827, "A2": -5.410793877685524, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": 0.7399460139655405, "A2": -5.581483378101116, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.0653472175101273, "A2": -5.992366829683378, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -1.9382809680964925, "A2": -6.061825621983603, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.919082305120409, "A2": -5.4969595769895685, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.5199729260785033, "A2": -6.70321987198435, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -4.065125105476391, "A2": -5.099474957513673, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.5333792414231273, "A2": -6.70322032745434, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.5333792414231273, "A2": -6.70322032745434, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.5333792414231273, "A2": -6.70322032745434, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -3.687074380991697, "A2": -5.966109326626329, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 8.34602116996953, "A2": -1.1577296020946617, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 3.591493252558558, "A2": -0.991985954602227, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 8.208401269242614, "A2": -1.0151804558446658, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 3.330685120277357, "A2": -1.4045382093928005, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 3.2797565803721707, "A2": -1.4045384587166374, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 3.2797565803721707, "A2": -1.4045384587166374, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 3.2797565803721707, "A2": -1.4045384587166374, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 8.34664334634494, "A2": -1.3721575497744176, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.5882433512789258, "A2": -11.046783046922839, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.252443946717996, "A2": -5.759152701205935, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.1446028710610765, "A2": -5.002830018965993, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.730114163409772, "A2": -5.832306031673053, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -0.9582617419719999, "A2": -7.830212497855493, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.510135403331895, "A2": -10.679565076798745, "tau9": 0.432, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": 1.1339058992844158, "A2": -10.75627076838083, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -3.5001371337852776, "A2": -5.575570258789943, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.663753339598883, "A2": -11.22698766509423, "tau9": 0.416, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.252443946717996, "A2": -5.759152701205935, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.705077514380369, "A2": -11.2269905154003, "tau9": 0.416, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.705077514380369, "A2": -11.2269905154003, "tau9": 0.416, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -4.705077514380369, "A2": -11.2269905154003, "tau9": 0.416, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "fail": 0, "A1": -1.5596526682666554, "A2": -11.278258704785824, "tau9": 0.448, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -9.674815820829995, "A2": -16.58735599146995, "tau9": 0.304, "tau12": 0.336}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -8.198480044111019, "A2": -15.174498397901106, "tau9": 0.336, "tau12": 0.768}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -8.415925003851685, "A2": -14.603959877660028, "tau9": 0.32, "tau12": 0.752}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -8.874267109057438, "A2": -15.350393657351397, "tau9": 0.304, "tau12": 0.752}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -2.695279803026087, "A2": -14.75117249525524, "tau9": 0.992, "tau12": 1.568}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -11.166994320419954, "A2": -16.353550022733273, "tau9": 0.272, "tau12": 0.32}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -7.681667576666734, "A2": -16.461302733257924, "tau9": 0.336, "tau12": 0.368}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -6.983108487090924, "A2": -15.282761315066411, "tau9": 0.448, "tau12": 1.04}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -11.27656524198687, "A2": -16.777941036616095, "tau9": 0.272, "tau12": 0.32}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -8.198480044111019, "A2": -15.174498397901106, "tau9": 0.336, "tau12": 0.768}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -11.288024166436468, "A2": -16.777943642122825, "tau9": 0.272, "tau12": 0.32}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -11.288024166436468, "A2": -16.777943642122825, "tau9": 0.272, "tau12": 0.32}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -11.288024166436468, "A2": -16.777943642122825, "tau9": 0.272, "tau12": 0.32}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "fail": 0, "A1": -9.674055893831868, "A2": -16.794687005199616, "tau9": 0.304, "tau12": 0.336}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.856013630192436, "A2": -13.233668138524159, "tau9": 0.4, "tau12": 0.56}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.863732578996689, "A2": -10.80283665754437, "tau9": 0.72, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.879477445501932, "A2": -10.186434780883946, "tau9": 0.736, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -6.3793632430935965, "A2": -11.195135942368118, "tau9": 0.512, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -0.9413421639398629, "A2": -10.274920765520111, "tau9": 1.488, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -6.801652115726647, "A2": -12.541536674906325, "tau9": 0.4, "tau12": 0.528}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -4.3357823637809405, "A2": -12.690660398749216, "tau9": 0.4, "tau12": 0.528}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.0494981682219695, "A2": -10.997070595607967, "tau9": 0.896, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -7.0013083343002345, "A2": -13.331488057974294, "tau9": 0.4, "tau12": 0.528}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.863732578996689, "A2": -10.80283665754437, "tau9": 0.72, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -7.028186331415056, "A2": -13.33148798760612, "tau9": 0.4, "tau12": 0.528}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -7.028186331415056, "A2": -13.33148798760612, "tau9": 0.4, "tau12": 0.528}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -7.028186331415056, "A2": -13.33148798760612, "tau9": 0.4, "tau12": 0.528}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "fail": 0, "A1": -5.1765042139209685, "A2": -13.079667887774262, "tau9": 0.688, "tau12": 0.912}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 3.8615762755896768, "A2": -11.278556854190766, "tau9": 0.4, "tau12": 2.016}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -3.552437659724787, "A2": -5.915021695039103, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -3.115584222845586, "A2": -4.059494775487818, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -3.918399071800473, "A2": -6.077382472490891, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -1.2421627742893568, "A2": -8.238657197207772, "tau9": 3.088, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.5599467035169226, "A2": -10.889386614345373, "tau9": 0.4, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 4.782441385679511, "A2": -10.969622792163925, "tau9": 0.416, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.9493316755959076, "A2": -6.122245763331842, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.799117448616359, "A2": -11.433014807861904, "tau9": 0.4, "tau12": 1.984}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -3.552437659724787, "A2": -5.915021695039103, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.8537136864603885, "A2": -11.433023050276475, "tau9": 0.4, "tau12": 1.984}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.8537136864603885, "A2": -11.433023050276475, "tau9": 0.4, "tau12": 1.984}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": -2.8537136864603885, "A2": -11.433023050276475, "tau9": 0.4, "tau12": 1.984}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "fail": 0, "A1": 3.8622763939614146, "A2": -11.432498754870881, "tau9": 0.4, "tau12": 1.984}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -8.774749629238912, "A2": -16.027001765581414, "tau9": 0.304, "tau12": 0.368}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -7.6463662348110635, "A2": -11.29400691212431, "tau9": 0.384, "tau12": 0.928}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -7.5056876286880625, "A2": -8.589316574036296, "tau9": 0.4, "tau12": 1.248}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -8.353080640521618, "A2": -14.53973341259646, "tau9": 0.32, "tau12": 0.64}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -2.9608918444861274, "A2": -13.80771996852905, "tau9": 1.056, "tau12": 1.936}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -9.863981063131128, "A2": -15.827355024378871, "tau9": 0.304, "tau12": 0.384}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -8.603859732434122, "A2": -15.927258063472436, "tau9": 0.336, "tau12": 0.384}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -7.221593325155359, "A2": -14.613308282358934, "tau9": 0.432, "tau12": 0.928}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -9.905825261738062, "A2": -16.237760063494797, "tau9": 0.288, "tau12": 0.384}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -7.6463662348110635, "A2": -11.29400691212431, "tau9": 0.384, "tau12": 0.928}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -9.914774225684905, "A2": -16.237765415009452, "tau9": 0.288, "tau12": 0.384}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -9.914774225684905, "A2": -16.237765415009452, "tau9": 0.288, "tau12": 0.384}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -9.914774225684905, "A2": -16.237765415009452, "tau9": 0.288, "tau12": 0.384}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "fail": 0, "A1": -8.778924740459587, "A2": -16.255117626827186, "tau9": 0.304, "tau12": 0.368}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.408374782018638, "A2": -14.730474267280584, "tau9": 0.352, "tau12": 0.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.36078794768296, "A2": -9.5829559510429, "tau9": 0.56, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -7.614729954041675, "A2": -13.37155636909358, "tau9": 0.352, "tau12": 1.168}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": 0.034272056946894364, "A2": -12.546490697016326, "tau9": 1.6, "tau12": 3.376}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.320197793655029, "A2": -14.345567981707363, "tau9": 0.368, "tau12": 0.4}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -1.2575225057087875, "A2": -14.451034334298207, "tau9": 0.4, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.051637858929411, "A2": -13.30961376996645, "tau9": 0.56, "tau12": 1.6}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.483461884720646, "A2": -14.840853914547745, "tau9": 0.368, "tau12": 0.4}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.36078794768296, "A2": -9.5829559510429, "tau9": 0.56, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.53742231576963, "A2": -14.840857531602383, "tau9": 0.368, "tau12": 0.4}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.53742231576963, "A2": -14.840857531602383, "tau9": 0.368, "tau12": 0.4}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.53742231576963, "A2": -14.840857531602383, "tau9": 0.368, "tau12": 0.4}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "fail": 0, "A1": -6.393899939969234, "A2": -14.866509950379406, "tau9": 0.352, "tau12": 0.4}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.139155981441094, "A2": -10.237688154500484, "tau9": 0.56, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.7622890943123912, "A2": -6.066756468814324, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.160860854081611, "A2": -2.8843990451042845, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -2.7327067656759096, "A2": -6.384157443045949, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -0.953252712472557, "A2": -6.719129666991071, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.2705378098293039, "A2": -9.775811012925095, "tau9": 0.56, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 4.82186649565697, "A2": -9.858970837642499, "tau9": 0.56, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -2.790506996634207, "A2": -6.160439939923924, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.4651207318268302, "A2": -10.410660858738499, "tau9": 0.56, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.7622890943123912, "A2": -6.066756468814324, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.4972723434944006, "A2": -10.410663778724532, "tau9": 0.56, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.4972723434944006, "A2": -10.410663778724532, "tau9": 0.56, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": -1.4972723434944006, "A2": -10.410663778724532, "tau9": 0.56, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "fail": 0, "A1": 1.2464757568635627, "A2": -10.468075307942472, "tau9": 0.736, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.956685912679433, "A2": -14.348317865524415, "tau9": 0.32, "tau12": 0.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -6.929682574156109, "A2": -12.521927676367694, "tau9": 0.464, "tau12": 1.184}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -6.89181281704122, "A2": -11.712915420703156, "tau9": 0.432, "tau12": 1.008}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -7.659459305234644, "A2": -12.798218748798913, "tau9": 0.368, "tau12": 0.864}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -1.7301143071422656, "A2": -12.319864439719607, "tau9": 1.344, "tau12": 1.968}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.268010520205605, "A2": -14.080279434387135, "tau9": 0.368, "tau12": 0.4}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -4.649954771853227, "A2": -14.194656545071012, "tau9": 0.384, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -6.835768602955715, "A2": -12.851015476336926, "tau9": 0.528, "tau12": 1.36}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.424482594953929, "A2": -14.600284423128887, "tau9": 0.368, "tau12": 0.4}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -6.929682574156109, "A2": -12.521927676367694, "tau9": 0.464, "tau12": 1.184}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.459796296331888, "A2": -14.600289398318896, "tau9": 0.368, "tau12": 0.4}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.459796296331888, "A2": -14.600289398318896, "tau9": 0.368, "tau12": 0.4}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.459796296331888, "A2": -14.600289398318896, "tau9": 0.368, "tau12": 0.4}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "fail": 0, "A1": -8.954061006685704, "A2": -14.47258405013958, "tau9": 0.32, "tau12": 0.4}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -9.09714478256953, "A2": -16.82501747347423, "tau9": 0.304, "tau12": 0.32}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -7.475331934617043, "A2": -14.011653454679081, "tau9": 0.368, "tau12": 0.784}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -7.501809871183842, "A2": -13.462767070940544, "tau9": 0.368, "tau12": 0.768}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -8.665075857309915, "A2": -14.775208093566661, "tau9": 0.304, "tau12": 0.416}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -2.7410679280327788, "A2": -14.406082961020054, "tau9": 1.184, "tau12": 1.84}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -10.402469504412215, "A2": -16.48625521286773, "tau9": 0.288, "tau12": 0.32}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -8.620221150626424, "A2": -16.620822340274998, "tau9": 0.304, "tau12": 0.336}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -6.959487239551616, "A2": -14.549740439457128, "tau9": 0.432, "tau12": 0.976}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -10.456627788639256, "A2": -17.02351781723882, "tau9": 0.288, "tau12": 0.32}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -7.475331934617043, "A2": -14.011653454679081, "tau9": 0.368, "tau12": 0.784}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -10.463312700877985, "A2": -17.02352055640985, "tau9": 0.288, "tau12": 0.32}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -10.463312700877985, "A2": -17.02352055640985, "tau9": 0.288, "tau12": 0.32}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -10.463312700877985, "A2": -17.02352055640985, "tau9": 0.288, "tau12": 0.32}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "fail": 0, "A1": -9.09867227589642, "A2": -17.043939479768333, "tau9": 0.304, "tau12": 0.32}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 1.1129567206406095, "A2": -10.415994576311917, "tau9": 0.416, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -3.6426605477465728, "A2": -4.977105693860695, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -3.653480593969134, "A2": -4.115200865492087, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -4.1219839106777245, "A2": -4.972614406679488, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.784214652949201, "A2": -7.467347625435822, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.021128772183447, "A2": -10.011907278711842, "tau9": 0.416, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 4.49378579062146, "A2": -10.08497721448242, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -2.933782762543874, "A2": -5.149111131977549, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.2243856109682574, "A2": -10.56900423456045, "tau9": 0.416, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -3.6426605477465728, "A2": -4.977105693860695, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.2813491641885668, "A2": -10.569005301613316, "tau9": 0.416, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.2813491641885668, "A2": -10.569005301613316, "tau9": 0.416, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": -1.2813491641885668, "A2": -10.569005301613316, "tau9": 0.416, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "fail": 0, "A1": 1.1147974685821231, "A2": -10.64066790768901, "tau9": 0.416, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.261386758620702, "A2": -11.199142734745406, "tau9": 0.464, "tau12": 0.672}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.959884520730414, "A2": -8.929386434746933, "tau9": 2.272, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -5.025681534521647, "A2": -8.412189807857505, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -5.4151872215146355, "A2": -9.142782071680491, "tau9": 2.272, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -1.656539674224152, "A2": -9.131755128704203, "tau9": 1.968, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -5.873454551852712, "A2": -10.729043501025837, "tau9": 0.464, "tau12": 0.656}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -1.7870096337297268, "A2": -10.823328804733258, "tau9": 0.464, "tau12": 0.656}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.441829681343207, "A2": -8.910342839205184, "tau9": 2.272, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.086628654741046, "A2": -11.355321305372357, "tau9": 0.464, "tau12": 0.656}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -4.959884520730414, "A2": -8.929386434746933, "tau9": 2.272, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.120928299207441, "A2": -11.35532337202168, "tau9": 0.464, "tau12": 0.656}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.120928299207441, "A2": -11.35532337202168, "tau9": 0.464, "tau12": 0.656}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.120928299207441, "A2": -11.35532337202168, "tau9": 0.464, "tau12": 0.656}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "fail": 0, "A1": -6.133464026473744, "A2": -11.445235868053242, "tau9": 0.464, "tau12": 0.672}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 3.0600980563233824, "A2": -10.152857085125033, "tau9": 0.576, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -2.6971147217107907, "A2": -6.54505139442527, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -2.5691809026903463, "A2": -5.801297662605128, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -2.8773531335141724, "A2": -6.642568037398383, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 1.270632629156904, "A2": -7.901494119943797, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.5580155199745889, "A2": -9.86803969637785, "tau9": 0.544, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 5.760625284309736, "A2": -9.929712786935376, "tau9": 0.544, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -1.6395637924414006, "A2": -6.310540690916277, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.7705979748912475, "A2": -10.366162481435977, "tau9": 0.544, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -2.6971147217107907, "A2": -6.54505139442527, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.8138822833897872, "A2": -10.366164952483, "tau9": 0.544, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.8138822833897872, "A2": -10.366164952483, "tau9": 0.544, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": -0.8138822833897872, "A2": -10.366164952483, "tau9": 0.544, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "fail": 0, "A1": 3.062117269982612, "A2": -10.410709835950371, "tau9": 0.592, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -5.100735808512503, "A2": -13.364794438387655, "tau9": 0.352, "tau12": 0.432}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.759713931449712, "A2": -11.018227931687397, "tau9": 1.008, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.52772364577897, "A2": -10.707062832424626, "tau9": 1.024, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -7.183246377727058, "A2": -11.322229804631753, "tau9": 0.384, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -1.6730247399052576, "A2": -10.97531185023158, "tau9": 1.392, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.278062214735833, "A2": -13.031315494181687, "tau9": 0.384, "tau12": 0.432}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -2.7810397321981095, "A2": -13.131973796804509, "tau9": 0.4, "tau12": 0.432}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.41431182691815, "A2": -11.18393215181615, "tau9": 1.008, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.43245216403653, "A2": -13.550647398884468, "tau9": 0.384, "tau12": 0.416}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.759713931449712, "A2": -11.018227931687397, "tau9": 1.008, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.466331075470847, "A2": -13.550649581227422, "tau9": 0.384, "tau12": 0.416}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.466331075470847, "A2": -13.550649581227422, "tau9": 0.384, "tau12": 0.416}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -6.466331075470847, "A2": -13.550649581227422, "tau9": 0.384, "tau12": 0.416}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "fail": 0, "A1": -5.103579630054568, "A2": -13.573333311045346, "tau9": 0.352, "tau12": 0.432}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.5818785393598068, "A2": -8.167722276583792, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -3.7228683079585427, "A2": -5.9833984960062745, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -3.7169979839037155, "A2": -5.458198534114594, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -3.381309550010332, "A2": -6.334782366795362, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.20739557197077646, "A2": -6.2217344590510315, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.19529479845149258, "A2": -7.71269330118569, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": 7.167428345591443, "A2": -7.786338009959518, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -2.8600887980949934, "A2": -6.122218801865729, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.43067147613159507, "A2": -8.417142135638189, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -3.7228683079585427, "A2": -5.9833984960062745, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.5108307363331319, "A2": -8.417147171198252, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.5108307363331319, "A2": -8.417147171198252, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.5108307363331319, "A2": -8.417147171198252, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "fail": 0, "A1": -0.5351079032337279, "A2": -8.44837798301569, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -9.307183266045417, "A2": -14.597459299620027, "tau9": 0.304, "tau12": 0.368}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -7.179878889690604, "A2": -13.46233498508473, "tau9": 0.4, "tau12": 1.248}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -6.985154939066214, "A2": -12.733402366702286, "tau9": 0.4, "tau12": 1.936}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.19170057056502, "A2": -13.49387235016594, "tau9": 0.32, "tau12": 0.864}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -1.8661178760554222, "A2": -12.520240000615068, "tau9": 1.264, "tau12": 2.288}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.01632132491109, "A2": -14.390217480039896, "tau9": 0.368, "tau12": 0.384}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -3.7698418819145814, "A2": -14.480512738324267, "tau9": 0.384, "tau12": 0.4}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -6.646287225120263, "A2": -13.389787552373525, "tau9": 0.464, "tau12": 1.744}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.15127829517245, "A2": -14.870656096341513, "tau9": 0.352, "tau12": 0.384}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -7.179878889690604, "A2": -13.46233498508473, "tau9": 0.4, "tau12": 1.248}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.192135771120778, "A2": -14.870658827203151, "tau9": 0.352, "tau12": 0.384}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.192135771120778, "A2": -14.870658827203151, "tau9": 0.352, "tau12": 0.384}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -8.192135771120778, "A2": -14.870658827203151, "tau9": 0.352, "tau12": 0.384}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "fail": 0, "A1": -9.285153144223155, "A2": -14.932094413187386, "tau9": 0.304, "tau12": 0.368}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.308188238292423, "A2": -16.435325105251707, "tau9": 0.288, "tau12": 0.352}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -6.787833687849138, "A2": -13.542869708213578, "tau9": 0.592, "tau12": 0.832}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -6.927097683126979, "A2": -4.45401333872205, "tau9": 0.512, "tau12": 1.36}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -8.54852124599902, "A2": -14.575055779422259, "tau9": 0.32, "tau12": 0.64}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -2.7351155701100645, "A2": -14.527429193208846, "tau9": 1.008, "tau12": 1.744}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.24966475461869, "A2": -16.234815011819936, "tau9": 0.288, "tau12": 0.368}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -7.105994027021898, "A2": -16.346310601506936, "tau9": 0.368, "tau12": 0.384}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -7.096777825265674, "A2": -14.484496229450578, "tau9": 0.528, "tau12": 1.216}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.361751450117232, "A2": -16.689997874397587, "tau9": 0.288, "tau12": 0.368}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -6.787833687849138, "A2": -13.542869708213578, "tau9": 0.592, "tau12": 0.832}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.39141571944943, "A2": -16.689998865005823, "tau9": 0.288, "tau12": 0.368}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.39141571944943, "A2": -16.689998865005823, "tau9": 0.288, "tau12": 0.368}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.39141571944943, "A2": -16.689998865005823, "tau9": 0.288, "tau12": 0.368}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "fail": 0, "A1": -10.315048769774544, "A2": -16.762214434939654, "tau9": 0.288, "tau12": 0.352}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -9.259817533160005, "A2": -15.41819478782658, "tau9": 0.32, "tau12": 0.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -7.334216226801946, "A2": -13.040625377497584, "tau9": 0.4, "tau12": 1.552}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -7.0052332688147505, "A2": -10.089848707150924, "tau9": 0.416, "tau12": 2.288}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.434493442030554, "A2": -13.930784661677807, "tau9": 0.336, "tau12": 1.264}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -1.0305612338329309, "A2": -12.886708467011081, "tau9": 1.44, "tau12": 2.752}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.809557960943495, "A2": -15.03766997940912, "tau9": 0.352, "tau12": 0.416}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -6.40059808036831, "A2": -15.163851391850978, "tau9": 0.384, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.021647320613523, "A2": -13.673966545368648, "tau9": 0.368, "tau12": 0.848}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.915913412103299, "A2": -15.594488182802262, "tau9": 0.336, "tau12": 0.416}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -7.334216226801946, "A2": -13.040625377497584, "tau9": 0.4, "tau12": 1.552}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.930973625470667, "A2": -15.59449188974708, "tau9": 0.336, "tau12": 0.416}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.930973625470667, "A2": -15.59449188974708, "tau9": 0.336, "tau12": 0.416}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -8.930973625470667, "A2": -15.59449188974708, "tau9": 0.336, "tau12": 0.416}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "fail": 0, "A1": -9.21673532986166, "A2": -15.659279839273303, "tau9": 0.32, "tau12": 0.4}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -10.00115244266546, "A2": -16.677792892210896, "tau9": 0.288, "tau12": 0.336}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.826300399070955, "A2": -15.233834905137497, "tau9": 0.416, "tau12": 0.992}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.618922620238351, "A2": -14.170972582044934, "tau9": 0.416, "tau12": 0.992}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -7.453935479459336, "A2": -15.372201788420766, "tau9": 0.352, "tau12": 0.896}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -2.4534842991873322, "A2": -14.186353782247709, "tau9": 0.976, "tau12": 1.808}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.907255013381384, "A2": -16.409020932493384, "tau9": 0.288, "tau12": 0.368}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.257252275528568, "A2": -16.510684816584135, "tau9": 0.304, "tau12": 0.368}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.18534133416111, "A2": -15.593388033502277, "tau9": 0.56, "tau12": 1.184}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.965912351066116, "A2": -16.81985401496719, "tau9": 0.288, "tau12": 0.368}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -6.826300399070955, "A2": -15.233834905137497, "tau9": 0.416, "tau12": 0.992}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.974608830015505, "A2": -16.819854432352628, "tau9": 0.288, "tau12": 0.368}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.974608830015505, "A2": -16.819854432352628, "tau9": 0.288, "tau12": 0.368}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -9.974608830015505, "A2": -16.819854432352628, "tau9": 0.288, "tau12": 0.368}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "fail": 0, "A1": -10.001453663353445, "A2": -16.82914187899027, "tau9": 0.288, "tau12": 0.336}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -8.25340592840712, "A2": -13.739490774900636, "tau9": 0.32, "tau12": 0.432}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -5.818634655232559, "A2": -11.026325987053628, "tau9": 0.944, "tau12": 2.112}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -5.332312309327545, "A2": -10.243078039298306, "tau9": 0.976, "tau12": 3.616}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -7.515190674179407, "A2": -11.871081389158583, "tau9": 0.448, "tau12": 2.08}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -1.2279740137446566, "A2": -11.535389468846544, "tau9": 1.344, "tau12": 3.072}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -9.812508391218016, "A2": -13.270476335928995, "tau9": 0.288, "tau12": 0.432}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -8.539606650192942, "A2": -13.447158763714118, "tau9": 0.336, "tau12": 0.432}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -6.507401028670268, "A2": -12.302477315395453, "tau9": 0.624, "tau12": 2.112}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -9.853369249797902, "A2": -14.098561653589638, "tau9": 0.288, "tau12": 0.432}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -5.818634655232559, "A2": -11.026325987053628, "tau9": 0.944, "tau12": 2.112}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -9.858185943645147, "A2": -14.09858499798528, "tau9": 0.288, "tau12": 0.432}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -9.858185943645147, "A2": -14.09858499798528, "tau9": 0.288, "tau12": 0.432}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -9.858185943645147, "A2": -14.09858499798528, "tau9": 0.288, "tau12": 0.432}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "fail": 0, "A1": -8.132004464528443, "A2": -13.84613247473437, "tau9": 0.32, "tau12": 0.464}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 2.7665533029616656, "A2": -9.60356675381049, "tau9": 0.512, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -4.663077715585106, "A2": -7.116341770251652, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -0.5865220128897235, "A2": -7.821854524147164, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -1.0402246653533254, "A2": -9.306810206570086, "tau9": 0.448, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 5.047709900079795, "A2": -9.367247422347392, "tau9": 0.496, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -3.6909300772491136, "A2": -6.360445156003105, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -1.2103746313681834, "A2": -9.820860095538317, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -1.268793720679141, "A2": -9.820861859113482, "tau9": 0.448, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -1.268793720679141, "A2": -9.820861859113482, "tau9": 0.448, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": -1.268793720679141, "A2": -9.820861859113482, "tau9": 0.448, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "fail": 0, "A1": 2.7667582848870613, "A2": -9.854899008283862, "tau9": 0.512, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -0.5973301730257247, "A2": -2.575008014418411, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -1.1134774090653872, "A2": -1.0447258559720354, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -0.9424248941269763, "A2": -1.1196000899370218, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -1.3207371498626914, "A2": -1.1905336713188641, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 1.8594723794772918, "A2": -0.8094706669470886, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 2.1344438217549784, "A2": -2.353944029702237, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 5.400300249783204, "A2": -2.380284604031731, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -1.1194201888003845, "A2": -1.1282608354742982, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 1.9147308000064944, "A2": -2.726841680705827, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -1.1134774090653872, "A2": -1.0447258559720354, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 1.8674771562009365, "A2": -2.726841751654266, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 1.8674771562009365, "A2": -2.726841751654266, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 1.8674771562009365, "A2": -2.726841751654266, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -0.5864076704921252, "A2": -2.668853576901185, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.975109580671235, "A2": -0.7742935450402787, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.4091838929012175, "A2": -0.5369786792859534, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 7.264633472294698, "A2": -0.5621224628061837, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.181478938409157, "A2": -0.9843756368662024, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.1452430672660285, "A2": -0.9843759737541592, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.1452430672660285, "A2": -0.9843759737541592, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.1452430672660285, "A2": -0.9843759737541592, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 3.974814648853103, "A2": -1.013988521763928, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -1.739061670656176, "A2": -7.247437686826165, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.7280366478320905, "A2": -5.592698544242218, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.669979207368987, "A2": -5.492137157652797, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.797492596866913, "A2": -5.73314384904797, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": 0.4295810052389993, "A2": -5.783603482156225, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.140717270932088, "A2": -7.116580743308417, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -1.7515895340470988, "A2": -7.154462264519728, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.595598560283073, "A2": -5.511717659396588, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.39795259491489, "A2": -7.4333355987404195, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.7280366478320905, "A2": -5.592698544242218, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.418724527856213, "A2": -7.4333355823773415, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.418724527856213, "A2": -7.4333355823773415, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -4.418724527856213, "A2": -7.4333355823773415, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -1.7474847486347602, "A2": -6.956440608758726, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -3.780419543846512, "A2": -8.704601487549253, "tau9": 1.152, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -4.132420943194154, "A2": -8.411125223128034, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -3.7568334081072803, "A2": -8.254451021957642, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -4.488175328973851, "A2": -8.532341945015967, "tau9": 1.408, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -0.4784247349566409, "A2": -8.08309590622696, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -5.132986780808947, "A2": -8.376051774404088, "tau9": 1.328, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": 0.1677304733270198, "A2": -8.428976734477994, "tau9": 1.328, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -4.016823080927806, "A2": -8.501029924340113, "tau9": 1.344, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -5.366753624453589, "A2": -8.79309571830949, "tau9": 1.232, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -4.132420943194154, "A2": -8.411125223128034, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -5.396780094809188, "A2": -8.79309601136564, "tau9": 1.232, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -5.396780094809188, "A2": -8.79309601136564, "tau9": 1.232, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -5.396780094809188, "A2": -8.79309601136564, "tau9": 1.232, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -3.736789245829408, "A2": -8.709375332906127, "tau9": 1.328, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4616584309849814, "A2": -5.409452733590358, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.8653674751699687, "A2": -4.945174312948822, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.5884201990013422, "A2": -4.889471678687604, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -3.660555328288571, "A2": -5.050154068820008, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -0.6766746367110164, "A2": -4.875132394364362, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.0806872820255986, "A2": -5.129643179051623, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": 0.9618382983040796, "A2": -5.16990836802325, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -3.758434488658446, "A2": -4.836462966932242, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.387976027536394, "A2": -5.691520287895423, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.8653674751699687, "A2": -4.945174312948822, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4169076720247236, "A2": -5.691520821653061, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4169076720247236, "A2": -5.691520821653061, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4169076720247236, "A2": -5.691520821653061, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4028941382126177, "A2": -5.432419370367512, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": 0.19764616712129968, "A2": -3.6357273166616433, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.3092887871347223, "A2": -1.4298116005958579, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.0509555642993675, "A2": -1.5033647372931016, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.606396062177731, "A2": -1.532489157073118, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": 2.1796639878465967, "A2": -1.1236715697029238, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -0.37087246054242784, "A2": -3.3160615133016167, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": 4.123215670663779, "A2": -3.3525083924506403, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.3951453153867555, "A2": -1.357422594054547, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -0.596383606098573, "A2": -3.852924797861048, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.3092887871347223, "A2": -1.4298116005958579, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -0.6191498194932666, "A2": -3.8529250622393496, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -0.6191498194932666, "A2": -3.8529250622393496, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -0.6191498194932666, "A2": -3.8529250622393496, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": 0.19863576672699768, "A2": -3.872878246044879, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.979717861774082, "A2": -4.427528624540756, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.9773527765822903, "A2": -3.345806816307419, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.799273325473588, "A2": -3.277788612489467, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -2.6261377651848834, "A2": -3.6398299517639914, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": 1.129461355169955, "A2": -3.732073012627582, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.1740807304945775, "A2": -4.1158461777700275, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": 1.9547495078077, "A2": -4.1507857271948545, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -2.121493087434538, "A2": -3.869588748618603, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.3908914954218252, "A2": -4.622256272222083, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.9773527765822903, "A2": -3.345806816307419, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.4262784789442386, "A2": -4.6222565226002015, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.4262784789442386, "A2": -4.6222565226002015, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.4262784789442386, "A2": -4.6222565226002015, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -1.8396388687137533, "A2": -4.66076612845585, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.45468154778440717, "A2": -3.015031583702804, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -0.7174983504816573, "A2": -1.3124629397933063, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -0.497602004201334, "A2": -1.37834101183525, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -1.1241865011826884, "A2": -1.4045947816407869, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 3.2966786473692924, "A2": -1.1845289253924427, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.5786980148238792, "A2": -2.7385326195578537, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 3.804041411424272, "A2": -2.7684261270282864, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -1.0239765649667563, "A2": -1.4454782915234579, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.33928367738302967, "A2": -3.2077513515418064, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -0.7174983504816573, "A2": -1.3124629397933063, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.3046964224375669, "A2": -3.2077516432974873, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.3046964224375669, "A2": -3.2077516432974873, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.3046964224375669, "A2": -3.2077516432974873, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.45347784785620493, "A2": -3.2762514062309784, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.159551605167135, "A2": -4.28132618445868, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.4293567620072791, "A2": -3.324790544775565, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.0836624079986448, "A2": -3.2903559987442033, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.198889552950962, "A2": -3.57111240953732, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": 0.8187479070659643, "A2": -3.4655430456535004, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -0.8615995503065526, "A2": -3.876391214981579, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": 2.308890367544146, "A2": -3.9158763862280335, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.0742065013260893, "A2": -3.5428395041638945, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.1806774346686075, "A2": -4.493654303443117, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.4293567620072791, "A2": -3.324790544775565, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.2357746552808493, "A2": -4.493654789076416, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.2357746552808493, "A2": -4.493654789076416, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -1.2357746552808493, "A2": -4.493654789076416, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.1636701624088674, "A2": -3.188130003557993, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.6091151211417398, "A2": -2.7552674246046442, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 0.7951580957595821, "A2": -1.3435949565783982, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.6133512152569283, "A2": -1.4254228234837216, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -0.2880360694156139, "A2": -1.485648084645844, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 2.6882744262265583, "A2": -1.3921109751067038, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.722217293818167, "A2": -2.5568555833678626, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 6.242896004310929, "A2": -2.5848111746819735, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 2.184392754569732, "A2": -1.4293130698473542, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.4570459507855482, "A2": -3.0086824195578754, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 0.7951580957595821, "A2": -1.3435949565783982, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.4104644620666327, "A2": -3.008682654143942, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.4104644620666327, "A2": -3.008682654143942, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.4104644620666327, "A2": -3.008682654143942, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 1.610145165137897, "A2": -2.9971391852424576, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.1582318076815121, "A2": -6.676752723729445, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -3.484002032273108, "A2": -5.718475878514618, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -3.4848845683136025, "A2": -5.590544730301751, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -3.3615518665124995, "A2": -5.944171235107094, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": 2.81113653450538, "A2": -5.6453421241856105, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.4781895068836401, "A2": -6.437496414287406, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": 0.7431125279002709, "A2": -6.474285801244135, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -2.692965887273382, "A2": -5.884951345538372, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.7065795783159954, "A2": -6.824767431025515, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -3.484002032273108, "A2": -5.718475878514618, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.721890864586221, "A2": -6.824767405946729, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.721890864586221, "A2": -6.824767405946729, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.721890864586221, "A2": -6.824767405946729, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.1572194663788573, "A2": -6.569700563766181, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -2.8069468561855526, "A2": -5.185984021597938, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.6086726290800204, "A2": -4.301532534569167, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.501994973839339, "A2": -4.268244802966446, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.6819898762843657, "A2": -4.585190141755391, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -0.13413709703481735, "A2": -4.45553265550683, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.809836151967671, "A2": -4.864020440963402, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -1.711102061989578, "A2": -4.908703029269626, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.4897130186502916, "A2": -4.738819343653805, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -4.047564694438947, "A2": -5.463955035133218, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.6086726290800204, "A2": -4.301532534569167, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -4.05223397018933, "A2": -5.463955272884357, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -4.05223397018933, "A2": -5.463955272884357, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -4.05223397018933, "A2": -5.463955272884357, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -2.801053501624648, "A2": -5.080845758172671, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.326398780802671, "A2": -2.1512006200847194, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.19326850779416538, "A2": -1.0146804321137455, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 0.1965151567772388, "A2": -1.0488123769992574, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.8327143629239632, "A2": -1.0885813214500923, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 2.7950827052837295, "A2": -0.976731451539697, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 2.0236482555083795, "A2": -2.075849801083513, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 5.709459170473478, "A2": -2.1046130249467656, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.23874512654885266, "A2": -0.8031200651919617, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.7024072080220005, "A2": -2.59595119511451, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.19326850779416538, "A2": -1.0146804321137455, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.6682687229729674, "A2": -2.5959512941123286, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.6682687229729674, "A2": -2.5959512941123286, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.6682687229729674, "A2": -2.5959512941123286, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 1.3193075218384736, "A2": -2.589143391735442, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.365488100761633, "A2": -5.402171678509218, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -1.8511563081070614, "A2": -4.3053949878668405, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -0.42055561045230033, "A2": -4.3576830977027745, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -3.0308761551467, "A2": -4.653075856977261, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": 0.07509611878492728, "A2": -4.369575448874271, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.7354053193045353, "A2": -5.328103870068471, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -1.3227383664724712, "A2": -5.36117096581318, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.692909640966428, "A2": -4.593909790418557, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.8225107424856812, "A2": -5.822252884637016, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -1.8511563081070614, "A2": -4.3053949878668405, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.834284200425593, "A2": -5.822253144095138, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.834284200425593, "A2": -5.822253144095138, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.834284200425593, "A2": -5.822253144095138, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -2.367027535245182, "A2": -5.721374611403014, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 4.025256392428919, "A2": -0.702068461728178, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 3.2045732817082824, "A2": -0.36085268172590645, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 9.04651452500042, "A2": -0.3890361481843388, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.92496159321825, "A2": -0.8806006010693068, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.8766655532959624, "A2": -0.8806008770979477, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.8766655532959624, "A2": -0.8806008770979477, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.8766655532959624, "A2": -0.8806008770979477, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 4.024775462521413, "A2": -0.9361692103216726, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 1.7603914574070667, "A2": -2.6413467845535137, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 0.10045191553204823, "A2": -0.8193346302435968, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 0.4342678499246314, "A2": -0.9056775184935923, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -0.6030351537737761, "A2": -0.8725969249655002, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 3.228733907773391, "A2": -0.7287376751261962, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 2.577884843069044, "A2": -2.409868680925094, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 6.8012363997162515, "A2": -2.438408360008374, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -0.6746256752705909, "A2": -0.6938545833141875, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 2.3262436760493648, "A2": -2.8785812639657458, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 0.10045191553204823, "A2": -0.8193346302435968, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 2.280469893076963, "A2": -2.8785814149014404, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 2.280469893076963, "A2": -2.8785814149014404, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 2.280469893076963, "A2": -2.8785814149014404, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 1.7614991476357267, "A2": -2.930284498504749, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.607609566658579, "A2": -7.178668777596285, "tau9": 0.976, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -4.779191866039475, "A2": -6.483962858325683, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -4.746491639832293, "A2": -6.313435279070175, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -4.796154515358644, "A2": -6.816861414459062, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -0.22561198537982222, "A2": -6.625144732108982, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.213766956708286, "A2": -6.7642036529504015, "tau9": 1.008, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -3.417490853083903, "A2": -6.832334410155654, "tau9": 0.992, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -4.045005443078878, "A2": -6.748408726313132, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.422736618735719, "A2": -7.425290902321372, "tau9": 0.976, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -4.779191866039475, "A2": -6.483962858325683, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.433939276750635, "A2": -7.425291148447574, "tau9": 0.976, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.433939276750635, "A2": -7.425291148447574, "tau9": 0.976, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.433939276750635, "A2": -7.425291148447574, "tau9": 0.976, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -5.608007800066762, "A2": -7.171202900524335, "tau9": 0.976, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.622499490315231, "A2": -7.120392905623855, "tau9": 1.12, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.076704106933304, "A2": -6.6243124495269745, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.021299932104952, "A2": -6.477965323508367, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -4.828268520553503, "A2": -6.830032436005752, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": 0.7501682776222633, "A2": -6.596508141099298, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.527199815400104, "A2": -6.779906648988069, "tau9": 1.296, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -4.111960053659033, "A2": -6.860634996546976, "tau9": 1.232, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -4.317239403931908, "A2": -6.678651095059063, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.935401346721974, "A2": -7.3862375946533785, "tau9": 1.12, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.076704106933304, "A2": -6.6243124495269745, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.93947901834569, "A2": -7.386237430277421, "tau9": 1.12, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.93947901834569, "A2": -7.386237430277421, "tau9": 1.12, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.93947901834569, "A2": -7.386237430277421, "tau9": 1.12, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -5.74068488710537, "A2": -7.005134884761588, "tau9": 1.104, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.7233018477388264, "A2": -2.3794791775867834, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -0.5508965540763078, "A2": -0.7045643264545671, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -0.3060406883580026, "A2": -0.7900531594295135, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -1.0927699360251246, "A2": -0.9353328560780055, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.821275315186982, "A2": -0.9430960695526107, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.633247398818584, "A2": -2.103568372339698, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 7.927047182091654, "A2": -2.1340808524232395, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -1.0825155392537333, "A2": -1.0427857161800789, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.411557406761771, "A2": -2.570807869183331, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -0.5508965540763078, "A2": -0.7045643264545671, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.370331927054721, "A2": -2.5708079980993706, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.370331927054721, "A2": -2.5708079980993706, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.370331927054721, "A2": -2.5708079980993706, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.743086240942341, "A2": -2.507881004009209, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.590660964231123, "A2": -1.6173051913352272, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 0.4978634521304707, "A2": -0.4558926194983224, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 0.9020797374842162, "A2": -0.5004023805623765, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.19226131257537932, "A2": -0.5818921951005228, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.448319624332049, "A2": -0.48819906564721116, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.8718847046408515, "A2": -1.3445196343687893, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 8.33012944184187, "A2": -1.3731776371875017, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.20157565475350217, "A2": -0.5778724887867999, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.6005732944008533, "A2": -1.8453649396365124, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 0.4978634521304707, "A2": -0.4558926194983224, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.5580099690302007, "A2": -1.8453651750399946, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.5580099690302007, "A2": -1.8453651750399946, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.5580099690302007, "A2": -1.8453651750399946, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 3.5936181325552363, "A2": -1.767137925257942, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -5.1475786909242025, "A2": -10.903455795425296, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.6366254040377655, "A2": -6.661371443554252, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.507417515539779, "A2": -6.279955579837614, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -5.107810928779366, "A2": -7.374769112496354, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -1.293477254836167, "A2": -7.87799367300568, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.248520454101132, "A2": -10.545651079797276, "tau9": 0.432, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": 0.40074345415329804, "A2": -10.627393009023242, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -3.8553414189839836, "A2": -7.509341139560267, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.496994897347915, "A2": -11.10529184322544, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.6366254040377655, "A2": -6.661371443554252, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.558087549741973, "A2": -11.105295798894394, "tau9": 0.432, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.558087549741973, "A2": -11.105295798894394, "tau9": 0.432, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -4.558087549741973, "A2": -11.105295798894394, "tau9": 0.432, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 484, "fail": 0, "A1": -5.105321297316098, "A2": -11.138747283138969, "tau9": 0.432, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 4.5005723115115845, "A2": -9.212359915133842, "tau9": 1.152, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -3.6101702145993873, "A2": -6.593744716286597, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 0.8696263015386101, "A2": -7.087520007895167, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -0.4541794361651883, "A2": -8.758425728734691, "tau9": 1.504, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 6.8457511016058845, "A2": -8.827751219885661, "tau9": 1.504, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -3.063124220914084, "A2": -7.258847588295147, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -0.7027890311751448, "A2": -9.353061984116826, "tau9": 1.152, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -0.7720428911538778, "A2": -9.353066406007144, "tau9": 1.152, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -0.7720428911538778, "A2": -9.353066406007144, "tau9": 1.152, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": -0.7720428911538778, "A2": -9.353066406007144, "tau9": 1.152, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 485, "fail": 0, "A1": 4.502275838396227, "A2": -9.411167096333816, "tau9": 1.152, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.1302556828796, "A2": -14.881317714950912, "tau9": 0.352, "tau12": 0.48}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -6.605208701457096, "A2": -12.723728540308617, "tau9": 0.448, "tau12": 1.6}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -6.304739768374118, "A2": -12.0428753766053, "tau9": 0.464, "tau12": 1.744}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -7.24513367790384, "A2": -13.035546146008208, "tau9": 0.4, "tau12": 0.992}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -1.4336088147280384, "A2": -12.606411045738689, "tau9": 1.408, "tau12": 2.112}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.558405415201262, "A2": -14.128537902281483, "tau9": 0.368, "tau12": 0.48}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -7.227261324145774, "A2": -14.334345231238766, "tau9": 0.4, "tau12": 0.496}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -6.413859168550735, "A2": -12.991938121096192, "tau9": 0.512, "tau12": 1.6}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.69155375008406, "A2": -14.97078657616642, "tau9": 0.368, "tau12": 0.48}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -6.605208701457096, "A2": -12.723728540308617, "tau9": 0.448, "tau12": 1.6}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.707846491723028, "A2": -14.970790580295173, "tau9": 0.368, "tau12": 0.48}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.707846491723028, "A2": -14.970790580295173, "tau9": 0.368, "tau12": 0.48}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.707846491723028, "A2": -14.970790580295173, "tau9": 0.368, "tau12": 0.48}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 486, "fail": 0, "A1": -8.06661589456317, "A2": -14.581969453656312, "tau9": 0.352, "tau12": 0.48}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -9.507610618466403, "A2": -17.21048606642482, "tau9": 0.304, "tau12": 0.352}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -8.420333431523886, "A2": -15.72775038168106, "tau9": 0.32, "tau12": 0.608}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -8.63392484821236, "A2": -14.978671193659515, "tau9": 0.304, "tau12": 0.592}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -9.186107853634223, "A2": -15.976529924507432, "tau9": 0.304, "tau12": 0.352}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -3.9273868982525335, "A2": -15.334075438635793, "tau9": 0.832, "tau12": 1.504}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -11.474183702940074, "A2": -16.90484440959125, "tau9": 0.256, "tau12": 0.32}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -8.074515442261669, "A2": -17.040331416314334, "tau9": 0.352, "tau12": 0.368}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -6.939514581143902, "A2": -15.989965184129174, "tau9": 0.432, "tau12": 0.816}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -11.56491027620678, "A2": -17.409561370882034, "tau9": 0.256, "tau12": 0.304}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -8.420333431523886, "A2": -15.72775038168106, "tau9": 0.32, "tau12": 0.608}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -11.579007547551575, "A2": -17.409563746989356, "tau9": 0.256, "tau12": 0.304}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -11.579007547551575, "A2": -17.409563746989356, "tau9": 0.256, "tau12": 0.304}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -11.579007547551575, "A2": -17.409563746989356, "tau9": 0.256, "tau12": 0.304}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 487, "fail": 0, "A1": -9.509195703225867, "A2": -17.47669251349176, "tau9": 0.304, "tau12": 0.352}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -4.908791456234681, "A2": -14.318080476853567, "tau9": 0.352, "tau12": 0.448}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -6.6409597479497595, "A2": -12.180369823826194, "tau9": 0.512, "tau12": 1.616}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -6.662561916380474, "A2": -11.633978513331716, "tau9": 0.496, "tau12": 2.16}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -7.69263936360172, "A2": -12.675354416881277, "tau9": 0.352, "tau12": 1.024}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -2.4783941286269013, "A2": -11.894531353460415, "tau9": 0.992, "tau12": 2.24}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -5.23714661905519, "A2": -13.937244629457455, "tau9": 0.384, "tau12": 0.464}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": 1.315670999478432, "A2": -14.052888286292891, "tau9": 0.416, "tau12": 0.464}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -6.060423834777829, "A2": -12.725652963021181, "tau9": 0.64, "tau12": 1.44}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -5.527088577744706, "A2": -14.473253623201348, "tau9": 0.384, "tau12": 0.448}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -6.6409597479497595, "A2": -12.180369823826194, "tau9": 0.512, "tau12": 1.616}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -5.599533630492678, "A2": -14.473257830314417, "tau9": 0.384, "tau12": 0.448}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -5.599533630492678, "A2": -14.473257830314417, "tau9": 0.384, "tau12": 0.448}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -5.599533630492678, "A2": -14.473257830314417, "tau9": 0.384, "tau12": 0.448}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 490, "fail": 0, "A1": -4.905701979049581, "A2": -14.42453520436108, "tau9": 0.352, "tau12": 0.448}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -6.080378790120947, "A2": -12.774745061854754, "tau9": 0.336, "tau12": 0.56}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -5.080336926352182, "A2": -7.671093163447043, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -5.068807710521992, "A2": -6.761531276705392, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -6.260509538364293, "A2": -7.736760076650975, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -3.604264834943711, "A2": -9.295792285662326, "tau9": 1.984, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -6.911323845002202, "A2": -12.387311551205848, "tau9": 0.352, "tau12": 0.512}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -1.9282788664898551, "A2": -12.482460770664957, "tau9": 0.384, "tau12": 0.512}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -4.537533634455845, "A2": -7.147609081056844, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -7.020824499824406, "A2": -12.940061039320653, "tau9": 0.352, "tau12": 0.512}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -5.080336926352182, "A2": -7.671093163447043, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -7.051194507209544, "A2": -12.940065068412824, "tau9": 0.352, "tau12": 0.512}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -7.051194507209544, "A2": -12.940065068412824, "tau9": 0.352, "tau12": 0.512}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -7.051194507209544, "A2": -12.940065068412824, "tau9": 0.352, "tau12": 0.512}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 491, "fail": 0, "A1": -6.078707108004932, "A2": -12.95263357094354, "tau9": 0.336, "tau12": 0.784}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -3.013868221678175, "A2": -10.884494141005103, "tau9": 0.496, "tau12": 1.44}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -4.233689447693601, "A2": -8.621352061910393, "tau9": 1.296, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -4.138760689652386, "A2": -8.392218541464263, "tau9": 1.296, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -4.650259082169576, "A2": -9.123364282617272, "tau9": 1.296, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.37209490828843583, "A2": -8.236973583690443, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.5891743323578825, "A2": -10.404012413890138, "tau9": 0.448, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": 5.682865499398621, "A2": -10.497538631467286, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -4.045078462927216, "A2": -9.09685915447449, "tau9": 2.56, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.7679813760222503, "A2": -11.090723700055298, "tau9": 0.448, "tau12": 1.36}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -4.233689447693601, "A2": -8.621352061910393, "tau9": 1.296, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.8361514805183359, "A2": -11.090725363823065, "tau9": 0.448, "tau12": 1.36}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.8361514805183359, "A2": -11.090725363823065, "tau9": 0.448, "tau12": 1.36}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -0.8361514805183359, "A2": -11.090725363823065, "tau9": 0.448, "tau12": 1.36}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 492, "fail": 0, "A1": -2.871324290482618, "A2": -11.144481978726494, "tau9": 0.672, "tau12": 1.44}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.144914421997274, "A2": -10.977451117774667, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.131734768682121, "A2": -7.081359698339692, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.0975483337239025, "A2": -6.428544191841721, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.60309268797703, "A2": -7.470093683824006, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -0.6442563461472856, "A2": -8.178934807153723, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -3.6799445738356167, "A2": -10.549144961396548, "tau9": 0.464, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": 0.9705270331759387, "A2": -10.630578059344852, "tau9": 0.48, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -3.597202322097088, "A2": -7.396220688969455, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -3.9611036876761934, "A2": -11.130938987735949, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.131734768682121, "A2": -7.081359698339692, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.001158688020051, "A2": -11.130941870230025, "tau9": 0.448, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.001158688020051, "A2": -11.130941870230025, "tau9": 0.448, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.001158688020051, "A2": -11.130941870230025, "tau9": 0.448, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 493, "fail": 0, "A1": -4.11740406157185, "A2": -11.148444504729405, "tau9": 0.464, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.842356685936542, "A2": -13.431049876672683, "tau9": 0.368, "tau12": 0.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -4.814676403461791, "A2": -11.126244893454402, "tau9": 0.832, "tau12": 2.56}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -4.061176335020511, "A2": -10.4138895053308, "tau9": 1.04, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.68244081430754, "A2": -11.441153034749686, "tau9": 0.448, "tau12": 2.544}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.1745488189742215, "A2": -11.712934876734543, "tau9": 1.296, "tau12": 2.48}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.630657770609547, "A2": -13.08778787676063, "tau9": 0.384, "tau12": 0.4}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -2.2697618488950195, "A2": -13.178413775736173, "tau9": 0.4, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -4.829434453568871, "A2": -11.23308384161925, "tau9": 0.928, "tau12": 3.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.784814360001165, "A2": -13.56510696414456, "tau9": 0.384, "tau12": 0.4}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -4.814676403461791, "A2": -11.126244893454402, "tau9": 0.832, "tau12": 2.56}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.828097083078342, "A2": -13.565107877911554, "tau9": 0.384, "tau12": 0.4}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.828097083078342, "A2": -13.565107877911554, "tau9": 0.384, "tau12": 0.4}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.828097083078342, "A2": -13.565107877911554, "tau9": 0.384, "tau12": 0.4}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 498, "fail": 0, "A1": -6.836612887327689, "A2": -13.57602860844715, "tau9": 0.368, "tau12": 0.4}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 0.5629652356732142, "A2": -10.622338110964655, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.2324950070397223, "A2": -5.570231019856685, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.168339055617471, "A2": -4.862000412609182, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.6414552421651996, "A2": -6.044199217670506, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 0.7102370112022338, "A2": -7.64074994463409, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -2.962659748613196, "A2": -10.290758476284282, "tau9": 0.432, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 2.869223269529249, "A2": -10.364343074851117, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.040756597547041, "A2": -5.875582660894471, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.1375287095419298, "A2": -10.827750320902176, "tau9": 0.432, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.2324950070397223, "A2": -5.570231019856685, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.173294826540056, "A2": -10.827751663000718, "tau9": 0.432, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.173294826540056, "A2": -10.827751663000718, "tau9": 0.432, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": -3.173294826540056, "A2": -10.827751663000718, "tau9": 0.432, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 499, "fail": 0, "A1": 0.5654099477676813, "A2": -10.869988902530324, "tau9": 0.448, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.736981090161038, "A2": -15.245377012078904, "tau9": 0.32, "tau12": 0.352}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -7.175588053346559, "A2": -13.976940651611077, "tau9": 0.4, "tau12": 1.072}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -7.296494429151258, "A2": -13.039000388956826, "tau9": 0.384, "tau12": 1.104}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.047323542200497, "A2": -14.003577337121731, "tau9": 0.336, "tau12": 0.72}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -1.1798137041343946, "A2": -13.393765195576277, "tau9": 1.152, "tau12": 1.68}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.83350868345419, "A2": -15.071954890417974, "tau9": 0.336, "tau12": 0.384}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -6.747710880003015, "A2": -15.152577612211726, "tau9": 0.368, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -5.99081498466277, "A2": -13.971223499915304, "tau9": 0.784, "tau12": 1.728}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.912500306247694, "A2": -15.41916090572032, "tau9": 0.32, "tau12": 0.384}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -7.175588053346559, "A2": -13.976940651611077, "tau9": 0.4, "tau12": 1.072}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.93967882923648, "A2": -15.419164436031263, "tau9": 0.32, "tau12": 0.384}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.93967882923648, "A2": -15.419164436031263, "tau9": 0.32, "tau12": 0.384}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.93967882923648, "A2": -15.419164436031263, "tau9": 0.32, "tau12": 0.384}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 500, "fail": 0, "A1": -8.74425922127176, "A2": -15.39476295522584, "tau9": 0.32, "tau12": 0.352}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.762529825660514, "A2": -14.101878245012305, "tau9": 0.352, "tau12": 0.576}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -6.608803292601167, "A2": -12.38499011115586, "tau9": 0.576, "tau12": 1.52}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -6.644724607877988, "A2": -12.077708366009603, "tau9": 0.576, "tau12": 1.68}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -6.961686412870083, "A2": -12.60022506692345, "tau9": 0.48, "tau12": 1.552}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -1.5112927363192543, "A2": -12.12981016053985, "tau9": 1.072, "tau12": 2.944}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -8.262911353137985, "A2": -13.586464346628482, "tau9": 0.368, "tau12": 0.592}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -5.912273839686963, "A2": -13.725604559802056, "tau9": 0.384, "tau12": 0.576}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -5.638711954817534, "A2": -12.843588487668951, "tau9": 0.688, "tau12": 2.112}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -8.395005324574473, "A2": -14.283352488565422, "tau9": 0.352, "tau12": 0.56}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -6.608803292601167, "A2": -12.38499011115586, "tau9": 0.576, "tau12": 1.52}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -8.40289655517804, "A2": -14.283351841817225, "tau9": 0.352, "tau12": 0.56}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -8.40289655517804, "A2": -14.283351841817225, "tau9": 0.352, "tau12": 0.56}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -8.40289655517804, "A2": -14.283351841817225, "tau9": 0.352, "tau12": 0.56}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 501, "fail": 0, "A1": -3.6599968928445294, "A2": -14.048170053313441, "tau9": 0.352, "tau12": 0.672}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 0.7278423534978218, "A2": -10.731251785250265, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -3.1249948904708464, "A2": -7.11544941731499, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -3.464707375395294, "A2": -7.384298836627295, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.9411111691121904, "A2": -8.20619900651213, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.5902856411857061, "A2": -10.204910908587175, "tau9": 0.448, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 5.716309954112261, "A2": -10.29613591283887, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -3.515412175267654, "A2": -7.360208890809977, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.81007525983796, "A2": -10.82562974622144, "tau9": 0.448, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -3.1249948904708464, "A2": -7.11544941731499, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.8649096066254419, "A2": -10.825631060249925, "tau9": 0.432, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.8649096066254419, "A2": -10.825631060249925, "tau9": 0.432, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": -0.8649096066254419, "A2": -10.825631060249925, "tau9": 0.432, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 502, "fail": 0, "A1": 0.7398719393953739, "A2": -10.845263188138674, "tau9": 0.448, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -6.136945117779437, "A2": -14.577719706371138, "tau9": 0.352, "tau12": 0.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -5.375892903545589, "A2": -12.030893627368428, "tau9": 0.736, "tau12": 2.192}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -5.114246192411445, "A2": -11.305619401174237, "tau9": 0.688, "tau12": 3.408}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -6.393128216416924, "A2": -12.550543041048892, "tau9": 0.512, "tau12": 1.216}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -1.8925058220100195, "A2": -10.340356246773826, "tau9": 1.04, "tau12": 2.224}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -7.1883060203448945, "A2": -14.36740388333983, "tau9": 0.384, "tau12": 0.4}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -4.5370043295242, "A2": -14.452436424388154, "tau9": 0.384, "tau12": 0.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -5.330535423752546, "A2": -12.625749565814598, "tau9": 0.832, "tau12": 2.112}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -7.325597668685737, "A2": -14.757530577067133, "tau9": 0.384, "tau12": 0.4}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -5.375892903545589, "A2": -12.030893627368428, "tau9": 0.736, "tau12": 2.192}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -7.356882486777261, "A2": -14.757533521937415, "tau9": 0.384, "tau12": 0.4}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -7.356882486777261, "A2": -14.757533521937415, "tau9": 0.384, "tau12": 0.4}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -7.356882486777261, "A2": -14.757533521937415, "tau9": 0.384, "tau12": 0.4}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 503, "fail": 0, "A1": -6.092036478654305, "A2": -14.749187560446131, "tau9": 0.352, "tau12": 0.4}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.2269102796790348, "A2": -9.38532251420397, "tau9": 0.88, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -4.177610018166501, "A2": -6.4433665298082365, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -4.13992910826687, "A2": -5.726078810805584, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -4.051183414868272, "A2": -6.380499666803906, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.7776177235571258, "A2": -7.585572957722073, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.18146582402727662, "A2": -8.98176945273898, "tau9": 1.664, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 7.0326763245499855, "A2": -9.046839072000681, "tau9": 0.944, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -3.3782086448076845, "A2": -6.49858052420902, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.40740964080590186, "A2": -9.531632995608518, "tau9": 0.832, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -4.177610018166501, "A2": -6.4433665298082365, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.47232748415962555, "A2": -9.53163517101521, "tau9": 0.832, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.47232748415962555, "A2": -9.53163517101521, "tau9": 0.832, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": -0.47232748415962555, "A2": -9.53163517101521, "tau9": 0.832, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 508, "fail": 0, "A1": 2.2304947361851077, "A2": -9.554736128506663, "tau9": 0.864, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.2993146586438615, "A2": -11.19329848787167, "tau9": 0.48, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -3.7826072289360595, "A2": -6.488701690457562, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -3.685467191194089, "A2": -5.342534751610632, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -3.9793036775690815, "A2": -6.554606880741946, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.4979993879688362, "A2": -8.55333745046875, "tau9": 3.344, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -0.8455406321290558, "A2": -10.717405420640647, "tau9": 0.464, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": 5.2445870855997025, "A2": -10.80705078995704, "tau9": 0.464, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -3.466293350607109, "A2": -6.973943483556008, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.0830162262943397, "A2": -11.363902746936468, "tau9": 0.464, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -3.7826072289360595, "A2": -6.488701690457562, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.1508411257974007, "A2": -11.363904355874626, "tau9": 0.464, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.1508411257974007, "A2": -11.363904355874626, "tau9": 0.464, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.1508411257974007, "A2": -11.363904355874626, "tau9": 0.464, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 509, "fail": 0, "A1": -1.1940641806589465, "A2": -11.426059082104363, "tau9": 0.528, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -9.446514044118253, "A2": -16.850043462426257, "tau9": 0.288, "tau12": 0.336}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -7.387778020856657, "A2": -15.218644521146249, "tau9": 0.4, "tau12": 0.784}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -7.42494497773801, "A2": -14.748490345424559, "tau9": 0.4, "tau12": 0.768}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -8.55207166746896, "A2": -15.36145687574492, "tau9": 0.304, "tau12": 0.624}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -2.7393271444972385, "A2": -14.929123523049237, "tau9": 1.008, "tau12": 1.712}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -10.965275772672777, "A2": -16.632760386849263, "tau9": 0.272, "tau12": 0.32}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -9.661697637836799, "A2": -16.754187358400767, "tau9": 0.304, "tau12": 0.352}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -6.3620462909748206, "A2": -15.432890615443362, "tau9": 0.496, "tau12": 0.944}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -11.002207898351887, "A2": -17.040989039428318, "tau9": 0.272, "tau12": 0.32}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -7.387778020856657, "A2": -15.218644521146249, "tau9": 0.4, "tau12": 0.784}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -11.003838024308033, "A2": -17.040991131186473, "tau9": 0.272, "tau12": 0.32}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -11.003838024308033, "A2": -17.040991131186473, "tau9": 0.272, "tau12": 0.32}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -11.003838024308033, "A2": -17.040991131186473, "tau9": 0.272, "tau12": 0.32}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 514, "fail": 0, "A1": -9.44988024401415, "A2": -17.036149777948296, "tau9": 0.288, "tau12": 0.336}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.546720380045862, "A2": -16.460869661700094, "tau9": 0.288, "tau12": 0.336}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -6.364488669738782, "A2": -7.685488860432466, "tau9": 2.928, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -8.518660594138845, "A2": -15.401206469817925, "tau9": 0.32, "tau12": 0.48}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -1.6260757747439634, "A2": -14.603720498142783, "tau9": 1.12, "tau12": 1.664}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.841868185175942, "A2": -16.102811740557982, "tau9": 0.288, "tau12": 0.32}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -9.693929061508365, "A2": -16.253679689788033, "tau9": 0.304, "tau12": 0.336}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -7.08058852384552, "A2": -15.283467093705896, "tau9": 0.416, "tau12": 0.896}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.901728392763502, "A2": -16.6787171116925, "tau9": 0.272, "tau12": 0.32}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -6.364488669738782, "A2": -7.685488860432466, "tau9": 2.928, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.907199928290222, "A2": -16.678720053669757, "tau9": 0.272, "tau12": 0.32}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.907199928290222, "A2": -16.678720053669757, "tau9": 0.272, "tau12": 0.32}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.907199928290222, "A2": -16.678720053669757, "tau9": 0.272, "tau12": 0.32}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 515, "fail": 0, "A1": -10.545479791023082, "A2": -16.71581551112833, "tau9": 0.288, "tau12": 0.336}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.2861114710282378, "A2": -9.43959514355374, "tau9": 0.8, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -3.718876328686971, "A2": -0.8283323940894806, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -3.9432162587882185, "A2": -5.7418533921854165, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 0.14680882847263596, "A2": -7.036729081541688, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -2.6731665255754096, "A2": -8.955548292906276, "tau9": 0.832, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 3.0827485165377833, "A2": -9.041861111650748, "tau9": 0.832, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -3.573025056388335, "A2": -5.648444512130112, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -2.8785234569166747, "A2": -9.616431270000323, "tau9": 0.8, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -3.718876328686971, "A2": -0.8283323940894806, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -2.9147091085434527, "A2": -9.61643486120426, "tau9": 0.8, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -2.9147091085434527, "A2": -9.61643486120426, "tau9": 0.8, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": -2.9147091085434527, "A2": -9.61643486120426, "tau9": 0.8, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 516, "fail": 0, "A1": 2.3061227044553796, "A2": -9.646081374357832, "tau9": 0.816, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.11236306380515032, "A2": -8.97267507758976, "tau9": 0.624, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -3.696654756655953, "A2": -6.130984560997133, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -3.6041291615782303, "A2": -3.4180729311007103, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -3.6793683536360704, "A2": -6.598803985614228, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.6572148911012389, "A2": -7.149430710518826, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.7215617750641576, "A2": -8.514916581654267, "tau9": 0.624, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": 5.22687517808102, "A2": -8.58540570113213, "tau9": 0.624, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -3.035702963517373, "A2": -6.469935563961636, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.9290442450303765, "A2": -9.159955547753263, "tau9": 0.592, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -3.696654756655953, "A2": -6.130984560997133, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.9842657575583581, "A2": -9.15995680099336, "tau9": 0.592, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.9842657575583581, "A2": -9.15995680099336, "tau9": 0.592, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.9842657575583581, "A2": -9.15995680099336, "tau9": 0.592, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S8 stationary", "seed": 517, "fail": 0, "A1": -0.09984872267278572, "A2": -9.179525072865832, "tau9": 0.624, "tau12": 4.0}

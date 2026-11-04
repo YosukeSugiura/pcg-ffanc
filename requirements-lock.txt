@@ -1,0 +1,14 @@
+# Artifact generation and pixel comparison; extracted from the tested interpreter pip freeze.
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.61.1
+kiwisolver==1.4.9
+matplotlib==3.11.2
+numpy==2.3.5
+packaging==26.3
+pillow==12.3.0
+PyMuPDF==1.26.6
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+scipy==1.17.0
+six==1.17.0

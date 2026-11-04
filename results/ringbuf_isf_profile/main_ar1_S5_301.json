@@ -1,0 +1,67 @@
+{
+  "comparison": {
+    "all_fields_equal": true,
+    "different_fields": [],
+    "raw_error_equal": true,
+    "reference_e_sha256": "4437b7f29d9b16929206ae2c66763ac335b7b0f372a9b395a546a02ba901eca6",
+    "reference_e_dtype": "float64",
+    "reference_e_shape": [
+      40000
+    ],
+    "instrumented_e_sha256": "4437b7f29d9b16929206ae2c66763ac335b7b0f372a9b395a546a02ba901eca6",
+    "instrumented_e_dtype": "float64",
+    "instrumented_e_shape": [
+      40000
+    ],
+    "event_fields": {
+      "reset_hops": {
+        "equal": true,
+        "reference_sha256": "5c2baab01000fba949e4084f7e32dfd636f47354e7beb13d69c5ae6014449a39",
+        "instrumented_sha256": "5c2baab01000fba949e4084f7e32dfd636f47354e7beb13d69c5ae6014449a39"
+      },
+      "loc_hist": {
+        "equal": true,
+        "reference_sha256": "d4781a438e226240a58669691e65bf818930e1b5af98adc6fd443448852da6fa",
+        "instrumented_sha256": "d4781a438e226240a58669691e65bf818930e1b5af98adc6fd443448852da6fa"
+      },
+      "n_resets": {
+        "equal": true,
+        "reference_sha256": "ee6c32ed6d10895fbd523f1637c50374fe48506c821286ad83416f51e69765b2",
+        "instrumented_sha256": "ee6c32ed6d10895fbd523f1637c50374fe48506c821286ad83416f51e69765b2"
+      },
+      "events_total": {
+        "equal": true,
+        "reference_sha256": "ee6c32ed6d10895fbd523f1637c50374fe48506c821286ad83416f51e69765b2",
+        "instrumented_sha256": "ee6c32ed6d10895fbd523f1637c50374fe48506c821286ad83416f51e69765b2"
+      }
+    },
+    "reference_result_sha256": "0d4d00799f054b0536517c4615f2bddeeefe76bbcff183c17dfeb98bbad4d240",
+    "instrumented_result_sha256": "0d4d00799f054b0536517c4615f2bddeeefe76bbcff183c17dfeb98bbad4d240"
+  },
+  "update_ns": 281410028,
+  "updates": 312,
+  "isf": {
+    "chi2": {
+      "ns": 22586022,
+      "calls": 287
+    },
+    "f": {
+      "ns": 0,
+      "calls": 0
+    },
+    "norm": {
+      "ns": 0,
+      "calls": 0
+    }
+  },
+  "isf_ns": 22586022,
+  "isf_fraction_of_instrumented_update": 0.08026018887997836,
+  "stable_reference": true,
+  "stable_instrumented": true,
+  "hops_reference": 312,
+  "hops_instrumented": 312,
+  "method": "main",
+  "noise": "ar1",
+  "scene": "S5 src 30cm cont",
+  "seed": 301
+}

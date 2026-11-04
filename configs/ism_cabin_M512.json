@@ -1,0 +1,25 @@
+{
+ "fft_length": 1024,
+ "hop_length": 256,
+ "controller_length": 512,
+ "sample_rate": 8000,
+ "duration_seconds": 2.0,
+ "mu_global": 0.055,
+ "mu_binwise": 0.35,
+ "power_smoothing": 0.8,
+ "regularization_ratio": 0.001,
+ "secondary_noise_snr_db": 20.0,
+ "seed": 0,
+ "plant": "ism",
+ "ism_rt60": 0.06,
+ "ism_max_order": 10,
+ "len_p": 1024,
+ "len_s": 256,
+ "move_dx": 0.05,
+ "ism_room": [
+  3.0,
+  2.0,
+  1.5
+ ],
+ "ism_src_dist": 1.0
+}

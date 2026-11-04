@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using this software."
+title: "Preconditioned Conjugate Gradients for Fast-Tracking Feedforward Active Noise Control"
+authors:
+  - family-names: Sugiura
+    given-names: Yosuke
+license: [MIT, CC-BY-4.0]
+abstract: "Code is MIT-licensed; derived data are CC-BY-4.0. See LICENSE and the MeshRIR attribution in README."
+# Fill these fields when the release and DOI exist:
+# version: "<release-tag>"
+# date-released: YYYY-MM-DD
+# doi: "<doi>"
+# repository-code: "<repository-url>"
+# preferred-citation:
+#   type: article
+#   title: "<published-article-title>"
+#   authors:
+#     - family-names: Sugiura
+#       given-names: Yosuke
+#   doi: "<article-doi>"

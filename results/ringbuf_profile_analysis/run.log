@@ -1,0 +1,45 @@
+{
+  "verified": {
+    "main": {
+      "pass": 75,
+      "fail": 0
+    },
+    "bank": {
+      "pass": 75,
+      "fail": 0
+    }
+  },
+  "calls": {
+    "bank": {
+      "_sandwich_q": 577,
+      "_localize": 64,
+      "force_restart": 64
+    },
+    "main": {
+      "_sandwich_q": 459,
+      "_localize": 87
+    }
+  },
+  "isf": {
+    "bank": {
+      "n": 75,
+      "equal": 75,
+      "fraction_median": 0.05450932429494453,
+      "fraction_min": 0.0429665940073641,
+      "fraction_max": 0.066409905907099,
+      "calls_median": 295,
+      "calls_min": 287,
+      "calls_max": 304
+    },
+    "main": {
+      "n": 75,
+      "equal": 75,
+      "fraction_median": 0.08101603149403981,
+      "fraction_min": 0.05035694168581374,
+      "fraction_max": 0.12245831822917685,
+      "calls_median": 295,
+      "calls_min": 269,
+      "calls_max": 304
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Recorded direct versions for the room and measured-stationary environment.
+# Transitive dependencies and platform-specific builds are not locked.
+numpy==2.5.3
+scipy==1.18.1
+pyroomacoustics==0.10.1

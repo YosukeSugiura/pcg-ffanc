@@ -1,0 +1,1120 @@
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.1696146789111426, "A2": -7.526688357603906, "tau9": 1.064, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.612118059717432, "A2": -5.1838320082895, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.35869030035453475, "A2": -0.9221435377560562, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.007502089584835264, "A2": -1.5901872776603645, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.37312805639792557, "A2": -0.4237448829484222, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -1.7370303823015, "A2": -7.6567745397601685, "tau9": 3.88, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.4345371116884658, "A2": -7.7881525134133796, "tau9": 1.32, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -0.622670029516934, "A2": -6.8542475245745536, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -0.01299686272152614, "A2": -4.689613900617108, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.5680442479076464, "A2": -4.536364685082351, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.5294321364812005, "A2": -5.375080713121967, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.3444085225593086, "A2": -0.21670135470700738, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.3192336717157561, "A2": -0.9112708671879864, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.6591394468001289, "A2": -0.935898267882414, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.313420640654088, "A2": -4.231054855321913, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.8027298846415802, "A2": -5.149523140451658, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.0673685270001494, "A2": -3.8976529634104295, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.3520296117768326, "A2": -0.5429203587082201, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.724936727282704, "A2": -5.746162671084938, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -0.653331846962236, "A2": -4.8365362258055145, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.227814913470662, "A2": -0.24534363129921968, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.00037694978431469583, "A2": -4.1771392878333256, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -0.9178303572415346, "A2": -4.411269946023126, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.007382494970564238, "A2": -1.453706311081902, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.9071197497632453, "A2": -3.4619740505809293, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.6913176106043166, "A2": -1.092298609098426, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.0637909436726034, "A2": -1.1488344623045128, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.029497871140749848, "A2": -1.0591264129438602, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.32073844022438547, "A2": -4.721739869105532, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.0397015662930755, "A2": -6.593978283412384, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.5935761755041913, "A2": -5.775981845238803, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.0764826417942943, "A2": -6.1809045745096896, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.1980060929384697, "A2": -9.546219904199091, "tau9": 0.84, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.6093447386677062, "A2": -4.685331564824062, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.09921209985928789, "A2": -1.743134978887283, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.15576814207928036, "A2": -1.5530764078152568, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -1.9709598060274944, "A2": -7.628710077402304, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.5284406502464446, "A2": -0.6564943871884231, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.8534086559987131, "A2": -4.317280778864941, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -4.4845917870084655, "A2": -13.718441725307004, "tau9": 0.664, "tau12": 0.952}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.8028257925762334, "A2": -9.742192152240104, "tau9": 1.064, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.822908892006682, "A2": -6.128296031717505, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.5277679620051794, "A2": -6.248305794062027, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.603594024832656, "A2": -12.650111629556582, "tau9": 0.952, "tau12": 1.4}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.9142637955901702, "A2": -12.764270761486259, "tau9": 0.808, "tau12": 1.112}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.6877946894855214, "A2": -11.152448095481326, "tau9": 1.032, "tau12": 2.152}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -1.9795204579622756, "A2": -9.399329549899226, "tau9": 1.464, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -6.01408299559833, "A2": -10.566790866876012, "tau9": 0.76, "tau12": 2.616}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.5357583771946297, "A2": -10.353776964250706, "tau9": 1.016, "tau12": 3.432}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -0.09431487126800325, "A2": -5.279953906778665, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.15939204646226157, "A2": -5.095004591226734, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.3750131143815525, "A2": -2.3445143802279382, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -3.5007618522059274, "A2": -10.03451295432593, "tau9": 0.936, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.2718983183226575, "A2": -10.633153027984925, "tau9": 1.512, "tau12": 1.64}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.3464577432937421, "A2": -4.18712829307673, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -2.1784753861433033, "A2": -9.742766294983205, "tau9": 1.512, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.16324592485386236, "A2": -5.597292243154987, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.0061249623893076, "A2": -11.71865363784216, "tau9": 0.84, "tau12": 1.96}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.174147372196001, "A2": -10.55165584992727, "tau9": 0.808, "tau12": 2.44}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 1.2725944456766127, "A2": -1.5831662219604619, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.8289468614207158, "A2": -8.676027307938506, "tau9": 1.544, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.078066098559093, "A2": -10.116856891356914, "tau9": 1.064, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.9905888253245966, "A2": -7.20629988886182, "tau9": 3.976, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -3.0582791384348393, "A2": -9.273162874366504, "tau9": 1.416, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 2.3123485512558095, "A2": -4.034811801780091, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 1.4897211641483332, "A2": -4.2823345240503485, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.02691639198023245, "A2": -5.572051592209722, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -1.2374642146371135, "A2": -9.968448691127241, "tau9": 1.368, "tau12": 2.888}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -2.9827676493499204, "A2": -11.269265888869471, "tau9": 1.336, "tau12": 1.544}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -4.083111642454097, "A2": -11.65135817866599, "tau9": 0.792, "tau12": 1.928}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.7100790331330145, "A2": -13.8050776360782, "tau9": 0.76, "tau12": 0.92}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -3.3659070249942684, "A2": -14.773305563756358, "tau9": 0.664, "tau12": 0.92}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.2324226836737981, "A2": -6.267166262720602, "tau9": 1.928, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.6447287480448289, "A2": -6.393295822707735, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.6520598426578608, "A2": -12.305496184810455, "tau9": 0.872, "tau12": 1.464}
+{"method": "FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.7140319874546117, "A2": -7.451274593147245, "tau9": 1.096, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.8894195731333148, "A2": -5.055066268106253, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.2620558612042796, "A2": -0.925086601649152, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.18120617459875216, "A2": -1.6595267788887536, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.25099579253676846, "A2": -0.44398552360888627, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.081217285341978, "A2": -7.526375315230717, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.991123413253391, "A2": -7.7370562510796095, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.2238289852928323, "A2": -6.787832402576207, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -0.2665852556768368, "A2": -4.625565215212369, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.9172914529129073, "A2": -4.483189616484545, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.821239048551092, "A2": -5.31303996734505, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.27298177526606554, "A2": -0.21772739587544307, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.46642132055286306, "A2": -0.9453066210425973, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.5137204814146128, "A2": -0.9417301775304637, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.5619381531587548, "A2": -4.1691143571643945, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.269079651513072, "A2": -5.0577558471067405, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.3248780065607697, "A2": -3.8675344556930398, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.22206746331479116, "A2": -0.5937344311604908, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.252119970562904, "A2": -5.681956177906677, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.1375355927897508, "A2": -4.829797318719289, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.3211200080610235, "A2": -0.3121069650563549, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.3494805355743963, "A2": -4.2067664580259585, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.294676060392478, "A2": -4.4443617809862035, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.23083550323024205, "A2": -1.4842316156731261, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -1.3340364270261775, "A2": -3.4607859002180974, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.3703540656039126, "A2": -1.116359059053715, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.1606764860030395, "A2": -1.1867759824664401, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.11603651876153649, "A2": -1.098408131760154, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.6778775914345269, "A2": -4.612477063975953, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.530674684405159, "A2": -6.6300902930417385, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -3.012181273623224, "A2": -5.697625463319563, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.6031377490251995, "A2": -6.13913854369856, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.639571926397539, "A2": -9.425348850451783, "tau9": 0.824, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.8935546977964492, "A2": -4.573786040750896, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.3132423000624056, "A2": -1.7943948837963357, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.3479212976273461, "A2": -1.6192101498118432, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.4947274740491054, "A2": -7.641564862778715, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.6551066567184496, "A2": -0.6995786168156397, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.5149514387410391, "A2": -4.210620877362016, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -5.040658189591728, "A2": -13.707868268202096, "tau9": 0.584, "tau12": 0.792}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -3.10964479373642, "A2": -9.59912645644431, "tau9": 1.048, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.3738927400829059, "A2": -4.447609460816032, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.5993802096884373, "A2": -5.852600964652419, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.9494067113721, "A2": -12.714247995923873, "tau9": 0.76, "tau12": 1.24}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.467090420005336, "A2": -12.729060519666104, "tau9": 0.648, "tau12": 1.048}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.1688881368405981, "A2": -8.265477095970109, "tau9": 1.352, "tau12": 3.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -6.303427491296228, "A2": -10.30858975106449, "tau9": 0.712, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -4.0824755076908374, "A2": -10.384041073698258, "tau9": 0.856, "tau12": 3.944}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -0.13211934903014835, "A2": -4.986289655867296, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.00214150677278845, "A2": -4.900693394144067, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -3.916070645923978, "A2": -9.356634755360359, "tau9": 0.968, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.2366591060294387, "A2": -9.842420222120298, "tau9": 1.56, "tau12": 1.64}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.40257731682369063, "A2": -3.8307677772580377, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -2.4644787275842277, "A2": -9.948962198510632, "tau9": 1.032, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.12070397262451568, "A2": -5.074722983883021, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.4600209060519567, "A2": -11.56860264774769, "tau9": 0.76, "tau12": 1.64}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.6275197314661893, "A2": -10.40201239423669, "tau9": 0.776, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -2.2664500983183182, "A2": -8.566986214131804, "tau9": 1.512, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.487132528411956, "A2": -9.985297730947213, "tau9": 0.968, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -1.443609675452546, "A2": -7.07777441942614, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -3.5268223048086194, "A2": -8.965312211180855, "tau9": 1.704, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.8450510443421657, "A2": -4.003897911830145, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.9837164129834658, "A2": -4.714705106782844, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.37140591984402066, "A2": -5.3258090134541884, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -1.7280918456110552, "A2": -10.084368167267838, "tau9": 1.048, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.193623523620231, "A2": -7.0350982603476355, "tau9": 1.608, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -1.4180699429565622, "A2": -7.147625750990193, "tau9": 1.56, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.972878776924301, "A2": -13.098284951441062, "tau9": 0.776, "tau12": 0.952}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -3.787511709378486, "A2": -14.626581180018407, "tau9": 0.616, "tau12": 0.856}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2752803621422437, "A2": -6.140468172808387, "tau9": 4.0, "tau12": 4.0}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -3.1611034984750392, "A2": -12.192641443639056, "tau9": 0.776, "tau12": 1.304}
+{"method": "leaky FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.6561210703850073, "A2": -7.552972309800846, "tau9": 1.096, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.946086824178258, "A2": -5.234747243362683, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.31440910210314865, "A2": -1.0579742162981831, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.11791469028147171, "A2": -1.7366338130723424, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.3929883997354703, "A2": -0.5079007764470597, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.168711394560584, "A2": -7.744892030416595, "tau9": 3.592, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.2789430915774522, "A2": -7.86730178827634, "tau9": 3.608, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.5627545171712887, "A2": -6.924797491818854, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -0.2994596246235201, "A2": -4.722860144961594, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.7139198292147357, "A2": -4.696412137831023, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.4915076282664153, "A2": -5.524272141134498, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.2964157424576582, "A2": -0.34435801543867317, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.2169183272261173, "A2": -1.0520283182134214, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.6490599542777687, "A2": -0.9636959993971146, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.5128770430799223, "A2": -4.33377867019416, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.6775834555620386, "A2": -5.200316946358897, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.3668378693566194, "A2": -3.9434351836611015, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.36032372800297446, "A2": -0.6402267848253373, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.5701941187544537, "A2": -5.812747622258812, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.3673139513232342, "A2": -4.863310375267892, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.12724890845012546, "A2": -0.3841275674481336, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.23377981247909146, "A2": -4.283045877456104, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.2270348888492058, "A2": -4.480263842883444, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.0162359273388947, "A2": -1.5620480541162027, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -1.1317490723646435, "A2": -3.565826503233521, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.7041226967545717, "A2": -1.2153238321214064, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.1677501047427751, "A2": -1.314526369179128, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.09149902006163473, "A2": -1.1474724518531283, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.6863079564446171, "A2": -4.7760730516378, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.7410101467117727, "A2": -6.624060713787657, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -3.050114413574218, "A2": -5.8758701851541275, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.827699137929604, "A2": -6.188559481297747, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -3.1774805581826184, "A2": -9.650085968448733, "tau9": 0.696, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.1494564202936752, "A2": -4.6462113944569445, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.03980776807090545, "A2": -1.8708307460079523, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.09294838349018802, "A2": -1.6948872799192554, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.7936142432281637, "A2": -7.744973545150185, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.4738398903662519, "A2": -0.8309769781506177, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.43779101325786635, "A2": -4.342941506216796, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -4.932243755205182, "A2": -14.569912857958823, "tau9": 0.568, "tau12": 0.744}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -3.746314262716699, "A2": -10.210477237016505, "tau9": 0.904, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -1.4850911250237653, "A2": -7.2696477180875565, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.9326406784485712, "A2": -6.429094475001229, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -1.8897289280977527, "A2": -5.51307238628119, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.9092487774964226, "A2": -13.487115563291528, "tau9": 0.568, "tau12": 1.208}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.850819030005452, "A2": -13.080653584834092, "tau9": 0.6, "tau12": 1.032}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -3.243356104982892, "A2": -11.983459547705031, "tau9": 0.568, "tau12": 1.352}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -2.641689729059129, "A2": -10.847077000364742, "tau9": 1.0, "tau12": 2.312}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -6.848350152860602, "A2": -11.023411112100623, "tau9": 0.552, "tau12": 2.536}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -4.51395756820936, "A2": -10.908412039255664, "tau9": 0.744, "tau12": 2.136}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -1.1172381026111193, "A2": -5.772281690472716, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.7167876156534172, "A2": -5.377716233041133, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -0.31821733987741585, "A2": -3.991991046028105, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -4.503537154371571, "A2": -10.19879543610381, "tau9": 0.84, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.2956972368385802, "A2": -13.178575281269673, "tau9": 0.856, "tau12": 1.528}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.6669590899720648, "A2": -4.340782977974977, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -2.786087223963218, "A2": -10.299157950675053, "tau9": 1.064, "tau12": 3.704}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.5431716160040977, "A2": -6.036700538695761, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -3.106047099560488, "A2": -12.213242553964216, "tau9": 0.68, "tau12": 1.288}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -4.016209383490787, "A2": -10.599377153726572, "tau9": 0.792, "tau12": 2.44}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.10665199175173543, "A2": -4.155298750431216, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -3.2978630304925853, "A2": -9.191230728948373, "tau9": 1.448, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -3.0027212130734355, "A2": -10.576879155233778, "tau9": 0.76, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -1.9748271221155216, "A2": -7.56187960056237, "tau9": 3.976, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -3.8442263631684566, "A2": -9.461642506778796, "tau9": 1.544, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 2.1981066131401295, "A2": -4.3649613035517705, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.9079305041091656, "A2": -5.163050818632151, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.46358662179352317, "A2": -6.0676373288292575, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -2.2909504573620993, "A2": -10.807144059896768, "tau9": 0.92, "tau12": 2.824}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.611045442741601, "A2": -10.772900671294359, "tau9": 1.336, "tau12": 1.496}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -3.6795849548575656, "A2": -12.349491583374231, "tau9": 0.68, "tau12": 1.304}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -3.0489888278725195, "A2": -14.109683816513865, "tau9": 0.76, "tau12": 0.904}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -4.3618473077960385, "A2": -15.007368963985488, "tau9": 0.536, "tau12": 0.76}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -4.523933376393626, "A2": -12.050528751794715, "tau9": 0.584, "tau12": 1.128}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.2663963229022386, "A2": -4.4205874262614975, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.09724056753942714, "A2": -6.859996916034188, "tau9": 4.0, "tau12": 4.0}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -3.9201790065577464, "A2": -12.849424625908021, "tau9": 0.664, "tau12": 1.176}
+{"method": "convex FD-FxNLMS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.6682031816214816, "A2": -5.355476529699747, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.034585795575478, "A2": -7.95534362788426, "tau9": 1.096, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.4385832212326453, "A2": -5.159503623659701, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.3536879525575782, "A2": -0.9520646258740207, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": 0.01763951390901051, "A2": -1.452307302801798, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.6395342428213224, "A2": -0.25985829226228085, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -0.5691637797445985, "A2": -7.271519325015752, "tau9": 1.896, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -1.3453214901794641, "A2": -7.385034957158682, "tau9": 3.96, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": 0.3636255293411539, "A2": -6.358104949656202, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.366574931274507, "A2": -4.49284838701958, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.5345275333929806, "A2": -4.4618814412098455, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.8814212943800195, "A2": -5.480037617448986, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.5070937071169889, "A2": -0.30936543254338467, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.19270881692982367, "A2": -0.9144667422652814, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.621809032498595, "A2": -0.9064378183558672, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -0.7410127242689435, "A2": -4.21001159384936, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -0.4257474300663865, "A2": -5.576534284905162, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -0.8723077718367687, "A2": -4.0427592736984845, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.26757840615396244, "A2": -0.3276522842348057, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.38702334176162745, "A2": -5.732407463770237, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": 0.037779034495900046, "A2": -4.816481517071188, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.04491239374643087, "A2": -0.2971449363334356, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": 0.1765486279878119, "A2": -3.7138533601926884, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -0.17614072713531215, "A2": -4.623296584112962, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.06101658809447418, "A2": -1.4286894365942002, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -1.2967900792515488, "A2": -3.4246319858215473, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.6737462866877326, "A2": -1.083830526417753, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.1760328085703192, "A2": -0.7966272914911049, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.10628059990077565, "A2": -0.9225160413315037, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": 0.801714650030386, "A2": -4.906860053484824, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -2.3279662552729166, "A2": -6.1877835553681, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.933711621384817, "A2": -5.346915814098852, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -0.023287741481661982, "A2": -5.886806400887509, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -0.37356264613158335, "A2": -8.583351019546534, "tau9": 1.592, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -0.9188639688337941, "A2": -4.718214703981813, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.12543161334053382, "A2": -1.6409358509279564, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.04237039183381014, "A2": -1.4014156954290866, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -1.098118532947097, "A2": -7.2128283386181415, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.3292474655321943, "A2": -0.4939727581935379, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.1706293677220891, "A2": -5.601772588146462, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -4.375405478143778, "A2": -13.748803099552305, "tau9": 0.648, "tau12": 0.968}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.605287441114405, "A2": -9.998283002034658, "tau9": 1.016, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.47660480265847727, "A2": -7.008182481998249, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -4.653398934105145, "A2": -7.79424705546927, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -1.0440321343754682, "A2": -6.171515683892224, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -0.6911645334980074, "A2": -12.486431942088501, "tau9": 0.824, "tau12": 1.272}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.1196599199414887, "A2": -12.761958512771084, "tau9": 0.792, "tau12": 1.192}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": 0.33356977782978714, "A2": -12.23260934173, "tau9": 0.872, "tau12": 1.672}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -1.7034558055627431, "A2": -10.821308160979527, "tau9": 1.064, "tau12": 2.392}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -6.854242207444704, "A2": -10.760613978526552, "tau9": 0.552, "tau12": 2.616}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.6306463754849387, "A2": -11.613701028396768, "tau9": 0.824, "tau12": 1.368}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -0.14181207241082014, "A2": -6.520197771899227, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.002182365675861504, "A2": -6.4131448367870405, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -0.22944615860082282, "A2": -6.348062895819405, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -4.138424355504697, "A2": -10.568194389018169, "tau9": 0.968, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.0098865391560135, "A2": -13.527370873934876, "tau9": 0.824, "tau12": 1.096}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.10807895644782545, "A2": -6.179796935389651, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.2504454353978145, "A2": -10.225046948235995, "tau9": 1.08, "tau12": 3.704}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.024888139220423627, "A2": -7.09073606539558, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.9989845536381474, "A2": -11.488419401644716, "tau9": 0.84, "tau12": 2.008}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.9842796322712095, "A2": -10.094279970754183, "tau9": 1.112, "tau12": 2.392}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.8768111440058503, "A2": -6.022652843958969, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.6462418864294548, "A2": -9.037581420429735, "tau9": 1.192, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -0.9354278383226746, "A2": -10.339922055738477, "tau9": 0.968, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.9340770171157974, "A2": -8.540913097807984, "tau9": 2.264, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -3.5497794888261054, "A2": -9.477028187982633, "tau9": 1.384, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 2.408512105563707, "A2": -5.843876243971592, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 1.099495301072843, "A2": -7.197925659348114, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.3734661796628011, "A2": -7.330336227864057, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.3560962045280916, "A2": -9.520407736172615, "tau9": 1.416, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -2.1112602436796055, "A2": -12.409099631638878, "tau9": 0.888, "tau12": 1.544}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -4.727640381609411, "A2": -11.137956812804122, "tau9": 0.712, "tau12": 1.864}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.6561289617749089, "A2": -12.627907376693678, "tau9": 0.968, "tau12": 1.304}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -0.6085005282915974, "A2": -13.401080650134107, "tau9": 0.904, "tau12": 1.256}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.6373132269681854, "A2": -12.340627066573301, "tau9": 0.744, "tau12": 1.304}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.006996486141268977, "A2": -6.012355057162573, "tau9": 4.0, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 1.014006798899353, "A2": -7.67901482837428, "tau9": 2.04, "tau12": 4.0}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.0251390186706275, "A2": -11.970049611549703, "tau9": 0.92, "tau12": 1.432}
+{"method": "FDKF", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.3881636667152228, "A2": -6.729040242043892, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.4941132662011804, "A2": -0.9936095279222843, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.3571760186117614, "A2": -8.550669845180622, "tau9": 1.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.8540981853200988, "A2": -5.90451904578305, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.17624309834042828, "A2": -1.6431633780084698, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -1.3271697120997172, "A2": -3.182428837046398, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -0.20555408166894829, "A2": -0.9964936476572865, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.503679114870063, "A2": -8.22366087661136, "tau9": 0.792, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.089302024050859, "A2": -8.063319218164818, "tau9": 1.288, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.2004365953545728, "A2": -7.4048481178944625, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -0.33785932279315767, "A2": -5.230834801855286, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -3.2349140065901705, "A2": -5.199327615281703, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -4.5149341073249945, "A2": -6.629983934127141, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.35883020194293125, "A2": -0.6943638402914196, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.6596289987043706, "A2": -1.6650205493812684, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -0.4121513370504493, "A2": -2.836803157681091, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.889964370825112, "A2": -5.085516363148727, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.3855351545904013, "A2": -6.59361505829338, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.478901012517543, "A2": -0.5006752767162389, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.4412489303443814, "A2": -4.3181830914041095, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.6741562519027838, "A2": -1.4507765979556835, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.0952246963029306, "A2": -6.32419837234318, "tau9": 2.152, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.2351959536327635, "A2": -5.353482558178228, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.6258754458177478, "A2": -1.259503765881227, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.7948392622023664, "A2": -4.9892623282151005, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.4693339193708597, "A2": -5.221302936175695, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.2597120328322579, "A2": -2.3585502892740378, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -2.041435607826376, "A2": -3.910044269500858, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.0529528995919084, "A2": -1.82807411452536, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.6644203431067435, "A2": -2.11114142063989, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.4025908703143365, "A2": -1.6318894306617981, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": 0.3867521062242973, "A2": -5.420692448386583, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.6683052643929837, "A2": -7.74135895488514, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -3.0111721754143557, "A2": -6.110623917291262, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.5714595918208951, "A2": -6.897469074343761, "tau9": 2.904, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.829563239682147, "A2": -10.08474593031363, "tau9": 0.76, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.723780787834511, "A2": -5.2297306925914135, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.15765835125335578, "A2": -2.7088696930777365, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.7259942136810353, "A2": -3.135475145882455, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.6441186145148987, "A2": -8.127461740862769, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -1.1696771527644143, "A2": -1.6675488128950435, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -1.4629793972088256, "A2": -8.906277534102605, "tau9": 0.84, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -6.300179144796033, "A2": -16.610077002365617, "tau9": 0.44, "tau12": 0.552}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -3.2425322448276876, "A2": -11.758243775021315, "tau9": 0.568, "tau12": 0.952}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -2.1147019085680667, "A2": -9.259646021099107, "tau9": 0.888, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -5.704486298226991, "A2": -10.763051651316813, "tau9": 0.52, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -4.630733881583412, "A2": -8.728843633137144, "tau9": 1.864, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.6610880547994373, "A2": -15.550274840070522, "tau9": 0.552, "tau12": 0.664}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.3786622303916602, "A2": -15.367318611093484, "tau9": 0.52, "tau12": 0.648}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.7653189504495634, "A2": -15.695679895979033, "tau9": 0.568, "tau12": 0.696}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -3.036378434057445, "A2": -13.658671228988354, "tau9": 0.552, "tau12": 0.68}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -7.554972200229429, "A2": -12.762982940280807, "tau9": 0.408, "tau12": 0.616}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.768057199587772, "A2": -14.122378045687665, "tau9": 0.536, "tau12": 0.696}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -3.029462809275609, "A2": -8.991575266935879, "tau9": 0.776, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -1.8384479055026959, "A2": -8.436197451924052, "tau9": 1.224, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -2.635710821663145, "A2": -10.414432670938599, "tau9": 0.664, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -5.148551011432535, "A2": -13.214274921769768, "tau9": 0.488, "tau12": 0.68}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -3.142727508942089, "A2": -17.0599250189447, "tau9": 0.536, "tau12": 0.648}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -3.086767911044945, "A2": -8.965974212665648, "tau9": 0.904, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -3.104036313801765, "A2": -12.738818347827376, "tau9": 0.568, "tau12": 0.792}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -2.7590190806668735, "A2": -9.79474267152011, "tau9": 0.712, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.6754003321197652, "A2": -14.411954962318223, "tau9": 0.568, "tau12": 0.696}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.3979678417946655, "A2": -12.297912745542789, "tau9": 0.552, "tau12": 0.792}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -1.808142074905846, "A2": -8.391400713918419, "tau9": 3.048, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -2.6579593133789685, "A2": -13.002104879293867, "tau9": 0.568, "tau12": 0.808}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.892776844224343, "A2": -12.396807441573412, "tau9": 0.568, "tau12": 0.872}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -2.8121329929849233, "A2": -11.08641774102045, "tau9": 0.616, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -4.250449128516428, "A2": -11.782817265600361, "tau9": 0.584, "tau12": 1.064}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 0.3290632292015736, "A2": -8.273091540785156, "tau9": 1.72, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.29243928236979877, "A2": -10.017609355567787, "tau9": 0.744, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -1.7215258896343977, "A2": -9.697352397909034, "tau9": 0.792, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -2.7647657444275797, "A2": -12.83818407433467, "tau9": 0.584, "tau12": 0.824}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -4.170587728990129, "A2": -15.804150789663542, "tau9": 0.504, "tau12": 0.632}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -5.508862691864024, "A2": -14.103149489610258, "tau9": 0.472, "tau12": 0.616}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -3.532147307539012, "A2": -16.31771150031512, "tau9": 0.52, "tau12": 0.648}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -3.470695001206855, "A2": -18.13493778858297, "tau9": 0.52, "tau12": 0.616}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -3.327167149649262, "A2": -14.40184185259178, "tau9": 0.552, "tau12": 0.664}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -1.3508962445263801, "A2": -8.450966793139962, "tau9": 1.032, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -1.4322325159217737, "A2": -10.71795328120049, "tau9": 0.728, "tau12": 4.0}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -3.5368903261687685, "A2": -15.35147350933987, "tau9": 0.52, "tau12": 0.68}
+{"method": "RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -2.9733266691595936, "A2": -9.98125440193633, "tau9": 0.664, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.5142646316566237, "A2": -1.020584248421161, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.2335258201377046, "A2": -8.597528790773831, "tau9": 1.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.8031910386361738, "A2": -5.932734684904606, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.17528304764093683, "A2": -1.6702452508192211, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -1.3191056978902864, "A2": -3.2152405647170736, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -0.20674954358615544, "A2": -1.0239302085175086, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.392573743654114, "A2": -8.269230455780763, "tau9": 0.792, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.9635555792869246, "A2": -8.111220434918778, "tau9": 1.288, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.0822387351732634, "A2": -7.443752917896641, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -0.2958943106181345, "A2": -5.265416007431591, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -3.1997101584305305, "A2": -5.240787237968867, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -4.462908370691216, "A2": -6.672960054937336, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.3604126129176111, "A2": -0.7194158099659408, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.6452716807950364, "A2": -1.6903570214435417, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -0.39812173040975113, "A2": -2.8670901712555574, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.8426810717441067, "A2": -5.115762685049402, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.23376117701007, "A2": -6.637625435473481, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.48990762203749805, "A2": -0.5258420949063977, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.4095666552675534, "A2": -4.360306758777501, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.6776012510859764, "A2": -1.4755549402581307, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.9842061757488492, "A2": -6.3533851304961555, "tau9": 2.152, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.1517394609998017, "A2": -5.385257216937635, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.6119252749878352, "A2": -1.284813518900609, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.7258588354933803, "A2": -5.013278105710814, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.3928167129790794, "A2": -5.255537189489088, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.24143622918089008, "A2": -2.3846277360293744, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -1.993638350952219, "A2": -3.9386969003605365, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.0710057314672565, "A2": -1.8572501808519117, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.6529808685306003, "A2": -2.1405522926757032, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.3963571669776233, "A2": -1.6567130146711944, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": 0.4275255087602504, "A2": -5.456517320598671, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.5465845035902714, "A2": -7.782184530028779, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.9373783213273112, "A2": -6.1555337767279115, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.4470003892611958, "A2": -6.923956379555406, "tau9": 2.888, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.664120796806273, "A2": -10.134625906081167, "tau9": 0.792, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.6167900865746803, "A2": -5.3005350622317895, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.13684276288891797, "A2": -2.737961092302521, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.7001420206265074, "A2": -3.162275817871041, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.54623209463778, "A2": -8.171507467721264, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -1.1623293469736593, "A2": -1.6969002137932994, "tau9": 4.0, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -1.2642307035386426, "A2": -8.959678068311591, "tau9": 0.856, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -5.8898904419915485, "A2": -16.62947939816728, "tau9": 0.472, "tau12": 0.584}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -3.0335698160622195, "A2": -11.875323645907763, "tau9": 0.6, "tau12": 0.968}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -1.9216565711907108, "A2": -9.333503385138123, "tau9": 0.888, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -5.504401182526374, "A2": -10.834779512338532, "tau9": 0.536, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -4.519615107310062, "A2": -8.787777748909951, "tau9": 1.864, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.272338396045082, "A2": -15.539870882325635, "tau9": 0.6, "tau12": 0.728}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.981868673586327, "A2": -15.358429373502851, "tau9": 0.568, "tau12": 0.696}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.409417380411092, "A2": -15.616482674477846, "tau9": 0.6, "tau12": 0.76}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -2.7523334227205716, "A2": -13.684488983274738, "tau9": 0.584, "tau12": 0.76}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -7.315076778574293, "A2": -12.836627372782575, "tau9": 0.424, "tau12": 0.664}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.5220999581571855, "A2": -14.166413112159582, "tau9": 0.568, "tau12": 0.728}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -2.756738899160249, "A2": -9.031533249392883, "tau9": 0.808, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -1.6550540197414862, "A2": -8.48478536911821, "tau9": 1.208, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -2.4454133487914707, "A2": -10.475652320392028, "tau9": 0.68, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -4.824465391422212, "A2": -13.267632506980387, "tau9": 0.536, "tau12": 0.728}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.5790513615443285, "A2": -16.924791658355723, "tau9": 0.6, "tau12": 0.712}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -2.838013469259513, "A2": -9.012204867881222, "tau9": 0.904, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -2.8459825570744206, "A2": -12.781461443270983, "tau9": 0.584, "tau12": 0.904}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -2.550840457659001, "A2": -9.839739623371837, "tau9": 0.76, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.3385068971162983, "A2": -14.401100088270177, "tau9": 0.6, "tau12": 0.744}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.0835641390403135, "A2": -12.38741335959222, "tau9": 0.584, "tau12": 0.968}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -1.6141481981288721, "A2": -8.450228721142452, "tau9": 1.992, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -2.3553810039158547, "A2": -13.004119242110345, "tau9": 0.616, "tau12": 0.824}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.64602818688576, "A2": -12.43821321367376, "tau9": 0.616, "tau12": 0.904}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -2.6043677614050282, "A2": -11.131225764133106, "tau9": 0.648, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -4.011388543002591, "A2": -11.834289947006848, "tau9": 0.6, "tau12": 1.064}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 0.4655602277421938, "A2": -8.344315430810559, "tau9": 1.704, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.13555038037350145, "A2": -10.057019682401725, "tau9": 0.776, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -1.531154561490543, "A2": -9.738491148581454, "tau9": 0.824, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -2.4609204633324615, "A2": -12.865222289867246, "tau9": 0.616, "tau12": 0.84}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.7711746564026045, "A2": -15.790191101479817, "tau9": 0.552, "tau12": 0.68}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -5.206286855088399, "A2": -14.156442953974324, "tau9": 0.504, "tau12": 0.664}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -3.1000107548919464, "A2": -16.27928212639577, "tau9": 0.568, "tau12": 0.696}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.943494149189132, "A2": -17.96852504610742, "tau9": 0.568, "tau12": 0.68}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.926494050714106, "A2": -14.445283025202077, "tau9": 0.584, "tau12": 0.712}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -1.229850247350488, "A2": -8.534400122986089, "tau9": 1.032, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -1.2490765375022674, "A2": -10.760073509731827, "tau9": 0.744, "tau12": 4.0}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -3.2227996770800975, "A2": -15.415921023919628, "tau9": 0.568, "tau12": 0.728}
+{"method": "VFF-RLS", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -2.777558866301351, "A2": -10.031575554323801, "tau9": 0.712, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -1.452544830759249, "A2": -7.571632765347781, "tau9": 1.144, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.5325013208929175, "A2": -5.250225250311635, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.32097417153387586, "A2": -0.9897538615116447, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.1494004230698998, "A2": -1.6342402225546522, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.6750200761961971, "A2": -0.43032201630447237, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -1.2025347075715749, "A2": -7.2788009709359045, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -1.791831024435704, "A2": -7.670790814076502, "tau9": 2.152, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": 0.26606746321592833, "A2": -6.482657389919421, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.6024306280944516, "A2": -4.552188291944273, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.2966416837298604, "A2": -4.4956737294593845, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -1.999314639487182, "A2": -5.509972325804337, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.3326725099856531, "A2": -0.3112185464329552, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.20062500871761996, "A2": -1.058411187378606, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.6711104053829302, "A2": -0.8017225664815985, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.058269944220214, "A2": -4.330615432918928, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.2606480000904383, "A2": -5.634071808550727, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.0611124117226824, "A2": -4.087247988244434, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.6029359916670465, "A2": -0.5593402626601803, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.2646254152819345, "A2": -5.662590343552587, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": 0.8527804561377627, "A2": -4.719516887325931, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.08365634475382405, "A2": -0.332549376038992, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": 0.34506506612010757, "A2": -3.927997653625659, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -0.7153924914287474, "A2": -4.414736941353656, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.24101693556258239, "A2": -1.507976813227211, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.5658749873690445, "A2": -3.4213848988384434, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.679463201320576, "A2": -1.2911140741389968, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.41006703774750436, "A2": -1.1811481660732062, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.37535375448141095, "A2": -1.0474174213488867, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": 0.251653137545477, "A2": -4.986326386631564, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -2.6965463743769287, "A2": -6.735940071224968, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -1.1860657769064293, "A2": -5.663555647795113, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -0.5969005903018174, "A2": -5.964597562203023, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -1.5499593423013025, "A2": -9.311620559709162, "tau9": 1.592, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.2241738584438475, "A2": -4.731947693665964, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.03246290663137295, "A2": -1.8494958891578879, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.22871539117543538, "A2": -1.6124244400757948, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -1.7290024661582926, "A2": -7.434012038670257, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.364353899590148, "A2": -0.7218121263053308, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.1950261350330877, "A2": -3.7458136899281107, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.0994346615209576, "A2": -12.488178009228658, "tau9": 1.016, "tau12": 1.496}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.4627861234986432, "A2": -9.448415915682242, "tau9": 1.352, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.08280177249544765, "A2": -5.852473832522017, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.4883316229784143, "A2": -6.038476526929024, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -0.05055720577805043, "A2": -4.748391643283343, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -1.9139936687796935, "A2": -11.81066701145645, "tau9": 1.096, "tau12": 1.592}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -1.9282078327524013, "A2": -11.222231157331663, "tau9": 1.16, "tau12": 1.736}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -0.7298731085537988, "A2": -11.586001612798265, "tau9": 0.872, "tau12": 2.152}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -1.5724981919510037, "A2": -10.026150172426856, "tau9": 1.368, "tau12": 2.76}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -5.395393471601308, "A2": -10.475260414979752, "tau9": 1.096, "tau12": 2.616}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.786501904584754, "A2": -9.99832172783832, "tau9": 1.24, "tau12": 3.736}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -0.13301964888659357, "A2": -5.127991530362812, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.14365306333550465, "A2": -5.014299564243757, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.6561781370189151, "A2": -2.8302537908098957, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -3.761960894830556, "A2": -9.62378611205638, "tau9": 1.464, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.5117993958642515, "A2": -11.965380633974913, "tau9": 1.144, "tau12": 1.496}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.44834151228008107, "A2": -4.275137427583336, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.8184062205484273, "A2": -9.309181496691552, "tau9": 1.88, "tau12": 3.704}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.47747715771438054, "A2": -5.316886742327343, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.4930480753203043, "A2": -10.262691245841218, "tau9": 1.208, "tau12": 2.216}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -2.5564526790000848, "A2": -10.318031321610633, "tau9": 1.112, "tau12": 2.424}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.39291118156023347, "A2": -4.063790520536103, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.8809068140889211, "A2": -9.056615327436988, "tau9": 1.752, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.7237741036137266, "A2": -9.668721470697788, "tau9": 1.352, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -1.157641458047103, "A2": -6.581766113136491, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -2.3324253935577675, "A2": -8.915136549300811, "tau9": 1.64, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 2.3428581794056584, "A2": -3.780343608366647, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 1.5208944938109328, "A2": -3.694756896269115, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.3637371745432011, "A2": -5.005624528880759, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.7283119908477965, "A2": -9.308335543767893, "tau9": 1.368, "tau12": 2.904}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -2.976894277161956, "A2": -11.511167761985563, "tau9": 1.096, "tau12": 1.896}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -4.087159917352678, "A2": -11.959200279749059, "tau9": 0.824, "tau12": 1.592}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -0.5855872851706814, "A2": -12.253196911919309, "tau9": 0.968, "tau12": 1.448}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.3378604077901186, "A2": -13.437365595978205, "tau9": 0.872, "tau12": 1.416}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.169527124606865, "A2": -11.343015012119368, "tau9": 1.032, "tau12": 2.12}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.5436687435438017, "A2": -4.339600769578097, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.9175491016897329, "A2": -5.970147697978962, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.1440635608037235, "A2": -11.651361742909515, "tau9": 1.048, "tau12": 1.672}
+{"method": "FD-FxNLMS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": 0.39118380057889623, "A2": -4.338848002528864, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.280180093282176, "A2": -1.2439985745597864, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.1760101434509957, "A2": -9.107880934101946, "tau9": 0.936, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.482653577105986, "A2": -6.167246624428597, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.21630283370260311, "A2": -1.8877215096435456, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.7383112607375119, "A2": -3.4109630637004495, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.0435051113966249, "A2": -1.3462309728815272, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.2409645059668613, "A2": -8.773939176823564, "tau9": 0.712, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -4.882167917220382, "A2": -8.50809268115652, "tau9": 1.16, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.5083475396349846, "A2": -7.906414042192416, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.021344922392605124, "A2": -5.639073698148488, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.1437098846803773, "A2": -5.314708887710783, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.1574878713878745, "A2": -6.528524369623212, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 1.6062649116099494, "A2": -1.1004337656242744, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.7629078825790747, "A2": -2.024872977049705, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.2021864759021274, "A2": -2.9060375831898706, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.0786674292893978, "A2": -5.3797319002579815, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -4.164368328364372, "A2": -7.113446873258664, "tau9": 2.888, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": 1.390023868924573, "A2": -0.8766006202951936, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": 0.31753962516067596, "A2": -4.806557549613423, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 1.4175520834314268, "A2": -1.8176361156963217, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.9536785638845855, "A2": -6.702462174330471, "tau9": 2.152, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.9384011862566528, "A2": -5.837501394944097, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.027149357414155445, "A2": -1.5720129671646643, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.5815818953658796, "A2": -5.292445951784774, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.1289946001792848, "A2": -5.649780302942512, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.5223316189961856, "A2": -2.4173427672533037, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.6526261242230917, "A2": -3.9666387692578544, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.9668450217613995, "A2": -1.8015343103772832, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.012656146783241395, "A2": -2.268439803852084, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.06179110488821285, "A2": -1.850502829303982, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.9172413547972238, "A2": -5.9547854027295655, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.5203052824485423, "A2": -8.153116747529662, "tau9": 3.832, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.7438132854799253, "A2": -6.545323307826059, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.9070649645952154, "A2": -7.2712268112831335, "tau9": 2.888, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -5.106935293660372, "A2": -10.563320136693847, "tau9": 0.376, "tau12": 1.944}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.9820695219094255, "A2": -5.908877464726508, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.8015521091530098, "A2": -2.7293463562309106, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2663917058063904, "A2": -3.1970944555049625, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -4.30233331001468, "A2": -8.523493998763461, "tau9": 0.968, "tau12": 4.0}
+{"method": "RLS + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.8251712670656465, "A2": -2.0314295873886694, "tau9": 4.0, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -3.704970799683565, "A2": -9.512679287863715, "tau9": 0.76, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -11.507921277956356, "A2": -17.13536717993374, "tau9": 0.264, "tau12": 0.296}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -5.773117262324479, "A2": -12.620295926057242, "tau9": 0.344, "tau12": 0.568}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -5.042591043118108, "A2": -9.959228722893204, "tau9": 0.504, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -7.866197410692209, "A2": -11.298001056297931, "tau9": 0.328, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -5.935836010991274, "A2": -9.231160985816437, "tau9": 0.68, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -7.701789804041638, "A2": -16.22545870377389, "tau9": 0.312, "tau12": 0.36}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -9.351502723707732, "A2": -15.93662017749034, "tau9": 0.28, "tau12": 0.312}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -7.859250889144981, "A2": -16.34394715070211, "tau9": 0.296, "tau12": 0.344}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -8.24296439005557, "A2": -14.198865808605671, "tau9": 0.312, "tau12": 0.392}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -9.441601071460964, "A2": -13.245304228594016, "tau9": 0.296, "tau12": 0.392}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -8.174636426959909, "A2": -14.665753520044811, "tau9": 0.296, "tau12": 0.344}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -5.991438783816269, "A2": -9.476692154627418, "tau9": 0.52, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -3.657482832821246, "A2": -8.968439494961931, "tau9": 0.568, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -5.355786668694471, "A2": -10.988953224050796, "tau9": 0.36, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -8.866440242211741, "A2": -13.728170150785616, "tau9": 0.296, "tau12": 0.36}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -9.896804125894525, "A2": -17.78951773882867, "tau9": 0.28, "tau12": 0.296}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -5.461581537417903, "A2": -9.494965170681972, "tau9": 0.552, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -7.383370493058408, "A2": -13.263176067727187, "tau9": 0.344, "tau12": 0.472}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -5.7660048122900145, "A2": -10.305906897484402, "tau9": 0.408, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -8.284317064791825, "A2": -14.924599215373426, "tau9": 0.296, "tau12": 0.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -6.687186888428572, "A2": -13.060139617157539, "tau9": 0.328, "tau12": 0.376}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -4.565568117922786, "A2": -8.991716222112041, "tau9": 1.224, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -8.048348023047726, "A2": -13.41311733832317, "tau9": 0.312, "tau12": 0.36}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -5.936375487290117, "A2": -12.94334481847077, "tau9": 0.328, "tau12": 0.392}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -5.7865115224255605, "A2": -11.588900240211803, "tau9": 0.36, "tau12": 3.448}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -7.5760476126110845, "A2": -12.26239378712416, "tau9": 0.328, "tau12": 1.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -2.547976624909509, "A2": -8.964443171899978, "tau9": 1.256, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -2.346691949924192, "A2": -10.54705798606741, "tau9": 0.456, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -4.890410085687934, "A2": -10.211983556279524, "tau9": 0.552, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -7.605021519431085, "A2": -13.36067799577015, "tau9": 0.312, "tau12": 0.52}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -10.128842270566023, "A2": -16.319647662651246, "tau9": 0.28, "tau12": 0.312}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -10.444586286940144, "A2": -14.665177764084563, "tau9": 0.28, "tau12": 0.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -9.48474773367031, "A2": -16.88422825080517, "tau9": 0.28, "tau12": 0.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -10.48381835506866, "A2": -18.848180767766912, "tau9": 0.28, "tau12": 0.296}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -8.688665671341768, "A2": -15.09798982232934, "tau9": 0.296, "tau12": 0.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -4.088890662161035, "A2": -9.191408502049468, "tau9": 0.984, "tau12": 4.0}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -4.0552697147231624, "A2": -11.257704914926872, "tau9": 0.392, "tau12": 2.056}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -8.868270981175831, "A2": -16.102053723882793, "tau9": 0.296, "tau12": 0.328}
+{"method": "RLS + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -6.25353016908862, "A2": -10.480269212115477, "tau9": 0.36, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.2974405349256775, "A2": -7.51791464700606, "tau9": 1.064, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.4768891966566147, "A2": -5.183364444747966, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.35869030035453475, "A2": -0.9221435377560562, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.007502089584835264, "A2": -1.5901872776603645, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.37312805639792557, "A2": -0.4237448829484222, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -1.857907608607667, "A2": -7.66017345069359, "tau9": 3.88, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -2.7333247077368013, "A2": -7.788856278893389, "tau9": 1.32, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -0.9607066723305127, "A2": -6.872642987518166, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.11202327504956186, "A2": -4.699615907630496, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.5680442479076464, "A2": -4.536364685082351, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -2.5294321364812005, "A2": -5.375080713121967, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.33840145430384616, "A2": -0.2170747140973689, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.2929272553982689, "A2": -0.9032175666548312, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.6591394468001289, "A2": -0.935898267882414, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.2825749212177395, "A2": -4.2309093193264316, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.3133759869973907, "A2": -5.171832372440593, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.502888307882411, "A2": -3.9312903748742722, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.46760005958790474, "A2": -0.5334239182510025, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -0.9671080224992261, "A2": -5.764248946652221, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.0857775995944159, "A2": -4.835600981278892, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.227814913470662, "A2": -0.24534363129921968, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -0.17327105795325065, "A2": -4.190101128319774, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.1592508652594964, "A2": -4.413618588997231, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.007382494970564238, "A2": -1.453706311081902, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.9071197497632453, "A2": -3.4619740505809293, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.6913176106043166, "A2": -1.092298609098426, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.0637909436726034, "A2": -1.1488344623045128, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.029497871140749848, "A2": -1.0591264129438602, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.5562812493117711, "A2": -4.721477537941917, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.514418372306751, "A2": -6.6203583441459415, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.966220897210954, "A2": -5.794146229050363, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.2907735166421508, "A2": -6.198794289278712, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -2.3308645731895195, "A2": -9.546679793350991, "tau9": 0.888, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.7648644512655853, "A2": -4.678495581135786, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.09921209985928789, "A2": -1.743134978887283, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.15576814207928036, "A2": -1.5530764078152568, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.4907224694524066, "A2": -7.65692779278646, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.5284406502464446, "A2": -0.6564943871884231, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.6324127230744316, "A2": -4.470269091486127, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.8624597129315434, "A2": -13.501784922557544, "tau9": 0.728, "tau12": 0.968}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.7462799104206557, "A2": -9.714960285312442, "tau9": 1.096, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.9868151733894076, "A2": -5.9677019867712495, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.5755891997790936, "A2": -6.242499594983057, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -2.5144823392334468, "A2": -12.380237967711283, "tau9": 1.048, "tau12": 1.4}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -3.31596696207652, "A2": -12.812999100131744, "tau9": 0.792, "tau12": 1.112}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.700926468224445, "A2": -11.001152537185828, "tau9": 1.048, "tau12": 2.184}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -2.1347752731530623, "A2": -8.352832707270306, "tau9": 2.664, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -6.096616743997333, "A2": -10.522688969654773, "tau9": 0.76, "tau12": 2.616}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.773368671527548, "A2": -10.351687481570126, "tau9": 1.016, "tau12": 3.432}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.12758455779159555, "A2": -5.19107426250947, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.42809293241551627, "A2": -5.107705494202358, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.7773561183387744, "A2": -1.6580778104590146, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -3.6382904704892467, "A2": -9.734511494768519, "tau9": 1.144, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -1.1887936257720664, "A2": -10.728887734789971, "tau9": 1.48, "tau12": 1.64}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.3443291498512185, "A2": -4.1869369101201315, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.4772860761229842, "A2": -9.37171931565455, "tau9": 1.512, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 0.1054785841089626, "A2": -5.68039037505714, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.5932223409503536, "A2": -11.847771604732873, "tau9": 0.808, "tau12": 1.64}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.6428300509310234, "A2": -10.669717364035378, "tau9": 0.792, "tau12": 2.424}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 1.1260466612902127, "A2": -1.8974446623978496, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.974308229802674, "A2": -8.761486095665099, "tau9": 1.544, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.5143207133398313, "A2": -10.211770513934013, "tau9": 0.968, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -0.9998991693181274, "A2": -7.254056005748186, "tau9": 3.976, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -3.5333074698692934, "A2": -9.398456658721333, "tau9": 1.288, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.893992625117734, "A2": -4.107202113811473, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 1.2665225447739799, "A2": -4.424209312593913, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.2683636542655166, "A2": -5.701092291942638, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.5867007729171148, "A2": -9.541340029728325, "tau9": 1.416, "tau12": 2.968}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.283819925665739, "A2": -11.048292205242682, "tau9": 1.368, "tau12": 1.576}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -3.630875743128041, "A2": -11.502729344274222, "tau9": 0.792, "tau12": 2.152}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.9713165326370117, "A2": -13.704168571617974, "tau9": 0.776, "tau12": 1.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -3.5301894467283743, "A2": -14.541032284055941, "tau9": 0.712, "tau12": 0.936}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -1.7713283632382097, "A2": -6.5476688195614905, "tau9": 2.6, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2400468151524428, "A2": -6.412284420938324, "tau9": 4.0, "tau12": 4.0}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -2.8740409985690163, "A2": -12.361740645104373, "tau9": 0.84, "tau12": 1.448}
+{"method": "FD-FxNLMS + restart", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 1, "A1": 0.0, "A2": 0.0, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.2801600397899826, "A2": -1.2439995919642215, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -0.5146651845381216, "A2": -9.11061965045192, "tau9": 0.936, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": 1.297116844114041, "A2": -6.19409236697973, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.2162713628162385, "A2": -1.8877225037936514, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.7383449638458911, "A2": -3.4109646543800136, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.043487156399143675, "A2": -1.3462319647666336, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -0.7914051112047037, "A2": -8.77482522266975, "tau9": 0.712, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": 1.7742606644903283, "A2": -8.50329636614067, "tau9": 1.16, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": 2.6797105034165587, "A2": -7.9058438829769155, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 6.4116040122234, "A2": -5.631004146731861, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.143733779137604, "A2": -5.314709802934278, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.1575165927641913, "A2": -6.528523631553814, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 3.087602939336965, "A2": -1.094278651769038, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 2.4483681069009147, "A2": -2.0216400341178584, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.2021557430369751, "A2": -2.906040464117174, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": 1.8951833247435683, "A2": -5.384198757696491, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -2.461687654567777, "A2": -7.108942036137883, "tau9": 2.888, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": 3.180360574209071, "A2": -0.8690110998070733, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": 0.9565323776486738, "A2": -4.802983732225417, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 7.193862119618761, "A2": -1.8197038591283021, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": 0.3801347820833352, "A2": -6.692545063644937, "tau9": 2.152, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": 1.8653576505477074, "A2": -5.826636545915945, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.02713334414375975, "A2": -1.5720134968149169, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": 3.170960770404965, "A2": -5.278458495870354, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": 1.1249177432726385, "A2": -5.649231960783817, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.5223002522154321, "A2": -2.4173433235758397, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.652666046504914, "A2": -3.966640181602694, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.9668245836346177, "A2": -1.8015356391823125, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.012674179471148305, "A2": -2.2684412687102875, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.06177543896703144, "A2": -1.8505039278290802, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": 0.40553114949150126, "A2": -5.946795321539973, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": 0.8910778502989083, "A2": -8.140266238550106, "tau9": 3.832, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": 1.8673263438216923, "A2": -6.536335508824557, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": 1.8363203117626423, "A2": -7.279332961934304, "tau9": 2.888, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -1.794426481063371, "A2": -10.573987227689797, "tau9": 0.52, "tau12": 2.696}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": 0.44693215753151666, "A2": -5.914135750523755, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.8015286237721929, "A2": -2.7293471961538303, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2663704064752038, "A2": -3.1970945726260225, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -0.8387189399923891, "A2": -8.515133296649115, "tau9": 0.968, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.8251859109374742, "A2": -2.0314304191810066, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.9845713370224713, "A2": -9.500695588034715, "tau9": 0.76, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -4.713627843180744, "A2": -17.064790857906235, "tau9": 0.328, "tau12": 0.376}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.729065511396361, "A2": -12.598315844664853, "tau9": 0.392, "tau12": 0.616}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -1.1777892489005983, "A2": -9.93901762147656, "tau9": 0.504, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -3.3637453116882754, "A2": -11.263402141550134, "tau9": 0.392, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -0.7901209456751246, "A2": -9.222427401832377, "tau9": 0.696, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.4934207923672838, "A2": -16.15183903636669, "tau9": 0.376, "tau12": 0.408}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -5.71541846510525, "A2": -15.91321015382902, "tau9": 0.344, "tau12": 0.36}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -5.045722653561111, "A2": -16.22531449435792, "tau9": 0.344, "tau12": 0.36}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -3.906117955617817, "A2": -14.12105722577257, "tau9": 0.36, "tau12": 0.488}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -4.277350727688441, "A2": -13.226523285197189, "tau9": 0.376, "tau12": 0.472}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.9805609987286372, "A2": -14.609064465169112, "tau9": 0.36, "tau12": 0.408}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -2.1221077790689615, "A2": -9.461484707984912, "tau9": 0.6, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.26557047167631254, "A2": -8.959693689430182, "tau9": 0.552, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -2.0703816767219165, "A2": -10.955037575994691, "tau9": 0.408, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -3.582534067893921, "A2": -13.667302484442878, "tau9": 0.376, "tau12": 0.472}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -6.062208508869312, "A2": -17.716267114425168, "tau9": 0.328, "tau12": 0.344}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.3385517667395955, "A2": -9.463952330151512, "tau9": 0.568, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -3.0466914195066, "A2": -13.200699269930706, "tau9": 0.36, "tau12": 0.504}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -1.790316463330304, "A2": -10.279025884303593, "tau9": 0.504, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -5.113935149215852, "A2": -14.862822359295858, "tau9": 0.344, "tau12": 0.408}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -6.15301336751609, "A2": -13.041373413699338, "tau9": 0.344, "tau12": 0.408}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -1.6059846436288092, "A2": -8.980757208772538, "tau9": 1.24, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -3.5953424750918295, "A2": -13.39254431108164, "tau9": 0.376, "tau12": 0.456}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.0462491590856664, "A2": -12.931089672785598, "tau9": 0.408, "tau12": 0.456}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -2.339493926163793, "A2": -11.562077832408754, "tau9": 0.408, "tau12": 3.448}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -4.70427141639154, "A2": -12.23711072740449, "tau9": 0.392, "tau12": 1.032}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -0.6438331446168659, "A2": -8.955838741258733, "tau9": 1.256, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": 0.010305203717434668, "A2": -10.515082164293958, "tau9": 0.504, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -1.0678766456343984, "A2": -10.194097925667025, "tau9": 0.568, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -4.456289334780161, "A2": -13.325770710531703, "tau9": 0.36, "tau12": 0.584}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -4.116352737645769, "A2": -16.219948978374127, "tau9": 0.36, "tau12": 0.376}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -4.5070078767803725, "A2": -14.625678048501614, "tau9": 0.328, "tau12": 0.376}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -1.6504388548656563, "A2": -16.825160803440497, "tau9": 0.344, "tau12": 0.36}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -7.355314435608497, "A2": -18.79418988864852, "tau9": 0.312, "tau12": 0.344}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -5.104495237395921, "A2": -15.022861501576937, "tau9": 0.36, "tau12": 0.488}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.37129192517355514, "A2": -9.191418418948242, "tau9": 0.968, "tau12": 4.0}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 2.227005192350581, "A2": -11.231915688336837, "tau9": 0.44, "tau12": 2.072}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -5.752007134373962, "A2": -16.0447044773207, "tau9": 0.36, "tau12": 0.392}
+{"method": "SFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -2.0519011626716823, "A2": -10.456192223751454, "tau9": 0.408, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.2801600397899826, "A2": -1.2439995919642215, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.1630878473989243, "A2": -9.105103263782633, "tau9": 0.936, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.4726339007553966, "A2": -6.167469985086546, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.2162713628162385, "A2": -1.8877225037936514, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.7383449638458911, "A2": -3.4109646543800136, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.043487156399143675, "A2": -1.3462319647666336, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.2343121245035666, "A2": -8.770189411227262, "tau9": 0.712, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -4.8900884292501985, "A2": -8.50355853351447, "tau9": 1.16, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.5123398875932106, "A2": -7.90220538371932, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.029052486378942678, "A2": -5.638232740353391, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.143733779137604, "A2": -5.314709802934278, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.1575165927641913, "A2": -6.528523631553814, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 1.6210218830695544, "A2": -1.0969232622695992, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.7679479063303325, "A2": -2.021620150091566, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.2021557430369751, "A2": -2.906040464117174, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.0805145348952638, "A2": -5.381900510471977, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -4.169549151917397, "A2": -7.111592402193231, "tau9": 2.888, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": 1.4026293211618457, "A2": -0.872493170573333, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": 0.2992557907547212, "A2": -4.797122879381882, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 1.4212723176738988, "A2": -1.8132784877830126, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.950326616144762, "A2": -6.6986431532763095, "tau9": 2.152, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.9348202200918172, "A2": -5.837672119189758, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.02713334414375975, "A2": -1.5720134968149169, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.5820324871294473, "A2": -5.288609997233578, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.1217985362290337, "A2": -5.645993418716946, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.5223002522154321, "A2": -2.4173433235758397, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.652666046504914, "A2": -3.966640181602694, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.9668245836346177, "A2": -1.8015356391823125, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.012674179471148305, "A2": -2.2684412687102875, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.06177543896703144, "A2": -1.8505039278290802, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.9191754195407968, "A2": -5.94996972172893, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.5200296788482026, "A2": -8.152404873565759, "tau9": 3.832, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.7460615893936655, "A2": -6.54401087565902, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.907737398649824, "A2": -7.276621989422769, "tau9": 2.888, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -5.086961121371068, "A2": -10.563734446915575, "tau9": 0.376, "tau12": 1.944}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.9925292593939834, "A2": -5.911931142581746, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.8015286237721929, "A2": -2.7293471961538303, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2663704064752038, "A2": -3.1970945726260225, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -4.294593602431003, "A2": -8.52402428048753, "tau9": 0.968, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.8251859109374742, "A2": -2.0314304191810066, "tau9": 4.0, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -3.6937112211693455, "A2": -9.51494300733873, "tau9": 0.76, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -11.501661420621822, "A2": -17.129402006413596, "tau9": 0.264, "tau12": 0.296}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -5.784081774521274, "A2": -12.64721035252765, "tau9": 0.344, "tau12": 0.568}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -5.019149085546904, "A2": -9.948663581925489, "tau9": 0.504, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -7.850183800066553, "A2": -11.298567799146912, "tau9": 0.328, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -5.925236546838452, "A2": -9.225924856017402, "tau9": 0.696, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -7.699419238682763, "A2": -16.21398041403888, "tau9": 0.312, "tau12": 0.36}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -9.332432156807894, "A2": -15.931613655571407, "tau9": 0.28, "tau12": 0.312}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -7.855273736414748, "A2": -16.326520863676613, "tau9": 0.296, "tau12": 0.344}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -8.225226564846635, "A2": -14.203707655003264, "tau9": 0.312, "tau12": 0.392}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -9.435571296068067, "A2": -13.23765879486123, "tau9": 0.296, "tau12": 0.392}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -8.183389462760625, "A2": -14.657026877125759, "tau9": 0.296, "tau12": 0.344}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -5.967402062358923, "A2": -9.473740770947105, "tau9": 0.584, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -3.65455137509694, "A2": -8.967499889604467, "tau9": 0.584, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -5.341898523044305, "A2": -10.982360168694123, "tau9": 0.36, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -8.862852479037812, "A2": -13.716849171589324, "tau9": 0.296, "tau12": 0.36}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -9.892118050889243, "A2": -17.781828679732786, "tau9": 0.28, "tau12": 0.296}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -5.452715218954825, "A2": -9.489546819599253, "tau9": 0.568, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -7.378877250053346, "A2": -13.263039589092415, "tau9": 0.344, "tau12": 0.472}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -5.749920588784549, "A2": -10.305194291663021, "tau9": 0.408, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -8.28037058229196, "A2": -14.917206943853746, "tau9": 0.296, "tau12": 0.328}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -6.687712919183619, "A2": -13.06035817404437, "tau9": 0.328, "tau12": 0.376}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -4.528232570447305, "A2": -8.994671715288991, "tau9": 1.224, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -8.026404350509617, "A2": -13.392400557277037, "tau9": 0.312, "tau12": 0.36}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -5.932578637541525, "A2": -12.9388190343123, "tau9": 0.328, "tau12": 0.392}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -5.779396683118731, "A2": -11.579180679163288, "tau9": 0.36, "tau12": 3.448}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -7.585800740204992, "A2": -12.26047075557705, "tau9": 0.328, "tau12": 1.016}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -2.546065198599685, "A2": -8.964165022239172, "tau9": 1.256, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -2.3464545101979746, "A2": -10.538344575923588, "tau9": 0.456, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -4.884338815877401, "A2": -10.207627696298445, "tau9": 0.552, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -7.607434340861272, "A2": -13.35765933945581, "tau9": 0.312, "tau12": 0.52}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -10.120855752519198, "A2": -16.3022098560906, "tau9": 0.28, "tau12": 0.312}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -10.450807695397309, "A2": -14.665572780926112, "tau9": 0.28, "tau12": 0.328}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -9.484241611281686, "A2": -16.880980391109013, "tau9": 0.28, "tau12": 0.328}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -10.482228468956272, "A2": -18.846387753415577, "tau9": 0.28, "tau12": 0.296}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -8.71744883075506, "A2": -15.10270774498494, "tau9": 0.296, "tau12": 0.328}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -4.089793899129485, "A2": -9.196873091998887, "tau9": 0.984, "tau12": 4.0}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -4.049185038009668, "A2": -11.257615167235018, "tau9": 0.392, "tau12": 2.056}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -8.875325612129226, "A2": -16.09245698076798, "tau9": 0.296, "tau12": 0.328}
+{"method": "SFTF-H + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -6.242078796499875, "A2": -10.472015643613194, "tau9": 0.36, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.2801600397899826, "A2": -1.2439995919642215, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.1877985768896444, "A2": -9.107884852544132, "tau9": 0.936, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -2.5006827905392153, "A2": -6.167254422415942, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.2162713628162385, "A2": -1.8877225037936514, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.7383449638458911, "A2": -3.4109646543800136, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.043487156399143675, "A2": -1.3462319647666336, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.2585010492497606, "A2": -8.773943240654917, "tau9": 0.712, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -4.89975733193788, "A2": -8.508099419597004, "tau9": 1.16, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -1.5223535613629218, "A2": -7.906412181135086, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.007357896129640107, "A2": -5.6390803021234, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.143733779137604, "A2": -5.314709802934278, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.1575165927641913, "A2": -6.528523631553814, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 1.5996822407844855, "A2": -1.100444645064203, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": 0.7551010896133732, "A2": -2.0248908592120407, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.2021557430369751, "A2": -2.906040464117174, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.0897321568223488, "A2": -5.379734408112261, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -4.188082505615776, "A2": -7.113448694091172, "tau9": 2.888, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": 1.3820610737679504, "A2": -0.8766134674368793, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": 0.29748416241853093, "A2": -4.806560847126845, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": 1.4168158833668936, "A2": -1.817644874463285, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -1.95862698001233, "A2": -6.7024697911847735, "tau9": 2.152, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -1.941863138663624, "A2": -5.837504130212974, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": 0.02713334414375975, "A2": -1.5720134968149169, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -1.5948555550671828, "A2": -5.292452407888054, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -1.1488081315983811, "A2": -5.649791618329063, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.5223002522154321, "A2": -2.4173433235758397, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -0.652666046504914, "A2": -3.966640181602694, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.9668245836346177, "A2": -1.8015356391823125, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.012674179471148305, "A2": -2.2684412687102875, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.06177543896703144, "A2": -1.8505039278290802, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -0.9233740516774587, "A2": -5.954788697393523, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -3.544437849071521, "A2": -8.153121854835408, "tau9": 3.832, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.7543370450471323, "A2": -6.545324253549638, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -2.920929349029906, "A2": -7.271229980093773, "tau9": 2.888, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -5.118612926563902, "A2": -10.56333277791399, "tau9": 0.376, "tau12": 1.944}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.9939046087828873, "A2": -5.908885614015132, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.8015286237721929, "A2": -2.7293471961538303, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.2663704064752038, "A2": -3.1970945726260225, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -4.317098039645869, "A2": -8.523508855133212, "tau9": 0.968, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.8251859109374742, "A2": -2.0314304191810066, "tau9": 4.0, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -3.7084470229744286, "A2": -9.512708697458397, "tau9": 0.76, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -11.509683993844709, "A2": -17.135418152390415, "tau9": 0.264, "tau12": 0.296}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -5.792386030777807, "A2": -12.620470450827932, "tau9": 0.344, "tau12": 0.568}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -5.05817060874344, "A2": -9.959300061454583, "tau9": 0.504, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -7.875085290662881, "A2": -11.298068525652171, "tau9": 0.328, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -5.939663169578816, "A2": -9.231214231760195, "tau9": 0.68, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -7.720649797374678, "A2": -16.225504029097493, "tau9": 0.312, "tau12": 0.36}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -9.361135076550148, "A2": -15.936655762689856, "tau9": 0.28, "tau12": 0.312}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -7.876613046352671, "A2": -16.343823871094585, "tau9": 0.296, "tau12": 0.344}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -8.24960831445254, "A2": -14.198841027303814, "tau9": 0.312, "tau12": 0.392}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -9.44697066074316, "A2": -13.245325916114583, "tau9": 0.296, "tau12": 0.392}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -8.185214740808107, "A2": -14.66576158584861, "tau9": 0.296, "tau12": 0.344}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -6.00153385430656, "A2": -9.476751370013316, "tau9": 0.52, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -3.680250541985818, "A2": -8.96847440879709, "tau9": 0.568, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -5.364382480133939, "A2": -10.989028102143383, "tau9": 0.36, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -8.877936109137645, "A2": -13.728174434009581, "tau9": 0.296, "tau12": 0.36}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -9.911615838988267, "A2": -17.789522379779243, "tau9": 0.28, "tau12": 0.296}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -5.470488798447093, "A2": -9.495016506180972, "tau9": 0.552, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -7.397036931897012, "A2": -13.263270246555381, "tau9": 0.344, "tau12": 0.472}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -5.772731513166136, "A2": -10.305930327080237, "tau9": 0.408, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -8.293819783890541, "A2": -14.9245384818113, "tau9": 0.296, "tau12": 0.328}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -6.700906630429721, "A2": -13.060299252797892, "tau9": 0.312, "tau12": 0.376}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -4.576157660454438, "A2": -8.99179517804993, "tau9": 1.224, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -8.060940402108796, "A2": -13.413166714086081, "tau9": 0.312, "tau12": 0.36}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -5.938796469374795, "A2": -12.943403150952516, "tau9": 0.328, "tau12": 0.392}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -5.791395468047416, "A2": -11.588933586347148, "tau9": 0.36, "tau12": 3.448}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -7.581492314276408, "A2": -12.26242618245376, "tau9": 0.328, "tau12": 1.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -2.5568148508543667, "A2": -8.964566548995483, "tau9": 1.256, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -2.3501542840922385, "A2": -10.54713152432283, "tau9": 0.456, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -4.899792171009432, "A2": -10.212040246173892, "tau9": 0.552, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -7.6151965597901174, "A2": -13.360675886734716, "tau9": 0.296, "tau12": 0.52}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -10.140927137183217, "A2": -16.319653548848635, "tau9": 0.28, "tau12": 0.312}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -10.45289387211161, "A2": -14.665201868438436, "tau9": 0.28, "tau12": 0.328}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -9.497763845002432, "A2": -16.884292143596692, "tau9": 0.28, "tau12": 0.328}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -10.500246532411202, "A2": -18.848271361623027, "tau9": 0.28, "tau12": 0.296}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -8.701913735941929, "A2": -15.098054143165209, "tau9": 0.296, "tau12": 0.328}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -4.1012355405159875, "A2": -9.191447439198962, "tau9": 0.984, "tau12": 4.0}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -4.057911210830831, "A2": -11.25775010660017, "tau9": 0.392, "tau12": 2.056}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -8.886140539678777, "A2": -16.102037616109197, "tau9": 0.296, "tau12": 0.328}
+{"method": "CFTF + det", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -6.263481134374961, "A2": -10.480357063456346, "tau9": 0.36, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 1.1089271405212235, "A2": -1.251768821399931, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -3.4630492839229805, "A2": -8.917328586435278, "tau9": 0.936, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -3.4346020770295578, "A2": -6.089985012948501, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": 0.18638554674799743, "A2": -1.9006764493883792, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.6925468152189174, "A2": -3.423961588102556, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.08913572829560662, "A2": -1.245200426179669, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -4.4964786100917316, "A2": -8.608915542900766, "tau9": 0.712, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -5.5843061703702555, "A2": -8.430582346851995, "tau9": 1.16, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -3.1672824283461387, "A2": -7.767353708047691, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -1.002230125001698, "A2": -5.460330554394935, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.279507840523354, "A2": -5.43720273970539, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -3.216846724172209, "A2": -6.874601924406603, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.17497811301025376, "A2": -0.9565371981916333, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.5109741958793175, "A2": -1.8859969171375723, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": 0.06973667519799004, "A2": -3.065601614068086, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -2.5878573551043376, "A2": -5.260833965111166, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -5.430154290251056, "A2": -6.885266545312961, "tau9": 2.936, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -0.2570891335979551, "A2": -0.7452712402668294, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -2.272303005466595, "A2": -4.720938933508971, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.39699487555148066, "A2": -1.6804132386958743, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -3.195689095127957, "A2": -6.5581639054187715, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -3.2468086403688052, "A2": -5.633667459929392, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.13087916007737938, "A2": -1.4374124754006536, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -2.2443952823180426, "A2": -5.096849646383914, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -3.2169886807915753, "A2": -5.511671155217525, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.38039003211238853, "A2": -2.5511723319218844, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -1.0220647430857546, "A2": -4.081730772826262, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.9562458763415407, "A2": -2.009961320775675, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.005777190965194464, "A2": -2.334538530239879, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": 0.0012647573752675833, "A2": -1.8370376979325118, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -2.388612143316645, "A2": -5.836659923003793, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -5.1990268278457314, "A2": -8.01071204858935, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -4.055293235530913, "A2": -6.4165265764934745, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -3.7838887472478326, "A2": -7.152394786287493, "tau9": 2.888, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -4.382904084327264, "A2": -10.424567773454395, "tau9": 0.392, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -3.8361937090011056, "A2": -5.734706759457158, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": 0.6970488438122352, "A2": -2.914267398398863, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": 0.3097969070711421, "A2": -3.324228730009243, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -5.100579872044842, "A2": -8.41444694590182, "tau9": 0.968, "tau12": 4.0}
+{"method": "E-PCG", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.7238720626086779, "A2": -1.9422561772598723, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -3.6071392510088414, "A2": -9.392275376300717, "tau9": 0.76, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -10.012024713227216, "A2": -16.954303170324437, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -5.6287472224730815, "A2": -12.616890802058606, "tau9": 0.44, "tau12": 0.568}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -5.143218750083868, "A2": -9.905469027676782, "tau9": 0.408, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -6.946109739193447, "A2": -11.180349521065773, "tau9": 0.328, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -5.509012642592387, "A2": -9.146578903599341, "tau9": 0.616, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -7.7906048625831446, "A2": -16.07512812559262, "tau9": 0.312, "tau12": 0.344}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -9.192509277397395, "A2": -15.794680189920946, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -8.81209747736608, "A2": -16.141206652988817, "tau9": 0.296, "tau12": 0.328}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -8.013512373484115, "A2": -14.123643871784468, "tau9": 0.312, "tau12": 0.36}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -8.290670955072452, "A2": -13.11315399554765, "tau9": 0.312, "tau12": 0.376}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -7.314325086524608, "A2": -14.53659593364883, "tau9": 0.312, "tau12": 0.36}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -5.531129656298438, "A2": -9.301104283918754, "tau9": 0.52, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -4.854662397717518, "A2": -8.884384323187863, "tau9": 0.856, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -4.948965893016296, "A2": -10.884650005107257, "tau9": 0.36, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -7.39218374174466, "A2": -13.587134221579827, "tau9": 0.328, "tau12": 0.392}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -10.69197702783656, "A2": -17.626984506704094, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -4.667552532834481, "A2": -9.383255785665082, "tau9": 0.568, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -7.192427520402097, "A2": -13.149981695001514, "tau9": 0.328, "tau12": 0.408}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -5.536541852355915, "A2": -10.198649260162982, "tau9": 0.392, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -8.836585219077042, "A2": -14.769246761814564, "tau9": 0.296, "tau12": 0.344}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -7.447833525251083, "A2": -13.012846239161798, "tau9": 0.344, "tau12": 0.376}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -4.279253694538753, "A2": -8.920877916714788, "tau9": 1.208, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -4.8015772558286365, "A2": -13.218785345864806, "tau9": 0.328, "tau12": 0.376}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -5.849129849164932, "A2": -12.846012472650937, "tau9": 0.328, "tau12": 0.392}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -5.59752507307401, "A2": -11.494238128601896, "tau9": 0.36, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -6.66005886815393, "A2": -12.108508560323315, "tau9": 0.328, "tau12": 1.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -2.4127504424976447, "A2": -8.834860051925522, "tau9": 0.904, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -3.2993641108138045, "A2": -10.428780392704137, "tau9": 0.44, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -4.565879345558181, "A2": -10.092631033272117, "tau9": 0.552, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -7.7295128591425355, "A2": -13.228446053048623, "tau9": 0.296, "tau12": 0.52}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -9.288474192753736, "A2": -16.170276622851084, "tau9": 0.296, "tau12": 0.328}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -9.948088020059847, "A2": -14.585379042489858, "tau9": 0.28, "tau12": 0.328}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -8.455743086534898, "A2": -16.75889737245047, "tau9": 0.28, "tau12": 0.312}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -10.325503133638765, "A2": -18.7220831369515, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -9.175449564010322, "A2": -14.986820969173714, "tau9": 0.296, "tau12": 0.36}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -4.4125410556427545, "A2": -9.095897917080908, "tau9": 0.632, "tau12": 4.0}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -4.436377574734048, "A2": -11.167011242736622, "tau9": 0.376, "tau12": 2.072}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -9.316664255995088, "A2": -15.91545228343123, "tau9": 0.28, "tau12": 0.328}
+{"method": "E-PCG", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -5.794582717438047, "A2": -10.364051510779772, "tau9": 0.36, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": 0.6431617825259048, "A2": -1.0549185023394507, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -2.6556411483807576, "A2": -8.891773648852524, "tau9": 0.936, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -1.7906697079200704, "A2": -6.046464547035997, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -0.026321383145360706, "A2": -1.7645131727395582, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -0.6810950840267949, "A2": -3.3561664358435994, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": 0.14697496043120517, "A2": -1.258589289673107, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -3.492949922041289, "A2": -8.361959175636688, "tau9": 0.744, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -4.8236764903011045, "A2": -8.028407172712457, "tau9": 1.16, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -2.6644395150033255, "A2": -7.878907232788381, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": 0.1540493195390599, "A2": -5.560538101056905, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -2.4815076713390445, "A2": -5.164597441317068, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -4.987047781144752, "A2": -6.764826502702509, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": 0.4390611856330502, "A2": -1.123570726032059, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -0.46167226881275775, "A2": -2.0366569578319953, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -0.5593290338955085, "A2": -2.952697292499092, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -1.851759504502767, "A2": -4.979096645756464, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -5.546536159246292, "A2": -7.0170513902151574, "tau9": 2.888, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": 0.03732413390883589, "A2": -0.8970257975177884, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -1.2235113061030294, "A2": -4.613117945391444, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -0.40698416099606666, "A2": -1.7566526251599073, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -2.8453811708151533, "A2": -6.462728964451179, "tau9": 2.152, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -2.6981765649673175, "A2": -5.69245194873384, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -0.3422679690054713, "A2": -1.4249366455128953, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -2.4050330826348456, "A2": -5.016884325933413, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -2.8351547460991804, "A2": -5.61504570373062, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": 0.07605966268414642, "A2": -2.436363616123109, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -2.0367457476752606, "A2": -3.826432285110197, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": 1.5743266896256132, "A2": -1.8574431572131052, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -0.5076804441677716, "A2": -2.2482775197835085, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -0.32980288304668703, "A2": -1.8270016752224147, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -2.105556157366798, "A2": -5.840105575235547, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -5.522923184682517, "A2": -8.072505134040982, "tau9": 1.32, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -2.7243028886606027, "A2": -6.442358198241507, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -3.6268691846109724, "A2": -7.232249523676058, "tau9": 2.904, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -1.5837731335684828, "A2": -10.348331673646133, "tau9": 0.376, "tau12": 2.696}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -2.9621360772004808, "A2": -5.607559708781159, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -0.551311243396859, "A2": -2.811118475941597, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -0.3430625984897089, "A2": -3.2326266013326794, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -4.7384475964700465, "A2": -8.495456055205857, "tau9": 0.968, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "ar1", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -0.668754855565003, "A2": -1.8561237361519534, "tau9": 4.0, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 480, "fail": 0, "A1": -3.3161473020055228, "A2": -9.554665899484831, "tau9": 0.76, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 481, "fail": 0, "A1": -9.957986735803141, "A2": -17.10059521501699, "tau9": 0.28, "tau12": 0.312}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 482, "fail": 0, "A1": -5.557494568164957, "A2": -12.642982669575355, "tau9": 0.392, "tau12": 0.568}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 483, "fail": 0, "A1": -4.513621533989871, "A2": -9.905174818975393, "tau9": 0.424, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "fail": 0, "A1": -7.200477194930146, "A2": -11.343447694287613, "tau9": 0.344, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "fail": 0, "A1": -5.664503817484258, "A2": -9.273476620709163, "tau9": 0.68, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "fail": 0, "A1": -7.590921306431864, "A2": -16.043117584584014, "tau9": 0.312, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "fail": 0, "A1": -9.504325199077334, "A2": -15.846051348131727, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 488, "fail": 0, "A1": -8.591625742765943, "A2": -16.224715399568396, "tau9": 0.296, "tau12": 0.328}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 489, "fail": 0, "A1": -7.887192314054322, "A2": -14.20392335937445, "tau9": 0.312, "tau12": 0.376}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "fail": 0, "A1": -7.153788898441108, "A2": -13.257172767780434, "tau9": 0.328, "tau12": 0.392}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "fail": 0, "A1": -7.35640992813463, "A2": -14.645415248491659, "tau9": 0.312, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "fail": 0, "A1": -5.782285560892349, "A2": -9.476890399974971, "tau9": 0.568, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "fail": 0, "A1": -4.728781206370495, "A2": -8.920595556455648, "tau9": 0.904, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 494, "fail": 0, "A1": -4.648822444816299, "A2": -11.040410965306375, "tau9": 0.376, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 495, "fail": 0, "A1": -7.5574998292642075, "A2": -13.696892326117553, "tau9": 0.328, "tau12": 0.376}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 496, "fail": 0, "A1": -10.59215557311938, "A2": -17.68033267275866, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 497, "fail": 0, "A1": -4.677417162024481, "A2": -9.53822773083702, "tau9": 0.568, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "fail": 0, "A1": -7.097302430639161, "A2": -13.176233954468152, "tau9": 0.312, "tau12": 0.408}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "fail": 0, "A1": -5.56595154208622, "A2": -10.31912320146877, "tau9": 0.392, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "fail": 0, "A1": -8.711780360821745, "A2": -14.85154523829566, "tau9": 0.296, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "fail": 0, "A1": -7.17161255162361, "A2": -13.01591922863273, "tau9": 0.328, "tau12": 0.392}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "fail": 0, "A1": -4.113059190484051, "A2": -9.045394102582232, "tau9": 1.208, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "fail": 0, "A1": -5.303460756460088, "A2": -13.290670016142096, "tau9": 0.328, "tau12": 0.376}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 504, "fail": 0, "A1": -5.709930489630699, "A2": -12.908198504624917, "tau9": 0.344, "tau12": 0.392}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 505, "fail": 0, "A1": -5.6853950490076794, "A2": -11.625959264161324, "tau9": 0.344, "tau12": 1.48}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 506, "fail": 0, "A1": -6.473277803547268, "A2": -12.27038562998226, "tau9": 0.328, "tau12": 1.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 507, "fail": 0, "A1": -2.223637808074041, "A2": -8.999958514487405, "tau9": 1.192, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "fail": 0, "A1": -2.7656722005256134, "A2": -10.577659359861224, "tau9": 0.44, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "fail": 0, "A1": -4.5014253338889185, "A2": -10.249228294875358, "tau9": 0.568, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 510, "fail": 0, "A1": -7.698429083589585, "A2": -13.295587350974987, "tau9": 0.312, "tau12": 0.52}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 511, "fail": 0, "A1": -8.968153672376932, "A2": -16.274339634500922, "tau9": 0.296, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 512, "fail": 0, "A1": -9.24875092735775, "A2": -14.682408939670228, "tau9": 0.296, "tau12": 0.328}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 513, "fail": 0, "A1": -8.638325540083779, "A2": -16.83146689728713, "tau9": 0.296, "tau12": 0.312}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "fail": 0, "A1": -10.294073817040223, "A2": -18.75929132672398, "tau9": 0.28, "tau12": 0.296}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "fail": 0, "A1": -8.84260550371465, "A2": -15.031632186185373, "tau9": 0.296, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "fail": 0, "A1": -3.045063305110191, "A2": -9.16085286665282, "tau9": 0.632, "tau12": 4.0}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "fail": 0, "A1": -4.158118417214172, "A2": -11.308303479627641, "tau9": 0.376, "tau12": 2.056}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 518, "fail": 0, "A1": -8.884660973443346, "A2": -15.969254696947011, "tau9": 0.296, "tau12": 0.344}
+{"method": "E-PCG bank", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 519, "fail": 0, "A1": -5.691339246517359, "A2": -10.508367960844119, "tau9": 0.376, "tau12": 4.0}

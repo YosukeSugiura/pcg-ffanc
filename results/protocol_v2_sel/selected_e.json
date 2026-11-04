@@ -1,0 +1,391 @@
+{
+ "selected": {
+  "FD-FxNLMS": 5,
+  "leaky FD-FxNLMS": 5,
+  "convex FD-FxNLMS": 3,
+  "FDKF": 2,
+  "RLS": 0,
+  "VFF-RLS": 0,
+  "FD-FxNLMS + det": 7,
+  "RLS + det": 1,
+  "FD-FxNLMS + restart": 1,
+  "SFTF + det": 1,
+  "SFTF-H + det": 2,
+  "CFTF + det": 1
+ },
+ "grids": {
+  "FD-FxNLMS": [
+   "fixed_binwise",
+   [
+    {
+     "mu": 0.05
+    },
+    {
+     "mu": 0.1
+    },
+    {
+     "mu": 0.15
+    },
+    {
+     "mu": 0.2
+    },
+    {
+     "mu": 0.25
+    },
+    {
+     "mu": 0.3
+    }
+   ]
+  ],
+  "leaky FD-FxNLMS": [
+   "leaky_binwise",
+   [
+    {
+     "mu": 0.1,
+     "leak": 0.001
+    },
+    {
+     "mu": 0.1,
+     "leak": 0.01
+    },
+    {
+     "mu": 0.2,
+     "leak": 0.001
+    },
+    {
+     "mu": 0.2,
+     "leak": 0.01
+    },
+    {
+     "mu": 0.35,
+     "leak": 0.001
+    },
+    {
+     "mu": 0.35,
+     "leak": 0.01
+    }
+   ]
+  ],
+  "convex FD-FxNLMS": [
+   "convex_binwise",
+   [
+    {
+     "mu_fast": 0.9,
+     "mu_slow": 0.35,
+     "mu_a": 1.0
+    },
+    {
+     "mu_fast": 0.8,
+     "mu_slow": 0.1,
+     "mu_a": 1.0
+    },
+    {
+     "mu_fast": 0.5,
+     "mu_slow": 0.1,
+     "mu_a": 1.0
+    },
+    {
+     "mu_fast": 0.5,
+     "mu_slow": 0.2,
+     "mu_a": 1.0
+    },
+    {
+     "mu_fast": 0.35,
+     "mu_slow": 0.05,
+     "mu_a": 1.0
+    },
+    {
+     "mu_fast": 0.35,
+     "mu_slow": 0.1,
+     "mu_a": 1.0
+    }
+   ]
+  ],
+  "FDKF": [
+   "C-FDKF",
+   [
+    {
+     "P0": 10.0,
+     "gain_scale": 4.0,
+     "A": 0.998
+    },
+    {
+     "P0": 30.0,
+     "gain_scale": 4.0,
+     "A": 0.998
+    },
+    {
+     "P0": 10.0,
+     "gain_scale": 4.0,
+     "A": 0.9995
+    },
+    {
+     "P0": 30.0,
+     "gain_scale": 4.0,
+     "A": 0.9995
+    },
+    {
+     "P0": 10.0,
+     "gain_scale": 4.0,
+     "A": 0.9999
+    },
+    {
+     "P0": 30.0,
+     "gain_scale": 4.0,
+     "A": 0.9999
+    }
+   ]
+  ],
+  "RLS": [
+   "R-RLS",
+   [
+    {
+     "lam": 0.9995,
+     "delta": 0.01
+    },
+    {
+     "lam": 0.9998,
+     "delta": 0.01
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01
+    }
+   ]
+  ],
+  "VFF-RLS": [
+   "R-VFF",
+   [
+    {
+     "N0": 500.0,
+     "lam_min": 0.9995,
+     "delta": 0.001
+    },
+    {
+     "N0": 2000.0,
+     "lam_min": 0.9995,
+     "delta": 0.001
+    }
+   ]
+  ],
+  "FD-FxNLMS + det": [
+   "V-SCHED",
+   [
+    {
+     "denom": "cum",
+     "scale": 0.25,
+     "mu_min": 0.2,
+     "det_reset_w": true
+    },
+    {
+     "denom": "cum",
+     "scale": 0.25,
+     "mu_min": 0.2,
+     "det_reset_w": false
+    },
+    {
+     "denom": "cum",
+     "scale": 0.125,
+     "mu_min": 0.2,
+     "det_reset_w": true
+    },
+    {
+     "denom": "cum",
+     "scale": 0.25,
+     "mu_min": 0.1,
+     "det_reset_w": true
+    },
+    {
+     "denom": "rls",
+     "scale": 0.25,
+     "mu_min": 0.0,
+     "det_reset_w": true
+    },
+    {
+     "denom": "rls",
+     "scale": 0.25,
+     "mu_min": 0.0,
+     "det_reset_w": false
+    },
+    {
+     "denom": "cum",
+     "scale": 0.125,
+     "mu_min": 0.2,
+     "det_reset_w": false
+    },
+    {
+     "denom": "cum",
+     "scale": 0.0625,
+     "mu_min": 0.2,
+     "det_reset_w": false
+    }
+   ]
+  ],
+  "RLS + det": [
+   "R-RLS",
+   [
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": true
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": true
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": false
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "det_delta": 0.1
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": true,
+     "det_delta": 0.1
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "det_delta": 1.0
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": true,
+     "det_delta": 1.0
+    }
+   ]
+  ],
+  "FD-FxNLMS + restart": [
+   "fixed_binwise",
+   [
+    {
+     "mu": 0.3,
+     "det_boost": 0.0625,
+     "det_reset_w": false
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.125,
+     "det_reset_w": false
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.25,
+     "det_reset_w": false
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.0,
+     "det_reset_w": true
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.0625,
+     "det_reset_w": true
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.125,
+     "det_reset_w": true
+    },
+    {
+     "mu": 0.3,
+     "det_boost": 0.25,
+     "det_reset_w": true
+    }
+   ]
+  ],
+  "SFTF + det": [
+   "R-SFTF",
+   [
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": true
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": true
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": false
+    }
+   ]
+  ],
+  "SFTF-H + det": [
+   "R-SFTF",
+   [
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "hybrid": 512
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "hybrid": 1024
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "hybrid": 2048
+    }
+   ]
+  ],
+  "CFTF + det": [
+   "R-SFTF",
+   [
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": true,
+     "cov": true
+    },
+    {
+     "lam": 0.9999,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "cov": true
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": true,
+     "cov": true
+    },
+    {
+     "lam": 1.0,
+     "delta": 0.01,
+     "det_reset_w": false,
+     "cov": true
+    }
+   ]
+  ]
+ }
+}

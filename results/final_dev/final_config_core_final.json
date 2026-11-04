@@ -1,0 +1,47 @@
+{
+ "name": "E-PCG core final: C1 (core + fixes), restart on detection (Prop. 9 removed), det_C_pre",
+ "decided": "2026-10-29, ablation set c (results/ablation_core_c/stats.md; rule (v) confirmed X1)",
+ "method": "E-PCG-F",
+ "flags": {
+  "k": 8,
+  "L_hops": 48,
+  "ridge": 0.001,
+  "detect": true,
+  "J": 6,
+  "localize": true,
+  "loc_step": 12,
+  "k_first": 16,
+  "k_first_hops": 6,
+  "k_steady": 4,
+  "k_hops": 24,
+  "det_stat": "sandwich",
+  "kd": 16,
+  "det_fa": 1e-07,
+  "branch_hops": 0,
+  "adapt": "restart",
+  "screen_fa": 0.01,
+  "score_unreg": true,
+  "steady_every": 1,
+  "mem_bank": [
+   12,
+   48,
+   1000
+  ],
+  "mem_cheap": [
+   "share",
+   "nodetect",
+   "fftmin",
+   "sharescore",
+   "doze"
+  ],
+  "cg_stat_tol": 0.1,
+  "mem_primary": 48,
+  "cg_stat_mindof": "M",
+  "grow_len": "half",
+  "pre_window": "bartlett_s",
+  "cg_stat_exactJ": true,
+  "weight_consistent": true,
+  "fixes_1028": true,
+  "det_C_pre": true
+ }
+}

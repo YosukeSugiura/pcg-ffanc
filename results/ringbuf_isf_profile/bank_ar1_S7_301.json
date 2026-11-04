@@ -1,0 +1,67 @@
+{
+  "comparison": {
+    "all_fields_equal": true,
+    "different_fields": [],
+    "raw_error_equal": true,
+    "reference_e_sha256": "1fa970dfbb1aa5c9c23500f38aa0dfee2c443a65a98e31381f9a533a54806c7e",
+    "reference_e_dtype": "float64",
+    "reference_e_shape": [
+      40000
+    ],
+    "instrumented_e_sha256": "1fa970dfbb1aa5c9c23500f38aa0dfee2c443a65a98e31381f9a533a54806c7e",
+    "instrumented_e_dtype": "float64",
+    "instrumented_e_shape": [
+      40000
+    ],
+    "event_fields": {
+      "reset_hops": {
+        "equal": true,
+        "reference_sha256": "7e19a08b3c45741c259fe41d27d0c51381838254cd209bb64972c8b3cedd0013",
+        "instrumented_sha256": "7e19a08b3c45741c259fe41d27d0c51381838254cd209bb64972c8b3cedd0013"
+      },
+      "loc_hist": {
+        "equal": true,
+        "reference_sha256": "9680df34dc1d5685aa7ef967391710a1eacf6eb46c1e88848b834a4f58cc2116",
+        "instrumented_sha256": "9680df34dc1d5685aa7ef967391710a1eacf6eb46c1e88848b834a4f58cc2116"
+      },
+      "n_resets": {
+        "equal": true,
+        "reference_sha256": "bbe30a25430db256afe286f22962e23ca32ea9d0f650e5d3063bb8dd41b67500",
+        "instrumented_sha256": "bbe30a25430db256afe286f22962e23ca32ea9d0f650e5d3063bb8dd41b67500"
+      },
+      "events_total": {
+        "equal": true,
+        "reference_sha256": "bbe30a25430db256afe286f22962e23ca32ea9d0f650e5d3063bb8dd41b67500",
+        "instrumented_sha256": "bbe30a25430db256afe286f22962e23ca32ea9d0f650e5d3063bb8dd41b67500"
+      }
+    },
+    "reference_result_sha256": "33e940007e6e7f9d316a437d85017f18c26f5cca7e4786a1968241fcd1549ddb",
+    "instrumented_result_sha256": "33e940007e6e7f9d316a437d85017f18c26f5cca7e4786a1968241fcd1549ddb"
+  },
+  "update_ns": 403122037,
+  "updates": 312,
+  "isf": {
+    "chi2": {
+      "ns": 21454195,
+      "calls": 295
+    },
+    "f": {
+      "ns": 0,
+      "calls": 0
+    },
+    "norm": {
+      "ns": 0,
+      "calls": 0
+    }
+  },
+  "isf_ns": 21454195,
+  "isf_fraction_of_instrumented_update": 0.05322009969899016,
+  "stable_reference": true,
+  "stable_instrumented": true,
+  "hops_reference": 312,
+  "hops_instrumented": 312,
+  "method": "bank",
+  "noise": "ar1",
+  "scene": "S7 rd abrupt",
+  "seed": 301
+}

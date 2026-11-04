@@ -1,0 +1,13 @@
+{
+  "fft_length": 512,
+  "hop_length": 128,
+  "controller_length": 256,
+  "sample_rate": 8000,
+  "duration_seconds": 2.0,
+  "mu_global": 0.055,
+  "mu_binwise": 0.35,
+  "power_smoothing": 0.8,
+  "regularization_ratio": 0.001,
+  "secondary_noise_snr_db": 20.0,
+  "seed": 0
+}

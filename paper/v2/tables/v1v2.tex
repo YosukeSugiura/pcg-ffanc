@@ -1,0 +1,25 @@
+\begin{table}[t]\centering\caption{First (v1) and revised (v2) final evaluation: median A1 (dB) of the best baseline and of E-PCG.}\label{tab:v1v2}
+\scriptsize
+\begin{tabular}{llrlrrrr}
+\toprule
+cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & E-PCG & $\Delta_1$ & $\Delta_2$ \\
+\midrule
+S8 & RLS & -9.1 & SFTF+det & -9.2 & -11.1 & -2.0 & -1.9 \\
+S1 & convex & -13.4 & RLS & -13.3 & -14.1 & -0.8 & -0.8 \\
+S2 & convex & -11.7 & CFTF+det & -12.4 & -13.8 & -2.1 & -1.4 \\
+S5 & convex & -12.5 & convex & -12.1 & -12.3 & +0.2 & -0.3 \\
+S7 & convex & -3.6 & CFTF+det & -6.1 & -11.0 & -7.4 & -4.9 \\
+R1 & RLS & -13.3 & RLS & -13.3 & -14.0 & -0.7 & -0.7 \\
+R2 & convex & -11.6 & CFTF+det & -12.1 & -13.2 & -1.6 & -1.0 \\
+R3 & RLS & -12.2 & RLS & -12.2 & -12.4 & -0.1 & -0.1 \\
+S8$^h$ & RLS & -12.5 & SFTF+det & -12.5 & -13.4 & -0.9 & -0.8 \\
+S1$^h$ & convex & -13.5 & CFTF+det & -15.8 & -16.2 & -2.7 & -0.4 \\
+S2$^h$ & convex & -8.9 & CFTF+det & -14.0 & -15.0 & -6.1 & -1.0 \\
+S5$^h$ & convex & -12.2 & CFTF+det & -13.6 & -13.3 & -1.1 & +0.4 \\
+R1$^h$ & convex & -13.2 & CFTF+det & -15.8 & -16.0 & -2.8 & -0.2 \\
+R2$^h$ & convex & -8.9 & CFTF+det & -13.5 & -14.6 & -5.7 & -1.1 \\
+R3$^h$ & convex & -11.8 & CFTF+det & -13.6 & -13.2 & -1.4 & +0.4 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\scriptsize $^h$ harmonic noise. $\Delta_{1,2}$: E-PCG minus the v1 / v2 best baseline (difference of medians). E-PCG vs all baselines (Holm): v1 77 win / 0 loss / 0 mixed / 13 none of 90; v2 132 / 0 / 0 / 48 of 180. Holm over 180 (v1) / 360 (v2) tests.}
+\end{table}

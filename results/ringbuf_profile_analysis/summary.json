@@ -1,0 +1,2346 @@
+{
+  "qualification": "One oldest sample age per nonempty access, in samples from stop; not per-element or future bound. append_copy separately.",
+  "history_verified": {
+    "main": {
+      "pass": 75,
+      "fail": 0
+    },
+    "bank": {
+      "pass": 75,
+      "fail": 0
+    }
+  },
+  "observed_callers": {
+    "bank": [
+      "_edge_fft",
+      "_localize",
+      "_residual_autocov",
+      "_sandwich_q",
+      "_segment_stats",
+      "_update_core"
+    ],
+    "main": [
+      "_edge_fft",
+      "_localize",
+      "_residual_autocov",
+      "_sandwich_q",
+      "_segment_stats",
+      "_update_core"
+    ]
+  },
+  "instrumented_method_calls": {
+    "bank": {
+      "_sandwich_q": 577,
+      "_localize": 64,
+      "force_restart": 64
+    },
+    "main": {
+      "_sandwich_q": 459,
+      "_localize": 87
+    }
+  },
+  "history_groups": [
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6285,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 32
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9622,
+      "median": 511.0,
+      "q99": 29439.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6287,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 30
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9813,
+      "median": 511.0,
+      "q99": 30063.639999999898,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 4
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6285,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8832,
+        "hop": 69.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 25
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 10007,
+      "median": 511.0,
+      "q99": 27647.0,
+      "max": 31743,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6287,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 31
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9554,
+      "median": 511.0,
+      "q99": 29439.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6286,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 33
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9521,
+      "median": 511.0,
+      "q99": 29439.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6285,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8704,
+        "hop": 68.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 28
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 9882,
+      "median": 511.0,
+      "q99": 27775.0,
+      "max": 31871,
+      "max_example": {
+        "seed": 301,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "index",
+      "field": "dh",
+      "count": 6299,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 37
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "index",
+      "field": "xf",
+      "count": 10028,
+      "median": 511.0,
+      "q99": 29951.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 4
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "dh",
+      "count": 6273,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 10240,
+        "hop": 80.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 33
+    },
+    {
+      "mode": "bank",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "xf",
+      "count": 8491,
+      "median": 511.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 1,
+        "caller": "_edge_fft"
+      },
+      "ties": 1338
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6284,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 27
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9651,
+      "median": 511.0,
+      "q99": 29951.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6280,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 20
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9583,
+      "median": 511.0,
+      "q99": 30079.0,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 4
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6356,
+      "median": 128.0,
+      "q99": 3072.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8320,
+        "hop": 65.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 29
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 10331,
+      "median": 511.0,
+      "q99": 28415.0,
+      "max": 31871,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6283,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 26
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9717,
+      "median": 511.0,
+      "q99": 29930.52000000002,
+      "max": 32511,
+      "max_example": {
+        "seed": 301,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6285,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 25
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 9646,
+      "median": 511.0,
+      "q99": 30021.399999999907,
+      "max": 32511,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 3
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6346,
+      "median": 128.0,
+      "q99": 3072.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8320,
+        "hop": 65.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 29
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 10262,
+      "median": 511.0,
+      "q99": 29055.0,
+      "max": 31871,
+      "max_example": {
+        "seed": 300,
+        "stop": 39936,
+        "hop": 312.0,
+        "member": 2,
+        "caller": "_edge_fft"
+      },
+      "ties": 2
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 4665,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 15
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "dh",
+      "count": 6258,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 22528,
+        "hop": 176.0,
+        "member": 1,
+        "caller": "_residual_autocov"
+      },
+      "ties": 18
+    },
+    {
+      "mode": "bank",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "xf",
+      "count": 8250,
+      "median": 511.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 1,
+        "caller": "_edge_fft"
+      },
+      "ties": 1323
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6289,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 32
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6302,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1337
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6292,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 32
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6350,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1337
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6328,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6248,
+      "max_example": {
+        "seed": 302,
+        "stop": 15744,
+        "hop": 123.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 3
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 6442,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6759,
+      "max_example": {
+        "seed": 302,
+        "stop": 15744,
+        "hop": 123.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6288,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 31
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6300,
+      "median": 579.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1336
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6288,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 32
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6299,
+      "median": 603.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1337
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6295,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8704,
+        "hop": 68.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 28
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 6343,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1280
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "index",
+      "field": "dh",
+      "count": 6298,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 35
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S7 rd abrupt",
+      "kind": "index",
+      "field": "xf",
+      "count": 6369,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1340
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "dh",
+      "count": 6273,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 10240,
+        "hop": 80.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 33
+    },
+    {
+      "mode": "main",
+      "noise": "ar1",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "xf",
+      "count": 6099,
+      "median": 511.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1338
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6287,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 27
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R1 rig 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6335,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1332
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6281,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 21
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R2 rig 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6318,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1326
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6378,
+      "median": 128.0,
+      "q99": 1408.0,
+      "max": 6176,
+      "max_example": {
+        "seed": 303,
+        "stop": 17664,
+        "hop": 138.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 3
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "R3 rig 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 6579,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6687,
+      "max_example": {
+        "seed": 303,
+        "stop": 17664,
+        "hop": 138.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6288,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 28
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S1 src 10cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6338,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1333
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "dh",
+      "count": 6284,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 8064,
+        "hop": 63.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 24
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S2 src 30cm",
+      "kind": "index",
+      "field": "xf",
+      "count": 6327,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1329
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "dh",
+      "count": 6358,
+      "median": 128.0,
+      "q99": 1408.0,
+      "max": 6224,
+      "max_example": {
+        "seed": 300,
+        "stop": 17536,
+        "hop": 137.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 3
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S5 src 30cm cont",
+      "kind": "index",
+      "field": "xf",
+      "count": 6537,
+      "median": 639.0,
+      "q99": 6655.0,
+      "max": 6735,
+      "max_example": {
+        "seed": 300,
+        "stop": 17536,
+        "hop": 137.0,
+        "member": 0,
+        "caller": "_segment_stats"
+      },
+      "ties": 1
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "dh",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "append_copy",
+      "field": "xf",
+      "count": 1555,
+      "median": 19968.0,
+      "q99": 39424.0,
+      "max": 39808,
+      "max_example": {
+        "seed": 300,
+        "stop": 39808,
+        "hop": 311.0,
+        "member": 0,
+        "caller": "_update_core"
+      },
+      "ties": 5
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "dh",
+      "count": 6258,
+      "median": 128.0,
+      "q99": 128.0,
+      "max": 6144,
+      "max_example": {
+        "seed": 300,
+        "stop": 22528,
+        "hop": 176.0,
+        "member": 0,
+        "caller": "_residual_autocov"
+      },
+      "ties": 18
+    },
+    {
+      "mode": "main",
+      "noise": "harmonic",
+      "scene": "S8 stationary",
+      "kind": "index",
+      "field": "xf",
+      "count": 6054,
+      "median": 511.0,
+      "q99": 6655.0,
+      "max": 6655,
+      "max_example": {
+        "seed": 300,
+        "stop": 6656,
+        "hop": 52.0,
+        "member": 0,
+        "caller": "_edge_fft"
+      },
+      "ties": 1323
+    }
+  ],
+  "isf": {
+    "bank": {
+      "n": 75,
+      "equal": 75,
+      "fraction_median": 0.05450932429494453,
+      "fraction_min": 0.0429665940073641,
+      "fraction_max": 0.066409905907099,
+      "calls_median": 295,
+      "calls_min": 287,
+      "calls_max": 304
+    },
+    "main": {
+      "n": 75,
+      "equal": 75,
+      "fraction_median": 0.08101603149403981,
+      "fraction_min": 0.05035694168581374,
+      "fraction_max": 0.12245831822917685,
+      "calls_median": 295,
+      "calls_min": 269,
+      "calls_max": 304
+    }
+  }
+}
