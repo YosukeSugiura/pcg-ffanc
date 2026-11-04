@@ -2,8 +2,8 @@
 
 This directory contains the source, test suite, configurations, archived
 summaries and the inputs required to reproduce the manuscript's LaTeX tables.
-It is a preparation snapshot; no release identifier or archival DOI has been
-assigned. The underlying MeshRIR dataset is separately available and attributed
+It is release v1.0.0, archived with the result records at Zenodo,
+https://doi.org/10.5281/zenodo.23965831. The underlying MeshRIR dataset is separately available and attributed
 at https://doi.org/10.5281/zenodo.5500451.
 
 ## Environment
@@ -48,9 +48,9 @@ Numeric records, decisions, parameters, and scientific calculations are unchange
 ## Figures and large records
 
 Binary arrays, run-level files and logs are not included. Their candidate paths
-and byte sizes are in `ZENODO_MANIFEST.txt`; no archive has been created or
-uploaded. After obtaining an authorized archive and restoring the files at the
-listed paths, `python paper/v2/make_figures.py learning learning_all excess cost shat` can
+and byte sizes are in `ZENODO_MANIFEST.txt`. They are archived at
+https://doi.org/10.5281/zenodo.23965831 as `pcg-ffanc-results-part1.tar` and `pcg-ffanc-results-part2.tar`;
+extract both into this directory to restore the listed paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
 render the corresponding plots from stored inputs. The eigenvalue figure's
 original generator computes new signal realizations; it is not part of the
 no-experiment table reproduction. Inspect the separate archive, especially its
@@ -74,7 +74,7 @@ expect bitwise equality across NumPy or BLAS versions.
 
 The provenance commit hashes refer to a development history that is not
 included in the public repository. See `CITATION.cff` for citation metadata.
-Zenodo DOI: **pending**.
+Zenodo DOI: https://doi.org/10.5281/zenodo.23965831
 
 The measured-path inputs use MeshRIR by Shoichi Koyama, Tomoya Nishida,
 Keisuke Kimura, Takumi Abe, Natsuki Ueno, and Jesper Brunnström: “MeshRIR:
@@ -100,7 +100,7 @@ To prepare an archive after checking its sources, run
 `python make_zenodo_archive.py SOURCE_ROOT OUTPUT_TAR` from this directory.
 The script validates the manifest and sanitizes absolute filesystem paths in
 log copies; it leaves source files untouched. Review the archive and licensing
-before upload. No archive is bundled in this snapshot.
+before upload. The archived records are in the Zenodo record above, not in this repository.
 
 The optional optimizer tests require the optional `optuna` package. When it is
 not installed, those tests are skipped; they are unrelated to reproducing the

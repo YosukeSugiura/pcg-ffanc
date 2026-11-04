@@ -1,5 +1,5 @@
 # Candidate archive contents, repository-relative paths and bytes.
-# No archive has been created or uploaded; inspect logs for sensitive data before release.
+# Archived at https://doi.org/10.5281/zenodo.23965831 as pcg-ffanc-results-part1.tar and pcg-ffanc-results-part2.tar (logs sanitized by make_zenodo_archive.py).
 # Rejected preflight outputs are excluded.
 results/band_epcg_M512_a.log	1258
 results/band_epcg_M512_b.log	500
