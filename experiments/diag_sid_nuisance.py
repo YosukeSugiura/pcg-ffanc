@@ -20,7 +20,7 @@ def spy(*a, **k):
 P.sid_profile2 = spy
 scen, seed = sys.argv[1], int(sys.argv[2])
 cfg = dict(D.SCEN[scen])
-r = P.run(cfg, seed, 'E-PCG-F', PRM, D.T, D.CH)
+r = P.run(cfg, seed, 'PCG-WLS-F', PRM, D.T, D.CH)
 x, y, e, sh, a, b, M, grid = cap[0][0][:8]
 rs, fs = cap[0][0][8], cap[0][0][9]
 yr = cap[0][1]['yreg']

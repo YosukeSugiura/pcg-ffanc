@@ -1,6 +1,6 @@
 """Step 1 of docs/current/[planning reference omitted]: ablation of the frozen v6.5 towards the 'E-PCG core' (2026-10-28).
 
-Variants (all E-PCG-F, M = 512; v6.5 = sweep_tradeoff.SWEEP['E-PCG-M v6.5'][2][2]):
+Variants (all PCG-WLS-F, M = 512; v6.5 = sweep_tradeoff.SWEEP['E-PCG-M v6.5'][2][2]):
   V0  v6.5 (reference)
   V1  V0 without the secondary-path re-identification (sid and every sid_* flag removed; the movement ridge stays,
       gated 'after_event', and is then never released)
@@ -129,7 +129,7 @@ def jobs():
 def one(v, nz, sc, sd):
     cfg = dict(D.SCEN[sc], controller_length=M, fft_length=2 * M, **({} if nz == 'ar1' else {'noise_type': nz}))
     ch = not sc.startswith('S8')
-    r = D.P.run(cfg, sd, 'E-PCG-F', dict(VAR[v]), TT, D.CH if ch else None)
+    r = D.P.run(cfg, sd, 'PCG-WLS-F', dict(VAR[v]), TT, D.CH if ch else None)
     tp = np.array(r['total_power']); up = np.array(r['uncontrolled_power'])
     return {'variant': v, 'prm': VAR[v], 'noise': nz, 'scen': sc, 'seed': sd, 'flag_stable': bool(r['stable']),
             'tp': tp.tolist(), 'up': up[:len(tp)].tolist(), 'hops_full': len(up),

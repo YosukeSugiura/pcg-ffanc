@@ -1,16 +1,16 @@
 """Numerical check 3 of [unpublished theory draft omitted] (windowed limit), 2026-10-30. Analysis only.
 
-Question: does E-PCG (main, window L = 48 hops) reach the realizable limit of ITS OWN window, i.e. the excess of exact
+Question: does PCG-WLS (main, window L = 48 hops) reach the realizable limit of ITS OWN window, i.e. the excess of exact
 LS on the same sliding window?  Same cell / seeds / floor as gap_check2 (S8, M = 512, tuning seeds 300-309).
 
 Offline references (hop-wise, a priori: the controller applied on hop b is computed from the data before hop b;
 virtual residual e = d_hat + X w, ridge delta = 1e-2 as in RLS):
   - 'offline growing LS'  : all data [0, bH)            (validates the offline evaluation against simulated RLS lam 1)
-  - 'offline window LS'   : data [max(0, (b-L)H), bH)   (the windowed limit of E-PCG)
+  - 'offline window LS'   : data [max(0, (b-L)H), bH)   (the windowed limit of PCG-WLS)
   - 'predicted window'    : sigma^2 tr(R G_win^-1), sigma^2 = oracle floor power, R = whole-run sample covariance.
-Simulated curves (exact LS = RLS lam 1, E-PCG main) are read from results/gap_check2/curves.npz (same floor definition).
-Pre-stated reading (before running): E-PCG reaches its windowed limit if its excess is within +-1 dB of
-'offline window LS' over hops 48-312 (window full); hops < 48 are reported but E-PCG's growing controller length
+Simulated curves (exact LS = RLS lam 1, PCG-WLS main) are read from results/gap_check2/curves.npz (same floor definition).
+Pre-stated reading (before running): PCG-WLS reaches its windowed limit if its excess is within +-1 dB of
+'offline window LS' over hops 48-312 (window full); hops < 48 are reported but PCG-WLS's growing controller length
 (grow_len) makes it a different, biased estimator there.
 usage: python experiments/gap_check3.py
 """

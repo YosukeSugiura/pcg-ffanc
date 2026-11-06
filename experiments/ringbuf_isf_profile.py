@@ -123,7 +123,7 @@ def run_pair(protocol, classes, distributions, cfg, seed, flags, scene):
     previous = protocol.RETURN_SIGNALS
     try:
         protocol.RETURN_SIGNALS = True
-        args = (cfg, seed, 'E-PCG-F', dict(flags), 5., None if scene.startswith('S8') else 1.)
+        args = (cfg, seed, 'PCG-WLS-F', dict(flags), 5., None if scene.startswith('S8') else 1.)
         uninstrumented = protocol.run(*args)
         with profile_updates(classes, distributions) as stats:
             instrumented = protocol.run(*args)
@@ -146,8 +146,8 @@ def main():
     if not out.is_relative_to(ROOT/'results') or out == ROOT/'results':
         raise ValueError('output must be a new directory under results')
     import verify_protocol_defs as D
-    from ffanc_norm.epcg import EPCG
-    from ffanc_norm.epcg_bank import EPCGBank
+    from ffanc_norm.pcg_wls import PcgWls
+    from ffanc_norm.pcg_wls_mw import PcgWlsMultiWindow
     from scipy.stats import chi2, f, norm
     env = runtime()
     flags = {name: json.loads(path.read_text())['flags'] for name, path in FLAGS.items()}
@@ -169,7 +169,7 @@ def main():
                            **({} if noise == 'ar1' else {'noise_type': noise}))
                 key = f'{method}_{noise}_{scene.split()[0]}_{seed}'
                 try:
-                    row = run_pair(D.P, (EPCG, EPCGBank), {'chi2': chi2, 'f': f, 'norm': norm}, cfg, seed, flags[method], scene)
+                    row = run_pair(D.P, (PcgWls, PcgWlsMultiWindow), {'chi2': chi2, 'f': f, 'norm': norm}, cfg, seed, flags[method], scene)
                 except Exception as exc:
                     row = {'exception': f'{type(exc).__name__}: {exc}'}
                 row.update(method=method, noise=noise, scene=scene, seed=seed)

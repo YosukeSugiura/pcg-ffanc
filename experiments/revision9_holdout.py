@@ -15,7 +15,8 @@ OUT = ROOT / 'results/final_eval_holdout'
 SEEDS = range(800, 840)
 SELECTED = json.loads((ev.SEL / 'selected_e.json').read_text())['selected']
 METHODS = {m: (ev.GRID[m][0], ev.GRID[m][1][i]) for m, i in SELECTED.items()}
-METHODS.update({'E-PCG': ('E-PCG-F', ev.MAIN), 'E-PCG bank': ('E-PCG-F', ev.BANK)})
+# record labels of PCG-WLS / PCG-WLS (multi-window) in results/ (former names, see ffanc_norm.naming)
+METHODS.update({'E-PCG': ('PCG-WLS-F', ev.MAIN), 'E-PCG bank': ('PCG-WLS-F', ev.BANK)})
 
 
 def run_one(m, nz, sc, sd, events=None):

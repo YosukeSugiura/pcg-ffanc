@@ -26,8 +26,8 @@ SWEEP = {
     'FDKF': ('C-FDKF', 'A', [{'P0': 1.0, 'gain_scale': 1.0, 'A': a} for a in (0.99, 0.995, 0.998, 0.999, 0.9995)]),
     'RLS': ('R-RLS', 'lam', [{'lam': lm, 'delta': 1e-2} for lm in (0.998, 0.999, 0.9995, 0.9998, 0.9999, 0.99995, 1.0)]),
     'VFF-RLS': ('R-VFF', 'lam_min', [{'N0': 8000.0, 'lam_min': lm, 'delta': 1e-3} for lm in (0.95, 0.98, 0.99, 0.995, 0.999)]),
-    'E-PCG-M v6.5': ('E-PCG-F', 'D', [dict(L, **dict(v65, robust_bound_dx=dx)) for dx in (0.025, 0.05, 0.1, 0.15)]),   # D < rs (~0.2-0.3 m) required by shat_shift
-    'E-PCG-M v6.5 (level)': ('E-PCG-F', 'fa', [dict(L, **dict(v65, det_fa=fa, sid_consist=fa)) for fa in (1e-4, 1e-10)]),
+    'E-PCG-M v6.5': ('PCG-WLS-F', 'D', [dict(L, **dict(v65, robust_bound_dx=dx)) for dx in (0.025, 0.05, 0.1, 0.15)]),   # D < rs (~0.2-0.3 m) required by shat_shift
+    'E-PCG-M v6.5 (level)': ('PCG-WLS-F', 'fa', [dict(L, **dict(v65, det_fa=fa, sid_consist=fa)) for fa in (1e-4, 1e-10)]),
 }
 LABEL = {'scale': lambda p: f"x{p['mu_fast']:g}", 'D': lambda p: f"D={p['robust_bound_dx']:g}",
          'fa': lambda p: f"level={p['det_fa']:g}"}

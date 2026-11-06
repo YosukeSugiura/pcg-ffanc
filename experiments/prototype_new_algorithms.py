@@ -53,6 +53,7 @@ from ffanc_norm.benchmark_metrics import (  # noqa: E402
     threshold_times_from_db_curve,
 )
 from ffanc_norm.fd_fxnlms import fd_block_gradient  # noqa: E402
+from ffanc_norm import naming as _naming  # noqa: E402
 from ffanc_norm.normalization import PowerTracker  # noqa: E402
 from ffanc_norm.simulation import causal_fir_block, right_aligned_history  # noqa: E402
 from ffanc_norm.theory import primary_variance, wiener_solution  # noqa: E402
@@ -1520,6 +1521,7 @@ def _cftf_run(S, xf, dhat, w, t_from, t_to, lam, M, stab=(1.5, 2.5, 1.0)):
 
 def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
         change_at: float | None = None) -> dict:
+    method = _naming.method_key(method)          # former keys 'E-PCG-F' / 'E-PCG' (before v1.1.0) are accepted
     N = int(cfg['fft_length']); H = int(cfg['hop_length']); M = int(cfg['controller_length'])
     fs = int(cfg['sample_rate'])
     x, d, v, p, s, eval_samples = _make_signals(cfg, seed, 1, eval_seconds)
@@ -1688,7 +1690,7 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
     r_acc = np.zeros(M); p_acc = np.zeros(M)
 
     gls_oracle_acf = None
-    if method == 'E-PCG' and params.get('gls') == 'oracle':
+    if method == 'PCG-WLS' and params.get('gls') == 'oracle':
         # true noise autocorrelation n = d + x_f * w* + v over the run (oracle check only)
         w_opt, *_ = wiener_solution(s, p, M, pole=float(cfg.get('ar_pole', 0.95)))
         nn = (d + np.convolve(xf, w_opt)[:n] + v)[:eval_samples]
@@ -1868,7 +1870,7 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
             w = w - params['mu'] * g
 
         elif method == 'spec_binwise':
-            # FD-FxNLMS with the same movement spec as E-PCG (Prop. 10 + Prop. 12) as a per-bin leakage:
+            # FD-FxNLMS with the same movement spec as PCG-WLS (Prop. 10 + Prop. 12) as a per-bin leakage:
             # eps_k = kappa sqrt(1 - sinc(w_k dx/c)), leak_k = max(0, eps_k/gamma - 1) (normalized-gradient units)
             if b == 0:
                 if params.get('bound'):
@@ -2021,11 +2023,11 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
                 w_avg[:] = w_raw; n_avg[0] = 0
                 w = w_raw.copy()
 
-        elif method == 'E-PCG-F':
-            # production implementation (src/ffanc_norm/epcg.py): incremental FFT
-            # statistics, FD score detector; params map onto EPCGConfig fields
+        elif method == 'PCG-WLS-F':
+            # production implementation (src/ffanc_norm/pcg_wls.py): incremental FFT
+            # statistics, FD score detector; params map onto PcgWlsConfig fields
             if b == 0:
-                from ffanc_norm.epcg import EPCG as _EPCG, EPCGConfig as _EC
+                from ffanc_norm.pcg_wls import PcgWls as _PCGWLS, PcgWlsConfig as _EC
                 _prm = dict(params)
                 if _prm.pop('robust_kappa', None) is not None:
                     # Prop. 10: bound on -Re(Delta_k / S_hat_k): eps_k = kappa sigma_Delta / (sqrt(2) |S_hat_k|),
@@ -2176,15 +2178,15 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
                     _sid['prior_log'].append((int(_p0), int(_Lgp), float(_deff), int(_Tev), float(_s2p)))
                     return sid_cost_prior_build(_hi - _lo, _Lgp, 0 if _fam is None else len(_fam), _mdl)
                 _sid['prior'] = None; _sid['Tev'] = None; _sid['prior_log'] = []
-                # memory aggregation (new flag mem_bank = list of window lengths in hops; off by default)
+                # multi-window aggregation, PCG-WLS (multi-window) (flag mem_bank = list of window lengths in hops; off by default)
                 _mb = _prm.pop('mem_bank', None); _mbs = float(_prm.pop('mem_share', 0.02)); _mbe = float(_prm.pop('mem_eta', 1.0)); _mbc = (lambda z: z if isinstance(z, (list, tuple, set)) else bool(z))(_prm.pop('mem_cheap', False))
                 if _mb:
-                    from ffanc_norm.epcg_bank import EPCGBank as _BANK
+                    from ffanc_norm.pcg_wls_mw import PcgWlsMultiWindow as _MW
                     _mbp = _prm.pop('mem_primary', None)     # (v6.1) window (hops) of the detecting member; None = longest
                     _mbl = _prm.pop('mem_long_sched', None)  # (2026-10-24, cost) (every, k) of the longer members
-                    _mk = lambda **kw: _BANK(_EC(M=M, H=H, **kw), _mb, _mbe, _mbs, cheap=_mbc, primary=_mbp, long_sched=_mbl)
+                    _mk = lambda **kw: _MW(_EC(M=M, H=H, **kw), _mb, _mbe, _mbs, cheap=_mbc, primary=_mbp, long_sched=_mbl)
                 else:
-                    _mk = lambda **kw: _EPCG(_EC(M=M, H=H, **kw))
+                    _mk = lambda **kw: _PCGWLS(_EC(M=M, H=H, **kw))
                 _ep = _mk(**_prm)
             _f0 = _ep.fft.flops(); _extra_fl = 0.0
             if b == 0 and _sid.get('on') and _sid.get('cons') is not None:
@@ -2672,8 +2674,8 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
             score_hist[:] = _ep.scores; reset_hops[:] = [s // H - 1 for s in _ep.resets]
             loc_hist[:] = _ep.locs; n_resets[0] = len(_ep.resets); rl_hist[:] = [s_ // H - 1 for s_ in _ep.rollbacks]
 
-        elif method == 'E-PCG':
-            # Exact-covariance FD-PCG.  Window [t0, stop) with t0 = max(restart,
+        elif method == 'PCG-WLS':
+            # Exact-covariance FD-PCG (prototype of PCG-WLS).  Window [t0, stop) with t0 = max(restart,
             # stop - L*H).  X^T X = T(r) + Z(t0)^T Z(t0) - Z(stop)^T Z(stop):
             # Toeplitz part by a 2M-point circulant FFT, edge parts from M-1
             # samples at each boundary.  Preconditioner: circulant (bin PSD).
@@ -2908,7 +2910,7 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
             def solve(t_a, t_b, alpha, eta_rel):
                 Xa = conv_matrix(xf, t_a, t_b, M); Ga = Xa.T @ Xa; ba = Xa.T @ dhat[t_a:t_b]
                 gs = max(float(np.trace(Ga)) / M, 1e-30)
-                if alpha is None:   # ridge LS (relative ridge 1e-3), E-PCG equivalent
+                if alpha is None:   # ridge LS (relative ridge 1e-3), PCG-WLS equivalent
                     return np.linalg.solve(Ga + 1e-3 * gs * np.eye(M), -ba)
                 K = alpha ** np.maximum(idx[:, None], idx[None, :])
                 eta = eta_rel / gs
@@ -3274,7 +3276,7 @@ GRIDS = {
     'A-TPCGr': {'k': [8], 'gamma': [1.0, 0.995, 0.99], 'ridge': [1e-3], 'kappa': [2.0, 4.0], 'exact_hops': [4, 8]},
     'K-LS': {'alpha': [0.8, 0.85, 0.9, 0.95], 'eta': [1e3, 1e4, 1e5, 1e6], 'L': [32]},
     'K-EB': {'alphas': [(0.7, 0.8, 0.85, 0.9, 0.93, 0.96, 0.98, 0.99)], 'etas': [(0.1, 1.0, 10.0, 100.0, 1e3, 1e4, 1e5, 1e6, 1e7)], 'L': [32]},
-    'E-PCG': {'k': [8], 'L': [32], 'ridge': [1e-3]},
+    'PCG-WLS': {'k': [8], 'L': [32], 'ridge': [1e-3]},
     'C-FDKF': {'P0': [1e-3, 1e-2, 1e-1, 1.0, 10.0, 100.0], 'gain_scale': [1.0, 2.0, 4.0, 8.0], 'A': [0.998]},
 }
 
@@ -3321,7 +3323,7 @@ def main():
                           'selection': 'grid search on train seeds, ensemble cumulative dB, all train seeds stable',
                           'change_at_s': args.change_at},
            'methods': {}}
-    for method in args.methods.split(','):
+    for method in [_naming.method_key(m) for m in args.methods.split(',')]:
         t0 = time.time()
         rows = []
         for params in grid(method):

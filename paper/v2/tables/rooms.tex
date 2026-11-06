@@ -15,8 +15,8 @@ FD-FxNLMS+det & -5.7 & -8.2 & -8.6 & -7.3 & -4.8 & -6.2 & -7.4 & 0.0$^{\dagger30
 RLS+det & -0.8$^{\dagger1}$ & -8.4$^{\dagger1}$ & -8.9$^{\dagger1}$ & -7.2$^{\dagger1}$ & -6.7 & -10.4 & -9.3 & -3.6$^{\dagger6}$ \\
 SFTF-H+det & -0.9$^{\dagger1}$ & -8.4$^{\dagger1}$ & -8.9$^{\dagger1}$ & -7.2$^{\dagger1}$ & -6.7 & -10.4 & \textbf{-9.3} & -3.6$^{\dagger6}$ \\
 CFTF+det & -0.9$^{\dagger1}$ & -8.4$^{\dagger1}$ & -8.9$^{\dagger1}$ & -7.2$^{\dagger1}$ & -6.7 & \textbf{-10.4} & -9.3 & -3.6$^{\dagger6}$ \\
-E-PCG (bank) & -5.2 & -8.5 & -8.8 & -7.0$^{\dagger1}$ & -7.6 & -7.4 & -9.2 & 0.0$^{\dagger16}$ \\
-\textbf{E-PCG} & -5.2 & -8.7 & -8.8 & -7.5$^{\dagger5}$ & \textbf{-7.7} & -8.0 & -8.5 & -3.5$^{\dagger14}$ \\
+PCG-WLS (multi-window) & -5.2 & -8.5 & -8.8 & -7.0$^{\dagger1}$ & -7.6 & -7.4 & -9.2 & 0.0$^{\dagger16}$ \\
+\textbf{PCG-WLS} & -5.2 & -8.7 & -8.8 & -7.5$^{\dagger5}$ & \textbf{-7.7} & -8.0 & -8.5 & -3.5$^{\dagger14}$ \\
 \midrule
 \multicolumn{9}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
 FD-FxNLMS & -9.1 & -9.1 & -9.1 & -8.4$^{\dagger2}$ & -12.6 & -12.3 & -11.8 & 0.0$^{\dagger32}$ \\
@@ -29,8 +29,8 @@ FD-FxNLMS+det & -9.3 & -9.4 & -9.4 & -8.4 & -12.7 & -11.8 & -11.2 & 0.0$^{\dagge
 RLS+det & \textbf{-10.2$^{\dagger1}$} & \textbf{-10.2$^{\dagger1}$} & \textbf{-10.0$^{\dagger1}$} & -9.1$^{\dagger1}$ & -14.2 & \textbf{-14.0} & -13.4 & -9.7$^{\dagger6}$ \\
 SFTF-H+det & \textbf{-10.2$^{\dagger1}$} & \textbf{-10.2$^{\dagger1}$} & -10.0$^{\dagger1}$ & -9.1$^{\dagger1}$ & -14.2 & -14.0 & -13.4 & -9.5$^{\dagger6}$ \\
 CFTF+det & \textbf{-10.2$^{\dagger1}$} & \textbf{-10.2$^{\dagger1}$} & -10.0$^{\dagger1}$ & \textbf{-9.1$^{\dagger1}$} & -14.2 & \textbf{-14.0} & -13.4 & \textbf{-9.7$^{\dagger6}$} \\
-E-PCG (bank) & -9.9 & -10.0 & -9.9 & -8.7$^{\dagger1}$ & \textbf{-14.2} & -13.9 & \textbf{-13.5} & -4.3$^{\dagger16}$ \\
-\textbf{E-PCG} & -10.0 & -10.0 & -10.0 & -8.6$^{\dagger5}$ & -14.0 & -13.9 & -13.3 & -6.2$^{\dagger14}$ \\
+PCG-WLS (multi-window) & -9.9 & -10.0 & -9.9 & -8.7$^{\dagger1}$ & \textbf{-14.2} & -13.9 & \textbf{-13.5} & -4.3$^{\dagger16}$ \\
+\textbf{PCG-WLS} & -10.0 & -10.0 & -10.0 & -8.6$^{\dagger5}$ & -14.0 & -13.9 & -13.3 & -6.2$^{\dagger14}$ \\
 \bottomrule
 \end{tabular}}
 \\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}
@@ -53,8 +53,8 @@ FD-FxNLMS+det & -4.7 & -6.1 & -6.2 & -4.1$^{\dagger13}$ & -4.0 & -3.9 & -5.1 & 0
 RLS+det & -4.1 & -6.9 & -7.5 & -4.9$^{\dagger9}$ & -3.7 & -6.2 & -6.3 & 0.0$^{\dagger37}$ \\
 SFTF-H+det & -4.1 & -6.9 & -7.5 & \textbf{-4.9$^{\dagger9}$} & -3.7 & -6.2 & -6.3 & 0.0$^{\dagger37}$ \\
 CFTF+det & -4.1 & -6.9 & -7.5 & \textbf{-4.9$^{\dagger9}$} & -3.7 & \textbf{-6.2} & -6.3 & 0.0$^{\dagger37}$ \\
-E-PCG (bank) & -4.7 & -6.8 & -7.4 & 0.0$^{\dagger24}$ & -5.2$^{\dagger6}$ & -4.0$^{\dagger2}$ & -5.6$^{\dagger1}$ & 0.0$^{\dagger38}$ \\
-\textbf{E-PCG} & -4.8 & -7.2 & \textbf{-7.5} & 0.0$^{\dagger26}$ & \textbf{-5.5} & -4.2 & -5.5 & 0.0$^{\dagger39}$ \\
+PCG-WLS (multi-window) & -4.7 & -6.8 & -7.4 & 0.0$^{\dagger24}$ & -5.2$^{\dagger6}$ & -4.0$^{\dagger2}$ & -5.6$^{\dagger1}$ & 0.0$^{\dagger38}$ \\
+\textbf{PCG-WLS} & -4.8 & -7.2 & \textbf{-7.5} & 0.0$^{\dagger26}$ & \textbf{-5.5} & -4.2 & -5.5 & 0.0$^{\dagger39}$ \\
 \midrule
 \multicolumn{9}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
 FD-FxNLMS & -6.6 & -6.6 & -6.6 & 0.0$^{\dagger27}$ & -8.7$^{\dagger2}$ & -7.6$^{\dagger4}$ & -7.2$^{\dagger4}$ & 0.0$^{\dagger39}$ \\
@@ -67,8 +67,8 @@ FD-FxNLMS+det & -6.7 & -6.8 & -6.8 & -3.7$^{\dagger13}$ & -9.9 & -8.2 & -8.0 & 0
 RLS+det & \textbf{-8.6} & -8.5 & \textbf{-8.4} & -5.0$^{\dagger9}$ & \textbf{-11.4} & \textbf{-11.1} & -10.6 & 0.0$^{\dagger37}$ \\
 SFTF-H+det & \textbf{-8.6} & \textbf{-8.5} & \textbf{-8.4} & -5.0$^{\dagger9}$ & \textbf{-11.4} & -11.1 & \textbf{-10.7} & 0.0$^{\dagger37}$ \\
 CFTF+det & \textbf{-8.6} & -8.5 & \textbf{-8.4} & \textbf{-5.0$^{\dagger9}$} & \textbf{-11.4} & \textbf{-11.1} & -10.6 & 0.0$^{\dagger37}$ \\
-E-PCG (bank) & -8.4 & -8.3 & -8.1 & 0.0$^{\dagger24}$ & -11.2$^{\dagger6}$ & -10.9$^{\dagger2}$ & -10.4$^{\dagger1}$ & 0.0$^{\dagger38}$ \\
-\textbf{E-PCG} & -8.4 & -8.4 & -8.3 & 0.0$^{\dagger26}$ & -11.2 & -10.9 & -10.4 & 0.0$^{\dagger39}$ \\
+PCG-WLS (multi-window) & -8.4 & -8.3 & -8.1 & 0.0$^{\dagger24}$ & -11.2$^{\dagger6}$ & -10.9$^{\dagger2}$ & -10.4$^{\dagger1}$ & 0.0$^{\dagger38}$ \\
+\textbf{PCG-WLS} & -8.4 & -8.4 & -8.3 & 0.0$^{\dagger26}$ & -11.2 & -10.9 & -10.4 & 0.0$^{\dagger39}$ \\
 \bottomrule
 \end{tabular}}
 \\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}
@@ -91,8 +91,8 @@ FD-FxNLMS+det & -5.7 & -7.4 & -6.8 & -5.2 \\
 RLS+det & -5.9 & -7.6 & -7.7 & -7.9 \\
 SFTF-H+det & -6.0 & -7.6 & -7.7 & -7.9 \\
 CFTF+det & -6.0 & -7.6 & -7.7 & -7.9 \\
-E-PCG (bank) & -6.6 & -8.0 & \textbf{-8.0} & \textbf{-8.1} \\
-\textbf{E-PCG} & \textbf{-6.6} & \textbf{-8.3} & -8.0 & -8.0 \\
+PCG-WLS (multi-window) & -6.6 & -8.0 & \textbf{-8.0} & \textbf{-8.1} \\
+\textbf{PCG-WLS} & \textbf{-6.6} & \textbf{-8.3} & -8.0 & -8.0 \\
 \midrule
 \multicolumn{5}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
 FD-FxNLMS & -9.4 & -9.3 & -9.7 & -9.6 \\
@@ -105,8 +105,8 @@ FD-FxNLMS+det & -9.6 & -9.5 & -10.0 & -9.8 \\
 RLS+det & -9.8 & \textbf{-9.6} & -10.3 & -10.1 \\
 SFTF-H+det & -9.8 & -9.6 & -10.3 & -10.1 \\
 CFTF+det & -9.8 & \textbf{-9.6} & -10.3 & -10.1 \\
-E-PCG (bank) & \textbf{-9.9} & -9.6 & \textbf{-10.3} & \textbf{-10.1} \\
-\textbf{E-PCG} & -9.5 & -9.4 & -10.1 & -10.0 \\
+PCG-WLS (multi-window) & \textbf{-9.9} & -9.6 & \textbf{-10.3} & \textbf{-10.1} \\
+\textbf{PCG-WLS} & -9.5 & -9.4 & -10.1 & -10.0 \\
 \bottomrule
 \end{tabular}}
 \\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}

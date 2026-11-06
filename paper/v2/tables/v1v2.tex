@@ -1,8 +1,8 @@
-\begin{table}[t]\centering\caption{First (v1) and revised (v2) final evaluation: median A1 (dB) of the best baseline and of E-PCG.}\label{tab:v1v2}
+\begin{table}[t]\centering\caption{First (v1) and revised (v2) final evaluation: median A1 (dB) of the best baseline and of PCG-WLS.}\label{tab:v1v2}
 \scriptsize
 \begin{tabular}{llrlrrrr}
 \toprule
-cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & E-PCG & $\Delta_1$ & $\Delta_2$ \\
+cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & PCG-WLS & $\Delta_1$ & $\Delta_2$ \\
 \midrule
 S8 & RLS & -9.1 & SFTF+det & -9.2 & -11.1 & -2.0 & -1.9 \\
 S1 & convex & -13.4 & RLS & -13.3 & -14.1 & -0.8 & -0.8 \\
@@ -21,5 +21,5 @@ R2$^h$ & convex & -8.9 & CFTF+det & -13.5 & -14.6 & -5.7 & -1.1 \\
 R3$^h$ & convex & -11.8 & CFTF+det & -13.6 & -13.2 & -1.4 & +0.4 \\
 \bottomrule
 \end{tabular}
-\\[2pt]{\scriptsize $^h$ harmonic noise. $\Delta_{1,2}$: E-PCG minus the v1 / v2 best baseline (difference of medians). E-PCG vs all baselines (Holm): v1 77 win / 0 loss / 0 mixed / 13 none of 90; v2 132 / 0 / 0 / 48 of 180. Holm over 180 (v1) / 360 (v2) tests.}
+\\[2pt]{\scriptsize $^h$ harmonic noise. $\Delta_{1,2}$: PCG-WLS minus the v1 / v2 best baseline (difference of medians). PCG-WLS vs all baselines (Holm): v1 77 win / 0 loss / 0 mixed / 13 none of 90; v2 132 / 0 / 0 / 48 of 180. Holm over 180 (v1) / 360 (v2) tests.}
 \end{table}

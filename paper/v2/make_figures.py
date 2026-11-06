@@ -2,8 +2,9 @@
 eigenvalue analysis of gap_check, which re-runs the signal generator for 3 seeds: ~10 s).
 
 Palette: validated categorical slots (dataviz validator, light surface: all checks pass; contrast WARN for aqua, yellow,
-magenta -> secondary encoding by markers / line style and a legend). Proposed methods: near-black solid (main) and blue
-dashed (bank).
+magenta -> secondary encoding by markers / line style and a legend). Proposed methods: near-black solid (PCG-WLS) and
+blue dashed (PCG-WLS (multi-window)). Curves are read under their archived record labels; legends show the current
+names (ffanc_norm.naming).
 usage: python paper/v2/make_figures.py
 """
 import re, sys
@@ -15,20 +16,22 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent / 'figs'; OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
+from ffanc_norm import naming as N  # noqa: E402
+REC, REC_MW = N.RECORD_LABEL, N.RECORD_LABEL_MW   # record labels of PCG-WLS and PCG-WLS (multi-window)
 
 INK = '#2b2b2a'; MUTED = '#6f6e69'; GRID = '#e4e3dd'
 STYLE = {  # method: (color, linestyle, marker, linewidth)
-    'E-PCG': ('#1a1a19', '-', None, 2.0), 'E-PCG bank': ('#2a78d6', '--', None, 1.6),
+    REC: ('#1a1a19', '-', None, 2.0), REC_MW: ('#2a78d6', '--', None, 1.6),
     'FD-FxNLMS': ('#eb6834', '-', 'o', 1.0), 'leaky FD-FxNLMS': ('#1baf7a', '-', 's', 1.0),
     'convex FD-FxNLMS': ('#eda100', '-', '^', 1.0), 'RLS': ('#e87ba4', '-', 'v', 1.0),
     'RLS + CUSUM': ('#a1436d', '--', 'x', 1.4), 'VFF-RLS': ('#008300', '-', 'D', 1.0), 'FDKF': ('#6250d6', '-', 'P', 1.0),
     # detector-equipped baselines (v2, 2026-10-30): colour of the base method, dash-dot
     'FD-FxNLMS + det': ('#eb6834', '-.', 'X', 1.0), 'RLS + det': ('#e87ba4', '-.', '*', 1.8),
     'FD-FxNLMS + restart': ('#eb6834', ':', 'P', 1.2), 'SFTF + det': ('#6f6e69', '--', 'd', 1.3), 'SFTF-H + det': ('#1baf7a', ':', 'h', 1.6), 'CFTF + det': ('#6250d6', ':', '*', 1.6)}
-ORDER = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'RLS', 'VFF-RLS', 'FDKF', 'E-PCG bank', 'E-PCG']
+ORDER = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'RLS', 'VFF-RLS', 'FDKF', REC_MW, REC]
 ORDER_V2 = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'RLS', 'VFF-RLS', 'FDKF', 'FD-FxNLMS + det',
             'FD-FxNLMS + restart', 'RLS + det', 'SFTF + det', 'SFTF-H + det', 'CFTF + det', 'RLS + CUSUM',
-            'E-PCG bank', 'E-PCG']
+            REC_MW, REC]
 plt.rcParams.update({'font.size': 8, 'axes.edgecolor': MUTED, 'axes.labelcolor': INK, 'xtick.color': MUTED,
                      'ytick.color': MUTED, 'axes.grid': True, 'grid.color': GRID, 'grid.linewidth': 0.6,
                      'legend.frameon': False, 'axes.spines.top': False, 'axes.spines.right': False,
@@ -38,8 +41,8 @@ COL1 = 3.5; COL2 = 7.16      # IEEE column / page width (inch)
 
 def plot_method(ax, x, y, m, label=True, every=40):
     c, ls, mk, lw = STYLE[m]
-    ax.plot(x, y, color=c, ls=ls, lw=lw, marker=mk, markevery=every, ms=3.5, label=m if label else None,
-            zorder=5 if m.startswith('E-PCG') else 3)
+    ax.plot(x, y, color=c, ls=ls, lw=lw, marker=mk, markevery=every, ms=3.5, label=N.display_label(m) if label else None,
+            zorder=5 if m in (REC, REC_MW) else 3)
 
 
 def _fig_learning(methods, basename):
@@ -52,7 +55,7 @@ def _fig_learning(methods, basename):
         for m in methods:
             k = f'{m}|{nz}|{sc}'
             plot_method(ax, t, z[k + '|mean'], m, label=(ax is axs[0, 0]))
-            if m in ('E-PCG', 'RLS + det'):
+            if m in (REC, 'RLS + det'):
                 ax.fill_between(t, z[k + '|lo'], z[k + '|hi'], color=STYLE[m][0], alpha=0.12, lw=0)
         if not sc.startswith('S8'):
             ax.axvline(1.0, color=MUTED, ls=':', lw=0.8)
@@ -68,7 +71,7 @@ def _fig_learning(methods, basename):
 def fig_learning():
     # Retain the highlighted baselines, both self-contained systems and the proposed method.
     methods = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'FD-FxNLMS + restart',
-               'RLS + det', 'RLS + CUSUM', 'CFTF + det', 'E-PCG']
+               'RLS + det', 'RLS + CUSUM', 'CFTF + det', REC]
     _fig_learning(methods, 'learning')
 
 
@@ -104,7 +107,7 @@ def fig_excess():
     names = [('exact LS (RLS lam 1)', 'exact growing-window LS', '#6f6e69', '-', 1.2),
              ('FD-FxNLMS mu 0.2', r'FD-FxNLMS $\mu=0.2$', '#eb6834', '-', 1.0),
              ('FD-FxNLMS mu 0.5', r'FD-FxNLMS $\mu=0.5$', '#eda100', '-', 1.0),
-             ('E-PCG (main)', 'E-PCG', '#1a1a19', '-', 2.0)]
+             ('E-PCG (main)', N.PCG_WLS, '#1a1a19', '-', 2.0)]   # curve key: archived record label
     for ax, nz, title in zip(axs, ['ar1', 'harmonic'], ['(a) AR(1)', '(b) harmonic']):
         for key, lab, c, ls, lw in names:
             hb, yd = _logbin(g[f'{nz}|{key}'])
@@ -145,7 +148,7 @@ def fig_cost():
                 continue
             xs = [float(x[2].split('/')[1]) for x in r]; ys = [float(x[7]) for x in r]   # S2 cost, S2 A1
             c, ls, mk, lw = STYLE[m]
-            ax.plot(xs, ys, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=m)
+            ax.plot(xs, ys, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=N.display_label(m))
             for x_, y_, x in zip(xs, ys, r):
                 ax.annotate(x[1], (x_, y_), fontsize=5.5, color=MUTED, xytext=(2, 2), textcoords='offset points')
         rl = [x for x in rows if x[0] == 'RLS' and x[3] == nz]
@@ -180,7 +183,7 @@ def fig_shat():
             cells = r[0][5:9]                                   # S1 at -30 / -20 / -15 / -10 dB
             fails = [int(c.split('/')[0]) for c in cells]
             c, ls, mk, lw = STYLE[m]
-            ax.plot(nm, fails, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=m)
+            ax.plot(nm, fails, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=N.display_label(m))
         ax.set_xlabel(r'$\hat S$ NMSE (dB)'); ax.set_title(title + ', source move 10 cm', fontsize=8, loc='left', color=INK)
         ax.set_xticks(nm)
     axs[0].set_ylabel('failed runs (of 40)'); axs[1].legend(fontsize=6)

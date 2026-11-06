@@ -129,8 +129,8 @@ def main():
     OUT.mkdir(exist_ok=False)
     original_hash = hashlib.sha256(SOURCE.read_bytes()).hexdigest()
     legacy = load_original(OUT)
-    original_finish = legacy.E.EPCG._finish_hop
-    original_weighted = legacy.E.EPCG._weighted_solve
+    original_finish = legacy.E.PcgWls._finish_hop
+    original_weighted = legacy.E.PcgWls._weighted_solve
     original_run = legacy.D.P.run
     rows, context, stack = [], {}, []
     # Original main() prints each cell, but this wrapper also identifies each
@@ -173,14 +173,14 @@ def main():
             rows.append(row)
             stream.write(json.dumps(row) + '\n')
             return w
-        legacy.E.EPCG._finish_hop = probe
-        legacy.E.EPCG._weighted_solve = weighted
+        legacy.E.PcgWls._finish_hop = probe
+        legacy.E.PcgWls._weighted_solve = weighted
         legacy.D.P.run = run
         try:
             legacy.main()
         finally:
-            legacy.E.EPCG._finish_hop = original_finish
-            legacy.E.EPCG._weighted_solve = original_weighted
+            legacy.E.PcgWls._finish_hop = original_finish
+            legacy.E.PcgWls._weighted_solve = original_weighted
             legacy.D.P.run = original_run
     actual = json.loads((OUT / 'raw.json').read_text())
     expected = json.loads((ARCHIVE / 'raw.json').read_text())

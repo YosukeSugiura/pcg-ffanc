@@ -1,7 +1,7 @@
 """Diagnostics of REVISION_RULE_2 sections 4-5 from stored records (no simulation; 2026-10-30).
   N1: 'FD-FxNLMS + restart' vs 'FD-FxNLMS' (evaluation v2b): paired Wilcoxon (pratt) per condition and metric, Holm over
       its 30 comparisons, win rule of FINAL_EVAL_RULE.md; count of conditions with |median A1 difference| <= 0.5 dB.
-  N2: E-PCG - RLS + det, S7 AR(1) A1 (median paired difference) and the S7 hop table (hops 62-72: ensemble NR of the
+  N2: PCG-WLS - RLS + det, S7 AR(1) A1 (median paired difference) and the S7 hop table (hops 62-72: ensemble NR of the
       seed-summed powers, 40 evaluation seeds) with the samples since the localized change point tau of the first
       detection (n <= M = 512: the restarted RLS is under-determined).
 usage: python experiments/revision2_diag.py   -> results/revision2_diag/n1_n2.md

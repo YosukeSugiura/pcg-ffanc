@@ -5,7 +5,7 @@ Stationary cell S8, M = 512, tuning seeds 300-309, ar1 and harmonic. For each se
     irreducible part (uncontrollable residual + sensor noise);
   - excess(method, hop) = residual power(method) - residual power(w_opt), ensemble mean over seeds;
   - methods: exact growing-window LS (R-RLS lam = 1, the realizable optimum of Theorem 1 / Statement A), FD-FxNLMS
-    (mu = 0.2 = the selected baseline, and 0.5), E-PCG (main configuration; window L = 48 hops).
+    (mu = 0.2 = the selected baseline, and 0.5), PCG-WLS (main configuration; window L = 48 hops).
 Reported: excess ratios in dB (method / exact LS) over hop ranges, and the excess curves (results/gap_check2/).
 usage: RLS_FAST=1 python experiments/gap_check2.py
 """
@@ -21,7 +21,7 @@ MAIN = json.loads((ROOT / 'results/final_dev/final_config_core_main.json').read_
 METHODS = {'exact LS (RLS lam 1)': ('R-RLS', {'lam': 1.0, 'delta': 1e-2}),
            'FD-FxNLMS mu 0.2': ('fixed_binwise', {'mu': 0.2}),
            'FD-FxNLMS mu 0.5': ('fixed_binwise', {'mu': 0.5}),
-           'E-PCG (main)': ('E-PCG-F', MAIN)}
+           'E-PCG (main)': ('PCG-WLS-F', MAIN)}
 RANGES = [(1, 8), (8, 32), (32, 100), (100, 312)]          # hops
 
 

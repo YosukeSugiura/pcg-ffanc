@@ -2,9 +2,24 @@
 
 This directory contains the source, test suite, configurations, archived
 summaries and the inputs required to reproduce the manuscript's LaTeX tables.
-It is release v1.0.0, archived with the result records at Zenodo,
+It is release v1.1.0. Release v1.0.0 is archived with the result records at Zenodo,
 https://doi.org/10.5281/zenodo.23965831. The underlying MeshRIR dataset is separately available and attributed
 at https://doi.org/10.5281/zenodo.5500451.
+
+## Method name
+
+The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.1.0.
+Earlier records use the former name E-PCG. These are the files under `results/`, the rule documents in
+`docs/current/`, and the Zenodo archive (DOI 10.5281/zenodo.23965831). The multi-window variant was called
+E-PCG (bank) and is now PCG-WLS (multi-window).
+
+The implementation is in `ffanc_norm.pcg_wls` (`PcgWls`, `PcgWlsConfig`) and `ffanc_norm.pcg_wls_mw`
+(`PcgWlsMultiWindow`). The former modules `ffanc_norm.epcg` and `ffanc_norm.epcg_bank`, the function
+`cost.epcg_model` and the runner key `E-PCG-F` still work and emit a DeprecationWarning. Saved configurations
+under `results/` are read unchanged, and their method key is mapped to `PCG-WLS-F` on loading
+(`ffanc_norm.naming.load_config`). The runners in `experiments/` keep the record labels `E-PCG` and
+`E-PCG bank`, so new runs can be resumed from and compared with the archived records. The table and figure
+generators show the new names. The renaming changes no numerical result.
 
 ## Environment
 

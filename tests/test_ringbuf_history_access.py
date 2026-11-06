@@ -6,7 +6,7 @@ import pytest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'experiments'),str(ROOT/'src')]
 from ringbuf_history_access import selections, capture, History
-import ffanc_norm.epcg as E
+import ffanc_norm.pcg_wls as E
 
 
 def test_positions_match_numpy_for_index_forms():
@@ -21,7 +21,7 @@ def test_positions_match_numpy_for_index_forms():
 
 def test_record_eager_where_and_append_then_rewrap():
     with capture(E,True) as log:
-        o=E.EPCG(E.EPCGConfig(M=8,H=4,detect=False)); o.xf=np.arange(8.); o.dh=np.arange(8.)
+        o=E.PcgWls(E.PcgWlsConfig(M=8,H=4,detect=False)); o.xf=np.arange(8.); o.dh=np.arange(8.)
         assert isinstance(o.xf,History)
         out=np.where(np.array([False,True]),o.xf[np.clip(np.array([-3,2]),0,None)],0.)
         np.testing.assert_array_equal(out,[0,2]); assert log.rows[-1]['selected_count']==2
@@ -32,9 +32,9 @@ def test_record_eager_where_and_append_then_rewrap():
         np.testing.assert_array_equal(o.xf[8:],[0,1,2,3])
 
 
-def test_real_update_stop_and_banked_members():
+def test_real_update_stop_and_multi_window_members():
     with capture(E,True) as log:
-        a=E.EPCG(E.EPCGConfig(M=8,H=4,detect=False)); b=E.EPCG(E.EPCGConfig(M=8,H=4,detect=False))
+        a=E.PcgWls(E.PcgWlsConfig(M=8,H=4,detect=False)); b=E.PcgWls(E.PcgWlsConfig(M=8,H=4,detect=False))
         for o in (a,b):
             o.update(np.ones(4),np.ones(4))
         assert len(log.members)==2
@@ -48,36 +48,36 @@ def test_real_update_stop_and_banked_members():
 
 def test_copy_branch_context_is_correctly_attributed():
     with capture(E,True) as log:
-        a=E.EPCG(E.EPCGConfig(M=8,H=4,detect=False)); a.xf=np.arange(8.); a.stop=8
+        a=E.PcgWls(E.PcgWlsConfig(M=8,H=4,detect=False)); a.xf=np.arange(8.); a.stop=8
         b=copy.copy(a); b.stop=6
-        ns={};exec(compile('def access(self):\n return self.xf[-1]\n','epcg.py','exec'),ns)
+        ns={};exec(compile('def access(self):\n return self.xf[-1]\n','pcg_wls.py','exec'),ns)
         assert ns['access'](b)==7
         assert log.rows[-1]['stop']==6 and log.members[log.rows[-1]['member']] is b
 
 
 def test_restore_on_exception():
-    init=E.EPCG.__init__; had='__setattr__' in E.EPCG.__dict__; setter=E.EPCG.__setattr__; concat=np.concatenate
+    init=E.PcgWls.__init__; had='__setattr__' in E.PcgWls.__dict__; setter=E.PcgWls.__setattr__; concat=np.concatenate
     with pytest.raises(RuntimeError):
         with capture(E,True): raise RuntimeError('test')
-    assert E.EPCG.__init__ is init and E.EPCG.__setattr__ is setter
-    assert ('__setattr__' in E.EPCG.__dict__)==had and np.concatenate is concat
+    assert E.PcgWls.__init__ is init and E.PcgWls.__setattr__ is setter
+    assert ('__setattr__' in E.PcgWls.__dict__)==had and np.concatenate is concat
 
 
-def test_actual_bank_shared_members_and_forced_restart():
-    from ffanc_norm.epcg_bank import EPCGBank
-    original_init=E.EPCG.__init__; original_concat=np.concatenate
+def test_actual_multi_window_shared_members_and_forced_restart():
+    from ffanc_norm.pcg_wls_mw import PcgWlsMultiWindow
+    original_init=E.PcgWls.__init__; original_concat=np.concatenate
     with capture(E,True) as log:
-        bank=EPCGBank(E.EPCGConfig(M=8,H=4,detect=False),L_list=[2,3,5],
+        mw=PcgWlsMultiWindow(E.PcgWlsConfig(M=8,H=4,detect=False),L_list=[2,3,5],
                       primary=3,cheap=['share','nodetect'])
         for j in range(5):
-            bank.update(np.full(4,1.+j/10),np.full(4,.5))
+            mw.update(np.full(4,1.+j/10),np.full(4,.5))
         assert len(log.members)==3
-        assert all(o in log.members for o in bank.members)
+        assert all(o in log.members for o in mw.members)
         before=len(log.rows)
-        bank.members[2].force_restart(4)
+        mw.members[2].force_restart(4)
         forced=log.rows[before:]
         assert any('force_restart' in r['stack'] for r in forced)
-        assert all(log.members[r['member']] is bank.members[2] for r in forced)
+        assert all(log.members[r['member']] is mw.members[2] for r in forced)
         assert log.calls['force_restart']==1
         assert {r['member'] for r in log.rows} == {0,1,2}
-    assert E.EPCG.__init__ is original_init and np.concatenate is original_concat
+    assert E.PcgWls.__init__ is original_init and np.concatenate is original_concat

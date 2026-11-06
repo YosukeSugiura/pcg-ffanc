@@ -3,7 +3,7 @@
 For each seed: rho on the 2M grid; over bins with x_f-hat power >= 1e-2 of its max:
   rho_max = max |rho|,  re_min = min Re(S/S_hat).
 Outcome: loss caused by S_hat = post-change cumulative dB (hops +0..+48) with S_hat minus the
-same with S_hat = S (same seed), for E-PCG (weight) and fixed bin-wise.
+same with S_hat = S (same seed), for PCG-WLS (weight) and fixed bin-wise.
 usage: python experiments/diag_shat_theory.py NMSE_DB
 """
 import json, sys
@@ -29,7 +29,7 @@ for sd in range(100, 120):
     rho = (S - Sh) / Sh
     out = {}
     cfg0 = dict(cfg); cfg0.pop('shat_nmse_db')
-    for name, (meth, prm) in (('epcg', ('E-PCG-F', F)), ('fixed', ('fixed_binwise', {'mu': 0.648}))):
+    for name, (meth, prm) in (('epcg', ('PCG-WLS-F', F)), ('fixed', ('fixed_binwise', {'mu': 0.648}))):
         cum = []
         for cc in (cfg, cfg0):
             r = P.run(cc, sd, meth, prm, 2.0, 1.0)

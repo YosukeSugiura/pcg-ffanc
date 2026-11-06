@@ -2,21 +2,27 @@
 experiments/final_eval.py summary). No simulation.
   Table I  (paper/v2/tables/main.tex)  : median A1 / A2 (dB) and failures, main evaluation (results/final_eval_v2b; v1 vs v2 table: final_eval vs final_eval_v2b)
   Table II (paper/v2/tables/rooms.tex) : the same for the additional conditions (eval_roomB, eval_roomC, eval_snr10)
+The proposed methods are read under their archived record labels (E-PCG, E-PCG bank) and shown as PCG-WLS and
+PCG-WLS (multi-window) (ffanc_norm.naming).
 usage: python paper/v2/make_tables.py
 """
 import json
+import sys
 from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
+from ffanc_norm import naming as N  # noqa: E402
+REC, REC_MW = N.RECORD_LABEL, N.RECORD_LABEL_MW   # record labels of PCG-WLS and PCG-WLS (multi-window)
 OUT = Path(__file__).resolve().parent / 'tables'; OUT.mkdir(exist_ok=True)
 MAIN_DIR = 'final_eval_holdout'
 ORDER = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'FDKF', 'RLS', 'VFF-RLS', 'FD-FxNLMS + det',
          'FD-FxNLMS + restart', 'RLS + det', 'SFTF + det', 'SFTF-H + det', 'CFTF + det', 'RLS + CUSUM',
-         'E-PCG bank', 'E-PCG']
+         REC_MW, REC]
 SHORT = {'FD-FxNLMS': 'FD-FxNLMS', 'leaky FD-FxNLMS': 'leaky', 'convex FD-FxNLMS': 'convex', 'FDKF': 'FDKF', 'RLS': 'RLS',
          'VFF-RLS': 'VFF-RLS', 'FD-FxNLMS + det': 'FD-FxNLMS+det',
-         'FD-FxNLMS + restart': 'FD-FxNLMS+restart', 'SFTF + det': 'SFTF+det', 'SFTF-H + det': 'SFTF-H+det', 'CFTF + det': 'CFTF+det', 'RLS + det': 'RLS+det', 'E-PCG bank': 'E-PCG (bank)',
-         'RLS + CUSUM': 'RLS+CUSUM', 'E-PCG': '\\textbf{E-PCG}'}
+         'FD-FxNLMS + restart': 'FD-FxNLMS+restart', 'SFTF + det': 'SFTF+det', 'SFTF-H + det': 'SFTF-H+det', 'CFTF + det': 'CFTF+det', 'RLS + det': 'RLS+det', REC_MW: N.PCG_WLS_MW,
+         'RLS + CUSUM': 'RLS+CUSUM', REC: '\\textbf{' + N.PCG_WLS + '}'}
 CSHORT = {'S8 stationary': 'S8', 'S1 src 10cm': 'S1', 'S2 src 30cm': 'S2', 'S5 src 30cm cont': 'S5', 'S7 rd abrupt': 'S7',
           'R1 rig 10cm': 'R1', 'R2 rig 30cm': 'R2', 'R3 rig 30cm cont': 'R3'}
 
@@ -50,7 +56,7 @@ def table(M, combos, caption, label, decisions=None):
                 cand = [mm for mm in meths if (mm, nz, sc) in M and 2 * sum(r['fail'] for r in M[(mm, nz, sc)]) <= len(M[(mm, nz, sc)])]
                 best = min(np.median([r[key] for r in M[(mm, nz, sc)]]) for mm in cand) if cand else None
                 s = f'{v:.1f}' + (f'$^{{\\dagger{f}}}$' if f else '')
-                if decisions is not None and key == 'A1' and m not in ('E-PCG', 'E-PCG bank'):
+                if decisions is not None and key == 'A1' and m not in (REC, REC_MW):
                     decision = decisions[(m, nz, sc)]
                     symbol = {'win': 'w', 'loss': 'l', '-': '-', 'mixed': 'm'}[decision]
                     s += r'$^{\text{--}}$' if symbol == '-' else r'$^{\mathrm{' + symbol + '}}$'
@@ -58,11 +64,11 @@ def table(M, combos, caption, label, decisions=None):
             lines.append(f'{SHORT[m]} & ' + ' & '.join(vals) + r' \\')
         lines.append(r'\midrule')
     lines[-1] = r'\bottomrule'
-    lines += [r'\end{tabular}}', r'\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}' + (r' {\scriptsize A1 superscripts w / -- / l / m: E-PCG win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}' if decisions is not None else ''), r'\end{table*}']
+    lines += [r'\end{tabular}}', r'\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}' + (r' {\scriptsize A1 superscripts w / -- / l / m: PCG-WLS win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}' if decisions is not None else ''), r'\end{table*}']
     return '\n'.join(lines) + '\n'
 
 
-def wins(d, prop='E-PCG'):
+def wins(d, prop=REC):
     """{(baseline, noise, cell): label} of the '<prop> vs baselines' table in results/<d>/summary.md."""
     p = ROOT / 'results' / d / 'summary.md'
     if not p.exists():
@@ -79,28 +85,28 @@ def wins(d, prop='E-PCG'):
 
 def v1v2():
     """Table III: first final evaluation (v1: mean-NR selection, no detector-equipped baselines) vs v2 (A1-aligned
-    selection, detector-equipped baselines). Per condition: best baseline by median A1 and its median, E-PCG median,
-    difference; win / loss / none counts of E-PCG. No simulation; both from the stored per-run metrics."""
+    selection, detector-equipped baselines). Per condition: best baseline by median A1 and its median, PCG-WLS median,
+    difference; win / loss / none counts of PCG-WLS. No simulation; both from the stored per-run metrics."""
     M1, M2 = load('final_eval'), load('final_eval_v2e')     # v2e = v2d + 'CFTF + det' (REVISION_RULE_7)
     W1, W2 = wins('final_eval'), wins('final_eval_v2e')
     if M1 is None or M2 is None:
         return None
     assert W1 and W2, 'summary.md of final_eval / final_eval_v2 missing'
-    for k in M2:                                   # E-PCG records of v1 and v2 are the same (reused): check
-        if k[0] == 'E-PCG':
+    for k in M2:                                   # PCG-WLS records of v1 and v2 are the same (reused): check
+        if k[0] == REC:
             assert sorted(r['A1'] for r in M1[k]) == sorted(r['A1'] for r in M2[k]), k
     combos = [(nz, sc) for nz in ('ar1', 'harmonic') for sc in CSHORT if (nz, sc) != ('harmonic', 'S7 rd abrupt')]
     med = lambda M, m, nz, sc: float(np.median([r['A1'] for r in M[(m, nz, sc)]]))
     lines = [r'\begin{table}[t]\centering\caption{First (v1) and revised (v2) final evaluation: median A1 (dB) of the best'
-             r' baseline and of E-PCG.}\label{tab:v1v2}', r'\scriptsize', r'\begin{tabular}{llrlrrrr}', r'\toprule',
-             r'cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & E-PCG & $\Delta_1$ & $\Delta_2$ \\',
+             r' baseline and of PCG-WLS.}\label{tab:v1v2}', r'\scriptsize', r'\begin{tabular}{llrlrrrr}', r'\toprule',
+             r'cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & PCG-WLS & $\Delta_1$ & $\Delta_2$ \\',
              r'\midrule']
     for nz, sc in combos:
-        e = med(M2, 'E-PCG', nz, sc)
+        e = med(M2, REC, nz, sc)
         row = [f'{CSHORT.get(sc, sc)}{"$^h$" if nz == "harmonic" else ""}']
         ds = []
         for M in (M1, M2):
-            bs = [m for m in ORDER if m not in ('E-PCG', 'E-PCG bank') and (m, nz, sc) in M]
+            bs = [m for m in ORDER if m not in (REC, REC_MW) and (m, nz, sc) in M]
             b = min(bs, key=lambda m: med(M, m, nz, sc))
             row += [SHORT[b], f'{med(M, b, nz, sc):.1f}']; ds.append(f'{e - med(M, b, nz, sc):+.1f}')
         lines.append(' & '.join(row + [f'{e:.1f}'] + ds) + r' \\')
@@ -108,8 +114,8 @@ def v1v2():
                      (('win', 'win'), ('loss', 'loss'), ('mixed', 'mixed'), ('none', '-'))}   # summary.md labels
     c1, c2 = cnt(W1 or {}), cnt(W2 or {})
     lines += [r'\bottomrule', r'\end{tabular}',
-              r'\\[2pt]{\scriptsize $^h$ harmonic noise. $\Delta_{1,2}$: E-PCG minus the v1 / v2 best baseline (difference of '
-              r'medians). E-PCG vs all baselines (Holm): ' +
+              r'\\[2pt]{\scriptsize $^h$ harmonic noise. $\Delta_{1,2}$: PCG-WLS minus the v1 / v2 best baseline (difference of '
+              r'medians). PCG-WLS vs all baselines (Holm): ' +
               f'v1 {c1["win"]} win / {c1["loss"]} loss / {c1["mixed"]} mixed / {c1["none"]} none of {len(W1 or {})}; '
               f'v2 {c2["win"]} / {c2["loss"]} / {c2["mixed"]} / {c2["none"]} of {len(W2 or {})}. Holm over 180 (v1) / 360 (v2) tests.' + '}', r'\end{table}']
     return '\n'.join(lines) + '\n'
@@ -144,7 +150,7 @@ def main():
         parts = []
         for noise, display, label in [('ar1', 'AR(1)', 'tab:main'), ('harmonic', 'harmonic', 'tab:main-harmonic')]:
             subset = [(nz, sc) for nz, sc in combos if nz == noise]
-            caption = f'Main evaluation, {display} (holdout seeds {seed_set[0]}--{seed_set[-1]}, Holm over {ntests} tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share E-PCG detections.'
+            caption = f'Main evaluation, {display} (holdout seeds {seed_set[0]}--{seed_set[-1]}, Holm over {ntests} tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share PCG-WLS detections.'
             parts.append(table(M, subset, caption, label, decisions=wins(MAIN_DIR)))
         (OUT / 'main.tex').write_text('\n'.join(parts))
         print('written', OUT / 'main.tex')

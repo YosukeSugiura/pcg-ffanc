@@ -1,5 +1,5 @@
 """Review N6 diagnostic (docs/current/REVISION_RULE_3.md): cold-restart 'RLS + det' (GRID cfg 0) in S7 AR(1) on the
-evaluation seeds, against the selected warm configuration (v2b records) and E-PCG.
+evaluation seeds, against the selected warm configuration (v2b records) and PCG-WLS.
 usage: RLS_FAST=1 python experiments/diag_s7_cold.py run ; python experiments/diag_s7_cold.py summary
 """
 import json, sys
@@ -79,7 +79,7 @@ def summary():
         if h <= 72:
             L.append(f"| {h} | {since:.0f} | " + ' | '.join(f'{10 * np.log10(nr[k][0] / nr[k][1]):.2f}'
                                                           for k in ('E-PCG', 'warm', 'cold')) + ' |')
-    # share of the excess residual energy over E-PCG (hops 62-79) by samples since tau (review n21)
+    # share of the excess residual energy over PCG-WLS (hops 62-79) by samples since tau (review n21)
     since = [np.median([(h + 1) * H - taus[s] for s in S]) for h in range(62, 80)]
     for k in exc:
         e = np.array(exc[k]); tot = e.sum()

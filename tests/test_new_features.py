@@ -11,7 +11,7 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
 import prototype_new_algorithms as P  # noqa: E402
-from ffanc_norm.epcg import EPCG, EPCGConfig  # noqa: E402
+from ffanc_norm.pcg_wls import PcgWls, PcgWlsConfig  # noqa: E402
 
 FS = 8000
 
@@ -67,7 +67,7 @@ def test_score_unreg_removes_ridge_induced_false_alarms():
     eps = np.full(M + 1, 3.0)                      # very large robust ridge
     det = {}
     for su in (False, True):
-        ep = EPCG(EPCGConfig(M=M, H=H, L_hops=32, J=4, reg_eps=eps, reg_gamma=0.9, score_unreg=su, screen_fa=0.0))
+        ep = PcgWls(PcgWlsConfig(M=M, H=H, L_hops=32, J=4, reg_eps=eps, reg_gamma=0.9, score_unreg=su, screen_fa=0.0))
         for b in range(len(x) // H):
             ep.update(x[b * H:(b + 1) * H], d[b * H:(b + 1) * H])
         det[su] = len(ep.resets)
@@ -77,7 +77,7 @@ def test_score_unreg_removes_ridge_induced_false_alarms():
 
 def test_band_tree_identical_blocks_returns_old_estimate():
     M = 32
-    ep = EPCG(EPCGConfig(M=M, H=16, band='tree'))
+    ep = PcgWls(PcgWlsConfig(M=M, H=16, band='tree'))
     rng = np.random.default_rng(1)
     wA = rng.standard_normal(M)
     ev = {'wA': wA.copy(), 'wB': wA.copy()}
@@ -88,7 +88,7 @@ def test_band_tree_identical_blocks_returns_old_estimate():
 
 def test_band_tree_large_change_returns_new_estimate():
     M = 32
-    ep = EPCG(EPCGConfig(M=M, H=16, band='tree'))
+    ep = PcgWls(PcgWlsConfig(M=M, H=16, band='tree'))
     rng = np.random.default_rng(2)
     wA = rng.standard_normal(M); wB = wA + 50.0 * rng.standard_normal(M)
     ev = {'wA': wA.copy(), 'wB': wB.copy()}

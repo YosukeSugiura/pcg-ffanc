@@ -5,7 +5,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from ffanc_norm.epcg import EPCG, EPCGConfig  # noqa: E402
+from ffanc_norm.pcg_wls import PcgWls, PcgWlsConfig  # noqa: E402
 
 
 def conv_matrix(xf, t0, stop, M):
@@ -15,7 +15,7 @@ def conv_matrix(xf, t0, stop, M):
 
 def _fed(M=16, H=8, n_hops=40, seed=0, **kw):
     rng = np.random.default_rng(seed)
-    ep = EPCG(EPCGConfig(M=M, H=H, **kw))
+    ep = PcgWls(PcgWlsConfig(M=M, H=H, **kw))
     xf = rng.standard_normal(n_hops * H); dh = rng.standard_normal(n_hops * H)
     return ep, xf, dh
 
@@ -67,7 +67,7 @@ def test_truncated_pcg_score_is_conservative():
     xf = np.zeros(400); e = rng.standard_normal(400)
     for n in range(400):
         xf[n] = 0.95 * (xf[n - 1] if n else 0.0) + e[n]
-    ep = EPCG(EPCGConfig(M=M, H=H)); ep.xf = xf; ep.stop = 400; ep._ecache = {}
+    ep = PcgWls(PcgWlsConfig(M=M, H=H)); ep.xf = xf; ep.stop = 400; ep._ecache = {}
     t0 = 400 - 4 * H
     X = conv_matrix(xf, t0, 400, M); G = X.T @ X
     r = np.array([sum(xf[n] * xf[n - l] for n in range(t0, 400)) for l in range(M)])
@@ -110,7 +110,7 @@ def test_screen_residual_is_one_step_residual():
 def test_sandwich_pcg_matches_dense_and_is_conservative():
     M, H = 16, 8
     rng = np.random.default_rng(5)
-    ep = EPCG(EPCGConfig(M=M, H=H)); ep.xf = rng.standard_normal(300); ep.dh = rng.standard_normal(300)
+    ep = PcgWls(PcgWlsConfig(M=M, H=H)); ep.xf = rng.standard_normal(300); ep.dh = rng.standard_normal(300)
     ep.t0, ep.tJ, ep.stop = 100, 268, 300
     gam = ep._residual_autocov(H)
     g = rng.standard_normal(M)
@@ -131,7 +131,7 @@ def test_branch_rollback_on_noise_step_keeps_controller():
     n = 80 * H
     xf = rng.standard_normal(n); w_true = rng.standard_normal(M) * 0.5
     dh = -np.convolve(xf, w_true)[:n] + 0.05 * rng.standard_normal(n)
-    ep = EPCG(EPCGConfig(M=M, H=H, J=2, det_stat='score', det_fa=0.0, threshold=1e12, screen_fa=0.0,
+    ep = PcgWls(PcgWlsConfig(M=M, H=H, J=2, det_stat='score', det_fa=0.0, threshold=1e12, screen_fa=0.0,
                          localize=False, branch_hops=6, adapt='restart'))
     for b in range(80):
         if b == 40:
@@ -148,7 +148,7 @@ def test_weighted_operator_matches_dense():
     """alpha G_A + G_B with A = [t0, tau), B = [tau, stop) via circulants + three edge terms."""
     M = 16
     rng = np.random.default_rng(11)
-    ep = EPCG(EPCGConfig(M=M, H=8)); ep.xf = rng.standard_normal(300); ep.stop = 280; ep._ecache = {}
+    ep = PcgWls(PcgWlsConfig(M=M, H=8)); ep.xf = rng.standard_normal(300); ep.stop = 280; ep._ecache = {}
     t0, tau, stop, alpha = 60, 190, 280, 0.37
     corr = lambda a, b: np.array([sum(ep.xf[n] * (ep.xf[n - l] if n >= l else 0.0) for n in range(a, b)) for l in range(M)])
     r_main, r_B = corr(t0, stop), corr(tau, stop)

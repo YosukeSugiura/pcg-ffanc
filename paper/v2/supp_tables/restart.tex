@@ -33,12 +33,12 @@ harmonic & S8 stationary & +0.00 & 1 & +0.00 & 1 & +0.00 & - \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.285714\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}}
-\caption{N2: E-PCG - RLS + det, S7 AR(1)}\\
+\caption{N2: PCG-WLS - RLS + det, S7 AR(1)}\\
 \toprule
-hop & t (s) & median samples since tau & E-PCG NR (dB) & RLS + det NR (dB) & difference \\ \midrule
+hop & t (s) & median samples since tau & PCG-WLS NR (dB) & RLS + det NR (dB) & difference \\ \midrule
 \endfirsthead
 \toprule
-hop & t (s) & median samples since tau & E-PCG NR (dB) & RLS + det NR (dB) & difference \\ \midrule
+hop & t (s) & median samples since tau & PCG-WLS NR (dB) & RLS + det NR (dB) & difference \\ \midrule
 \endhead
 \bottomrule\endfoot
 62 & 1.008 & 68 & -0.23 & -0.22 & -0.01 \\
@@ -67,8 +67,8 @@ check & records & observed (dB) & predicted (dB) & within +-0.1 \\ \midrule
 (i) RLS lambda 0.9995 - RLS + det 0.9999, median A2 & final\_eval\_v2 (evaluation seeds) & 0.45 & 0.41 & yes \\
 (ii) RLS 0.9995 - 0.9999, median A2 & protocol\_v2\_sel (tuning seeds) & 0.46 & 0.41 & yes \\
 (ii) RLS 0.9998 - 0.9999, median A2 & protocol\_v2\_sel & 0.11 & 0.11 & yes \\
-(iii) E-PCG L = 24 - L = 48, median paired dA (A = NR over [1 s, end]) & ablation\_core\_d (tuning seeds) & 0.39 & 0.32 & yes \\
-(consequence) E-PCG - RLS + det, A2 & final\_eval\_v2 & +0.26 (paired) / 0.27 (medians) & 0.24 & yes \\
+(iii) PCG-WLS L = 24 - L = 48, median paired dA (A = NR over [1 s, end]) & ablation\_core\_d (tuning seeds) & 0.39 & 0.32 & yes \\
+(consequence) PCG-WLS - RLS + det, A2 & final\_eval\_v2 & +0.26 (paired) / 0.27 (medians) & 0.24 & yes \\
 \end{longtable}}
 \subsection*{revision3\_diag/s7\_cold.md}
 {\scriptsize\setlength{\tabcolsep}{3pt}
@@ -81,7 +81,7 @@ method & median A1 (dB) & median A2 (dB) & failures \\ \midrule
 method & median A1 (dB) & median A2 (dB) & failures \\ \midrule
 \endhead
 \bottomrule\endfoot
-E-PCG & -10.99 & -17.28 & 0 \\
+PCG-WLS & -10.99 & -17.28 & 0 \\
 RLS + det (warm, selected) & -6.06 & -17.62 & 0 \\
 RLS + det (cold, cfg 0) & -8.80 & -17.63 & 0 \\
 \end{longtable}}
@@ -89,10 +89,10 @@ RLS + det (cold, cfg 0) & -8.80 & -17.63 & 0 \\
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}}
 \caption{Review N6 diagnostic: cold vs warm restart of RLS + det, S7 AR(1), evaluation seeds (REVISION\_RULE\_3.md)}\\
 \toprule
-hop & median samples since tau & E-PCG NR & warm NR & cold NR \\ \midrule
+hop & median samples since tau & PCG-WLS NR & warm NR & cold NR \\ \midrule
 \endfirsthead
 \toprule
-hop & median samples since tau & E-PCG NR & warm NR & cold NR \\ \midrule
+hop & median samples since tau & PCG-WLS NR & warm NR & cold NR \\ \midrule
 \endhead
 \bottomrule\endfoot
 62 & 68 & -0.23 & -0.22 & -0.22 \\

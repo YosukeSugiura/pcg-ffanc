@@ -1,4 +1,4 @@
-"""Observe existing EPCG history references without changing the implementation."""
+"""Observe existing PcgWls history references without changing the implementation."""
 import argparse
 from contextlib import contextmanager
 import hashlib
@@ -74,7 +74,7 @@ def selections(key,n):
 def context(arr):
     frame=sys._getframe(2); calls=[]; contextual_owner=None
     while frame is not None:
-        if frame.f_code.co_filename.endswith(('epcg.py','epcg_bank.py')):
+        if frame.f_code.co_filename.endswith(('pcg_wls.py','pcg_wls_mw.py')):
             calls.append(frame.f_code.co_name)
             obj=frame.f_locals.get('self')
             if contextual_owner is None and getattr(obj,'__dict__',{}).get(arr._field) is arr:
@@ -125,7 +125,7 @@ def wrap_history(value,observer,owner,field):
 
 @contextmanager
 def capture(E,instrumented):
-    cls=E.EPCG; observer=Observer(); original_setattr=cls.__setattr__; original_init=cls.__init__
+    cls=E.PcgWls; observer=Observer(); original_setattr=cls.__setattr__; original_init=cls.__init__
     own_setattr='__setattr__' in cls.__dict__
     original_concat=np.concatenate
     methods=('_band_solve','force_restart','_localize','_sandwich_q','_risk_threshold')
@@ -174,7 +174,7 @@ def execute(protocol,E,flags,case,instrumented):
     row={'case':list(case),'config':cfg,'instrumented':instrumented}; raw={}
     with capture(E,instrumented) as observer:
         try:
-            result=protocol.P.run(cfg,seed,'E-PCG-F',dict(flags),5.,None if scene.startswith('S8') else 1.)
+            result=protocol.P.run(cfg,seed,'PCG-WLS-F',dict(flags),5.,None if scene.startswith('S8') else 1.)
             keys=('e','total_power','uncontrolled_power','score_hist','reset_hops','loc_hist')
             raw={k:np.asarray(result[k]).copy() for k in keys}
             row.update(fingerprints={k:fingerprint(raw[k]) for k in keys},
@@ -209,7 +209,7 @@ def main():
     out=args.out.resolve()
     if not out.is_relative_to((ROOT/'results').resolve()) or out==(ROOT/'results').resolve(): raise ValueError('output must be new results subdirectory')
     import verify_protocol_defs as protocol
-    import ffanc_norm.epcg as E
+    import ffanc_norm.pcg_wls as E
     import scipy.linalg.blas
     runtime=runtime_info()
     if runtime['kernel']!='SkylakeX':raise ValueError('preregistered SkylakeX required')
@@ -218,8 +218,8 @@ def main():
     out.mkdir(parents=True,exist_ok=False); (out/'cases').mkdir(); (out/'access').mkdir()
     immutable_json(out/'manifest.json',{'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
       'runtime':runtime,'rule_sha256':file_sha(RULE),'runner_sha256':file_sha(Path(__file__)),
-      'source_sha256':{name:file_sha(ROOT/name) for name in ('src/ffanc_norm/epcg.py',
-         'src/ffanc_norm/epcg_bank.py','experiments/prototype_new_algorithms.py',
+      'source_sha256':{name:file_sha(ROOT/name) for name in ('src/ffanc_norm/pcg_wls.py',
+         'src/ffanc_norm/pcg_wls_mw.py','experiments/prototype_new_algorithms.py',
          'experiments/verify_protocol_defs.py')},
       'main_sha256':file_sha(MAIN),'bank_sha256':file_sha(BANK),
       'supplement_sha256':file_sha(ROOT/'docs/current/RINGBUF_HISTORY_ACCESS_SUPPLEMENT_PREREG.md'),'flags':flags,'expected_pairs':len(cases)*len(flags)})

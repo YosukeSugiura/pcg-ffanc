@@ -1,4 +1,4 @@
-\begin{table*}[t]\centering\caption{Main evaluation, AR(1) (holdout seeds 800--839, Holm over 390 tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share E-PCG detections.}\label{tab:main}
+\begin{table*}[t]\centering\caption{Main evaluation, AR(1) (holdout seeds 800--839, Holm over 390 tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share PCG-WLS detections.}\label{tab:main}
 \scriptsize
 \RnineFitWidth{\begin{tabular}{lcccccccc}
 \toprule
@@ -18,8 +18,8 @@ SFTF+det & -8.3$^{\mathrm{w}}$ & -6.5$^{\mathrm{w}}$ & -4.2$^{\mathrm{w}}$ & -5.
 SFTF-H+det & -8.3$^{\mathrm{w}}$ & -13.2$^{\text{--}}$ & -12.2$^{\mathrm{w}}$ & -11.7$^{\text{--}}$ & -6.7$^{\mathrm{w}}$ & -12.9$^{\mathrm{w}}$ & -12.3$^{\mathrm{w}}$ & -10.9$^{\mathrm{w}}$ \\
 CFTF+det & -8.3$^{\mathrm{w}}$ & -13.2$^{\text{--}}$ & -12.3$^{\mathrm{w}}$ & -11.7$^{\text{--}}$ & -6.7$^{\mathrm{w}}$ & -12.9$^{\mathrm{w}}$ & -12.3$^{\mathrm{w}}$ & -11.0$^{\mathrm{w}}$ \\
 RLS+CUSUM & -8.3$^{\mathrm{w}}$ & -13.9$^{\text{--}}$ & -11.4$^{\mathrm{w}}$ & -12.6$^{\text{--}}$ & -5.5$^{\mathrm{w}}$ & -13.6$^{\text{--}}$ & -11.8$^{\mathrm{w}}$ & -12.3$^{\text{--}}$ \\
-E-PCG (bank) & -11.5 & -13.8 & -13.4 & \textbf{-12.7} & -12.5 & -13.8 & -13.4 & \textbf{-12.5} \\
-\textbf{E-PCG} & \textbf{-11.5} & \textbf{-14.3} & \textbf{-13.6} & -12.7 & \textbf{-12.6} & \textbf{-14.2} & \textbf{-13.6} & -12.3 \\
+PCG-WLS (multi-window) & -11.5 & -13.8 & -13.4 & \textbf{-12.7} & -12.5 & -13.8 & -13.4 & \textbf{-12.5} \\
+\textbf{PCG-WLS} & \textbf{-11.5} & \textbf{-14.3} & \textbf{-13.6} & -12.7 & \textbf{-12.6} & \textbf{-14.2} & \textbf{-13.6} & -12.3 \\
 \midrule
 \multicolumn{9}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
 FD-FxNLMS & -15.7 & -15.7 & -15.3 & -15.0 & -15.7 & -15.7 & -15.6 & -15.3 \\
@@ -35,14 +35,14 @@ SFTF+det & -16.1 & \textbf{-16.1} & -15.8 & -15.2 & -18.4 & -16.1 & -16.0 & -15.
 SFTF-H+det & -16.1 & -16.1 & -15.8 & -15.4 & -18.4 & -16.1 & -16.1 & \textbf{-15.7} \\
 CFTF+det & -16.1 & \textbf{-16.1} & \textbf{-15.8} & \textbf{-15.4} & -18.4 & \textbf{-16.1} & \textbf{-16.1} & -15.7 \\
 RLS+CUSUM & -16.1 & -16.0 & -15.8 & -15.3 & \textbf{-18.4} & -16.1 & -16.1 & -15.7 \\
-E-PCG (bank) & \textbf{-16.1} & -16.0 & -15.7 & -15.3 & -18.1 & -16.0 & -16.0 & -15.7 \\
-\textbf{E-PCG} & -15.9 & -15.9 & -15.6 & -15.3 & -18.0 & -15.9 & -15.9 & -15.6 \\
+PCG-WLS (multi-window) & \textbf{-16.1} & -16.0 & -15.7 & -15.3 & -18.1 & -16.0 & -16.0 & -15.7 \\
+\textbf{PCG-WLS} & -15.9 & -15.9 & -15.6 & -15.3 & -18.0 & -15.9 & -15.9 & -15.6 \\
 \bottomrule
 \end{tabular}}
-\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).} {\scriptsize A1 superscripts w / -- / l / m: E-PCG win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}
+\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).} {\scriptsize A1 superscripts w / -- / l / m: PCG-WLS win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}
 \end{table*}
 
-\begin{table*}[t]\centering\caption{Main evaluation, harmonic (holdout seeds 800--839, Holm over 390 tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share E-PCG detections.}\label{tab:main-harmonic}
+\begin{table*}[t]\centering\caption{Main evaluation, harmonic (holdout seeds 800--839, Holm over 390 tests, $M=512$): median A1 and A2. The +det and FD-FxNLMS+restart rows share PCG-WLS detections.}\label{tab:main-harmonic}
 \scriptsize
 \RnineFitWidth{\begin{tabular}{lccccccc}
 \toprule
@@ -62,8 +62,8 @@ SFTF+det & -12.9$^{\text{--}}$ & -9.7$^{\mathrm{w}}$ & -9.7$^{\mathrm{w}}$ & -5.
 SFTF-H+det & -12.9$^{\text{--}}$ & -16.3$^{\text{--}}$ & -13.9$^{\text{--}}$ & -13.9$^{\text{--}}$ & -15.8$^{\text{--}}$ & -13.8$^{\text{--}}$ & -13.6$^{\text{--}}$ \\
 CFTF+det & -12.9$^{\text{--}}$ & -16.3$^{\text{--}}$ & -14.0$^{\text{--}}$ & \textbf{-14.0$^{\text{--}}$} & -15.8$^{\text{--}}$ & -13.8$^{\text{--}}$ & \textbf{-13.6$^{\text{--}}$} \\
 RLS+CUSUM & -12.9$^{\text{--}}$ & -15.0$^{\mathrm{w}}$ & -11.4$^{\mathrm{w}}$ & -12.6$^{\text{--}}$ & -14.8$^{\mathrm{w}}$ & -11.6$^{\mathrm{w}}$ & -12.7$^{\text{--}}$ \\
-E-PCG (bank) & \textbf{-13.5} & -16.5 & -14.9 & -12.8 & \textbf{-16.3} & \textbf{-15.3} & -12.7 \\
-\textbf{E-PCG} & -13.5 & \textbf{-16.5} & \textbf{-15.0} & -13.4 & -16.1 & -15.2 & -13.3 \\
+PCG-WLS (multi-window) & \textbf{-13.5} & -16.5 & -14.9 & -12.8 & \textbf{-16.3} & \textbf{-15.3} & -12.7 \\
+\textbf{PCG-WLS} & -13.5 & \textbf{-16.5} & \textbf{-15.0} & -13.4 & -16.1 & -15.2 & -13.3 \\
 \midrule
 \multicolumn{8}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
 FD-FxNLMS & -18.6 & -18.3 & -18.0 & -17.2 & -18.3 & -18.0$^{\dagger1}$ & -16.9 \\
@@ -79,9 +79,9 @@ SFTF+det & -19.4 & -19.2 & -19.0 & -18.3 & -19.3 & -19.3 & -18.2 \\
 SFTF-H+det & -19.4 & -19.2 & -19.0 & -18.5 & -19.3 & -19.4 & -18.8 \\
 CFTF+det & -19.4 & -19.2 & -19.0 & -18.5 & -19.3 & \textbf{-19.4} & -18.7 \\
 RLS+CUSUM & -19.4 & -19.2 & -19.0 & -18.2 & -19.3 & -19.4 & -18.4 \\
-E-PCG (bank) & \textbf{-19.4} & \textbf{-19.2} & \textbf{-19.0} & \textbf{-18.6} & \textbf{-19.3} & -19.3 & \textbf{-18.8} \\
-\textbf{E-PCG} & -19.2 & -19.1 & -18.9 & -18.3 & -19.1 & -19.2 & -18.7 \\
+PCG-WLS (multi-window) & \textbf{-19.4} & \textbf{-19.2} & \textbf{-19.0} & \textbf{-18.6} & \textbf{-19.3} & -19.3 & \textbf{-18.8} \\
+\textbf{PCG-WLS} & -19.2 & -19.1 & -18.9 & -18.3 & -19.1 & -19.2 & -18.7 \\
 \bottomrule
 \end{tabular}}
-\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).} {\scriptsize A1 superscripts w / -- / l / m: E-PCG win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}
+\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).} {\scriptsize A1 superscripts w / -- / l / m: PCG-WLS win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}
 \end{table*}

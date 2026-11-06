@@ -26,14 +26,14 @@ SCEN = {
 F = dict(k=8, L_hops=32, ridge=1e-3, detect=True, J=4, localize=True, loc_step=8, k_first=32, k_first_hops=4, k_steady=1,
          k_hops=16, det_stat='sandwich', kd=32, det_fa=1e-7, branch_hops=0, adapt='weight')
 GRID = {
-    'E-PCG (proposed)': ('E-PCG-F', [dict(F, screen_fa=sf, **({} if dx is None else {'robust_dx': dx, 'reg_gamma': 0.9}))
+    'E-PCG (proposed)': ('PCG-WLS-F', [dict(F, screen_fa=sf, **({} if dx is None else {'robust_dx': dx, 'reg_gamma': 0.9}))
                                      for sf in (0.01, 0.05) for dx in (None, 0.05, 0.10)]),
     'FD-FxNLMS + spec (proposed rule)': ('spec_binwise', [{'mu': mu, 'robust_dx': dx, 'proximal': False} for mu in (0.35, 0.648, 1.0) for dx in (0.05, 0.10)]),
-    'E-PCG v2 (bound + score fix)': ('E-PCG-F', [dict(F, screen_fa=sf, score_unreg=True, **({} if dx is None else {'robust_bound_dx': dx, 'reg_gamma': 0.9}))
+    'E-PCG v2 (bound + score fix)': ('PCG-WLS-F', [dict(F, screen_fa=sf, score_unreg=True, **({} if dx is None else {'robust_bound_dx': dx, 'reg_gamma': 0.9}))
                                             for sf in (0.01, 0.05) for dx in (None, 0.05, 0.10)]),
     'FD-FxNLMS + bound (proposed rule)': ('spec_binwise', [{'mu': mu, 'robust_dx': dx, 'bound': True, 'proximal': False} for mu in (0.35, 0.648, 1.0) for dx in (0.05, 0.10)]),
     'FD-FxNLMS + bound prox (proposed rule)': ('spec_binwise', [{'mu': mu, 'robust_dx': dx, 'bound': True, 'proximal': True} for mu in (0.35, 0.648, 1.0) for dx in (0.05, 0.10)]),
-    'E-PCG v2 light': ('E-PCG-F', [dict(F, screen_fa=0.01, score_unreg=True, robust_bound_dx=0.10, reg_gamma=0.9,
+    'E-PCG v2 light': ('PCG-WLS-F', [dict(F, screen_fa=0.01, score_unreg=True, robust_bound_dx=0.10, reg_gamma=0.9,
                                         kd=16, k_first=16, steady_every=4)]),
     'FD-FxNLMS': ('fixed_binwise', [{'mu': mu} for mu in (0.2, 0.35, 0.5, 0.648, 0.8, 1.0)]),
     'leaky FD-FxNLMS': ('leaky_binwise', [{'mu': mu, 'leak': lk} for mu, lk in

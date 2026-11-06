@@ -5,7 +5,7 @@ import math
 import re
 import numpy as np
 from pathlib import Path
-from make_tables import ROOT, OUT, MAIN_DIR, load, wins
+from make_tables import ROOT, OUT, MAIN_DIR, load, wins, REC, REC_MW   # record labels of PCG-WLS / multi-window
 
 R = ROOT / 'results'
 def macro(name, value):
@@ -14,7 +14,7 @@ def macro(name, value):
 def label_counts(dataset):
     return collections.Counter(wins(dataset).values())
 
-def summary_rows(dataset, proposal='E-PCG'):
+def summary_rows(dataset, proposal=REC):
     out=[]; active=False
     for line in (R / dataset / 'summary.md').read_text().splitlines():
         if line.startswith('## '): active=line.startswith(f'## {proposal} vs baselines')
@@ -87,12 +87,12 @@ def generate():
         'MPWienerAr':ref('meas_p','ar1'), 'MPWienerHarm':ref('meas_p','harmonic'),
         'MPSWienerAr':ref('meas_ps','ar1'), 'MPSWienerHarm':ref('meas_ps','harmonic'),
         'MixedAone':mix[3], 'MixedAtwo':mix[5],
-        'RoomCBankSzero':failures('eval_roomC_x2','E-PCG bank','harmonic','S8'),
-        'RoomCBankStwo':failures('eval_roomC_x2','E-PCG bank','harmonic','S2'),
-        'RoomCBankSfive':failures('eval_roomC_x2','E-PCG bank','harmonic','S5'),
-        'RoomBEharmRtwo':failures('eval_roomB_x2','E-PCG','harmonic','R2'),
+        'RoomCBankSzero':failures('eval_roomC_x2',REC_MW,'harmonic','S8'),
+        'RoomCBankStwo':failures('eval_roomC_x2',REC_MW,'harmonic','S2'),
+        'RoomCBankSfive':failures('eval_roomC_x2',REC_MW,'harmonic','S5'),
+        'RoomBEharmRtwo':failures('eval_roomB_x2',REC,'harmonic','R2'),
         'RoomBRlsharmRtwo':failures('eval_roomB_x2','RLS + det','harmonic','R2'),
-        'RoomCEarRtwo':failures('eval_roomC_x2','E-PCG','ar1','R2'),
+        'RoomCEarRtwo':failures('eval_roomC_x2',REC,'ar1','R2'),
         'RoomCRlsarRtwo':failures('eval_roomC_x2','RLS + det','ar1','R2'),
         'HoldCftfFailures':sum(r['fail'] for k,rs in hold.items() if k[0]=='CFTF + det' for r in rs),
         'HoldCftfRuns':sum(len(rs) for k,rs in hold.items() if k[0]=='CFTF + det'),

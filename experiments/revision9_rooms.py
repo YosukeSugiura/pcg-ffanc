@@ -1,4 +1,4 @@
-"""Revision 9-C additional baselines, using the existing E-PCG event cache."""
+"""Revision 9-C additional baselines, using the existing PCG-WLS event cache."""
 import json
 import os
 import sys
@@ -78,7 +78,7 @@ def preflight(name):
     def scalar_bytes(v): return None if v is None else struct.pack('<d',float(v))
     for nz,sc,sd in keys:
         key=(nz,sc,sd); old=saved[key]
-        r=ev.D.P.run(ev.cfg_of(room,nz,sc),sd,'E-PCG-F',dict(ev.MAIN),5.0,None if sc.startswith('S8') else ev.D.CH)
+        r=ev.D.P.run(ev.cfg_of(room,nz,sc),sd,'PCG-WLS-F',dict(ev.MAIN),5.0,None if sc.startswith('S8') else ev.D.CH)
         if len(r['reset_hops'])!=len(r['loc_hist']): raise ValueError(f'unaligned detections: {key}')
         got_events=[[(int(h)+1)*ev.H,int(t)] for h,t in zip(r['reset_hops'],r['loc_hist'])]
         tp=list(map(float,r['total_power'])); up=list(map(float,r['uncontrolled_power'][:len(tp)]))

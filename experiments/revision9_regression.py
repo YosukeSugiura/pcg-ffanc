@@ -9,7 +9,7 @@ spec=importlib.util.spec_from_file_location('base_prototype',tmp.name)
 base=importlib.util.module_from_spec(spec); sys.modules[spec.name]=base; spec.loader.exec_module(base)
 new=ev.D.P
 sel=__import__('json').load(open('results/protocol_v2_sel/selected_e.json'))['selected']
-items=[(m,ev.GRID[m][0],ev.GRID[m][1][i]) for m,i in sel.items()] + [('E-PCG','E-PCG-F',ev.MAIN),('E-PCG bank','E-PCG-F',ev.BANK)]
+items=[(m,ev.GRID[m][0],ev.GRID[m][1][i]) for m,i in sel.items()] + [('E-PCG','PCG-WLS-F',ev.MAIN),('E-PCG bank','PCG-WLS-F',ev.BANK)]
 cfg=ev.cfg_of('A','ar1','S2 src 30cm'); events=ev.events('A','ar1','S2 src 30cm',300)
 def same(a,b,path=''):
  if isinstance(a,dict):

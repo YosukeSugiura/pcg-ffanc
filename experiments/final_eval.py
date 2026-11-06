@@ -12,6 +12,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
 import strict_div as SD  # noqa: E402
+from ffanc_norm import naming as N  # noqa: E402
 D = SD.D
 OUT = ROOT / 'results' / 'final_eval'; OUT.mkdir(parents=True, exist_ok=True)
 SEEDS = list(range(480, 520))
@@ -26,8 +27,12 @@ THR_A1 = 1.0; THR_A2 = 0.5; NBOOT = 1000
 _sel = json.loads((ROOT / 'results/protocol_final_sel/selected.json').read_text())
 BASE = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'RLS', 'VFF-RLS', 'FDKF']
 METH = {m: (_sel['grids'][m][0], _sel['grids'][m][1][_sel['selected'][m]]) for m in BASE}
-METH['E-PCG'] = ('E-PCG-F', json.loads((ROOT / 'results/final_dev/final_config_core_main.json').read_text())['flags'])
-METH['E-PCG bank'] = ('E-PCG-F', json.loads((ROOT / 'results/final_dev/final_config_core_final.json').read_text())['flags'])
+# 'E-PCG' and 'E-PCG bank' are the record labels of PCG-WLS and PCG-WLS (multi-window) in results/ (names before
+# v1.1.0). They are kept so that runs resume from and compare with the archived records (see ffanc_norm.naming).
+# The saved configurations carry the former method key 'E-PCG-F'; load_config maps it to 'PCG-WLS-F'.
+for _lab, _f in (('E-PCG', 'final_config_core_main.json'), ('E-PCG bank', 'final_config_core_final.json')):
+    _c = N.load_config(ROOT / 'results/final_dev' / _f)
+    METH[_lab] = (_c['method'], _c['flags'])
 PROP = ['E-PCG', 'E-PCG bank']
 ALL = BASE + PROP
 

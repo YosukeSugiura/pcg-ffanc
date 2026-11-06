@@ -8,7 +8,7 @@ Stages
 Detector-equipped baselines ('... + det'): at every detection of the proposed method on the same run (stop sample and
 localized change point tau, results/det_events/), RLS resets P and replays [tau, stop); 'FD-FxNLMS + det' (V-SCHED,
 FD-FxNLMS with the circulant-RLS step schedule mu_b = scale N / (H b) floored at mu_min, cumulative bin power) restarts
-its schedule at tau. Both therefore use exactly the detections of E-PCG (computed on E-PCG's own closed loop): same detections, but the
+its schedule at tau. Both therefore use exactly the detections of PCG-WLS (computed on PCG-WLS's own closed loop): same detections, but the
 baselines restart naively (no Prop. 9 weighting, no growing controller length), so the comparison is 'same detector,
 baseline-type restart' rather than an isolation of the estimator. det_reset_w: the restart
 also sets the controller to zero (cold start) instead of keeping it (warm start); both variants are in the grids.
@@ -59,12 +59,12 @@ GRID = {
                   # appended 2026-10-30 (review N2, docs/current/REVISION_RULE_2.md, before they ran): regularization of the
                   # reset P ('det_delta'; initial delta unchanged), warm / cold
                   + [{'lam': 0.9999, 'delta': 1e-2, 'det_reset_w': rw, 'det_delta': dd} for dd in (0.1, 1.0) for rw in (False, True)]),
-    # (2026-10-30, review N1, REVISION_RULE_2.md) the selected FD-FxNLMS (mu 0.3) + restart at E-PCG's detections: step boost
+    # (2026-10-30, review N1, REVISION_RULE_2.md) the selected FD-FxNLMS (mu 0.3) + restart at PCG-WLS's detections: step boost
     # mu_b = max(0.3, s (N / H) / (b_since + 1)) (s = 1/16, 1/8, 1/4: 1, 3, 6 boosted hops), warm or cold; cold s = 0 is a
     # plain restart. Identical to FD-FxNLMS on runs without detections.
     'FD-FxNLMS + restart': ('fixed_binwise', [{'mu': 0.3, 'det_boost': sb, 'det_reset_w': False} for sb in (0.0625, 0.125, 0.25)]
                             + [{'mu': 0.3, 'det_boost': sb, 'det_reset_w': True} for sb in (0.0, 0.0625, 0.125, 0.25)]),
-    # (2026-10-31, REVISION_RULE_4.md) stabilized FTF restarted at E-PCG's detections (prewindowed restart); mirrors
+    # (2026-10-31, REVISION_RULE_4.md) stabilized FTF restarted at PCG-WLS's detections (prewindowed restart); mirrors
     # RLS + det configurations 0-3
     'SFTF + det': ('R-SFTF', [{'lam': lm, 'delta': 1e-2, 'det_reset_w': rw} for lm in (0.9999, 1.0) for rw in (True, False)]),
     # (2026-10-31, REVISION_RULE_6.md) exact covariance restart: RLS for T_h samples after a detection, then FTF
@@ -138,7 +138,7 @@ def events(room, nz, sc, sd):
     k = (room, nz, sc, sd)
     if k not in _EV:
         ch = not sc.startswith('S8')
-        r = D.P.run(cfg_of(room, nz, sc), sd, 'E-PCG-F', dict(MAIN), TT, D.CH if ch else None)
+        r = D.P.run(cfg_of(room, nz, sc), sd, 'PCG-WLS-F', dict(MAIN), TT, D.CH if ch else None)
         ev = [[(int(h) + 1) * H, int(t)] for h, t in zip(r['reset_hops'], r['loc_hist'])]
         assert len(r['reset_hops']) == len(r['loc_hist']), 'detections and localizations must be aligned'
         _EV[k] = ev
@@ -148,7 +148,7 @@ def events(room, nz, sc, sd):
 
 
 def simulate(m, prm, room, nz, sc, sd):
-    meth = GRID[m][0] if m in GRID else 'E-PCG-F'
+    meth = GRID[m][0] if m in GRID else 'PCG-WLS-F'
     p = dict(prm)
     if m in DET:
         p['det_events'] = events(room, nz, sc, sd)
@@ -258,7 +258,8 @@ def _setup_final():
     if room in ('M', 'M_8a') and sel != json.loads((SEL / 'selected_e.json').read_text()):
         raise ValueError('Measured evaluation requires the frozen selected_e.json')
     meth = {m: (GRID[m][0], GRID[m][1][ci]) for m, ci in sel['selected'].items() if ci is not None}
-    meth['E-PCG'] = ('E-PCG-F', MAIN); meth['E-PCG bank'] = ('E-PCG-F', BANK)
+    # record labels of PCG-WLS / PCG-WLS (multi-window) in results/ (former names, see ffanc_norm.naming)
+    meth['E-PCG'] = ('PCG-WLS-F', MAIN); meth['E-PCG bank'] = ('PCG-WLS-F', BANK)
     base = [m for m in BASE if m in meth]
     FE.OUT = out; out.mkdir(parents=True, exist_ok=True)
     FE.METH = meth; FE.BASE = base; FE.ALL = base + FE.PROP; FE.COMBOS = combos; FE.SEEDS = EVAL

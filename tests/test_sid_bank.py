@@ -1,4 +1,4 @@
-"""Tests for the new (flag-guarded) memory bank and the sid v2 profile check."""
+"""Tests for the flag-guarded PCG-WLS (multi-window) and the sid v2 profile check."""
 import sys
 from pathlib import Path
 
@@ -6,8 +6,8 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
-from ffanc_norm.epcg import EPCG, EPCGConfig  # noqa: E402
-from ffanc_norm.epcg_bank import EPCGBank  # noqa: E402
+from ffanc_norm.pcg_wls import PcgWls, PcgWlsConfig  # noqa: E402
+from ffanc_norm.pcg_wls_mw import PcgWlsMultiWindow  # noqa: E402
 
 
 def _data(M=16, H=8, n_hops=60, seed=0):
@@ -18,17 +18,17 @@ def _data(M=16, H=8, n_hops=60, seed=0):
     return xf, dh
 
 
-def test_bank_with_one_member_equals_epcg():
+def test_multi_window_with_one_member_equals_pcg_wls():
     M, H = 16, 8
     xf, dh = _data(M, H)
-    a = EPCG(EPCGConfig(M=M, H=H, L_hops=12, detect=False))
-    b = EPCGBank(EPCGConfig(M=M, H=H, detect=False), L_list=(12,))
+    a = PcgWls(PcgWlsConfig(M=M, H=H, L_hops=12, detect=False))
+    b = PcgWlsMultiWindow(PcgWlsConfig(M=M, H=H, detect=False), L_list=(12,))
     for i in range(0, len(xf), H):
         wa = a.update(xf[i:i + H], dh[i:i + H]); wb = b.update(xf[i:i + H], dh[i:i + H])
         assert np.allclose(wa, wb)
 
 
-def test_bank_weights_are_a_distribution_and_follow_drift():
+def test_multi_window_weights_are_a_distribution_and_follow_drift():
     M, H = 8, 16
     rng = np.random.default_rng(3)
     n = 400 * H
@@ -43,7 +43,7 @@ def test_bank_weights_are_a_distribution_and_follow_drift():
         seg = np.concatenate([np.zeros(M - 1), xf])[i:i + H + M - 1]
         dh[i:i + H] = -np.convolve(seg, wt)[M - 1:M - 1 + H]
     dh += 0.01 * rng.standard_normal(n)
-    b = EPCGBank(EPCGConfig(M=M, H=H, detect=False), L_list=(4, 64))
+    b = PcgWlsMultiWindow(PcgWlsConfig(M=M, H=H, detect=False), L_list=(4, 64))
     for i in range(0, n, H):
         b.update(xf[i:i + H], dh[i:i + H])
     P = np.array(b.pi_hist)
@@ -79,13 +79,13 @@ def test_sid_profile2_recovers_distance_and_rejects_edge():
     assert u3 is None and info3['edge']
 
 
-def test_cheap_bank_shared_statistics_are_exact():
+def test_cheap_multi_window_shared_statistics_are_exact():
     import dataclasses
     M, H = 16, 8
     xf, dh = _data(M, H, n_hops=80)
-    base = EPCGConfig(M=M, H=H, k_hops=8)
-    b = EPCGBank(base, L_list=(4, 16), cheap=True)
-    ref = EPCG(dataclasses.replace(base, L_hops=4, detect=False, k_hops=2))
+    base = PcgWlsConfig(M=M, H=H, k_hops=8)
+    b = PcgWlsMultiWindow(base, L_list=(4, 16), cheap=True)
+    ref = PcgWls(dataclasses.replace(base, L_hops=4, detect=False, k_hops=2))
     for i in range(0, len(xf), H):
         b.update(xf[i:i + H], dh[i:i + H]); wr = ref.update(xf[i:i + H], dh[i:i + H])
         assert np.allclose(b.ws[0], wr, atol=1e-10)
@@ -120,8 +120,8 @@ def test_sharescore_is_exact():
     xf = rng.standard_normal(200 * H)
     dh = -np.convolve(xf, w0)[:len(xf)] + 0.1 * rng.standard_normal(len(xf))
     dh[100 * H:] = -np.convolve(xf, -w0)[100 * H:len(xf)] + 0.1 * rng.standard_normal(100 * H)
-    a = EPCGBank(EPCGConfig(M=M, H=H), (4, 16), cheap=['share', 'nodetect', 'fftmin'])
-    b = EPCGBank(EPCGConfig(M=M, H=H), (4, 16), cheap=['share', 'nodetect', 'fftmin', 'sharescore'])
+    a = PcgWlsMultiWindow(PcgWlsConfig(M=M, H=H), (4, 16), cheap=['share', 'nodetect', 'fftmin'])
+    b = PcgWlsMultiWindow(PcgWlsConfig(M=M, H=H), (4, 16), cheap=['share', 'nodetect', 'fftmin', 'sharescore'])
     for i in range(0, len(xf), H):
         assert np.allclose(a.update(xf[i:i + H], dh[i:i + H]), b.update(xf[i:i + H], dh[i:i + H]), atol=1e-12)
     assert b.fft.flops() < a.fft.flops()
@@ -135,11 +135,11 @@ def test_doze_saves_cost_in_stationary_and_wakes_under_drift():
         a = np.clip((i - 250 * H) / (100 * H), 0, 1); wt = (1 - a) * w0 + a * w1; wts.append(wt)
         seg = np.concatenate([np.zeros(M - 1), xf])[i:i + H + M - 1]; dh[i:i + H] = -np.convolve(seg, wt)[M - 1:M - 1 + H]
     dh += 0.05 * rng.standard_normal(n)
-    cfg = EPCGConfig(M=M, H=H, screen_fa=0.01)
+    cfg = PcgWlsConfig(M=M, H=H, screen_fa=0.01)
     res = {}
     for name, opts in (('ref', ['share', 'nodetect', 'fftmin', 'sharescore']),
                        ('doze', ['share', 'nodetect', 'fftmin', 'sharescore', 'doze'])):
-        b = EPCGBank(cfg, (4, 32), cheap=opts); err = []
+        b = PcgWlsMultiWindow(cfg, (4, 32), cheap=opts); err = []
         for k, i in enumerate(range(0, n, H)):
             err.append(np.sum((b.update(xf[i:i + H], dh[i:i + H]) - wts[k]) ** 2))
         res[name] = (b.fft.flops(), np.mean(err[260:350]), b)

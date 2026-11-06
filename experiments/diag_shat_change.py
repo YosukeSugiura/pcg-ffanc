@@ -8,10 +8,10 @@ import prototype_new_algorithms as P
 nm = float(sys.argv[1]) if len(sys.argv) > 1 else -15.0
 cfg = dict(json.loads((ROOT / 'configs/random_decay.json').read_text()), shat_nmse_db=nm)
 F = dict(adapt='restart', k=8, L_hops=32, ridge=1e-3, detect=True, J=4, localize=True, loc_step=8, k_first=32, k_first_hops=4, k_steady=1, k_hops=16)
-M = {'fixed': ('fixed_binwise', {'mu': 0.648}), 'nodet': ('E-PCG-F', dict(F, detect=False)),
-     'det-nobranch': ('E-PCG-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=0)),
-     'full': ('E-PCG-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=8)),
-     'weight': ('E-PCG-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=0, adapt='weight'))}
+M = {'fixed': ('fixed_binwise', {'mu': 0.648}), 'nodet': ('PCG-WLS-F', dict(F, detect=False)),
+     'det-nobranch': ('PCG-WLS-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=0)),
+     'full': ('PCG-WLS-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=8)),
+     'weight': ('PCG-WLS-F', dict(F, det_stat='sandwich', kd=32, det_fa=1e-7, screen_fa=1e-2, branch_hops=0, adapt='weight'))}
 hc = 63; res = {}
 for k, (m, p) in M.items():
     A = []

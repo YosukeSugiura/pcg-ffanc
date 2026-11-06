@@ -10,10 +10,10 @@
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.207547\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.075472\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}}
 \caption{INVALID Rule 8: historical reference only, M-P, ar1. A1/A2: median (Q1, Q3), dB.}\\
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endfirsthead
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endhead
 \bottomrule\endfoot
 FD-FxNLMS & 0.000 (0.000, 0.295) & 0.000 (-0.000, 0.000) & 28/40 & win & win \\
@@ -28,17 +28,17 @@ RLS + det & 0.240 (-0.073, 0.581) & -1.025 (-1.332, -0.803) & 0/40 & - & - \\
 SFTF + det & 0.239 (-0.072, 0.581) & -1.023 (-1.328, -0.801) & 0/40 & - & - \\
 SFTF-H + det & 0.239 (-0.072, 0.581) & -1.023 (-1.328, -0.801) & 0/40 & - & - \\
 CFTF + det & 0.239 (-0.072, 0.581) & -1.023 (-1.328, -0.801) & 0/40 & - & - \\
-E-PCG bank & 0.092 (-0.257, 0.329) & -0.822 (-1.033, -0.539) & 0/40 & n/a & n/a \\
-E-PCG & 0.232 (-0.088, 0.527) & -0.903 (-1.145, -0.651) & 0/40 & n/a & n/a \\
+PCG-WLS (multi-window) & 0.092 (-0.257, 0.329) & -0.822 (-1.033, -0.539) & 0/40 & n/a & n/a \\
+PCG-WLS & 0.232 (-0.088, 0.527) & -0.903 (-1.145, -0.651) & 0/40 & n/a & n/a \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.207547\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.075472\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}}
 \caption{INVALID Rule 8: historical reference only, M-P, harmonic. A1/A2: median (Q1, Q3), dB.}\\
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endfirsthead
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endhead
 \bottomrule\endfoot
 FD-FxNLMS & 0.147 (-0.312, 0.697) & -3.829 (-4.964, -2.577) & 1/40 & win & win \\
@@ -53,17 +53,17 @@ RLS + det & -1.671 (-2.170, -1.057) & -8.168 (-8.492, -7.426) & 0/40 & loss & mi
 SFTF + det & -0.920 (-1.283, -0.277) & -7.958 (-8.350, -7.310) & 0/40 & mixed & mixed \\
 SFTF-H + det & -1.675 (-2.169, -1.062) & -8.043 (-8.386, -7.320) & 0/40 & loss & mixed \\
 CFTF + det & -1.670 (-2.171, -1.061) & -8.143 (-8.480, -7.410) & 0/40 & loss & mixed \\
-E-PCG bank & -2.897 (-3.501, -2.260) & -6.622 (-7.254, -5.840) & 0/40 & n/a & n/a \\
-E-PCG & -2.113 (-3.007, -1.746) & -6.599 (-7.201, -5.770) & 0/40 & n/a & n/a \\
+PCG-WLS (multi-window) & -2.897 (-3.501, -2.260) & -6.622 (-7.254, -5.840) & 0/40 & n/a & n/a \\
+PCG-WLS & -2.113 (-3.007, -1.746) & -6.599 (-7.201, -5.770) & 0/40 & n/a & n/a \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.207547\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.075472\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}}
 \caption{INVALID Rule 8: historical reference only, M-PS, ar1. A1/A2: median (Q1, Q3), dB.}\\
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endfirsthead
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endhead
 \bottomrule\endfoot
 FD-FxNLMS & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
@@ -78,17 +78,17 @@ RLS + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 SFTF + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 SFTF-H + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 CFTF + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
-E-PCG bank & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 39/40 & n/a & n/a \\
-E-PCG & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
+PCG-WLS (multi-window) & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 39/40 & n/a & n/a \\
+PCG-WLS & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.207547\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.264151\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.075472\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.094340\linewidth-2\tabcolsep\relax}}
 \caption{INVALID Rule 8: historical reference only, M-PS, harmonic. A1/A2: median (Q1, Q3), dB.}\\
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endfirsthead
 \toprule
-Method & A1 & A2 & Fail / N & E-PCG vs. & Bank vs. \\ \midrule
+Method & A1 & A2 & Fail / N & PCG-WLS vs. & Multi-window vs. \\ \midrule
 \endhead
 \bottomrule\endfoot
 FD-FxNLMS & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
@@ -103,6 +103,6 @@ RLS + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 SFTF + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 SFTF-H + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
 CFTF + det & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & - & - \\
-E-PCG bank & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
-E-PCG & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
+PCG-WLS (multi-window) & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
+PCG-WLS & 0.000 (0.000, 0.000) & 0.000 (0.000, 0.000) & 40/40 & n/a & n/a \\
 \end{longtable}}

@@ -19,7 +19,7 @@ SEEDS = G2.SEEDS; TT = G2.TT
 METHODS = {'exact LS (RLS lam 1)': ('R-RLS', {'lam': 1.0, 'delta': 1e-2}),
            'pure 1/b schedule (V-SCHED)': ('V-SCHED', {'denom': 'cum', 'scale': 1.0, 'mu_min': 0.0, 'avg': False}),
            'FD-FxNLMS mu 0.2': ('fixed_binwise', {'mu': 0.2}),
-           'E-PCG (main)': ('E-PCG-F', G2.MAIN)}
+           'E-PCG (main)': ('PCG-WLS-F', G2.MAIN)}
 RANGES = [(1, 8), (8, 32), (32, 100), (100, 312)]
 SLOPE = (100, 312)
 

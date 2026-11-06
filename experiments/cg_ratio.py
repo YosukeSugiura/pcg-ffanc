@@ -1,4 +1,4 @@
-"""Item 4 of the revision (REVISION_RULE.md): optimization vs estimation error of E-PCG under the final-evaluation
+"""Item 4 of the revision (REVISION_RULE.md): optimization vs estimation error of PCG-WLS under the final-evaluation
 conditions (main configuration, M = 512), measured against dense window LS. Diagnostic only (no decision).
 
 At every 4th hop where the controller solves the plain window problem (no active change event, full controller
@@ -17,13 +17,13 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
 import verify_protocol_defs as D  # noqa: E402
-import ffanc_norm.epcg as E  # noqa: E402
+import ffanc_norm.pcg_wls as E  # noqa: E402
 OUT = ROOT / 'results' / 'cg_ratio'; OUT.mkdir(parents=True, exist_ok=True)
 M = 512; SEEDS = [300, 301, 302, 303, 304]; EVERY = 4
 MAIN = json.loads((ROOT / 'results/final_dev/final_config_core_main.json').read_text())['flags']
 CELLS = ['S8 stationary', 'S2 src 30cm', 'R2 rig 30cm']
 LOG = []
-_orig = E.EPCG._finish_hop
+_orig = E.PcgWls._finish_hop
 
 
 def _probe(self, Cm, Gw):
@@ -51,7 +51,7 @@ def _probe(self, Cm, Gw):
     return w
 
 
-E.EPCG._finish_hop = _probe
+E.PcgWls._finish_hop = _probe
 
 
 def main():
@@ -66,7 +66,7 @@ def main():
             for sd in SEEDS:
                 LOG.clear()
                 cfg = dict(D.SCEN[sc], controller_length=M, fft_length=2 * M, **({} if nz == 'ar1' else {'noise_type': nz}))
-                D.P.run(cfg, sd, 'E-PCG-F', dict(MAIN), 5.0, None if sc.startswith('S8') else D.CH)
+                D.P.run(cfg, sd, 'PCG-WLS-F', dict(MAIN), 5.0, None if sc.startswith('S8') else D.CH)
                 rs += [r['opt'] / r['est'] for r in LOG]
                 lm += [r['lam_min'] for r in LOG if 'lam_min' in r]; lx += [r['lam_max'] for r in LOG if 'lam_max' in r]
             raw[f'{nz}|{sc}'] = rs

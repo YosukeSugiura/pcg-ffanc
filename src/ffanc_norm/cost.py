@@ -3,14 +3,16 @@
 Conventions: real FFT of length n = 2.5 n log2 n flops; complex multiply = 6,
 complex add = 2, real multiply-add = 2. Filtering common to all filtered-x methods
 (controller output y = w * x, x_f = S_hat * x, S_hat * y) is reported separately
-by `common_filtering`. E-PCG is counted by instrumenting the implementation
-(ffanc_norm.epcg.FFTCounter); `epcg_model` gives the closed form of the same count.
+by `common_filtering`. PCG-WLS is counted by instrumenting the implementation
+(ffanc_norm.pcg_wls.FFTCounter); `pcg_wls_model` gives the closed form of the same count.
 """
 from __future__ import annotations
 
+import warnings
+
 import numpy as np
 
-from .epcg import fft_flops
+from .pcg_wls import fft_flops
 
 
 def _pow2(n: int) -> int:
@@ -46,8 +48,8 @@ def sftf(M: int, H: int) -> float:
     return H * 16.0 * M
 
 
-def epcg_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> float:
-    """Closed-form steady-state E-PCG count per hop (matches the instrumented implementation).
+def pcg_wls_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> float:
+    """Closed-form steady-state PCG-WLS count per hop (matches the instrumented implementation).
     FFT counts: statistics 5 (size >= H+M-1), boundary FFTs 3, circulant symbols 2,
     detector apply 9, detector PCG 2 + 8 kd, main PCG 2 + 8 k_main (sizes 2M)."""
     n2 = 2 * M
@@ -59,6 +61,12 @@ def epcg_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> flo
         n_f2 = 2 + 1 + 6 + (2 + 8 * k_main)   # boundaries 2, symbol 1, G w 6
     vec = (M + 1) * (2 * 6.0 + 18.0 * (n_f2 // 2)) + 12.0 * M * (kd + k_main + 2)
     return 5 * fft_flops(nseg) + n_f2 * f2 + vec
+
+
+def epcg_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> float:
+    """Deprecated alias of `pcg_wls_model` (the method was called E-PCG before v1.1.0)."""
+    warnings.warn("cost.epcg_model is deprecated; use cost.pcg_wls_model", DeprecationWarning, stacklevel=2)
+    return pcg_wls_model(M, H, kd, k_main, detect)
 
 
 # ---- 2026-10-30: estimates for the remaining baselines of the final evaluation (adaptation part, per hop) ----

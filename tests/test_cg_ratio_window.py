@@ -27,7 +27,7 @@ def test_full_window_requires_original_eligibility_and_actual_plain_solve():
 
 def test_load_does_not_install_hook_or_create_output(tmp_path):
     module = audit.load_original(tmp_path / 'not-created')
-    assert module.E.EPCG._finish_hop is module._orig
+    assert module.E.PcgWls._finish_hop is module._orig
     assert module.OUT == tmp_path / 'not-created'
     assert not module.OUT.exists()
     assert module.M == 512 and module.SEEDS == list(range(300, 305))
