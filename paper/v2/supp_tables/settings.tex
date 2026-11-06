@@ -5,7 +5,7 @@
 % Source: results/protocol_final_sel/selected.json
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.257143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.071429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.528571\linewidth-2\tabcolsep\relax}}
-\caption{Selected v2e baseline settings (zero-based grid indices).}\\
+\caption{Baseline settings from the A1-aligned selection (zero-based grid indices). Configuration files are in \texttt{results/protocol\_v2\_sel/}, \texttt{results/final\_dev/} and \texttt{results/protocol\_final\_sel/} of the public code release.}\\
 \toprule
 Method & Index & Implementation & Parameters \\ \midrule
 \endfirsthead
@@ -13,101 +13,97 @@ Method & Index & Implementation & Parameters \\ \midrule
 Method & Index & Implementation & Parameters \\ \midrule
 \endhead
 \bottomrule\endfoot
-FD-FxNLMS & 5 & fixed\_binwise & mu=0.3 \\
-leaky FD-FxNLMS & 5 & leaky\_binwise & mu=0.35; leak=0.01 \\
-convex FD-FxNLMS & 3 & convex\_binwise & mu\_fast=0.5; mu\_slow=0.2; mu\_a=1.0 \\
-FDKF & 2 & C-FDKF & P0=10.0; gain\_scale=4.0; A=0.9995 \\
-RLS & 0 & R-RLS & lam=0.9995; delta=0.01 \\
-VFF-RLS & 0 & R-VFF & N0=500.0; lam\_min=0.9995; delta=0.001 \\
-FD-FxNLMS + det & 7 & V-SCHED & denom=cum; scale=0.0625; mu\_min=0.2; det\_reset\_w=False \\
-FD-FxNLMS + restart & 1 & fixed\_binwise & mu=0.3; det\_boost=0.125; det\_reset\_w=False \\
-RLS + det & 1 & R-RLS & lam=0.9999; delta=0.01; det\_reset\_w=False \\
-SFTF + det & 1 & R-SFTF & lam=0.9999; delta=0.01; det\_reset\_w=False \\
-SFTF-H + det & 2 & R-SFTF & lam=0.9999; delta=0.01; det\_reset\_w=False; hybrid=2048 \\
-CFTF + det & 1 & R-SFTF & lam=0.9999; delta=0.01; det\_reset\_w=False; cov=True \\
+FD-FxNLMS & 5 & per-bin normalized, fixed step & $\mu=0.3$ \\
+leaky FD-FxNLMS & 5 & per-bin normalized, leaky & $\mu=0.35$, leakage $0.01$ \\
+convex FD-FxNLMS & 3 & per-bin normalized, convex combination & $\mu_{\rm fast}=0.5$, $\mu_{\rm slow}=0.2$, $\mu_a=1$ \\
+FDKF & 2 & diagonal FDKF & $P_0=10$, gain scale $4$, $A=0.9995$ \\
+RLS & 0 & exponentially weighted RLS & $\lambda=0.9995$, $\delta=0.01$ \\
+VFF-RLS & 0 & variable-forgetting-factor RLS & $N_0=500$, $\lambda_{\min}=0.9995$, $\delta=0.001$ \\
+FD-FxNLMS + det & 7 & $1/b$ step schedule & cumulative bin powers, step scale $0.0625$, $\mu_{\min}=0.2$, warm restart \\
+FD-FxNLMS + restart & 1 & per-bin normalized, fixed step & $\mu=0.3$, $s=0.125$, warm restart \\
+RLS + det & 1 & exponentially weighted RLS & $\lambda=0.9999$, $\delta=0.01$, warm restart \\
+SFTF + det & 1 & stabilized FTF & $\lambda=0.9999$, $\delta=0.01$, warm restart \\
+SFTF-H + det & 2 & stabilized FTF & $\lambda=0.9999$, $\delta=0.01$, warm restart, $T_h=2048$ \\
+CFTF + det & 1 & stabilized FTF & $\lambda=0.9999$, $\delta=0.01$, warm restart, covariance window \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.666667\linewidth-2\tabcolsep\relax}}
-\caption{PCG-WLS: frozen flags.}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.666667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}}
+\caption{PCG-WLS: frozen configuration, with the symbols of the main paper where they exist. Omitted: a trial-branch option, which is off, and an option that acts only with a robust ridge, which is not used.}\\
 \toprule
-Flag & Value \\ \midrule
+Setting & Value \\ \midrule
 \endfirsthead
 \toprule
-Flag & Value \\ \midrule
+Setting & Value \\ \midrule
 \endhead
 \bottomrule\endfoot
-k & 8 \\
-L\_hops & 48 \\
-ridge & 0.001 \\
-detect & true \\
-J & 6 \\
-localize & true \\
-loc\_step & 12 \\
-k\_first & 16 \\
-k\_first\_hops & 6 \\
-k\_steady & 4 \\
-k\_hops & 24 \\
-det\_stat & "sandwich" \\
-kd & 16 \\
-det\_fa & 1e-07 \\
-branch\_hops & 0 \\
-adapt & "weight" \\
-screen\_fa & 0.01 \\
-score\_unreg & true \\
-steady\_every & 1 \\
-cg\_stat\_tol & 0.1 \\
-cg\_stat\_mindof & "M" \\
-grow\_len & "half" \\
-pre\_window & "bartlett\_s" \\
-cg\_stat\_exactJ & true \\
-weight\_consistent & true \\
-fixes\_1028 & true \\
-det\_C\_pre & true \\
+$L$ (window length, hops) & 48 \\
+Tikhonov weight, relative to $r(0)$ & 0.001 \\
+$k_b$ (CG iterations per hop) in the first hops after a (re)start & 16 \\
+number of these hops & 6 \\
+window length beyond which the steady-state $k_b$ applies (hops) & 24 \\
+steady-state $k_b$ & 4 \\
+$k_b$ otherwise & 8 \\
+hops between steady-state CG updates & 1 \\
+$\epsilon$ (stopping-rule tolerance) & 0.1 \\
+minimum residual degrees of freedom $n-M$ for the stopping rule & $M$ \\
+$\mathrm{RSS}$ in the stopping rule excludes the Tikhonov term & on \\
+controller length while $n<2M$ & $n/2$ \\
+preconditioner & circulant of the Bartlett-tapered autocorrelation (full-length controller) \\
+change detection & on \\
+stage-1 level & 0.01 \\
+$J$ (hops in the stage-2 score test) & 6 \\
+stage-2 statistic & sandwich score $T$ \\
+$\boldsymbol\Sigma_u$ estimated on the pre-test segment $[t_0,t_J)$ & on \\
+stage-2 PCG iterations on the score system & 16 \\
+stage-2 nominal per-hop level & 1e-07 \\
+change-point localization ($\tau$) & on \\
+localization search step (samples) & 12 \\
+after a detection & Stein weight $\alpha$ \\
+weighted solve with the length and stopping rules at effective size $\alpha n_A+n_B$ & on \\
+corrected bookkeeping of the change handling (block estimates, sample counts, noise level, caches) & on \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.666667\linewidth-2\tabcolsep\relax}}
-\caption{PCG-WLS (multi-window): frozen flags.}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.666667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}}
+\caption{PCG-WLS (multi-window): frozen configuration, with the symbols of the main paper where they exist. Omitted: a trial-branch option, which is off, and an option that acts only with a robust ridge, which is not used.}\\
 \toprule
-Flag & Value \\ \midrule
+Setting & Value \\ \midrule
 \endfirsthead
 \toprule
-Flag & Value \\ \midrule
+Setting & Value \\ \midrule
 \endhead
 \bottomrule\endfoot
-k & 8 \\
-L\_hops & 48 \\
-ridge & 0.001 \\
-detect & true \\
-J & 6 \\
-localize & true \\
-loc\_step & 12 \\
-k\_first & 16 \\
-k\_first\_hops & 6 \\
-k\_steady & 4 \\
-k\_hops & 24 \\
-det\_stat & "sandwich" \\
-kd & 16 \\
-det\_fa & 1e-07 \\
-branch\_hops & 0 \\
-adapt & "restart" \\
-screen\_fa & 0.01 \\
-score\_unreg & true \\
-steady\_every & 1 \\
-mem\_bank & [12, 48, 1000] \\
-mem\_cheap & ["share", "nodetect", "fftmin", "sharescore", "doze"] \\
-cg\_stat\_tol & 0.1 \\
-mem\_primary & 48 \\
-cg\_stat\_mindof & "M" \\
-grow\_len & "half" \\
-pre\_window & "bartlett\_s" \\
-cg\_stat\_exactJ & true \\
-weight\_consistent & true \\
-fixes\_1028 & true \\
-det\_C\_pre & true \\
+$L$ (window length, hops) & 48 \\
+Tikhonov weight, relative to $r(0)$ & 0.001 \\
+$k_b$ (CG iterations per hop) in the first hops after a (re)start & 16 \\
+number of these hops & 6 \\
+window length beyond which the steady-state $k_b$ applies (hops) & 24 \\
+steady-state $k_b$ & 4 \\
+$k_b$ otherwise & 8 \\
+hops between steady-state CG updates & 1 \\
+$\epsilon$ (stopping-rule tolerance) & 0.1 \\
+minimum residual degrees of freedom $n-M$ for the stopping rule & $M$ \\
+$\mathrm{RSS}$ in the stopping rule excludes the Tikhonov term & on \\
+controller length while $n<2M$ & $n/2$ \\
+preconditioner & circulant of the Bartlett-tapered autocorrelation (full-length controller) \\
+change detection & on \\
+stage-1 level & 0.01 \\
+$J$ (hops in the stage-2 score test) & 6 \\
+stage-2 statistic & sandwich score $T$ \\
+$\boldsymbol\Sigma_u$ estimated on the pre-test segment $[t_0,t_J)$ & on \\
+stage-2 PCG iterations on the score system & 16 \\
+stage-2 nominal per-hop level & 1e-07 \\
+change-point localization ($\tau$) & on \\
+localization search step (samples) & 12 \\
+after a detection & restart \\
+weighted solve with the length and stopping rules at effective size $\alpha n_A+n_B$ & on \\
+corrected bookkeeping of the change handling (block estimates, sample counts, noise level, caches) & on \\
+windows (hops) & 12, 48, 1000 \\
+window of the detecting member (hops) & 48 \\
+cost reductions & shared window statistics, detection by one member only, minimal FFT lengths, shared stage-1 residual, idle low-weight members \\
 \end{longtable}}
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.306122\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.081633\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.612245\linewidth-2\tabcolsep\relax}}
-\caption{Selected v1 baselines (also used in the cost and model-error studies).}\\
+\caption{Baseline settings of the first final evaluation, also used in the cost and model-error studies (zero-based grid indices).}\\
 \toprule
 Method & Index & Parameters \\ \midrule
 \endfirsthead
@@ -115,10 +111,10 @@ Method & Index & Parameters \\ \midrule
 Method & Index & Parameters \\ \midrule
 \endhead
 \bottomrule\endfoot
-FD-FxNLMS & 0 & mu=0.2 \\
-leaky FD-FxNLMS & 5 & mu=0.35; leak=0.01 \\
-convex FD-FxNLMS & 4 & mu\_fast=0.9; mu\_slow=0.35; mu\_a=1.0 \\
-RLS & 1 & lam=0.9995; delta=0.01 \\
-VFF-RLS & 3 & N0=500.0; lam\_min=0.9995; delta=0.001 \\
-FDKF & 4 & P0=10.0; gain\_scale=4.0; A=0.9999 \\
+FD-FxNLMS & 0 & $\mu=0.2$ \\
+leaky FD-FxNLMS & 5 & $\mu=0.35$, leakage $0.01$ \\
+convex FD-FxNLMS & 4 & $\mu_{\rm fast}=0.9$, $\mu_{\rm slow}=0.35$, $\mu_a=1$ \\
+RLS & 1 & $\lambda=0.9995$, $\delta=0.01$ \\
+VFF-RLS & 3 & $N_0=500$, $\lambda_{\min}=0.9995$, $\delta=0.001$ \\
+FDKF & 4 & $P_0=10$, gain scale $4$, $A=0.9999$ \\
 \end{longtable}}

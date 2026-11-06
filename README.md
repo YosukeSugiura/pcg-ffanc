@@ -2,15 +2,19 @@
 
 This directory contains the source, test suite, configurations, archived
 summaries and the inputs required to reproduce the manuscript's LaTeX tables.
-It is release v1.1.0. Release v1.0.0 is archived with the result records at Zenodo,
-https://doi.org/10.5281/zenodo.23965831. The underlying MeshRIR dataset is separately available and attributed
-at https://doi.org/10.5281/zenodo.5500451.
+It is release v1.1.0.
+
+The result records are archived at Zenodo. To cite them, use the concept DOI
+https://doi.org/10.5281/zenodo.23965830. It covers all versions and resolves to the latest one.
+The v1.0.0 record has the version DOI https://doi.org/10.5281/zenodo.23965831 and holds the
+result archives listed in `ZENODO_MANIFEST.txt`. The underlying MeshRIR dataset is separately
+available and attributed at https://doi.org/10.5281/zenodo.5500451.
 
 ## Method name
 
 The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.1.0.
 Earlier records use the former name E-PCG. These are the files under `results/`, the rule documents in
-`docs/current/`, and the Zenodo archive (DOI 10.5281/zenodo.23965831). The multi-window variant was called
+`docs/current/`, and the v1.0.0 Zenodo record (DOI 10.5281/zenodo.23965831). The multi-window variant was called
 E-PCG (bank) and is now PCG-WLS (multi-window).
 
 The implementation is in `ffanc_norm.pcg_wls` (`PcgWls`, `PcgWlsConfig`) and `ffanc_norm.pcg_wls_mw`
@@ -46,7 +50,9 @@ python paper/v2/make_r10_values.py
 ```
 
 The generated LaTeX tables under `paper/v2/tables/` and `supp_tables/` are
-included for comparison. Generation recomputes the archived paired comparisons;
+included for comparison. `make_tables.py` also writes the merged tables used in
+the manuscript, `rooms_bc.tex` (rooms B and C) and `snr_measured.tex` (SNR 10 dB
+and MeshRIR). Generation recomputes the archived paired comparisons;
 the saved decisions are checked during the run. This procedure does not perform
 new simulations. The supplementary `sources.json` records hashes of the public
 copies of inputs and therefore differs from the original private source manifest.
@@ -62,11 +68,13 @@ Numeric records, decisions, parameters, and scientific calculations are unchange
 
 ## Figures and large records
 
-Binary arrays, run-level files and logs are not included. Their candidate paths
-and byte sizes are in `ZENODO_MANIFEST.txt`. They are archived at
-https://doi.org/10.5281/zenodo.23965831 as `pcg-ffanc-results-part1.tar` and `pcg-ffanc-results-part2.tar`;
-extract both into this directory to restore the listed paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
-render the corresponding plots from stored inputs. The eigenvalue figure's
+Binary arrays, run-level files, logs and rendered figures are not included. The paths
+and byte sizes of the archived files are in `ZENODO_MANIFEST.txt`. They are in the v1.0.0
+Zenodo record (https://doi.org/10.5281/zenodo.23965831) as `pcg-ffanc-results-part1.tar`
+and `pcg-ffanc-results-part2.tar`. Extract both into this directory to restore the listed
+paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
+render the corresponding plots from stored inputs. The cost and secondary-path figures
+(`cost`, `shat`) need only files in this repository. The eigenvalue figure's
 original generator computes new signal realizations; it is not part of the
 no-experiment table reproduction. Inspect the separate archive, especially its
 logs, for sensitive information and confirm licensing before publication.
@@ -89,7 +97,8 @@ expect bitwise equality across NumPy or BLAS versions.
 
 The provenance commit hashes refer to a development history that is not
 included in the public repository. See `CITATION.cff` for citation metadata.
-Zenodo DOI: https://doi.org/10.5281/zenodo.23965831
+To cite the result records, use the Zenodo concept DOI https://doi.org/10.5281/zenodo.23965830.
+The v1.0.0 record is https://doi.org/10.5281/zenodo.23965831.
 
 The measured-path inputs use MeshRIR by Shoichi Koyama, Tomoya Nishida,
 Keisuke Kimura, Takumi Abe, Natsuki Ueno, and Jesper Brunnström: “MeshRIR:

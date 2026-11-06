@@ -1,0 +1,43 @@
+\begin{table*}[t]\centering\caption{Additional evaluation sets, SNR 10 dB (room A; evaluation seeds 480--519; Holm over 80 tests) and measured room impulse responses (MeshRIR; evaluation seeds 480--519); separate families; configurations unchanged. M-S stationary expectation reference with true $S$, total NR medians (AR(1)/harmonic): -5.6/-13.4 dB.}\label{tab:snr_measured}
+\scriptsize
+\RnineFitWidth{\begin{tabular}{lcccccccccc}
+\toprule
+ & \multicolumn{4}{c}{SNR 10 dB (room A)} & \multicolumn{6}{c}{Measured RIR (MeshRIR)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-11}
+method & S8 & S2 & S8$^h$ & S2$^h$ & M-S & M-S$^h$ & M-P & M-P$^h$ & M-PS & M-PS$^h$ \\
+\midrule
+\multicolumn{11}{l}{\emph{A1 (first 0.512 s after the change; S5/R3: 0.592 s; S8: first 0.512 s), median dB}}\\
+FD-FxNLMS & -6.4 & -7.8 & -7.6 & -6.1 & -2.1$^{\dagger6}$ & -5.2$^{\dagger2}$ & -0.6$^{\dagger2}$ & -1.8$^{\dagger3}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+leaky & -6.3 & -7.9 & -7.6 & -6.4 & -1.6$^{\dagger5}$ & -4.8$^{\dagger6}$ & -0.9$^{\dagger2}$ & -1.4$^{\dagger7}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+convex & -6.3 & -8.0 & -7.4 & -6.5 & \textbf{-2.8$^{\dagger4}$} & -6.4 & -0.9$^{\dagger2}$ & -2.9 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FDKF & -2.3 & -7.6 & -2.6 & -5.6 & 0.6$^{\dagger6}$ & -1.4 & -0.1$^{\dagger2}$ & -1.0 & 0.0$^{\dagger40}$ & 0.0$^{\dagger39}$ \\
+RLS & -5.8 & -7.9 & -7.6 & -5.7 & -1.3 & -6.3 & -1.2 & -3.0 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+VFF-RLS & -2.6 & -7.7 & -4.6 & -5.3 & 2.2 & -1.9 & -1.1 & -2.8 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FD-FxNLMS+det & -5.7 & -7.4 & -6.8 & -5.2 & -2.3$^{\dagger6}$ & -4.9 & -0.2$^{\dagger2}$ & -1.3 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FD-FxNLMS+restart & -- & -- & -- & -- & -2.1$^{\dagger6}$ & -5.2$^{\dagger2}$ & -0.7$^{\dagger2}$ & -1.7$^{\dagger3}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+RLS+det & -5.9 & -7.6 & -7.7 & -7.9 & -1.5 & -6.5 & -0.9 & -7.5 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+SFTF+det & -- & -- & -- & -- & -1.6 & \textbf{-6.5} & 0.5 & -3.2 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+SFTF-H+det & -6.0 & -7.6 & -7.7 & -7.9 & -1.6 & \textbf{-6.5} & -0.9 & -7.5 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+CFTF+det & -6.0 & -7.6 & -7.7 & -7.9 & -1.6 & \textbf{-6.5} & -0.9 & \textbf{-7.5} & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+PCG-WLS (multi-window) & -6.6 & -8.0 & \textbf{-8.0} & \textbf{-8.1} & -1.8 & -5.1 & -1.7 & -6.8 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+\textbf{PCG-WLS} & \textbf{-6.6} & \textbf{-8.3} & -8.0 & -8.0 & -1.9 & -5.5 & \textbf{-2.3} & -6.8 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+\midrule
+\multicolumn{11}{l}{\emph{A2 (after A1 window; S8: last 1 s), median dB}}\\
+FD-FxNLMS & -9.4 & -9.3 & -9.7 & -9.6 & -3.8$^{\dagger6}$ & -9.3$^{\dagger2}$ & -4.2$^{\dagger2}$ & -9.3$^{\dagger3}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+leaky & -9.3 & -9.2 & -9.5 & -9.4 & -3.9$^{\dagger5}$ & -7.6$^{\dagger6}$ & -4.2$^{\dagger2}$ & -7.1$^{\dagger7}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+convex & -9.6 & -9.4 & -9.9 & -9.8 & -4.1$^{\dagger4}$ & -11.3 & -4.3$^{\dagger2}$ & -10.2 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FDKF & -9.3 & -9.1 & -9.7 & -9.5 & -4.1$^{\dagger6}$ & -10.3 & -4.1$^{\dagger2}$ & -9.8 & 0.0$^{\dagger40}$ & 0.0$^{\dagger39}$ \\
+RLS & -9.4 & -9.3 & -9.8 & -9.8 & -5.0 & -12.8 & -5.0 & -12.3 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+VFF-RLS & -9.5 & -9.4 & -10.0 & -9.9 & -5.0 & -12.9 & -5.1 & -12.4 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FD-FxNLMS+det & -9.6 & -9.5 & -10.0 & -9.8 & -4.2$^{\dagger6}$ & -11.1 & -4.2$^{\dagger2}$ & -9.3 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+FD-FxNLMS+restart & -- & -- & -- & -- & -3.8$^{\dagger6}$ & -9.3$^{\dagger2}$ & -4.2$^{\dagger2}$ & -9.1$^{\dagger3}$ & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+RLS+det & -9.8 & \textbf{-9.6} & -10.3 & -10.1 & \textbf{-5.5} & \textbf{-13.4} & \textbf{-5.3} & \textbf{-13.0} & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+SFTF+det & -- & -- & -- & -- & \textbf{-5.5} & \textbf{-13.4} & -5.3 & -13.0 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+SFTF-H+det & -9.8 & -9.6 & -10.3 & -10.1 & \textbf{-5.5} & \textbf{-13.4} & -5.3 & -13.0 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+CFTF+det & -9.8 & \textbf{-9.6} & -10.3 & -10.1 & \textbf{-5.5} & \textbf{-13.4} & \textbf{-5.3} & \textbf{-13.0} & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+PCG-WLS (multi-window) & \textbf{-9.9} & -9.6 & \textbf{-10.3} & \textbf{-10.1} & -5.3 & -13.3 & -5.0 & -13.0 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+\textbf{PCG-WLS} & -9.5 & -9.4 & -10.1 & -10.0 & -5.2 & -13.3 & -5.2 & -12.9 & 0.0$^{\dagger39}$ & 0.0$^{\dagger39}$ \\
+\bottomrule
+\end{tabular}}
+\\[2pt]{\scriptsize NR in dB; lower is better. $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB). --: not evaluated.}
+\end{table*}

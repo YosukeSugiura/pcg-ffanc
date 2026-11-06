@@ -10,33 +10,33 @@
 % Source: results/eval_snr10_x2/metrics.jsonl
 % Source: results/final_eval_meas_s_8a/metrics.jsonl
 {\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.315789\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.184211\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.092105\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.092105\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.078947\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.078947\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.078947\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.078947\linewidth-2\tabcolsep\relax}}
-\caption{Comparison counts (each proposed method has its own Holm family).}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.307692\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.256410\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.076923\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.076923\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.070513\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.070513\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.070513\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.070513\linewidth-2\tabcolsep\relax}}
+\caption{Comparison counts by evaluation set. Each proposed method has its own Holm family. The first (v1) and revised (v2) final evaluations are described in Section~\ref{supp:history}. All sets except the holdout use evaluation seeds 480--519.}\\
 \toprule
-Dataset & Proposed & Tests & Pairs & Win & Loss & Mixed & None \\ \midrule
+Evaluation set & Proposed & Tests & Pairs & Win & Loss & Mixed & None \\ \midrule
 \endfirsthead
 \toprule
-Dataset & Proposed & Tests & Pairs & Win & Loss & Mixed & None \\ \midrule
+Evaluation set & Proposed & Tests & Pairs & Win & Loss & Mixed & None \\ \midrule
 \endhead
 \bottomrule\endfoot
-final\_eval & PCG-WLS & 180 & 90 & 77 & 0 & 0 & 13 \\
-final\_eval & PCG-WLS (multi-window) & 180 & 90 & 75 & 0 & 0 & 15 \\
-final\_eval\_v2e & PCG-WLS & 360 & 180 & 132 & 0 & 0 & 48 \\
-final\_eval\_v2e & PCG-WLS (multi-window) & 360 & 180 & 123 & 0 & 0 & 57 \\
-eval\_roomB & PCG-WLS & 128 & 64 & 35 & 2 & 0 & 27 \\
-eval\_roomB & PCG-WLS (multi-window) & 128 & 64 & 34 & 3 & 0 & 27 \\
-eval\_roomC & PCG-WLS & 128 & 64 & 36 & 2 & 0 & 26 \\
-eval\_roomC & PCG-WLS (multi-window) & 128 & 64 & 34 & 3 & 0 & 27 \\
-eval\_snr10 & PCG-WLS & 64 & 32 & 13 & 0 & 0 & 19 \\
-eval\_snr10 & PCG-WLS (multi-window) & 64 & 32 & 16 & 0 & 0 & 16 \\
-final\_eval\_holdout & PCG-WLS & 390 & 195 & 139 & 0 & 0 & 56 \\
-final\_eval\_holdout & PCG-WLS (multi-window) & 390 & 195 & 127 & 0 & 0 & 68 \\
-eval\_roomB\_x2 & PCG-WLS & 160 & 80 & 39 & 6 & 0 & 35 \\
-eval\_roomB\_x2 & PCG-WLS (multi-window) & 160 & 80 & 38 & 4 & 0 & 38 \\
-eval\_roomC\_x2 & PCG-WLS & 160 & 80 & 40 & 6 & 0 & 34 \\
-eval\_roomC\_x2 & PCG-WLS (multi-window) & 160 & 80 & 38 & 7 & 0 & 35 \\
-eval\_snr10\_x2 & PCG-WLS & 80 & 40 & 13 & 0 & 0 & 27 \\
-eval\_snr10\_x2 & PCG-WLS (multi-window) & 80 & 40 & 16 & 0 & 0 & 24 \\
-final\_eval\_meas\_s\_8a & PCG-WLS & 48 & 24 & 13 & 4 & 1 & 6 \\
-final\_eval\_meas\_s\_8a & PCG-WLS (multi-window) & 48 & 24 & 13 & 4 & 2 & 5 \\
+Room A, first evaluation (v1) & PCG-WLS & 180 & 90 & 77 & 0 & 0 & 13 \\
+Room A, first evaluation (v1) & PCG-WLS (multi-window) & 180 & 90 & 75 & 0 & 0 & 15 \\
+Room A, earlier evaluation (v2) & PCG-WLS & 360 & 180 & 132 & 0 & 0 & 48 \\
+Room A, earlier evaluation (v2) & PCG-WLS (multi-window) & 360 & 180 & 123 & 0 & 0 & 57 \\
+Room B & PCG-WLS & 128 & 64 & 35 & 2 & 0 & 27 \\
+Room B & PCG-WLS (multi-window) & 128 & 64 & 34 & 3 & 0 & 27 \\
+Room C & PCG-WLS & 128 & 64 & 36 & 2 & 0 & 26 \\
+Room C & PCG-WLS (multi-window) & 128 & 64 & 34 & 3 & 0 & 27 \\
+Room A, SNR 10 dB & PCG-WLS & 64 & 32 & 13 & 0 & 0 & 19 \\
+Room A, SNR 10 dB & PCG-WLS (multi-window) & 64 & 32 & 16 & 0 & 0 & 16 \\
+Room A, holdout (seeds 800--839) & PCG-WLS & 390 & 195 & 139 & 0 & 0 & 56 \\
+Room A, holdout (seeds 800--839) & PCG-WLS (multi-window) & 390 & 195 & 127 & 0 & 0 & 68 \\
+Room B, added baselines & PCG-WLS & 160 & 80 & 39 & 6 & 0 & 35 \\
+Room B, added baselines & PCG-WLS (multi-window) & 160 & 80 & 38 & 4 & 0 & 38 \\
+Room C, added baselines & PCG-WLS & 160 & 80 & 40 & 6 & 0 & 34 \\
+Room C, added baselines & PCG-WLS (multi-window) & 160 & 80 & 38 & 7 & 0 & 35 \\
+Room A, SNR 10 dB, added baselines & PCG-WLS & 80 & 40 & 13 & 0 & 0 & 27 \\
+Room A, SNR 10 dB, added baselines & PCG-WLS (multi-window) & 80 & 40 & 16 & 0 & 0 & 24 \\
+Measured paths, M-S & PCG-WLS & 48 & 24 & 13 & 4 & 1 & 6 \\
+Measured paths, M-S & PCG-WLS (multi-window) & 48 & 24 & 13 & 4 & 2 & 5 \\
 \end{longtable}}

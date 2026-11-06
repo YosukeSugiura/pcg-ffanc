@@ -8,8 +8,15 @@ authors:
 license: [MIT, CC-BY-4.0]
 abstract: "Code is MIT-licensed; derived data are CC-BY-4.0. See LICENSE and the MeshRIR attribution in README."
 version: "v1.1.0"
-date-released: 2026-11-06
-doi: "10.5281/zenodo.23965831"
+date-released: 2026-11-07
+doi: "10.5281/zenodo.23965830"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23965830"
+    description: "Concept DOI of the Zenodo record (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23965831"
+    description: "Version DOI of the Zenodo record for v1.0.0"
 repository-code: "https://github.com/YosukeSugiura/pcg-ffanc"
 # Fill when the article is published:
 # preferred-citation:

@@ -2,7 +2,7 @@
 % Source: results/revision8a_diag/per_seed.json
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.071429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.071429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.091837\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.255102\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.255102\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.255102\linewidth-2\tabcolsep\relax}}
-\caption{Rule 8a stationary causal Wiener diagnostics: median (Q1, Q3), dB; true-S entries each use all archived seeds.}\\
+\caption{Stationary causal Wiener diagnostics with the common-delay correction: median (Q1, Q3) in dB. True-$S$ entries each use all archived seeds.}\\
 \toprule
 Scenario & Paths & Noise & True S: total bound & True S: ANC-only bound & Old model design: actual total (not a bound) \\ \midrule
 \endfirsthead
@@ -10,12 +10,12 @@ Scenario & Paths & Noise & True S: total bound & True S: ANC-only bound & Old mo
 Scenario & Paths & Noise & True S: total bound & True S: ANC-only bound & Old model design: actual total (not a bound) \\ \midrule
 \endhead
 \bottomrule\endfoot
-M-P & before & ar1 & -5.570 (-7.647, -3.017) & -5.682 (-7.855, -3.061) & n/a \\
+M-P & before & AR(1) & -5.570 (-7.647, -3.017) & -5.682 (-7.855, -3.061) & n/a \\
 M-P & before & harmonic & -13.378 (-15.547, -10.988) & -14.392 (-17.390, -11.514) & n/a \\
-M-P & after & ar1 & -5.569 (-6.986, -2.457) & -5.700 (-7.192, -2.496) & n/a \\
+M-P & after & AR(1) & -5.569 (-6.986, -2.457) & -5.700 (-7.192, -2.496) & n/a \\
 M-P & after & harmonic & -13.146 (-15.136, -10.608) & -13.850 (-17.212, -11.062) & n/a \\
-M-PS & before & ar1 & -5.570 (-7.647, -3.017) & -5.682 (-7.855, -3.061) & n/a \\
+M-PS & before & AR(1) & -5.570 (-7.647, -3.017) & -5.682 (-7.855, -3.061) & n/a \\
 M-PS & before & harmonic & -13.378 (-15.547, -10.988) & -14.392 (-17.390, -11.514) & n/a \\
-M-PS & after & ar1 & -6.307 (-7.305, -2.731) & -6.453 (-7.508, -2.768) & 0.323 (-0.378, 1.094) \\
+M-PS & after & AR(1) & -6.307 (-7.305, -2.731) & -6.453 (-7.508, -2.768) & 0.323 (-0.378, 1.094) \\
 M-PS & after & harmonic & -13.945 (-15.499, -11.141) & -15.160 (-17.345, -11.698) & -2.203 (-4.175, -0.425) \\
 \end{longtable}}

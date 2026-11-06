@@ -3,8 +3,8 @@ eigenvalue analysis of gap_check, which re-runs the signal generator for 3 seeds
 
 Palette: validated categorical slots (dataviz validator, light surface: all checks pass; contrast WARN for aqua, yellow,
 magenta -> secondary encoding by markers / line style and a legend). Proposed methods: near-black solid (PCG-WLS) and
-blue dashed (PCG-WLS (multi-window)). Curves are read under their archived record labels; legends show the current
-names (ffanc_norm.naming).
+blue dashed (PCG-WLS (multi-window)). Curves are read under their archived record labels; the saved figures show the
+current names (ffanc_norm.naming).
 usage: python paper/v2/make_figures.py
 """
 import re, sys
@@ -13,11 +13,37 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
+from matplotlib.text import Text
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent / 'figs'; OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
 from ffanc_norm import naming as N  # noqa: E402
 REC, REC_MW = N.RECORD_LABEL, N.RECORD_LABEL_MW   # record labels of PCG-WLS and PCG-WLS (multi-window)
+
+# Display names: stored records keep the former method name E-PCG.
+_DISPLAY = [(REC_MW, N.PCG_WLS_MW), ('E-PCG (main)', N.PCG_WLS), (REC, N.PCG_WLS)]
+
+
+def display_name(text):
+    for old, new in _DISPLAY:
+        text = text.replace(old, new)
+    return text
+
+
+_savefig = Figure.savefig
+
+
+def _savefig_display(self, *args, **kwargs):
+    for t in self.findobj(Text):
+        s = t.get_text()
+        if REC in s:
+            t.set_text(display_name(s))
+    return _savefig(self, *args, **kwargs)
+
+
+Figure.savefig = _savefig_display
 
 INK = '#2b2b2a'; MUTED = '#6f6e69'; GRID = '#e4e3dd'
 STYLE = {  # method: (color, linestyle, marker, linewidth)
@@ -41,14 +67,14 @@ COL1 = 3.5; COL2 = 7.16      # IEEE column / page width (inch)
 
 def plot_method(ax, x, y, m, label=True, every=40):
     c, ls, mk, lw = STYLE[m]
-    ax.plot(x, y, color=c, ls=ls, lw=lw, marker=mk, markevery=every, ms=3.5, label=N.display_label(m) if label else None,
+    ax.plot(x, y, color=c, ls=ls, lw=lw, marker=mk, markevery=every, ms=3.5, label=m if label else None,
             zorder=5 if m in (REC, REC_MW) else 3)
 
 
 def _fig_learning(methods, basename):
     # The independent holdout curves are archived; no simulations are run.
     z = np.load(ROOT / 'results/final_eval_holdout/curves.npz'); t = z['time_s']
-    panels = [('ar1', 'S8 stationary', '(a) stationary, AR(1)'), ('ar1', 'S7 rd abrupt', '(b) abrupt plant change, AR(1)'),
+    panels = [('ar1', 'S8 stationary', '(a) stationary, AR(1)'), ('ar1', 'S7 rd abrupt', '(b) abrupt primary-path change, AR(1)'),
               ('harmonic', 'S2 src 30cm', '(c) source move 30 cm, harmonic'), ('harmonic', 'R2 rig 30cm', '(d) control-unit move 30 cm, harmonic')]
     fig, axs = plt.subplots(2, 2, figsize=(COL2, 4.4), sharex=True)
     for ax, (nz, sc, title) in zip(axs.ravel(), panels):
@@ -148,7 +174,7 @@ def fig_cost():
                 continue
             xs = [float(x[2].split('/')[1]) for x in r]; ys = [float(x[7]) for x in r]   # S2 cost, S2 A1
             c, ls, mk, lw = STYLE[m]
-            ax.plot(xs, ys, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=N.display_label(m))
+            ax.plot(xs, ys, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=m)
             for x_, y_, x in zip(xs, ys, r):
                 ax.annotate(x[1], (x_, y_), fontsize=5.5, color=MUTED, xytext=(2, 2), textcoords='offset points')
         rl = [x for x in rows if x[0] == 'RLS' and x[3] == nz]
@@ -183,7 +209,7 @@ def fig_shat():
             cells = r[0][5:9]                                   # S1 at -30 / -20 / -15 / -10 dB
             fails = [int(c.split('/')[0]) for c in cells]
             c, ls, mk, lw = STYLE[m]
-            ax.plot(nm, fails, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=N.display_label(m))
+            ax.plot(nm, fails, color=c, ls=ls, lw=lw, marker=mk or 'o', ms=4, label=m)
         ax.set_xlabel(r'$\hat S$ NMSE (dB)'); ax.set_title(title + ', source move 10 cm', fontsize=8, loc='left', color=INK)
         ax.set_xticks(nm)
     axs[0].set_ylabel('failed runs (of 40)'); axs[1].legend(fontsize=6)

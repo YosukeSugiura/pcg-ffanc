@@ -10,21 +10,21 @@
 % Source: docs/current/REVISION_RULE_9a.md
 {\scriptsize\setlength{\tabcolsep}{3pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.200000\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.200000\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.200000\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.200000\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.200000\linewidth-2\tabcolsep\relax}}
-\caption{Archived environments by evaluation set; dependency versions can prevent bit reproduction.}\\
+\caption{Archived software environments by evaluation set. Dependency versions can prevent bit reproduction. For v2 only the NumPy family is known, from the numerical-environment amendment (Section~\ref{supp:rules}).}\\
 \toprule
-Dataset & Python & NumPy & SciPy & pyroomacoustics \\ \midrule
+Evaluation set & Python & NumPy & SciPy & pyroomacoustics \\ \midrule
 \endfirsthead
 \toprule
-Dataset & Python & NumPy & SciPy & pyroomacoustics \\ \midrule
+Evaluation set & Python & NumPy & SciPy & pyroomacoustics \\ \midrule
 \endhead
 \bottomrule\endfoot
-final\_eval\_v2e (Rule 9a) & not recorded & 2.5.x & not recorded & not recorded \\
-final\_eval\_holdout & 3.12.14 & 2.3.5 & 1.17.0 & 0.10.1 \\
-protocol\_v2\_sel\_cusum & 3.12.14 & 2.3.5 & 1.17.0 & 0.10.1 \\
-eval\_roomB\_x2 & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
-eval\_roomC\_x2 & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
-eval\_snr10\_x2 & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
-final\_eval\_meas\_s\_8a & 3.13.5 & 2.5.3 & 1.18.1 & 0.10.1 \\
-final\_eval\_meas\_p\_8a & not recorded & 2.5.4 & 1.18.1 & 0.10.1 \\
-final\_eval\_meas\_ps\_8a & not recorded & 2.5.4 & 1.18.1 & 0.10.1 \\
+Room A, earlier evaluation (v2) & not recorded & 2.5.x & not recorded & not recorded \\
+Room A, holdout (seeds 800--839) & 3.12.14 & 2.3.5 & 1.17.0 & 0.10.1 \\
+RLS+CUSUM selection (tuning seeds) & 3.12.14 & 2.3.5 & 1.17.0 & 0.10.1 \\
+Room B, added baselines & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
+Room C, added baselines & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
+Room A, SNR 10 dB, added baselines & 3.13.18 & 2.5.3 & 1.18.1 & 0.10.1 \\
+Measured paths, M-S & 3.13.5 & 2.5.3 & 1.18.1 & 0.10.1 \\
+Measured paths, M-P & not recorded & 2.5.4 & 1.18.1 & 0.10.1 \\
+Measured paths, M-PS & not recorded & 2.5.4 & 1.18.1 & 0.10.1 \\
 \end{longtable}}

@@ -36,8 +36,8 @@ assert len(stationary) == len({(r['noise'],r['seed']) for r in stationary}) and 
 values.update(StationaryRuns=str(len(stationary)), StationaryEvents=str(sum(len(r['events']) for r in stationary)))
 settings = (root/'paper/v2/supp_tables/settings.tex').read_text()
 settings_line = next(line for line in settings.splitlines() if line.startswith('FD-FxNLMS + det &'))
-floor = re.search(r'mu\\_min=([0-9.]+)', settings_line)
-j = re.search(r'^J & ([0-9]+)', settings, re.M)
+floor = re.search(r'\\mu_\{\\min\}=([0-9.]+)', settings_line)
+j = re.search(r'^\$J\$ \(hops in the stage-2 score test\) & ([0-9]+)', settings, re.M)
 assert floor and j
 values.update(DetFloor=floor.group(1), DetectorHops=j.group(1))
 registered = json.loads((root/'results/gap_check4/numeric.json').read_text())['ratios']['ar1']['pure 1/b schedule (V-SCHED)']
@@ -47,7 +47,7 @@ old5 = re.search(r'\| A、5 s、100–312 \| ([+-][0-9.]+) dB', rule10b)
 old20 = re.search(r'\| A、20 s、625–1250 \| ([+\-−][0-9.]+) dB', rule10b)
 assert old5 and old20
 values.update(OldFive=old5.group(1), OldTwenty=old20.group(1).replace('−','-'))
-scale = re.search(r'scale=([0-9.]+)', settings_line)
+scale = re.search(r'step scale \$([0-9.]+)\$', settings_line)
 assert scale
 fraction = Fraction(scale.group(1))
 values['DetScale'] = rf'\frac{{{fraction.numerator}}}{{{fraction.denominator}}}'

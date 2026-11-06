@@ -2,6 +2,7 @@
 experiments/final_eval.py summary). No simulation.
   Table I  (paper/v2/tables/main.tex)  : median A1 / A2 (dB) and failures, main evaluation (results/final_eval_v2b; v1 vs v2 table: final_eval vs final_eval_v2b)
   Table II (paper/v2/tables/rooms.tex) : the same for the additional conditions (eval_roomB, eval_roomC, eval_snr10)
+  merged tables used in the manuscript: tables/rooms_bc.tex (rooms B and C) and tables/snr_measured.tex (SNR 10 dB and MeshRIR)
 The proposed methods are read under their archived record labels (E-PCG, E-PCG bank) and shown as PCG-WLS and
 PCG-WLS (multi-window) (ffanc_norm.naming).
 usage: python paper/v2/make_tables.py
@@ -11,11 +12,11 @@ import sys
 from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[2]
+OUT = Path(__file__).resolve().parent / 'tables'; OUT.mkdir(exist_ok=True)
+MAIN_DIR = 'final_eval_holdout'
 sys.path.insert(0, str(ROOT / 'src'))
 from ffanc_norm import naming as N  # noqa: E402
 REC, REC_MW = N.RECORD_LABEL, N.RECORD_LABEL_MW   # record labels of PCG-WLS and PCG-WLS (multi-window)
-OUT = Path(__file__).resolve().parent / 'tables'; OUT.mkdir(exist_ok=True)
-MAIN_DIR = 'final_eval_holdout'
 ORDER = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'FDKF', 'RLS', 'VFF-RLS', 'FD-FxNLMS + det',
          'FD-FxNLMS + restart', 'RLS + det', 'SFTF + det', 'SFTF-H + det', 'CFTF + det', 'RLS + CUSUM',
          REC_MW, REC]
@@ -38,33 +39,74 @@ def load(d):
     return M
 
 
+A1_LABEL = 'A1 (first 0.512 s after the change; S5/R3: 0.592 s; S8: first 0.512 s)'
+A2_LABEL = 'A2 (after A1 window; S8: last 1 s)'
+
+
+def cell(M, meths, m, nz, sc, key, decisions=None):
+    """One table cell: median of `key` over the runs of (m, nz, sc), failure superscript, decision superscript, bold."""
+    rs = M.get((m, nz, sc), [])
+    if not rs:
+        return '--'
+    v = np.median([r[key] for r in rs]); f = sum(r['fail'] for r in rs)
+    # (review n22) methods with failures in more than half of the runs are not candidates for bold
+    cand = [mm for mm in meths if (mm, nz, sc) in M and 2 * sum(r['fail'] for r in M[(mm, nz, sc)]) <= len(M[(mm, nz, sc)])]
+    best = min(np.median([r[key] for r in M[(mm, nz, sc)]]) for mm in cand) if cand else None
+    s = f'{v:.1f}' + (f'$^{{\\dagger{f}}}$' if f else '')
+    if decisions is not None and key == 'A1' and m not in (REC, REC_MW):
+        decision = decisions[(m, nz, sc)]
+        symbol = {'win': 'w', 'loss': 'l', '-': '-', 'mixed': 'm'}[decision]
+        s += r'$^{\text{--}}$' if symbol == '-' else r'$^{\mathrm{' + symbol + '}}$'
+    return r'\textbf{' + s + '}' if best is not None and 2 * f <= len(rs) and np.isclose(v, best) else s
+
+
+def note(with_decisions, extra=''):
+    """Table note under the tabular (shared by table() and grouped_table())."""
+    return (r'\\[2pt]{\scriptsize NR in dB; lower is better. $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).' + extra + '}'
+            + (r' {\scriptsize A1 superscripts w / -- / l / m: PCG-WLS win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}' if with_decisions else ''))
+
+
+def grouped_table(groups, caption, label, extra_note='', tabcolsep=None):
+    """Several evaluation sets side by side as column groups (two-level header with cmidrule).
+    groups: list of (heading, M, combos, decisions). Rows: union of the methods of all groups in ORDER; a method not
+    evaluated in a group gets '--' there. Each cell (median, superscripts, bold) is computed within its own group
+    exactly as in table(). tabcolsep: optional column padding (e.g. '4pt') so that wide tables fit without scaling."""
+    gm = [[m for m in ORDER if any((m, nz, sc) in M for nz, sc in combos)] for _, M, combos, _ in groups]
+    meths = [m for m in ORDER if any(m in g for g in gm)]
+    ncol = sum(len(c) for _, _, c, _ in groups)
+    head, rules, cols, start = [], [], [], 2
+    for heading, _, combos, _ in groups:
+        head.append(r'\multicolumn{' + str(len(combos)) + r'}{c}{' + heading + '}')
+        rules.append(r'\cmidrule(lr){' + f'{start}-{start + len(combos) - 1}' + '}'); start += len(combos)
+        cols += [f'{CSHORT.get(sc, sc)}{"$^h$" if nz == "harmonic" else ""}' for nz, sc in combos]
+    lines = [r'\begin{table*}[t]\centering\caption{' + caption + r'}\label{' + label + r'}',
+             r'\scriptsize' + (r'\setlength{\tabcolsep}{' + tabcolsep + '}' if tabcolsep else ''),
+             r'\RnineFitWidth{\begin{tabular}{l' + 'c' * ncol + '}', r'\toprule',
+             ' & ' + ' & '.join(head) + r' \\', ''.join(rules), 'method & ' + ' & '.join(cols) + r' \\', r'\midrule']
+    for key, lab in (('A1', A1_LABEL), ('A2', A2_LABEL)):
+        lines.append(r'\multicolumn{' + str(ncol + 1) + r'}{l}{\emph{' + lab + r', median dB}}\\')
+        for m in meths:
+            vals = [cell(M, g, m, nz, sc, key, dec) for (_, M, combos, dec), g in zip(groups, gm) for nz, sc in combos]
+            lines.append(f'{SHORT[m]} & ' + ' & '.join(vals) + r' \\')
+        lines.append(r'\midrule')
+    lines[-1] = r'\bottomrule'
+    lines += [r'\end{tabular}}', note(any(g[3] is not None for g in groups), extra_note), r'\end{table*}']
+    return '\n'.join(lines) + '\n'
+
+
 def table(M, combos, caption, label, decisions=None):
     meths = [m for m in ORDER if any((m, nz, sc) in M for nz, sc in combos)]
     cols = ' & '.join(f'{CSHORT.get(sc, sc)}{"$^h$" if nz == "harmonic" else ""}' for nz, sc in combos)
     lines = [r'\begin{table*}[t]\centering\caption{' + caption + r'}\label{' + label + r'}', r'\scriptsize',
              r'\RnineFitWidth{\begin{tabular}{l' + 'c' * len(combos) + '}', r'\toprule', f'method & {cols} \\\\', r'\midrule']
-    for key, lab in (('A1', 'A1 (first 0.512 s after the change; S5/R3: 0.592 s; S8: first 0.512 s)'), ('A2', 'A2 (after A1 window; S8: last 1 s)')):
+    for key, lab in (('A1', A1_LABEL), ('A2', A2_LABEL)):
         lines.append(r'\multicolumn{' + str(len(combos) + 1) + r'}{l}{\emph{' + lab + r', median dB}}\\')
         for m in meths:
-            vals = []
-            for nz, sc in combos:
-                rs = M.get((m, nz, sc), [])
-                if not rs:
-                    vals.append('--'); continue
-                v = np.median([r[key] for r in rs]); f = sum(r['fail'] for r in rs)
-                # (review n22) methods with failures in more than half of the runs are not candidates for bold
-                cand = [mm for mm in meths if (mm, nz, sc) in M and 2 * sum(r['fail'] for r in M[(mm, nz, sc)]) <= len(M[(mm, nz, sc)])]
-                best = min(np.median([r[key] for r in M[(mm, nz, sc)]]) for mm in cand) if cand else None
-                s = f'{v:.1f}' + (f'$^{{\\dagger{f}}}$' if f else '')
-                if decisions is not None and key == 'A1' and m not in (REC, REC_MW):
-                    decision = decisions[(m, nz, sc)]
-                    symbol = {'win': 'w', 'loss': 'l', '-': '-', 'mixed': 'm'}[decision]
-                    s += r'$^{\text{--}}$' if symbol == '-' else r'$^{\mathrm{' + symbol + '}}$'
-                vals.append(r'\textbf{' + s + '}' if best is not None and 2 * f <= len(rs) and np.isclose(v, best) else s)
+            vals = [cell(M, meths, m, nz, sc, key, decisions) for nz, sc in combos]
             lines.append(f'{SHORT[m]} & ' + ' & '.join(vals) + r' \\')
         lines.append(r'\midrule')
     lines[-1] = r'\bottomrule'
-    lines += [r'\end{tabular}}', r'\\[2pt]{\scriptsize $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}' + (r' {\scriptsize A1 superscripts w / -- / l / m: PCG-WLS win / no decision / loss / mixed over the A1 and A2 comparisons; not equivalence. See Section S11 of the supplementary material.}' if decisions is not None else ''), r'\end{table*}']
+    lines += [r'\end{tabular}}', note(decisions is not None), r'\end{table*}']
     return '\n'.join(lines) + '\n'
 
 
@@ -99,7 +141,7 @@ def v1v2():
     med = lambda M, m, nz, sc: float(np.median([r['A1'] for r in M[(m, nz, sc)]]))
     lines = [r'\begin{table}[t]\centering\caption{First (v1) and revised (v2) final evaluation: median A1 (dB) of the best'
              r' baseline and of PCG-WLS.}\label{tab:v1v2}', r'\scriptsize', r'\begin{tabular}{llrlrrrr}', r'\toprule',
-             r'cond. & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & PCG-WLS & $\Delta_1$ & $\Delta_2$ \\',
+             r'cell & \multicolumn{2}{c}{v1 best baseline} & \multicolumn{2}{c}{v2 best baseline} & PCG-WLS & $\Delta_1$ & $\Delta_2$ \\',
              r'\midrule']
     for nz, sc in combos:
         e = med(M2, REC, nz, sc)
@@ -154,7 +196,7 @@ def main():
             parts.append(table(M, subset, caption, label, decisions=wins(MAIN_DIR)))
         (OUT / 'main.tex').write_text('\n'.join(parts))
         print('written', OUT / 'main.tex')
-    parts = []
+    parts, extra = [], {}
     for d, name in (('eval_roomB_x2', 'RT$_{60}$ 0.15 s'), ('eval_roomC_x2', 'RT$_{60}$ 0.3 s'), ('eval_snr10_x2', 'SNR 10 dB')):
         M = load(d)
         if M is None:
@@ -162,9 +204,18 @@ def main():
         combos = sorted({(nz, sc) for (_, nz, sc) in M}, key=lambda c: (c[0], list(CSHORT).index(c[1])))
         seeds = sorted({r['seed'] for rs in M.values() for r in rs})
         family = 2 * len(wins(d))
-        parts.append(table(M, combos, f'Additional condition: {name} (evaluation seeds {seeds[0]}--{seeds[-1]}; Holm over {family} tests; configurations unchanged).', f'tab:{d.removesuffix("_x2")}'))
+        extra[d] = (M, combos, seeds, family)
+        parts.append(table(M, combos, f'Additional evaluation set: {name} (evaluation seeds {seeds[0]}--{seeds[-1]}; Holm over {family} tests; configurations unchanged).', f'tab:{d.removesuffix("_x2")}'))
     if parts:
         (OUT / 'rooms.tex').write_text('\n'.join(parts)); print('written', OUT / 'rooms.tex')
+    # merged table of rooms B and C (column groups); the separate tables above stay in rooms.tex for checking
+    if 'eval_roomB_x2' in extra and 'eval_roomC_x2' in extra:
+        (MB, cB, sB, fB), (MC, cC, sC, fC) = extra['eval_roomB_x2'], extra['eval_roomC_x2']
+        assert sB == sC, 'room B / C seed sets differ'
+        cap = (f'Additional evaluation sets, rooms B (RT$_{{60}}$ 0.15 s) and C (RT$_{{60}}$ 0.3 s) (evaluation seeds {sB[0]}--{sB[-1]}; '
+               f'Holm over {fB} tests in room B and over {fC} tests in room C, separate families; configurations unchanged).')
+        (OUT / 'rooms_bc.tex').write_text(grouped_table([('Room B, RT$_{60}$ 0.15 s', MB, cB, None), ('Room C, RT$_{60}$ 0.3 s', MC, cC, None)], cap, 'tab:eval_rooms', tabcolsep='4pt'))
+        print('written', OUT / 'rooms_bc.tex')
     cusum_table()
     # measured paths (MeshRIR, Revision 8a): meas_p runs carry the S2 label, meas_ps the R2 label
     Mm = {}
@@ -182,6 +233,15 @@ def main():
         ms_ref = '/'.join(f'{float(l.split("|")[2].strip().split()[0]):.1f}' for l in wiener_rows)
         (OUT / 'measured.tex').write_text(table(Mm, combos, f'Measured room impulse responses (MeshRIR; evaluation seeds {measurement_seeds[0]}--{measurement_seeds[-1]}; configurations unchanged). M-S stationary expectation reference with true $S$, total NR medians (AR(1)/harmonic): {ms_ref} dB.', 'tab:measured'))
         print('written', OUT / 'measured.tex')
+        # merged table: SNR 10 dB (room A) and measured RIR as column groups; the separate tables stay for checking
+        if 'eval_snr10_x2' in extra:
+            Ms, cs, ss, fs = extra['eval_snr10_x2']
+            cap = (f'Additional evaluation sets, SNR 10 dB (room A; evaluation seeds {ss[0]}--{ss[-1]}; Holm over {fs} tests) and measured room impulse responses '
+                   f'(MeshRIR; evaluation seeds {measurement_seeds[0]}--{measurement_seeds[-1]}); separate families; configurations unchanged. '
+                   f'M-S stationary expectation reference with true $S$, total NR medians (AR(1)/harmonic): {ms_ref} dB.')
+            (OUT / 'snr_measured.tex').write_text(grouped_table([('SNR 10 dB (room A)', Ms, cs, None), ('Measured RIR (MeshRIR)', Mm, combos, None)],
+                                                                cap, 'tab:snr_measured', extra_note=' --: not evaluated.'))
+            print('written', OUT / 'snr_measured.tex')
 
 
 if __name__ == '__main__':
