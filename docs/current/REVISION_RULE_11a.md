@@ -82,7 +82,7 @@
 - 事実（`results/r11_preflight/env_A.json`、commit 0b74f62）: Python 3.12.3 / numpy 2.3.5 / scipy 1.17.0 / pyroomacoustics 0.10.1 で、保存済み holdout（9-A、Python 3.12.14）の E-PCG 4 キーと RLS + det 1 キーの `tp`・`up` が不一致（イベント列・`flag_stable` は一致。S8 の `up` で相対 4e-8）。環境 C は部屋 B の 4 キーと v2e の部屋 A 記録にバイト一致（`env_C.json` PASS）。原因はハードウェアの SIMD 経路か Python のパッチ版と推定、未確定。
 - [x] **決定: Rule 11 §9 項目 8 (b) で進める。** 部屋 A holdout の 15 手法（12 基線 ＋ RLS + CUSUM ＋ main ＋ bank）を環境 C で再実行し（`R11_HOLDOUT_BASE=envC`、出力 `results/final_eval_holdout_r11_envC/`）、Rule 11 の 11-A（F2）と 11-B/11-C（F1）の比較は**その中で閉じる**。G0・13 基線・提案法の比較対象・`up` の照合・イベントの読み込みは、すべてこのディレクトリの記録に切り替わる（実装済み、レビュー §2.4 で確認）。
 - 既存の 390 族（`results/final_eval_holdout/`、139/195）は不変。論文では「Rule 11 の比較は環境 C の再実行記録に対して行った」と環境表（Rule 9a §4 の方式）に 1 行加え、再実行 15 手法のラベル（2 × 15 × 13 を同じ Holm で再計算した**参考値**）と 390 族のラベルの一致数を補足に記す。この参考値で 390 族の数は置き換えない。
-- 経路 A への復帰条件（機械的）:実行担当の環境で `revision11_preflight.py envA` が `"pass": true` を返した場合**のみ**、経路 A（`PY=[venvA python]`、`final_eval_holdout/` と結合）。`"pass": false` なら経路 (b)。どちらになったかは各 `provenance.json` に `holdout_base: "envA" | "envC"` として記録する（§8 のコード修正）。著者への再確認は要らない。
+- 経路 A への復帰条件（機械的）: 実行担当の環境で `revision11_preflight.py envA` が `"pass": true` を返した場合**のみ**、経路 A（`PY=[venvA python]`、`final_eval_holdout/` と結合）。`"pass": false` なら経路 (b)。どちらになったかは各 `provenance.json` に `holdout_base: "envA" | "envC"` として記録する（§8 のコード修正）。著者への再確認は要らない。
 
 ### 3.2 §6.4 smoke の不合格 1 件（MFBLMS μ 0.3、harmonic R2、seed 300、NR +21.7 dB）
 - [x] **決定: 実装の不合格ではなく、調整グリッドの 1 点の失敗として扱う。** 根拠: (1) 実装は `gap_check4a` の再帰 A および Lu–Chen–Qiu (2017) 式 (6) の時間域形と機械精度で一致（§6.3 (a)、単体テスト）。(2) harmonic R2 は帯域外ビンの小さい D_b で正規化ゲインが大きくなる構造的な発散で、μ 0.3 は FD-FxNLMS でも上端。(3) seed 300 × harmonic R2 は調整の 450 run に含まれる（調整シード 300、COMBOS15 のセル）ので、同じ環境 C で決定論的に再現し、μ 0.3 は Rule 11 §1.4 の admissibility で落ちる。
@@ -94,7 +94,7 @@
   - (s4) 切替・再始動の回数と時刻がログに無い行があれば不合格・停止。
   - 部屋 B/C の行は時間計測のみで判定に使わない（Rule 11 §6.4 のとおり）。
 
-### 3.3実行担当の開始条件（機械的に確かめられる形。[run guide] §2 をこれに置き換える）
+### 3.3 実行担当の開始条件（機械的に確かめられる形。[run guide] §2 をこれに置き換える）
 本実行（B0 以降）に入る前に、実行担当は次をすべて確かめる。1 つでも満たさなければ §4 の事前検証までで停止・報告する。
 
 | # | 条件 | 確かめ方 |
@@ -232,7 +232,7 @@
 ## 9. 固定後のチェックリスト
 - [ ] 本書を commit（本書の sha256 を [run guide] §2・§7、[internal records]、`revision11_methods.RULE11A_SHA256` に転記）
 - [ ] §8 のコード修正 → `pytest` → §6.1・§6.3・§6.4 の再生成 → 内部の差分レビュー（ブロッカーなし）
-- [ ]実行担当: §3.3 の c1–c8 → B0（経路 (b)）→ 11-A → B1 → B2 → C → holdout new → 11-D（B → C → SNR10 → M-S → M-P）
+- [ ] 実行担当: §3.3 の c1–c8 → B0（経路 (b)）→ 11-A → B1 → B2 → C → holdout new → 11-D（B → C → SNR10 → M-S → M-P）
 - [ ] 集約: F1/F2/F3、like-for-like、経路 (b) の 15 手法の参考ラベルと 390 族の一致数、[internal records omitted]、tab:rules に 11/11a の行
 - [ ] **結果を見てからの取捨選択（著者）**: Rule 11 §1.7 の基準で本文に載せる場所を決める。数値・ラベル・family は変えない
 

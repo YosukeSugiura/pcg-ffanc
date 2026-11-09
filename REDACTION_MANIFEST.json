@@ -173,12 +173,12 @@
     },
     "docs/current/REVISION_RULE_11a.md": {
       "original_sha256": "6d26fe9394c9bcba244065171812ddc6e5418689be89a13609ac16db4c077563",
-      "release_sha256": "f27570be368d7b652574b29ed8cc46c1000d61ad3cd1a527704ba52fca4f85f4",
+      "release_sha256": "3237df695813e6062e0ae3dcd8023e611f8a44286049fa83d12534ca239a8356",
       "note": "v1.2.0: as REVISION_RULE_11.md"
     },
     "docs/current/REVISION_RULE_11b.md": {
       "original_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e",
-      "release_sha256": "71d8870e0b9c7d636e55dd72d7292f0cdcb9bc5f60472aba4b23a8e4f68abeb4",
+      "release_sha256": "b4836fef562af9af7f14b1522ebbb8701057a1cc214949a856fc8b2194303501",
       "note": "v1.2.0: as REVISION_RULE_11.md; one absolute path replaced by [absolute-path]"
     },
     "experiments/revision11_methods.py": {
@@ -188,8 +188,8 @@
     },
     "experiments/revision11_pipeline.py": {
       "original_sha256": "685854914bd3a841c2a1ad5d8cb9f8c98ecf5f1c5e7bd57b78c087c1b8c266c1",
-      "release_sha256": "c7002f66251400cf172e568a0cef87af8f1e0a2fdc67d2599b655ced11a00224",
-      "note": "v1.2.0: default push branch name neutralized"
+      "release_sha256": "9d5f9cab36a95fe115c01275c2047180649a313709b3f934afbc649cc7c5768b",
+      "note": "v1.2.0: git operations are opt-in (R11_GIT=1; push only with R11_PUSH=<remote>) and use the caller's git configuration; the development copy committed and pushed every job under a fixed author name and branch"
     },
     "paper/v2/make_detector_aggregates.py": {
       "original_sha256": "44ae0d5d8aa04960850859aa8f23fef0030355d71013df13e20fafb34d3d1aa7",
@@ -198,8 +198,8 @@
     },
     "tests/test_revision11.py": {
       "original_sha256": "d65dc480c0469e72163370cf5992c0abb1e48f9304e986a8efef61707035bf16",
-      "release_sha256": "23eb8177cecfd7084d376d5aef04a4a9259c9e94846188aa138a40a2b5adf33b",
-      "note": "v1.2.0: rule checks through rule_matches; imports ffanc_norm.pcg_wls"
+      "release_sha256": "ecad001defaf7bef8582b09c640a0db50f900944cb6b1825632ff8015de31c7e",
+      "note": "v1.2.0: rule checks through rule_matches; imports ffanc_norm.pcg_wls; direct runs use the method key PCG-WLS-F; provenance tests skip outside a git work tree; test of the opt-in git operations of the pipeline"
     },
     "results/eval_roomB_h/provenance.json": {
       "original_sha256": "445b9227a1c1fa436ffde31905d34a933ea4db8cd14801a1078ec8985f2e93a1",

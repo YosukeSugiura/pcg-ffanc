@@ -9,6 +9,7 @@
 The long, registered versions of the run-level checks are in experiments/revision11_preflight.py (seed 300, T = 5 s).
 """
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -19,6 +20,18 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src')); sys.path.insert(0, str(ROOT / 'experiments'))
 from ffanc_norm.fd_fxnlms import direct_block_gradient, fd_block_gradient, fd_block_gradient_mod  # noqa: E402
 from ffanc_norm.pcg_wls import PcgWls as EPCG, PcgWlsConfig as EPCGConfig  # noqa: E402  (former names)
+
+# The provenance records the git commit; outside a git work tree (e.g. an extracted release archive) these tests skip.
+def _in_git():
+    try:
+        return subprocess.run(['git', 'rev-parse', '--show-toplevel'], cwd=ROOT, capture_output=True,
+                              text=True).stdout.strip() == str(ROOT)
+    except OSError:
+        return False
+
+
+_IN_GIT = _in_git()
+needs_git = pytest.mark.skipif(not _IN_GIT, reason='provenance needs a git work tree (git clone the repository)')
 
 
 def _recursion_A(xh, r, den, M, N, H):
@@ -85,7 +98,7 @@ def _same(a, b, keys=('total_power', 'uncontrolled_power', 'stable', 'failure', 
 
 
 def _events(ev, nz='ar1', sc='S2 src 30cm', seed=300, tt=2.0):
-    r = ev.D.P.run(ev.cfg_of('A', nz, sc), seed, 'E-PCG-F', dict(ev.MAIN), tt, ev.D.CH)
+    r = ev.D.P.run(ev.cfg_of('A', nz, sc), seed, 'PCG-WLS-F', dict(ev.MAIN), tt, ev.D.CH)
     return [[(int(h) + 1) * ev.H, int(t)] for h, t in zip(r['reset_hops'], r['loc_hist'])]
 
 
@@ -356,6 +369,7 @@ def test_writes_outside_the_rule11_dirs_are_refused(tmp_path):
         R.provenance(HO.KINDS['base'], {'stage': 'x'})
 
 
+@needs_git
 def test_provenance_files_are_never_overwritten(tmp_path, monkeypatch):
     R = _R(); monkeypatch.setattr(R, 'OUT_DIRS', [tmp_path]); _env_a(R, tmp_path, monkeypatch)
     assert R.free_name(tmp_path, 'provenance_B1') == tmp_path / 'provenance_B1.json'
@@ -630,6 +644,7 @@ def test_growth_groups_and_event_use():
     assert firsts == sorted(firsts)                                           # Rule 11a Sec. 5.3 order
 
 
+@needs_git
 def test_rule11a_sha_and_provenance_fields(tmp_path, monkeypatch):
     import hashlib
     import revision11_methods as R
@@ -675,6 +690,7 @@ def test_inadmissible_groups_are_reported_and_the_selection_completes(tmp_path, 
     assert 'Groups without an admissible configuration' in (tmp_path / 'selection.md').read_text()
 
 
+@needs_git
 def test_holdout_base_must_match_env_a(tmp_path, monkeypatch):
     """Review N-M1 / Rule 11b Sec. 5: the recorded holdout_base follows R11_HOLDOUT_BASE and must agree with the path
     decided on this machine (env_A.json class I -> envA, else envC) in every job."""
@@ -822,6 +838,28 @@ def test_pipeline_pra_threads_match_envs():
         {'A': 3, 'C': 2}
 
 
+def test_pipeline_git_is_opt_in(monkeypatch):
+    """Public release: no git operation unless R11_GIT=1; the caller's git identity is used (no -c user.*); push only
+    with R11_PUSH."""
+    import subprocess
+    import revision11_pipeline as PL
+    calls = []
+    monkeypatch.setattr(PL, 'sh', lambda *a: calls.append(a))
+    monkeypatch.setattr(PL.subprocess, 'run', lambda *a, **k: subprocess.CompletedProcess(a, 1))   # staged changes
+    monkeypatch.setattr(PL.sys, 'argv', ['revision11_pipeline.py', 'rooms', 'roomB'])
+    for k in ('R11_GIT', 'NO_GIT', 'R11_PUSH', 'R11_TRAILER'):
+        monkeypatch.delenv(k, raising=False)
+    PL.commit('msg', 'results/x')
+    assert calls == []
+    monkeypatch.setenv('R11_GIT', '1')
+    PL.commit('msg', 'results/x')
+    assert [c[:2] for c in calls] == [('git', 'add'), ('git', 'commit')]
+    assert not any(str(x).startswith('user.') for c in calls for x in c)
+    calls.clear(); monkeypatch.setenv('R11_PUSH', 'origin')
+    PL.commit('msg', 'results/x')
+    assert [c[:2] for c in calls] == [('git', 'add'), ('git', 'commit'), ('git', 'push')] and calls[-1][2] == 'origin'
+
+
 def _case(tp_new, up_new, tp_old, up_old, ev_new=None, ev_old=None, flag=True, hops=None):
     import revision11_preflight as PF
     import revision11_methods as R
@@ -853,6 +891,7 @@ def test_env_classes_I_K_F():
     assert PF.classify([n]) == 'F'
 
 
+@needs_git
 def test_rule11b_sha_and_provenance_items(tmp_path, monkeypatch):
     import hashlib
     R = _R()

@@ -9,7 +9,9 @@ https://doi.org/10.5281/zenodo.23965830. It covers all versions and resolves to 
 The v1.0.0 record has the version DOI https://doi.org/10.5281/zenodo.23965831 and holds the
 result archives of section v1.0.0 of `ZENODO_MANIFEST.txt`. Zenodo version v1.2.0 adds the
 Revision 11 records (section v1.2.0); its version DOI is TODO (to be filled in when the version is
-published). The underlying MeshRIR dataset is separately available and attributed at
+published). Zenodo version v1.2.0 holds two kinds of files: the source zip of code release v1.2.0 (this repository at
+tag v1.2.0, including the summaries, metrics and provenance under `results/`) and the tar archives of the run-level
+records and logs listed in `ZENODO_MANIFEST.txt`. The underlying MeshRIR dataset is separately available and attributed at
 https://doi.org/10.5281/zenodo.5500451.
 
 ## Changes in v1.2.0
@@ -38,6 +40,8 @@ released separately and is part of v1.2.0.
   (`make_supplement.py --all --output paper/v2/supp_tables_all`). `make_r10_values.py` regenerates the long-layout
   settings table in a temporary directory when `supp_tables/settings.tex` is absent.
 - `make_zenodo_archive.py` archives one manifest section (`--section`) and splits the archive (`--max-mib`).
+- `experiments/revision11_pipeline.py` performs no git operation unless `R11_GIT=1` (then it commits with your own git
+  configuration; push only with `R11_PUSH=<remote>`).
 
 ## Method name
 
@@ -84,6 +88,18 @@ Revision 11 tuning and 11-D sets) or 3 threads (9-A, 9-B and the Revision 11 roo
 All Revision 11 sets ran on one machine (Intel Xeon Platinum 8573C, 3 CPUs, OpenBLAS core SkylakeX) with `RLS_FAST=1`
 and one BLAS thread per process; the fingerprint is in each `provenance.json` (`machine`).
 
+One simulation run (room A, AR(1) noise, 30 cm source move, holdout seed 800, 5 s, PCG-WLS main configuration):
+
+```sh
+RLS_FAST=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PRA_NUM_THREADS=3 python -c "import sys; sys.path[:0] = ['src', 'experiments']; import eval_v2 as ev; r = ev.D.P.run(ev.cfg_of('A', 'ar1', 'S2 src 30cm'), 800, 'PCG-WLS-F', dict(ev.MAIN), 5.0, ev.D.CH); print(r['stable'], r['reset_hops'])"
+```
+
+The Revision 11 jobs are run with `experiments/revision11_pipeline.py` (see its docstring; git operations are off
+unless `R11_GIT=1`). The preflight `experiments/revision11_preflight.py regress` compares against a development commit
+(b3058bf) that is not public, so it cannot be re-run from this repository; its result is
+`results/r11_preflight/regression.md`. The checks that re-run saved keys (`envA`, `envC`) need the run-level
+records of the Zenodo archives; all preflight checks write into `results/r11_preflight/`.
+
 ## Reproduce tables without running an experiment
 
 From this directory:
@@ -103,7 +119,9 @@ included for comparison; they are byte-identical to the tables of the manuscript
 below). `make_tables.py` also writes the merged tables used in the manuscript: `rooms_bc_h.tex` and
 `snr_measured_h.tex` (holdout seeds, Revision 11), the earlier `rooms_bc.tex` (rooms B and C) and `snr_measured.tex`
 (SNR 10 dB and MeshRIR), and `ablation.tex`. Without arguments `make_detector_aggregates.py` overwrites the archived
-`results/detector_aggregates/` (including its `provenance.json`); give other directories to compare. Generation recomputes the archived paired comparisons;
+`results/detector_aggregates/` (including its `provenance.json`); give other directories to compare. The JSON and
+Markdown outputs are byte-identical; the regenerated `provenance.json` differs in the commit and, with another NumPy,
+in the recorded version. Generation recomputes the archived paired comparisons;
 the saved decisions are checked during the run. This procedure does not perform
 new simulations. The supplementary `sources.json` records hashes of the public
 copies of inputs and therefore differs from the original private source manifest.
@@ -122,13 +140,16 @@ Numeric records, decisions, parameters, and scientific calculations are unchange
 
 ## Figures and large records
 
-Binary arrays, run-level files, logs and rendered figures are not included. The paths
+The summaries (`summary.md`, `summary.json`), per-run metrics (`metrics.jsonl`) and provenance files under `results/`
+are part of this repository, and therefore of the code release and its source zip in Zenodo version v1.2.0.
+Binary arrays, run-level files, logs and rendered figures are not included here. The paths
 and byte sizes of the archived files are in `ZENODO_MANIFEST.txt`. Section v1.0.0 is in the v1.0.0
 Zenodo record (https://doi.org/10.5281/zenodo.23965831) as `pcg-ffanc-results-part1.tar`
 and `pcg-ffanc-results-part2.tar`. Section v1.2.0 (Revision 11 run-level records, logs and one reference array) is in
 Zenodo version v1.2.0 (version DOI: TODO) as `pcg-ffanc-results-v1.2.0-part1.tar` and
 `pcg-ffanc-results-v1.2.0-part2.tar`; that version also carries the two v1.0.0 archives. Extract all of them into this
-directory to restore the listed paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
+directory to restore the listed paths (the reference array `results/r11_preflight/ref_localize_roomB_ar1_S8_480.npz`
+of the `localize` check was made on the development machine, not on the machine of the Revision 11 runs). Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
 render the corresponding plots from stored inputs. The cost and secondary-path figures
 (`cost`, `shat`) need only files in this repository. The eigenvalue figure's
 original generator computes new signal realizations; it is not part of the
@@ -136,13 +157,17 @@ no-experiment table reproduction. Inspect the separate archive, especially its
 logs, for sensitive information and confirm licensing before publication.
 
 The data include derived statistics from the separately distributed MeshRIR
-measurements. Retain the dataset's license and attribution when reusing them.
+measurements. Changes made to the MeshRIR impulse responses before use: removal of the common system delay (Rule 8a),
+resampling to 8 kHz, truncation to 1200 (primary path) and 512 (secondary path) taps, and normalization of the
+initial paths. The impulse responses themselves are not redistributed; `results/r11_preflight/meshrir_holdout_allocation.json`
+lists the source and microphone indices and coordinates used. Retain the dataset's license and attribution when reusing them.
 Code is MIT-licensed; archived data and documentation are CC BY 4.0 as detailed
 in `LICENSE`.
 
 ## Setup, sources, and citation
 
-The recorded holdout runs used Python 3.12.14; the room and measured-stationary runs used Python 3.13.18. The
+The recorded holdout runs used Python 3.12.14; the room and SNR 10 dB runs of Revision 9 (`eval_*_x2`) used Python
+3.13.18 and the measured-stationary set (`final_eval_meas_s_8a`) used Python 3.13.5. The
 minimum supported Python version is 3.10. Install the package and test tools
 with `pip install -e '.[dev]'`; run the test suite with
 `RLS_FAST=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PRA_NUM_THREADS=2 pytest`
@@ -188,11 +213,13 @@ To prepare an archive after checking its sources, run
 `python make_zenodo_archive.py SOURCE_ROOT OUTPUT_TAR [--section v1.2.0] [--max-mib 300]` from this directory.
 The script validates the manifest and sanitizes absolute filesystem paths in
 log copies; it leaves source files untouched. Review the archive and licensing
-before upload. The archived records are in the Zenodo record above, not in this repository.
+before upload. The run-level records and logs are in the Zenodo record above, not in this repository; the summaries
+are in this repository (and in the source zip of the code release in Zenodo version v1.2.0).
 
 The optional optimizer tests require the optional `optuna` package. When it is
 not installed, those tests are skipped; they are unrelated to reproducing the
-archived tables. Install `optuna` to run them.
+archived tables. `optuna` is not in the `dev` extra; install it with `pip install -e '.[dev,opt]'` (or
+`pip install optuna`) to run them.
 
 The measured-path wiring tests also require the separately licensed MeshRIR
 S32-M441 dataset and its verified-download marker. They skip when those files

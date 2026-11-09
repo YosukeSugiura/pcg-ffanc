@@ -1,13 +1,15 @@
 """Ordered, fail-stop Revision 11 job supervisor (Rule 11 Sec. 8). No scientific setting is chosen here.
 
 Each job = two single-threaded worker processes (SHARD 0/2, 1/2) under one `setsid nohup` bash script, logs in the
-output directory; the job is resumable (workers skip existing records). After a job: summary, then git add / commit /
-push of the output directory only (trailer from the environment variable R11_TRAILER).
+output directory; the job is resumable (workers skip existing records). After a job: summary. Git operations are
+opt-in (public release): with R11_GIT=1 the output directory is added and committed with the caller's own git
+configuration (message trailer from R11_TRAILER, if set); with R11_PUSH=<remote> the commit is also pushed to
+R11_BRANCH. Without R11_GIT nothing is committed or pushed.
 
 Start it detached and monitor the log and the status flags (2026-11-07 review M-5):
   python3 experiments/revision11_pipeline.py start <job args>      # setsid nohup itself, returns at once
       log     results/r11_pipeline/<job>.log   (append; 'DONE' or 'STOP:' at the end)
-      flags   results/r11_pipeline/<job>.running (pid) -> <job>.done (finished, committed) | <job>.stop (stopped)
+      flags   results/r11_pipeline/<job>.running (pid) -> <job>.done (finished) | <job>.stop (stopped)
   Re-running the same start command resumes the job (workers skip complete records, drop a cut last line).
   One pipeline at a time (lock results/r11_pipeline/lock); each job first checks the software environment of
   Rule 11 Sec. 1.2 with the worker interpreter PY (A: path-A room-A holdout; C: everything else; meas: + numba,
@@ -19,7 +21,8 @@ Start it detached and monitor the log and the status flags (2026-11-07 review M-
   python experiments/revision11_pipeline.py rooms roomB|roomC|snr10  # 11-D (environment C)
   python experiments/revision11_pipeline.py meas meas_s|meas_p       # 11-D measured (environment C, MeshRIR)
   options: PY=/path/to/python (default: this interpreter); ROWS=... (holdout new: subset of the selected rows);
-           NO_GIT=1 (no commit / push); R11_BRANCH (push target, default r11-run)
+           R11_GIT=1 (commit the outputs with your git configuration; default: no git operation);
+           R11_PUSH=<remote> (with R11_GIT=1: also push); R11_BRANCH (push target, default r11-run)
 """
 import fcntl
 import os
@@ -69,8 +72,13 @@ exit "$rc"
     log('completed', label)
 
 
+def git_enabled():
+    """Commit only if R11_GIT=1 (opt-in in the public release; the development runs committed every job)."""
+    return os.environ.get('R11_GIT') == '1' and not os.environ.get('NO_GIT')
+
+
 def commit(msg, *paths):
-    if os.environ.get('NO_GIT'):
+    if not git_enabled():
         return
     log_file = PIPE / f'{job_name(sys.argv[1:])}.log'
     if log_file.exists():                                 # the pipeline log so far (the rest goes with the next job)
@@ -79,9 +87,10 @@ def commit(msg, *paths):
     if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode == 0:
         log('nothing to commit'); return
     trailer = os.environ.get('R11_TRAILER', '')
-    sh('git', '-c', 'user.name=Yosuke Sugiura', '-c', 'user.email=ysugiura@meiji.ac.jp', 'commit', '-m',
-       msg + ('\n\n' + trailer if trailer else ''))
-    sh('git', 'push', 'origin', 'HEAD:refs/heads/' + os.environ.get('R11_BRANCH', 'r11-run'))
+    sh('git', 'commit', '-m', msg + ('\n\n' + trailer if trailer else ''))      # the caller's git user
+    remote = os.environ.get('R11_PUSH')
+    if remote:
+        sh('git', 'push', remote, 'HEAD:refs/heads/' + os.environ.get('R11_BRANCH', 'r11-run'))
 
 
 PIPE = ROOT / 'results/r11_pipeline'
