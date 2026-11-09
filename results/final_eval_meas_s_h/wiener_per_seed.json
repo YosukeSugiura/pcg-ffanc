@@ -1,0 +1,1082 @@
+[
+  {
+    "seed": 800,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.979208430309068,
+        "anc_only_nr_db": -9.278748776221294,
+        "model_objective_anc_nr_db": -9.278748776221294,
+        "controller_norm": 1.3244382767238343,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.418670605437478e-16,
+        "disturbance_power": 0.1184978307273856,
+        "anc_residual_power": 0.013990573661300342,
+        "sensor_power": 0.0011436814545755154
+      },
+      "harmonic": {
+        "total_nr_db": -16.898968666296156,
+        "anc_only_nr_db": -19.66900334548995,
+        "model_objective_anc_nr_db": -19.66900334548995,
+        "controller_norm": 1.3641246930193667,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.829819671565652e-16,
+        "disturbance_power": 0.2403052509486482,
+        "anc_residual_power": 0.002593360705805433,
+        "sensor_power": 0.0023624546533331054
+      }
+    }
+  },
+  {
+    "seed": 801,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.377186718847402,
+        "anc_only_nr_db": -5.481829604403701,
+        "model_objective_anc_nr_db": -5.481829604403701,
+        "controller_norm": 1.3878945126207152,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.705397771350531e-16,
+        "disturbance_power": 0.1722819726538973,
+        "anc_residual_power": 0.048759234124989066,
+        "sensor_power": 0.0016746302325868797
+      },
+      "harmonic": {
+        "total_nr_db": -14.376793861954496,
+        "anc_only_nr_db": -15.701809598948373,
+        "model_objective_anc_nr_db": -15.701809598948373,
+        "controller_norm": 1.4540264319321352,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.615453616090229e-16,
+        "disturbance_power": 0.28642720240794384,
+        "anc_residual_power": 0.007706076238069057,
+        "sensor_power": 0.0028533381676529843
+      }
+    }
+  },
+  {
+    "seed": 802,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -2.7548450341550987,
+        "anc_only_nr_db": -2.7936357177903943,
+        "model_objective_anc_nr_db": -2.7936357177903943,
+        "controller_norm": 1.3886387331472037,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.676344458433479e-16,
+        "disturbance_power": 0.2652417223897522,
+        "anc_residual_power": 0.13940497331642945,
+        "sensor_power": 0.0026627775462657825
+      },
+      "harmonic": {
+        "total_nr_db": -12.295432780246141,
+        "anc_only_nr_db": -13.051032778856754,
+        "model_objective_anc_nr_db": -13.051032778856754,
+        "controller_norm": 1.5657315998160781,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0193439669503061e-15,
+        "disturbance_power": 0.25721788207077834,
+        "anc_residual_power": 0.012740834666292852,
+        "sensor_power": 0.002572875317950058
+      }
+    }
+  },
+  {
+    "seed": 803,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -9.123923446958319,
+        "anc_only_nr_db": -9.45842435794378,
+        "model_objective_anc_nr_db": -9.45842435794378,
+        "controller_norm": 1.4156756318126955,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.725086297338458e-16,
+        "disturbance_power": 0.156487765598479,
+        "anc_residual_power": 0.017727110578212385,
+        "sensor_power": 0.0016171953834592495
+      },
+      "harmonic": {
+        "total_nr_db": -16.65182324974358,
+        "anc_only_nr_db": -19.271215073430866,
+        "model_objective_anc_nr_db": -19.271215073430866,
+        "controller_norm": 1.4785782859036902,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0587336559435183e-15,
+        "disturbance_power": 0.24664099751558094,
+        "anc_residual_power": 0.002917049244938523,
+        "sensor_power": 0.002468220648600124
+      }
+    }
+  },
+  {
+    "seed": 804,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.5321834158538845,
+        "anc_only_nr_db": -6.696102705345739,
+        "model_objective_anc_nr_db": -6.696102705345739,
+        "controller_norm": 1.3925188432023998,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.294199663203974e-16,
+        "disturbance_power": 0.28567900261936185,
+        "anc_residual_power": 0.06113192201485629,
+        "sensor_power": 0.003023279849810159
+      },
+      "harmonic": {
+        "total_nr_db": -14.344594898372433,
+        "anc_only_nr_db": -15.66362309384479,
+        "model_objective_anc_nr_db": -15.66362309384479,
+        "controller_norm": 1.448879129124863,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.1490340120908288e-15,
+        "disturbance_power": 0.23174986998668384,
+        "anc_residual_power": 0.006290094784159753,
+        "sensor_power": 0.002317491189460782
+      }
+    }
+  },
+  {
+    "seed": 805,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.8488661861835265,
+        "anc_only_nr_db": -8.067422378772646,
+        "model_objective_anc_nr_db": -8.067422378772646,
+        "controller_norm": 1.4875165391870264,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.161055762400412e-16,
+        "disturbance_power": 0.1568259327217669,
+        "anc_residual_power": 0.024472348087897996,
+        "sensor_power": 0.0015110356128523344
+      },
+      "harmonic": {
+        "total_nr_db": -16.252283247604332,
+        "anc_only_nr_db": -18.54857075479569,
+        "model_objective_anc_nr_db": -18.54857075479569,
+        "controller_norm": 1.5115543990244116,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.368589629720092e-16,
+        "disturbance_power": 0.2542893236886242,
+        "anc_residual_power": 0.003551984412606032,
+        "sensor_power": 0.0025350809507169113
+      }
+    }
+  },
+  {
+    "seed": 806,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.649448614828974,
+        "anc_only_nr_db": -7.861034949802718,
+        "model_objective_anc_nr_db": -7.861034949802718,
+        "controller_norm": 1.4649951681597173,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.760865244688974e-16,
+        "disturbance_power": 0.1412215505577547,
+        "anc_residual_power": 0.0231098688368299,
+        "sensor_power": 0.001393139033223746
+      },
+      "harmonic": {
+        "total_nr_db": -16.103985077150902,
+        "anc_only_nr_db": -18.32535611450627,
+        "model_objective_anc_nr_db": -18.32535611450627,
+        "controller_norm": 1.4508877460168788,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0810139338346149e-15,
+        "disturbance_power": 0.1381456759907028,
+        "anc_residual_power": 0.0020314291704425567,
+        "sensor_power": 0.001390639686722061
+      }
+    }
+  },
+  {
+    "seed": 807,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.9429590239703405,
+        "anc_only_nr_db": -7.1220505732465,
+        "model_objective_anc_nr_db": -7.1220505732465,
+        "controller_norm": 1.5382943607547053,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.863554792144585e-16,
+        "disturbance_power": 0.18164040038440268,
+        "anc_residual_power": 0.0352376869675273,
+        "sensor_power": 0.001859387750292023
+      },
+      "harmonic": {
+        "total_nr_db": -15.321301519617025,
+        "anc_only_nr_db": -17.0430922042608,
+        "model_objective_anc_nr_db": -17.0430922042608,
+        "controller_norm": 1.4867863433174324,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.941606967327491e-16,
+        "disturbance_power": 0.25947941902111793,
+        "anc_residual_power": 0.005126178165340068,
+        "sensor_power": 0.002569597185732645
+      }
+    }
+  },
+  {
+    "seed": 808,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -4.730207348710343,
+        "anc_only_nr_db": -4.822884429563018,
+        "model_objective_anc_nr_db": -4.822884429563018,
+        "controller_norm": 1.3345550769284997,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.650082855090003e-16,
+        "disturbance_power": 0.1528839178202875,
+        "anc_residual_power": 0.05035856667009909,
+        "sensor_power": 0.0016370412358702585
+      },
+      "harmonic": {
+        "total_nr_db": -11.254564098544702,
+        "anc_only_nr_db": -11.823099962905308,
+        "model_objective_anc_nr_db": -11.823099962905308,
+        "controller_norm": 1.4609988484282206,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.278946601565081e-15,
+        "disturbance_power": 0.22122253334780856,
+        "anc_residual_power": 0.014538492109481703,
+        "sensor_power": 0.0021980931998391534
+      }
+    }
+  },
+  {
+    "seed": 809,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.107120066228866,
+        "anc_only_nr_db": -7.28605480363406,
+        "model_objective_anc_nr_db": -7.28605480363406,
+        "controller_norm": 1.4322278795160754,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.933732200188687e-16,
+        "disturbance_power": 0.164528422057307,
+        "anc_residual_power": 0.030735158151262015,
+        "sensor_power": 0.0016052649028303414
+      },
+      "harmonic": {
+        "total_nr_db": -15.908994969335001,
+        "anc_only_nr_db": -17.971521194483234,
+        "model_objective_anc_nr_db": -17.971521194483234,
+        "controller_norm": 1.4374034749990798,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.625529145463783e-16,
+        "disturbance_power": 0.25914206304920184,
+        "anc_residual_power": 0.00413414583340179,
+        "sensor_power": 0.002579207780684864
+      }
+    }
+  },
+  {
+    "seed": 810,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.618403514823639,
+        "anc_only_nr_db": -5.731945857126228,
+        "model_objective_anc_nr_db": -5.731945857126228,
+        "controller_norm": 1.7349757825655356,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.319811938504751e-16,
+        "disturbance_power": 0.14596262558820422,
+        "anc_residual_power": 0.038998426196084644,
+        "sensor_power": 0.0014234033297601018
+      },
+      "harmonic": {
+        "total_nr_db": -14.577932872252703,
+        "anc_only_nr_db": -15.994074138594701,
+        "model_objective_anc_nr_db": -15.994074138594701,
+        "controller_norm": 1.7937605760850375,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.882454898782531e-16,
+        "disturbance_power": 0.27196509841958877,
+        "anc_residual_power": 0.006840782150956777,
+        "sensor_power": 0.002732516361589834
+      }
+    }
+  },
+  {
+    "seed": 811,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.089192528338405,
+        "anc_only_nr_db": -6.223445214042323,
+        "model_objective_anc_nr_db": -6.223445214042323,
+        "controller_norm": 1.67861840153871,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.3163458926457887e-15,
+        "disturbance_power": 0.1526948183177655,
+        "anc_residual_power": 0.03643172861520458,
+        "sensor_power": 0.001517136150474736
+      },
+      "harmonic": {
+        "total_nr_db": -15.384472344568012,
+        "anc_only_nr_db": -17.15436151450004,
+        "model_objective_anc_nr_db": -17.15436151450004,
+        "controller_norm": 1.7013556265360579,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.6296837829241036e-15,
+        "disturbance_power": 0.22528818408562049,
+        "anc_residual_power": 0.00433812701024989,
+        "sensor_power": 0.0022475804488129637
+      }
+    }
+  },
+  {
+    "seed": 812,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -3.997776693665631,
+        "anc_only_nr_db": -4.06203210699149,
+        "model_objective_anc_nr_db": -4.06203210699149,
+        "controller_norm": 1.0705772709324253,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.188051489855984e-16,
+        "disturbance_power": 0.20783942784389092,
+        "anc_residual_power": 0.08156892287980644,
+        "sensor_power": 0.002020667320218572
+      },
+      "harmonic": {
+        "total_nr_db": -9.800098983086047,
+        "anc_only_nr_db": -10.186214861697888,
+        "model_objective_anc_nr_db": -10.186214861697888,
+        "controller_norm": 1.2489306657485126,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.404639761286753e-16,
+        "disturbance_power": 0.26297259485630103,
+        "anc_residual_power": 0.025193528984759524,
+        "sensor_power": 0.002616421253798073
+      }
+    }
+  },
+  {
+    "seed": 813,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.491048572905783,
+        "anc_only_nr_db": -6.641813544376879,
+        "model_objective_anc_nr_db": -6.641813544376879,
+        "controller_norm": 1.3279002512498914,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.565865884678209e-16,
+        "disturbance_power": 0.15271876856270233,
+        "anc_residual_power": 0.03309108895397409,
+        "sensor_power": 0.001506997425781574
+      },
+      "harmonic": {
+        "total_nr_db": -16.22401695764856,
+        "anc_only_nr_db": -18.525939738867592,
+        "model_objective_anc_nr_db": -18.525939738867592,
+        "controller_norm": 1.3963108247185807,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0402627119905443e-15,
+        "disturbance_power": 0.27229827484148483,
+        "anc_residual_power": 0.003823410389712718,
+        "sensor_power": 0.0027378619342563115
+      }
+    }
+  },
+  {
+    "seed": 814,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.952917087431635,
+        "anc_only_nr_db": -8.191634150662505,
+        "model_objective_anc_nr_db": -8.191634150662505,
+        "controller_norm": 1.2477598683820597,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.790623421394054e-16,
+        "disturbance_power": 0.1319574279659175,
+        "anc_residual_power": 0.02001107533235787,
+        "sensor_power": 0.0013464584814224362
+      },
+      "harmonic": {
+        "total_nr_db": -16.15948865473087,
+        "anc_only_nr_db": -18.3704618130841,
+        "model_objective_anc_nr_db": -18.3704618130841,
+        "controller_norm": 1.2974379635844864,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.833793311223043e-16,
+        "disturbance_power": 0.20636758471741187,
+        "anc_residual_power": 0.00300327637659196,
+        "sensor_power": 0.0020429985010985067
+      }
+    }
+  },
+  {
+    "seed": 815,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.810617641962599,
+        "anc_only_nr_db": -5.933880527847229,
+        "model_objective_anc_nr_db": -5.933880527847229,
+        "controller_norm": 1.2407582639531716,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.351379700804683e-16,
+        "disturbance_power": 0.13869452472754093,
+        "anc_residual_power": 0.03537294867124976,
+        "sensor_power": 0.0013805972125407726
+      },
+      "harmonic": {
+        "total_nr_db": -15.806861339405234,
+        "anc_only_nr_db": -17.823758654745763,
+        "model_objective_anc_nr_db": -17.823758654745763,
+        "controller_norm": 1.2793001635495562,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0198244930315081e-15,
+        "disturbance_power": 0.21266620407938233,
+        "anc_residual_power": 0.0035101252533102883,
+        "sensor_power": 0.0021306898302668473
+      }
+    }
+  },
+  {
+    "seed": 816,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.148738254047274,
+        "anc_only_nr_db": -5.245087918158612,
+        "model_objective_anc_nr_db": -5.245087918158612,
+        "controller_norm": 1.2399991868341111,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.895933877273526e-16,
+        "disturbance_power": 0.16761210625441847,
+        "anc_residual_power": 0.05009525501276064,
+        "sensor_power": 0.0016183304426517098
+      },
+      "harmonic": {
+        "total_nr_db": -13.43877443039373,
+        "anc_only_nr_db": -14.45622981642979,
+        "model_objective_anc_nr_db": -14.45622981642979,
+        "controller_norm": 1.597172427789989,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.2643360757826885e-15,
+        "disturbance_power": 0.21932521940750482,
+        "anc_residual_power": 0.0078607790772285,
+        "sensor_power": 0.0021736839553939086
+      }
+    }
+  },
+  {
+    "seed": 817,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -3.795981131864205,
+        "anc_only_nr_db": -3.8572994997099257,
+        "model_objective_anc_nr_db": -3.8572994997099257,
+        "controller_norm": 1.0566248785225711,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.7942125924869e-16,
+        "disturbance_power": 0.11046806189056405,
+        "anc_residual_power": 0.04544716369795263,
+        "sensor_power": 0.001108930353242399
+      },
+      "harmonic": {
+        "total_nr_db": -12.155586441912668,
+        "anc_only_nr_db": -12.889320166064921,
+        "model_objective_anc_nr_db": -12.889320166064921,
+        "controller_norm": 1.2719040113116586,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.88300459106529e-16,
+        "disturbance_power": 0.1873741076900237,
+        "anc_residual_power": 0.009633354916638245,
+        "sensor_power": 0.0018880416024544275
+      }
+    }
+  },
+  {
+    "seed": 818,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.077339146614293,
+        "anc_only_nr_db": -7.26468712159371,
+        "model_objective_anc_nr_db": -7.26468712159371,
+        "controller_norm": 1.4741935417953875,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.319275239342649e-16,
+        "disturbance_power": 0.1773017856506348,
+        "anc_residual_power": 0.033284680871061276,
+        "sensor_power": 0.0018249734666054363
+      },
+      "harmonic": {
+        "total_nr_db": -14.048596774211543,
+        "anc_only_nr_db": -15.237369266897984,
+        "model_objective_anc_nr_db": -15.237369266897984,
+        "controller_norm": 1.5993887254072645,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.2040939592549663e-15,
+        "disturbance_power": 0.23471881481741036,
+        "anc_residual_power": 0.007027663800259641,
+        "sensor_power": 0.00230336009224025
+      }
+    }
+  },
+  {
+    "seed": 819,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.592939962225785,
+        "anc_only_nr_db": -6.756961930625492,
+        "model_objective_anc_nr_db": -6.756961930625492,
+        "controller_norm": 1.749515825162895,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.768578424229763e-16,
+        "disturbance_power": 0.15195632878910162,
+        "anc_residual_power": 0.03206436174698597,
+        "sensor_power": 0.0015804823409805594
+      },
+      "harmonic": {
+        "total_nr_db": -15.000275212818071,
+        "anc_only_nr_db": -16.58404144966117,
+        "model_objective_anc_nr_db": -16.58404144966117,
+        "controller_norm": 1.7976305510149173,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.035985899430142e-15,
+        "disturbance_power": 0.23893472270436864,
+        "anc_residual_power": 0.005246565780459049,
+        "sensor_power": 0.0023841225810224344
+      }
+    }
+  },
+  {
+    "seed": 820,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.7037451931378005,
+        "anc_only_nr_db": -6.8620755541627005,
+        "model_objective_anc_nr_db": -6.8620755541627005,
+        "controller_norm": 1.5393013806682643,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.459531487803335e-16,
+        "disturbance_power": 0.13449924597959906,
+        "anc_residual_power": 0.027702074584196427,
+        "sensor_power": 0.0013079641213770345
+      },
+      "harmonic": {
+        "total_nr_db": -14.937566000543637,
+        "anc_only_nr_db": -16.476824957444485,
+        "model_objective_anc_nr_db": -16.476824957444485,
+        "controller_norm": 1.5949345734490006,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.765448285638941e-16,
+        "disturbance_power": 0.21628387443929736,
+        "anc_residual_power": 0.004867899966240959,
+        "sensor_power": 0.002139260048617301
+      }
+    }
+  },
+  {
+    "seed": 821,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.014928002524712,
+        "anc_only_nr_db": -5.111101327012762,
+        "model_objective_anc_nr_db": -5.111101327012762,
+        "controller_norm": 1.5593861724855964,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.751847397463744e-16,
+        "disturbance_power": 0.20914066181625843,
+        "anc_residual_power": 0.06446564693090404,
+        "sensor_power": 0.0021077354003273974
+      },
+      "harmonic": {
+        "total_nr_db": -12.632501495353345,
+        "anc_only_nr_db": -13.447197447142322,
+        "model_objective_anc_nr_db": -13.447197447142322,
+        "controller_norm": 1.601815809766511,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0581132412802133e-15,
+        "disturbance_power": 0.24463313603970308,
+        "anc_residual_power": 0.011061029179416672,
+        "sensor_power": 0.0024139986788957223
+      }
+    }
+  },
+  {
+    "seed": 822,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.447910737837551,
+        "anc_only_nr_db": -8.708721474188128,
+        "model_objective_anc_nr_db": -8.708721474188128,
+        "controller_norm": 1.3963933861163702,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.17084637570065e-16,
+        "disturbance_power": 0.15048542141292967,
+        "anc_residual_power": 0.02025919951156764,
+        "sensor_power": 0.0014630770677295192
+      },
+      "harmonic": {
+        "total_nr_db": -15.759246752248984,
+        "anc_only_nr_db": -17.73488465776175,
+        "model_objective_anc_nr_db": -17.73488465776175,
+        "controller_norm": 1.481900371740201,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.057960258640212e-16,
+        "disturbance_power": 0.21453951298129548,
+        "anc_residual_power": 0.0036142552840628082,
+        "sensor_power": 0.002138694169380593
+      }
+    }
+  },
+  {
+    "seed": 823,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.897721488270227,
+        "anc_only_nr_db": -9.206328094299288,
+        "model_objective_anc_nr_db": -9.206328094299288,
+        "controller_norm": 1.3064906535666672,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 4.958883435079732e-16,
+        "disturbance_power": 0.17193188701796566,
+        "anc_residual_power": 0.02064066191363899,
+        "sensor_power": 0.0017449962717905661
+      },
+      "harmonic": {
+        "total_nr_db": -17.529971209139866,
+        "anc_only_nr_db": -21.05507447159015,
+        "model_objective_anc_nr_db": -21.05507447159015,
+        "controller_norm": 1.3282472897559905,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.888752401123253e-16,
+        "disturbance_power": 0.3170348692266468,
+        "anc_residual_power": 0.002486563668143521,
+        "sensor_power": 0.003168384382106779
+      }
+    }
+  },
+  {
+    "seed": 824,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -5.653980856915499,
+        "anc_only_nr_db": -5.772910108920946,
+        "model_objective_anc_nr_db": -5.772910108920946,
+        "controller_norm": 1.381800197198285,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.464086399041622e-16,
+        "disturbance_power": 0.14572458199509766,
+        "anc_residual_power": 0.038569304483396065,
+        "sensor_power": 0.0014709136252240391
+      },
+      "harmonic": {
+        "total_nr_db": -13.202375177978336,
+        "anc_only_nr_db": -14.164686134995392,
+        "model_objective_anc_nr_db": -14.164686134995392,
+        "controller_norm": 1.5878941212570987,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.2130779365847775e-15,
+        "disturbance_power": 0.2102499222404264,
+        "anc_residual_power": 0.008058741596572931,
+        "sensor_power": 0.0020993778698996015
+      }
+    }
+  },
+  {
+    "seed": 825,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -2.3875369929595855,
+        "anc_only_nr_db": -2.4194312200719734,
+        "model_objective_anc_nr_db": -2.4194312200719734,
+        "controller_norm": 0.9456911272277724,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 2.4501881105239725e-15,
+        "disturbance_power": 0.14294559601526252,
+        "anc_residual_power": 0.08188939410283129,
+        "sensor_power": 0.0014272725620733818
+      },
+      "harmonic": {
+        "total_nr_db": -9.79193231263628,
+        "anc_only_nr_db": -10.178188693344543,
+        "model_objective_anc_nr_db": -10.178188693344543,
+        "controller_norm": 1.0596646241954724,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0500298164489338e-15,
+        "disturbance_power": 0.19088837879240986,
+        "anc_residual_power": 0.01832148284131293,
+        "sensor_power": 0.0019038820198148516
+      }
+    }
+  },
+  {
+    "seed": 826,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -3.375990424839801,
+        "anc_only_nr_db": -3.4267883947922044,
+        "model_objective_anc_nr_db": -3.4267883947922044,
+        "controller_norm": 1.1417049626150666,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.605296369068899e-16,
+        "disturbance_power": 0.13705148179000118,
+        "anc_residual_power": 0.06225939497563428,
+        "sensor_power": 0.0013555382696182844
+      },
+      "harmonic": {
+        "total_nr_db": -12.177875640827136,
+        "anc_only_nr_db": -12.907276611309321,
+        "model_objective_anc_nr_db": -12.907276611309321,
+        "controller_norm": 1.289724699305607,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0361761688179747e-15,
+        "disturbance_power": 0.23911697060848486,
+        "anc_residual_power": 0.012242855928298588,
+        "sensor_power": 0.002383294929256211
+      }
+    }
+  },
+  {
+    "seed": 827,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -6.900779999756587,
+        "anc_only_nr_db": -7.077336442259277,
+        "model_objective_anc_nr_db": -7.077336442259277,
+        "controller_norm": 1.3912171000577964,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.286218436693692e-16,
+        "disturbance_power": 0.17807728147111695,
+        "anc_residual_power": 0.034903973710710745,
+        "sensor_power": 0.0018196741047170409
+      },
+      "harmonic": {
+        "total_nr_db": -14.74486625924616,
+        "anc_only_nr_db": -16.22610807797193,
+        "model_objective_anc_nr_db": -16.22610807797193,
+        "controller_norm": 1.4817613737582944,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.059902813273004e-16,
+        "disturbance_power": 0.27037712845220735,
+        "anc_residual_power": 0.006447021870656751,
+        "sensor_power": 0.002711316789778378
+      }
+    }
+  },
+  {
+    "seed": 828,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.641164773445752,
+        "anc_only_nr_db": -8.917015552106752,
+        "model_objective_anc_nr_db": -8.917015552106752,
+        "controller_norm": 1.243276346394101,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.564877238088459e-16,
+        "disturbance_power": 0.10996076492439155,
+        "anc_residual_power": 0.01411029836429867,
+        "sensor_power": 0.0010718848050403921
+      },
+      "harmonic": {
+        "total_nr_db": -15.51159912102497,
+        "anc_only_nr_db": -17.32271298488263,
+        "model_objective_anc_nr_db": -17.32271298488263,
+        "controller_norm": 1.2496095035233792,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.22649076550376e-16,
+        "disturbance_power": 0.16140126139966166,
+        "anc_residual_power": 0.0029897551734124777,
+        "sensor_power": 0.001591759663555424
+      }
+    }
+  },
+  {
+    "seed": 829,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.05849394620357,
+        "anc_only_nr_db": -8.299952826813987,
+        "model_objective_anc_nr_db": -8.299952826813987,
+        "controller_norm": 1.4568150746380482,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.034671222389841e-16,
+        "disturbance_power": 0.1399954243039349,
+        "anc_residual_power": 0.020707065558805547,
+        "sensor_power": 0.0014033104808383891
+      },
+      "harmonic": {
+        "total_nr_db": -16.517042221412154,
+        "anc_only_nr_db": -19.05396464366721,
+        "model_objective_anc_nr_db": -19.05396464366721,
+        "controller_norm": 1.5128101827455545,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0799985247983148e-15,
+        "disturbance_power": 0.23262702792655357,
+        "anc_residual_power": 0.0028924356637700494,
+        "sensor_power": 0.0023473841094880676
+      }
+    }
+  },
+  {
+    "seed": 830,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -3.2171410000558764,
+        "anc_only_nr_db": -3.2652150637339044,
+        "model_objective_anc_nr_db": -3.2652150637339044,
+        "controller_norm": 1.12416161241896,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.535137596883055e-16,
+        "disturbance_power": 0.18909623468330836,
+        "anc_residual_power": 0.0891582170011381,
+        "sensor_power": 0.0018966194781478629
+      },
+      "harmonic": {
+        "total_nr_db": -11.267636902060016,
+        "anc_only_nr_db": -11.844288805961384,
+        "model_objective_anc_nr_db": -11.844288805961384,
+        "controller_norm": 1.4959363364377745,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.584202026269776e-16,
+        "disturbance_power": 0.28879403142579974,
+        "anc_residual_power": 0.018886841370848395,
+        "sensor_power": 0.0028983509003493507
+      }
+    }
+  },
+  {
+    "seed": 831,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -7.304254020255713,
+        "anc_only_nr_db": -7.496227978872742,
+        "model_objective_anc_nr_db": -7.496227978872742,
+        "controller_norm": 1.6988713158189857,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.2874562463470554e-15,
+        "disturbance_power": 0.1598093289927087,
+        "anc_residual_power": 0.028443257308457225,
+        "sensor_power": 0.0015792870672716227
+      },
+      "harmonic": {
+        "total_nr_db": -13.342898140380184,
+        "anc_only_nr_db": -14.344229351400557,
+        "model_objective_anc_nr_db": -14.344229351400557,
+        "controller_norm": 1.8022032883407377,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.0023242871311577e-15,
+        "disturbance_power": 0.2558637881728764,
+        "anc_residual_power": 0.009409919115063552,
+        "sensor_power": 0.0025585972215623402
+      }
+    }
+  },
+  {
+    "seed": 832,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -0.7478241938577562,
+        "anc_only_nr_db": -0.7558279742686981,
+        "model_objective_anc_nr_db": -0.7558279742686981,
+        "controller_norm": 0.4364354072897575,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 5.763870646021098e-16,
+        "disturbance_power": 0.09708940687067738,
+        "anc_residual_power": 0.08158100488945796,
+        "sensor_power": 0.0009513487568199419
+      },
+      "harmonic": {
+        "total_nr_db": -9.697916999625715,
+        "anc_only_nr_db": -10.070183804082621,
+        "model_objective_anc_nr_db": -10.070183804082621,
+        "controller_norm": 0.6560553195867468,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.85932656113423e-16,
+        "disturbance_power": 0.17706879053004634,
+        "anc_residual_power": 0.017423028235609327,
+        "sensor_power": 0.0017465755299307412
+      }
+    }
+  },
+  {
+    "seed": 833,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -2.164719163886015,
+        "anc_only_nr_db": -2.192731060698956,
+        "model_objective_anc_nr_db": -2.192731060698956,
+        "controller_norm": 0.7735484813693565,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.537709169152962e-16,
+        "disturbance_power": 0.1308263402388609,
+        "anc_residual_power": 0.0789627175551231,
+        "sensor_power": 0.001301708718829905
+      },
+      "harmonic": {
+        "total_nr_db": -8.219228352339554,
+        "anc_only_nr_db": -8.471057740387442,
+        "model_objective_anc_nr_db": -8.471057740387442,
+        "controller_norm": 1.374762455602302,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.1379174075508449e-15,
+        "disturbance_power": 0.20462614809312168,
+        "anc_residual_power": 0.029097478440754537,
+        "sensor_power": 0.002045324583772738
+      }
+    }
+  },
+  {
+    "seed": 834,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.3410350785957,
+        "anc_only_nr_db": -8.599517144077373,
+        "model_objective_anc_nr_db": -8.599517144077373,
+        "controller_norm": 1.1988456585914695,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.154748709294378e-16,
+        "disturbance_power": 0.1325486703175585,
+        "anc_residual_power": 0.01829884426328198,
+        "sensor_power": 0.001314814688747821
+      },
+      "harmonic": {
+        "total_nr_db": -16.038237366626834,
+        "anc_only_nr_db": -18.17056795350171,
+        "model_objective_anc_nr_db": -18.17056795350171,
+        "controller_norm": 1.2346899430489473,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.475263189611208e-16,
+        "disturbance_power": 0.15874242363801042,
+        "anc_residual_power": 0.002419001910513168,
+        "sensor_power": 0.0015726307741818963
+      }
+    }
+  },
+  {
+    "seed": 835,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -1.0671644472956552,
+        "anc_only_nr_db": -1.0798298932611787,
+        "model_objective_anc_nr_db": -1.0798298932611787,
+        "controller_norm": 0.6883907899617224,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 8.1432472062581975e-16,
+        "disturbance_power": 0.14867359625916318,
+        "anc_residual_power": 0.11594468829605323,
+        "sensor_power": 0.0015543169332616394
+      },
+      "harmonic": {
+        "total_nr_db": -9.039419986320945,
+        "anc_only_nr_db": -9.35464161195592,
+        "model_objective_anc_nr_db": -9.35464161195592,
+        "controller_norm": 1.0604345038584846,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.935833654610502e-16,
+        "disturbance_power": 0.2770808059358238,
+        "anc_residual_power": 0.03214713551577277,
+        "sensor_power": 0.002765035745316268
+      }
+    }
+  },
+  {
+    "seed": 836,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -8.523351118553483,
+        "anc_only_nr_db": -8.80013398384471,
+        "model_objective_anc_nr_db": -8.80013398384471,
+        "controller_norm": 1.4163135818879302,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.98133710223921e-16,
+        "disturbance_power": 0.13082110823891233,
+        "anc_residual_power": 0.017245048714305135,
+        "sensor_power": 0.0013203352091580784
+      },
+      "harmonic": {
+        "total_nr_db": -16.9067969389732,
+        "anc_only_nr_db": -19.702249541186987,
+        "model_objective_anc_nr_db": -19.702249541186987,
+        "controller_norm": 1.4376839752667785,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.55874811555029e-16,
+        "disturbance_power": 0.21608421511135856,
+        "anc_residual_power": 0.002314185077658293,
+        "sensor_power": 0.0021342975352430485
+      }
+    }
+  },
+  {
+    "seed": 837,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -12.076569426177578,
+        "anc_only_nr_db": -12.835633218550877,
+        "model_objective_anc_nr_db": -12.835633218550877,
+        "controller_norm": 1.1916613326172703,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 6.184455952943373e-16,
+        "disturbance_power": 0.11934669313707343,
+        "anc_residual_power": 0.006212223443601735,
+        "sensor_power": 0.0012648552279813543
+      },
+      "harmonic": {
+        "total_nr_db": -18.728668241472,
+        "anc_only_nr_db": -24.3498795613386,
+        "model_objective_anc_nr_db": -24.3498795613386,
+        "controller_norm": 1.1885620692326808,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 7.68961659258891e-16,
+        "disturbance_power": 0.17510511424755654,
+        "anc_residual_power": 0.0006431479274463705,
+        "sensor_power": 0.0017265512247120849
+      }
+    }
+  },
+  {
+    "seed": 838,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -3.6322368968378744,
+        "anc_only_nr_db": -3.690229082183352,
+        "model_objective_anc_nr_db": -3.690229082183352,
+        "controller_norm": 1.3037200308671724,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.043792736100131e-16,
+        "disturbance_power": 0.16130433198684935,
+        "anc_residual_power": 0.0689641079099268,
+        "sensor_power": 0.0016358687074250504
+      },
+      "harmonic": {
+        "total_nr_db": -10.793664441986737,
+        "anc_only_nr_db": -11.291146215896092,
+        "model_objective_anc_nr_db": -11.291146215896092,
+        "controller_norm": 1.4041844404493244,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 1.4982069750290197e-15,
+        "disturbance_power": 0.1968426730256746,
+        "anc_residual_power": 0.01462192770561897,
+        "sensor_power": 0.0019358902356050795
+      }
+    }
+  },
+  {
+    "seed": 839,
+    "noise": {
+      "ar1": {
+        "total_nr_db": -2.2662713581943588,
+        "anc_only_nr_db": -2.297689339522517,
+        "model_objective_anc_nr_db": -2.297689339522517,
+        "controller_norm": 0.9557722197197717,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.347084403844922e-16,
+        "disturbance_power": 0.12453894834794234,
+        "anc_residual_power": 0.073372997243306,
+        "sensor_power": 0.0013103027612292317
+      },
+      "harmonic": {
+        "total_nr_db": -10.333957843586283,
+        "anc_only_nr_db": -10.783217204827892,
+        "model_objective_anc_nr_db": -10.783217204827892,
+        "controller_norm": 1.1264131132519268,
+        "exceeds_simulator_norm_limit_1000": false,
+        "normal_equation_relative_gradient": 9.207814856613442e-16,
+        "disturbance_power": 0.2263710664562104,
+        "anc_residual_power": 0.018901627335917038,
+        "sensor_power": 0.002270226280763131
+      }
+    }
+  }
+]

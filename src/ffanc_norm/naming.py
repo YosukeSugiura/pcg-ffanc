@@ -1,6 +1,6 @@
-"""Method names from v1.1.0 and the former names kept in the archived records.
+"""Method names from v1.2.0 and the former names kept in the archived records.
 
-The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.1.0. It was
+The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.2.0. It was
 called E-PCG before, and the multi-window variant was called E-PCG (bank). The archived records keep the former
 names: run records, summaries, curve files and saved configurations under results/, the rule documents in
 docs/current/, and the Zenodo archive (DOI 10.5281/zenodo.23965831). These records are not rewritten.
@@ -50,7 +50,7 @@ def method_key(key: str, warn: bool = True) -> str:
     if new is None:
         return key
     if warn:
-        warnings.warn(f"method key {key!r} is deprecated; use {new!r} (E-PCG was renamed PCG-WLS in v1.1.0)",
+        warnings.warn(f"method key {key!r} is deprecated; use {new!r} (E-PCG was renamed PCG-WLS in v1.2.0)",
                       DeprecationWarning, stacklevel=2)
     return new
 

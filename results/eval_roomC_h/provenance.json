@@ -1,0 +1,393 @@
+{
+  "commit": "d25a40778ef0ed6ceac0b0c4c387f37b224f01c8",
+  "git_status_porcelain": "?? results/r11_pipeline/holdout_ablation.done\n?? results/r11_pipeline/holdout_new.done\n?? results/r11_pipeline/lock\n?? results/r11_pipeline/rooms_roomB.done\n?? results/r11_pipeline/rooms_roomC.log\n?? results/r11_pipeline/rooms_roomC.running\n?? results/r11_pipeline/select_B1.done\n?? results/r11_pipeline/select_B2.done\n?? results/r11_pipeline/select_C.done\n",
+  "rule": "docs/current/REVISION_RULE_11.md",
+  "rule_sha256": "6ba432af58880a94d6915beab8f7183af645b706bff37b959d4acdd6519bf270",
+  "rule11a": "docs/current/REVISION_RULE_11a.md",
+  "rule11a_sha256": "6d26fe9394c9bcba244065171812ddc6e5418689be89a13609ac16db4c077563",
+  "rule11b": "docs/current/REVISION_RULE_11b.md",
+  "rule11b_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e",
+  "holdout_base": "envA",
+  "machine": {
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "cpu_count": 3,
+    "cpu_flags_sha256": "16a7227851bbd0d54c1a76b00030c349f39b11fe7860f6e2de2e0b7e1261be4c",
+    "PRA_NUM_THREADS": "2",
+    "pra_num_threads": 2,
+    "openblas_corename": "SkylakeX",
+    "numpy_blas": {
+      "name": "scipy-openblas",
+      "version": "0.3.34.106.0",
+      "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+    },
+    "python": "3.13.5",
+    "executable": "[absolute-path]"
+  },
+  "pra_threads": 2,
+  "env_class": "I",
+  "tuning_events_source": "cache",
+  "outer_reference": {
+    "RLS": "recorded",
+    "VFF-RLS": "recorded",
+    "SFTF-H + det": "recorded",
+    "FD-FxNLMS": "recorded",
+    "leaky FD-FxNLMS": "recorded",
+    "FDKF": "recorded",
+    "FD-FxNLMS + det": "recorded",
+    "RLS + CUSUM": "rerun"
+  },
+  "python": "3.13.5",
+  "software": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pyroomacoustics": "0.10.1"
+  },
+  "RLS_FAST": "1",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "written": "2026-11-08T17:01:49+0000",
+  "scripts_sha256": {
+    "experiments/revision11_methods.py": "c2515831c14e62436f737607e0e716256265c5d6b1bb282c62eca2a88be9e9e1",
+    "experiments/prototype_new_algorithms.py": "44bb3c9cc544841b555b60e7903921589de61661287fb9c777fe6792c88971a0",
+    "src/ffanc_norm/fd_fxnlms.py": "18899884623e3afeebc94ddcb4996936104154bf73e7c19901d6caf8e089b114",
+    "src/ffanc_norm/epcg.py": "a13c7859d43c667b7cc982dc1eb8a4b116df063664d25fbda466530eca17aba0",
+    "experiments/revision11_rooms.py": "7b8df3bae5c187f39d7e85fa1fa6211dfe0f80f72ee2ce537b38c5b65768c13b"
+  },
+  "stage": "11-D roomC",
+  "seeds": [
+    800,
+    839
+  ],
+  "combos": [
+    [
+      "ar1",
+      "S8 stationary"
+    ],
+    [
+      "ar1",
+      "S2 src 30cm"
+    ],
+    [
+      "ar1",
+      "S5 src 30cm cont"
+    ],
+    [
+      "ar1",
+      "R2 rig 30cm"
+    ],
+    [
+      "harmonic",
+      "S8 stationary"
+    ],
+    [
+      "harmonic",
+      "S2 src 30cm"
+    ],
+    [
+      "harmonic",
+      "S5 src 30cm cont"
+    ],
+    [
+      "harmonic",
+      "R2 rig 30cm"
+    ]
+  ],
+  "methods": {
+    "E-PCG": [
+      "E-PCG-F",
+      {
+        "k": 8,
+        "L_hops": 48,
+        "ridge": 0.001,
+        "detect": true,
+        "J": 6,
+        "localize": true,
+        "loc_step": 12,
+        "k_first": 16,
+        "k_first_hops": 6,
+        "k_steady": 4,
+        "k_hops": 24,
+        "det_stat": "sandwich",
+        "kd": 16,
+        "det_fa": 1e-07,
+        "branch_hops": 0,
+        "adapt": "weight",
+        "screen_fa": 0.01,
+        "score_unreg": true,
+        "steady_every": 1,
+        "cg_stat_tol": 0.1,
+        "cg_stat_mindof": "M",
+        "grow_len": "half",
+        "pre_window": "bartlett_s",
+        "cg_stat_exactJ": true,
+        "weight_consistent": true,
+        "fixes_1028": true,
+        "det_C_pre": true
+      }
+    ],
+    "FD-FxNLMS": [
+      "fixed_binwise",
+      {
+        "mu": 0.3
+      }
+    ],
+    "leaky FD-FxNLMS": [
+      "leaky_binwise",
+      {
+        "mu": 0.35,
+        "leak": 0.01
+      }
+    ],
+    "convex FD-FxNLMS": [
+      "convex_binwise",
+      {
+        "mu_fast": 0.5,
+        "mu_slow": 0.2,
+        "mu_a": 1.0
+      }
+    ],
+    "FDKF": [
+      "C-FDKF",
+      {
+        "P0": 10.0,
+        "gain_scale": 4.0,
+        "A": 0.9995
+      }
+    ],
+    "RLS": [
+      "R-RLS",
+      {
+        "lam": 0.9995,
+        "delta": 0.01
+      }
+    ],
+    "VFF-RLS": [
+      "R-VFF",
+      {
+        "N0": 500.0,
+        "lam_min": 0.9995,
+        "delta": 0.001
+      }
+    ],
+    "FD-FxNLMS + det": [
+      "V-SCHED",
+      {
+        "denom": "cum",
+        "scale": 0.0625,
+        "mu_min": 0.2,
+        "det_reset_w": false
+      }
+    ],
+    "RLS + det": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false
+      }
+    ],
+    "FD-FxNLMS + restart": [
+      "fixed_binwise",
+      {
+        "mu": 0.3,
+        "det_boost": 0.125,
+        "det_reset_w": false
+      }
+    ],
+    "SFTF + det": [
+      "R-SFTF",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false
+      }
+    ],
+    "SFTF-H + det": [
+      "R-SFTF",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "hybrid": 2048
+      }
+    ],
+    "CFTF + det": [
+      "R-SFTF",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "cov": true
+      }
+    ],
+    "RLS + CUSUM": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "cusum_h": 5,
+        "cusum_k": 32
+      }
+    ],
+    "MFBLMS": [
+      "fixed_binwise",
+      {
+        "mu": 0.05,
+        "mod": true
+      }
+    ],
+    "MFBLMS + det": [
+      "fixed_binwise",
+      {
+        "mu": 0.05,
+        "mod": true,
+        "det_boost": 0.0625,
+        "det_reset_w": false
+      }
+    ],
+    "switching FD-FxNLMS [6]": [
+      "SW-FBLMS",
+      {
+        "mu_n": 0.3,
+        "mu_m": 0.05,
+        "sw_thr": 0.01,
+        "sw_dwell": 4,
+        "sw_detect": "zeta"
+      }
+    ],
+    "switching FD-FxNLMS + det": [
+      "SW-FBLMS",
+      {
+        "mu_n": 0.3,
+        "mu_m": 0.05,
+        "sw_thr": 0.01,
+        "sw_dwell": 8,
+        "sw_detect": "det"
+      }
+    ],
+    "RLS + det (cond.)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_cond_db": 1.0,
+        "det_cond_k": 32
+      }
+    ],
+    "RLS + det + growth": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_grow": "half"
+      }
+    ],
+    "RLS + det + growth (from start)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_grow": "half",
+        "det_grow_start": true
+      }
+    ],
+    "RLS (extended grid)": [
+      "R-RLS",
+      {
+        "lam": 0.9993,
+        "delta": 0.01
+      }
+    ],
+    "VFF-RLS (extended grid)": [
+      "R-VFF",
+      {
+        "N0": 125.0,
+        "lam_min": 0.9995,
+        "delta": 0.001
+      }
+    ],
+    "RLS + CUSUM (extended grid)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "cusum_h": 5,
+        "cusum_k": 64
+      }
+    ],
+    "FD-FxNLMS (extended grid)": [
+      "fixed_binwise",
+      {
+        "mu": 0.32
+      }
+    ],
+    "FDKF (extended grid)": [
+      "C-FDKF",
+      {
+        "P0": 3.0,
+        "gain_scale": 4.0,
+        "A": 0.9995
+      }
+    ],
+    "FD-FxNLMS + det (extended grid)": [
+      "V-SCHED",
+      {
+        "denom": "cum",
+        "scale": 0.03125,
+        "mu_min": 0.2,
+        "det_reset_w": false
+      }
+    ],
+    "E-PCG bank": [
+      "E-PCG-F",
+      {
+        "k": 8,
+        "L_hops": 48,
+        "ridge": 0.001,
+        "detect": true,
+        "J": 6,
+        "localize": true,
+        "loc_step": 12,
+        "k_first": 16,
+        "k_first_hops": 6,
+        "k_steady": 4,
+        "k_hops": 24,
+        "det_stat": "sandwich",
+        "kd": 16,
+        "det_fa": 1e-07,
+        "branch_hops": 0,
+        "adapt": "restart",
+        "screen_fa": 0.01,
+        "score_unreg": true,
+        "steady_every": 1,
+        "mem_bank": [
+          12,
+          48,
+          1000
+        ],
+        "mem_cheap": [
+          "share",
+          "nodetect",
+          "fftmin",
+          "sharescore",
+          "doze"
+        ],
+        "cg_stat_tol": 0.1,
+        "mem_primary": 48,
+        "cg_stat_mindof": "M",
+        "grow_len": "half",
+        "pre_window": "bartlett_s",
+        "cg_stat_exactJ": true,
+        "weight_consistent": true,
+        "fixes_1028": true,
+        "det_C_pre": true
+      }
+    ]
+  }
+}

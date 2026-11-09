@@ -1,0 +1,80 @@
+{"noise": "ar1", "scen": "S8 stationary", "seed": 804, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 805, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 806, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 807, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 810, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 811, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 812, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 813, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 818, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 819, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 824, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 825, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 826, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 827, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 830, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 831, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 832, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 833, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 838, "events": []}
+{"noise": "ar1", "scen": "S8 stationary", "seed": 839, "events": []}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 804, "events": [[8320, 8276]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 805, "events": [[8192, 8076]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 806, "events": [[8320, 8192]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 807, "events": [[8320, 8240]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 810, "events": [[8704, 8660]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 811, "events": []}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 812, "events": [[8320, 8192]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 813, "events": [[8192, 8064]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 818, "events": [[8448, 8428]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 819, "events": [[8320, 8288]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 824, "events": [[8576, 8556]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 825, "events": [[8320, 8228]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 826, "events": []}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 827, "events": [[8448, 8344]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 830, "events": [[8192, 8148]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 831, "events": [[8320, 8228]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 832, "events": [[8192, 8124]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 833, "events": [[8448, 8404]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 838, "events": [[8320, 8192]]}
+{"noise": "ar1", "scen": "S2 src 30cm", "seed": 839, "events": [[8448, 8368]]}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 804, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 805, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 806, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 807, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 810, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 811, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 812, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 813, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 818, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 819, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 824, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 825, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 826, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 827, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 830, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 831, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 832, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 833, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 838, "events": []}
+{"noise": "harmonic", "scen": "S8 stationary", "seed": 839, "events": []}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 800, "events": [[8320, 8276]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 801, "events": [[8320, 8264]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 802, "events": [[8192, 8064]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 803, "events": [[8320, 8288]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 808, "events": [[8320, 8288]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 809, "events": [[8192, 8064]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 814, "events": [[8448, 8392]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 815, "events": [[8192, 8076]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 816, "events": [[8704, 8576]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 817, "events": [[8448, 8356]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 820, "events": [[8320, 8288]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 821, "events": [[8320, 8192]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 822, "events": [[8576, 8520]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 823, "events": [[8576, 8544]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 828, "events": [[8320, 8288]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 829, "events": [[8320, 8252]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 834, "events": [[8448, 8332]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 835, "events": [[8448, 8404]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 836, "events": [[8320, 8240]]}
+{"noise": "harmonic", "scen": "S2 src 30cm", "seed": 837, "events": [[8448, 8368]]}

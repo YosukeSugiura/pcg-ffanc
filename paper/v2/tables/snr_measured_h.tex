@@ -1,0 +1,25 @@
+\begin{table*}[t]\centering\caption{SNR 10 dB (room A; Holm over 208 tests) and measured room impulse responses M-S and M-P (MeshRIR; Holm over 104 and 104 tests), holdout seeds 800--839: median A1 (A2 in Section~S5). Separate families with all 26 baselines; configurations unchanged. M-S stationary expectation reference with true $S$, total NR medians (AR(1)/harmonic): -6.5/-14.7 dB. Leaky FD-FxNLMS, convex FD-FxNLMS and FD-FxNLMS+restart are in Section~S5 (bold decided among all 15 rows).}\label{tab:snr_measured}
+\scriptsize
+\RnineFitWidth{\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{4}{c}{SNR 10 dB (room A)} & \multicolumn{4}{c}{Measured RIR (MeshRIR)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+method & S8 & S2 & S8$^h$ & S2$^h$ & M-S & M-S$^h$ & M-P & M-P$^h$ \\
+\midrule
+\multicolumn{9}{l}{\emph{A1 (first 0.512 s after the change; S5/R3: 0.592 s; S8: first 0.512 s), median dB}}\\
+FD-FxNLMS & -7.1 & -7.7 & -7.6 & -6.2 & -3.5$^{\dagger2}$ & -6.1$^{\dagger1}$ & -0.8$^{\dagger5}$ & -0.8$^{\dagger1}$ \\
+FDKF & -2.4 & -7.4 & -2.6 & -5.7 & 0.5$^{\dagger4}$ & -1.6 & -0.3$^{\dagger6}$ & -0.6 \\
+RLS & -5.9 & -7.9 & -7.7 & -5.8 & -2.5$^{\dagger2}$ & -7.7 & -1.6 & -2.8 \\
+VFF-RLS & -1.5 & -7.8 & -5.3 & -5.3 & 0.3$^{\dagger2}$ & -4.1 & -1.5 & -2.4 \\
+FD-FxNLMS+det & -6.4 & -7.5 & -7.1 & -5.8 & -3.6$^{\dagger2}$ & -5.7 & -0.6$^{\dagger6}$ & -0.8 \\
+RLS+det & -6.0 & -7.4 & -7.9 & -7.9 & -2.9 & -7.8 & -1.2 & -6.9 \\
+SFTF+det & -6.0 & -3.7 & -7.9 & -6.4 & -2.9 & \textbf{-7.9} & 0.5 & -2.9 \\
+SFTF-H+det & -6.0 & -7.4 & -7.9 & -7.9 & -2.9 & \textbf{-7.9} & -1.2 & -6.9 \\
+CFTF+det & -6.0 & -7.5 & -7.9 & -7.9 & -2.9 & \textbf{-7.9} & -1.2 & \textbf{-6.9} \\
+RLS+CUSUM & -6.0 & -7.7 & -7.9 & -7.2 & -2.6$^{\dagger2}$ & -7.8 & -1.2 & -4.9 \\
+PCG-WLS (multi-window) & -6.8 & -7.9 & -8.0 & \textbf{-8.2} & -2.9 & -7.3 & -2.3 & -6.3 \\
+\textbf{PCG-WLS} & -6.8 & \textbf{-8.0} & \textbf{-8.0} & -8.0 & -2.9 & -7.5 & \textbf{-2.5} & -6.5 \\
+\bottomrule
+\end{tabular}}
+\\[2pt]{\scriptsize NR in dB; lower is better. $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}
+\end{table*}

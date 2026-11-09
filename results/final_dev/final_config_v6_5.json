@@ -1,0 +1,67 @@
+{
+ "name": "E-PCG-M v6.5",
+ "decided": "2026-10-25 on tuning seeds 300-309 (results/v6_4_dev/, experiments/dev_v6_length.py config C6x), before any run of this configuration on the evaluation seeds 480-519. = v6.4 + cg_stat_exactJ (bug fix of the statistical CG stopping rule: the LS cost estimate included the ridge penalties, [internal note omitted]). Tuning seeds vs v6.4: AR1 S3 +0.06 -> +0.02 dB (worst +0.48 -> +0.10), harmonic S4 -0.02 -> -0.07, others within +-0.03; flops +0.5-1.5k. Not adopted: halved tolerance (C6xt).",
+ "base": "E-PCG v2 light (verify_protocol_defs.GRID['E-PCG v2 light'], selected cfg)",
+ "cfg": {
+  "controller_length": 512,
+  "fft_length": 1024
+ },
+ "changes_vs_v6_4": [
+  "cg_stat_exactJ = True"
+ ],
+ "flags": {
+  "L_hops": 48,
+  "J": 6,
+  "loc_step": 12,
+  "k_first_hops": 6,
+  "k_steady": 4,
+  "k_hops": 24,
+  "steady_every": 1,
+  "mem_bank": [
+   12,
+   48,
+   1000
+  ],
+  "mem_cheap": [
+   "share",
+   "nodetect",
+   "fftmin",
+   "sharescore",
+   "doze"
+  ],
+  "reg_gate": "after_event",
+  "sid": true,
+  "sid_rearm": true,
+  "sid_c2f": 0.02,
+  "sid_spread": 2,
+  "sid_Dres": "crb",
+  "sid_res_split": true,
+  "sid_xreg": "direct",
+  "sid_cost_exact": true,
+  "cg_stat_tol": 0.1,
+  "sid_batch": true,
+  "sid_sig": "profile",
+  "sid_fastchol": true,
+  "sid_cs": 0.01,
+  "sid_range": "spec",
+  "sid_T": "dof2.2",
+  "sid_rs_track": true,
+  "sid_post": true,
+  "mem_primary": 48,
+  "cg_stat_mindof": "M",
+  "grow_len": "half",
+  "sid_s2pre": true,
+  "sid_s2pre_fb": "dof3",
+  "sid_s2pre_fix": true,
+  "sid_consist": 1e-07,
+  "sid_consist_every": 8,
+  "sid_consist_mode": "pre",
+  "sid_consist_anchor": "hop",
+  "sid_post_space": [
+   2,
+   4
+  ],
+  "pre_window": "bartlett_s",
+  "cg_stat_exactJ": true
+ }
+}

@@ -1,0 +1,25 @@
+\begin{table*}[t]\centering\caption{Rooms B (RT$_{60}$ 0.15 s) and C (RT$_{60}$ 0.3 s), holdout seeds 800--839: median A1 (A2 in Section~S5). Holm over 416 tests per room (PCG-WLS against all 26 baselines, one family per room); configurations unchanged. Leaky FD-FxNLMS, convex FD-FxNLMS and FD-FxNLMS+restart are in Section~S5 (bold decided among all 15 rows); the 13 baselines added in revision are in the archived results.}\label{tab:eval_rooms}
+\scriptsize\setlength{\tabcolsep}{4pt}
+\RnineFitWidth{\begin{tabular}{lcccccccccccccccc}
+\toprule
+ & \multicolumn{8}{c}{Room B, RT$_{60}$ 0.15 s} & \multicolumn{8}{c}{Room C, RT$_{60}$ 0.3 s} \\
+\cmidrule(lr){2-9}\cmidrule(lr){10-17}
+method & S8 & S2 & S5 & R2 & S8$^h$ & S2$^h$ & S5$^h$ & R2$^h$ & S8 & S2 & S5 & R2 & S8$^h$ & S2$^h$ & S5$^h$ & R2$^h$ \\
+\midrule
+\multicolumn{17}{l}{\emph{A1 (first 0.512 s after the change; S5/R3: 0.592 s; S8: first 0.512 s), median dB}}\\
+FD-FxNLMS & -4.6 & -8.8 & -9.2 & -8.2$^{\dagger1}$ & -5.3 & -7.5 & -8.3 & 0.0$^{\dagger37}$ & -4.8 & -6.4 & -6.8 & 0.0$^{\dagger28}$ & -4.3$^{\dagger5}$ & -4.6$^{\dagger5}$ & -5.1$^{\dagger6}$ & 0.0$^{\dagger40}$ \\
+FDKF & -3.8 & -7.8 & -8.1 & -6.9$^{\dagger1}$ & -3.8 & -7.2 & -8.7 & -4.3$^{\dagger7}$ & -1.6 & -5.7 & -5.9 & -1.2$^{\dagger20}$ & -1.3$^{\dagger6}$ & -4.1$^{\dagger4}$ & -5.7$^{\dagger4}$ & 0.0$^{\dagger37}$ \\
+RLS & -2.1 & \textbf{-9.4} & \textbf{-9.6} & -8.0$^{\dagger13}$ & -6.7 & -8.6 & -9.4 & \textbf{-5.7$^{\dagger16}$} & -4.2 & -7.7 & -7.9 & 0.0$^{\dagger38}$ & -3.9$^{\dagger4}$ & -6.2 & -7.3 & 0.0$^{\dagger40}$ \\
+VFF-RLS & 2.9$^{\dagger3}$ & -9.4$^{\dagger3}$ & -9.5$^{\dagger3}$ & -8.1$^{\dagger13}$ & -1.1 & -8.3 & -9.2 & -5.5$^{\dagger15}$ & -1.3 & \textbf{-7.7} & \textbf{-7.9} & 0.0$^{\dagger38}$ & 0.3$^{\dagger2}$ & -6.0 & -7.1 & 0.0$^{\dagger39}$ \\
+FD-FxNLMS+det & -6.3 & -8.7 & -8.9 & -7.7$^{\dagger1}$ & -5.0 & -6.6 & -7.5 & 0.0$^{\dagger35}$ & -5.0 & -5.9 & -6.4 & -3.7$^{\dagger17}$ & -4.2 & -3.9 & -5.2 & 0.0$^{\dagger40}$ \\
+RLS+det & -2.2 & -8.9 & -8.8 & -7.4$^{\dagger1}$ & -6.8 & -11.1 & -9.9 & -5.0$^{\dagger12}$ & -4.3 & -7.1 & -7.8 & -4.8$^{\dagger14}$ & -4.1 & -7.1 & -6.7 & 0.0$^{\dagger35}$ \\
+SFTF+det & -2.2 & -8.6$^{\dagger1}$ & -7.7$^{\dagger1}$ & -4.3$^{\dagger3}$ & -6.9 & -0.0 & -1.1 & 0.8$^{\dagger13}$ & -4.4 & -6.5 & -7.8 & -4.6$^{\dagger13}$ & -4.1 & 0.2 & -0.7 & 0.0$^{\dagger36}$ \\
+SFTF-H+det & -2.2 & -8.9 & -8.8 & -7.4$^{\dagger1}$ & -6.9 & -11.1 & -10.1 & -4.9$^{\dagger10}$ & -4.4 & -7.1 & -7.8 & \textbf{-4.8$^{\dagger15}$} & -4.1 & -7.1 & -6.8 & 0.0$^{\dagger35}$ \\
+CFTF+det & -2.2 & -8.9 & -8.8 & -7.4$^{\dagger1}$ & -6.9 & \textbf{-11.1} & -9.9 & -5.0$^{\dagger11}$ & -4.4 & -7.1 & -7.8 & -4.8$^{\dagger14}$ & -4.1 & \textbf{-7.2} & -6.8 & 0.0$^{\dagger35}$ \\
+RLS+CUSUM & -2.2 & -9.1 & -9.5 & -7.9$^{\dagger16}$ & -6.8 & -9.9 & \textbf{-10.3} & 0.0$^{\dagger32}$ & -4.0$^{\dagger2}$ & -7.6 & -7.8 & 0.0$^{\dagger36}$ & -4.1$^{\dagger5}$ & -6.5 & \textbf{-7.9} & 0.0$^{\dagger40}$ \\
+PCG-WLS (multi-window) & -5.8 & -8.8 & -8.8 & -7.7$^{\dagger2}$ & -7.5 & -8.2 & -9.3 & -1.3$^{\dagger17}$ & -5.8 & -7.2 & -7.7 & 0.0$^{\dagger27}$ & -5.2$^{\dagger6}$ & -3.9 & -6.9 & 0.0$^{\dagger40}$ \\
+\textbf{PCG-WLS} & -5.8 & -9.0 & -9.4 & -8.1$^{\dagger7}$ & \textbf{-7.5} & -8.3 & -8.4 & 0.0$^{\dagger21}$ & \textbf{-5.9} & -7.6 & -7.8 & 0.0$^{\dagger30}$ & \textbf{-5.5} & -4.5 & -6.1 & 0.0$^{\dagger40}$ \\
+\bottomrule
+\end{tabular}}
+\\[2pt]{\scriptsize NR in dB; lower is better. $^h$ harmonic noise, otherwise AR(1). Bold: best median among methods failing in at most half of the runs; failure counts are separate outcomes. $^{\dagger k}$: $k$ failed runs of 40 (counted as 0 dB).}
+\end{table*}

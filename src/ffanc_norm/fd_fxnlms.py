@@ -52,6 +52,53 @@ def fd_block_gradient(
     return gradient_t[:M].copy()
 
 
+def fd_block_gradient_mod(
+    filtered_reference_history: np.ndarray,
+    new_error: np.ndarray,
+    denominator: np.ndarray,
+    controller_length: int,
+) -> np.ndarray:
+    """(2026-11-07, Revision 11-B) modified FBLMS gradient (Lu, Qiu, Zou 2014; Lu, Chen, Qiu 2017, Eq. (6)).
+
+    Constraint before normalization: the circular correlation IFFT(conj(X) E) is truncated to its first M lags (equal
+    to the linear correlation for N >= M + H - 1), transformed back, normalized by the bin denominator, and the first M
+    taps are kept: g = [F^-1 D^-1 F [c_{0..M-1}; 0]]_{0..M-1}. fd_block_gradient instead normalizes all N lags and then
+    truncates (normalization before constraint, Eq. (3)). Cost: one extra FFT/IFFT pair. New function; the existing
+    gradient is unchanged.
+    """
+    xf = np.asarray(filtered_reference_history, dtype=float)
+    err = np.asarray(new_error, dtype=float)
+    denom = np.asarray(denominator, dtype=float)
+
+    N = xf.size
+    H = err.size
+    M = int(controller_length)
+
+    if N <= 0 or H <= 0 or M <= 0:
+        raise ValueError("N, H, and M must be positive")
+    if H > N:
+        raise ValueError("new_error must not be longer than the FFT frame")
+    if M > N:
+        raise ValueError("controller_length must not exceed FFT length")
+    if N < M + H - 1:
+        raise ValueError("need N >= M + H - 1 to avoid circular aliasing")
+    if denom.shape != (N // 2 + 1,):
+        raise ValueError("unexpected denominator shape")
+    if np.any(denom <= 0.0):
+        raise ValueError("denominator must be strictly positive")
+
+    e_frame = np.zeros(N, dtype=float)
+    e_frame[-H:] = err
+
+    Xf = np.fft.rfft(xf)
+    E = np.fft.rfft(e_frame)
+
+    c = np.fft.irfft(np.conj(Xf) * E, n=N)
+    c[M:] = 0.0
+    gradient_t = np.fft.irfft(np.fft.rfft(c) / denom, n=N)
+    return gradient_t[:M].copy()
+
+
 def direct_block_gradient(
     filtered_reference_history: np.ndarray,
     new_error: np.ndarray,

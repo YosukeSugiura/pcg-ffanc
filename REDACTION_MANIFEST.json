@@ -1,5 +1,6 @@
 {
   "description": "Non-scientific workflow identifiers redacted; hashes document original and release copies.",
+  "notes": "Each entry describes the release copy made when the file was first redacted. Source files changed in later releases (renaming to PCG-WLS and Revision 11 in v1.2.0) no longer have their recorded release_sha256. Entries added in v1.2.0 carry a 'note'. The Revision 11 provenance records (scripts_sha256) hash the development copies; the public prototype_new_algorithms.py and src/ffanc_norm/epcg.py differ from them by the renaming, and revision11_methods.py as listed below.",
   "files": {
     "experiments/ablation_core.py": {
       "original_sha256": "0fc0007bd61eedeeaffe597871c9a136b58fd0b76c96deecf66202b3c2386dd8",
@@ -164,6 +165,131 @@
     "results/ringbuf_isf_profile/plan.json": {
       "original_sha256": "2c4369127816d9f54e8f27209d84d3f87fbdcb06c5416739b65deb539542869d",
       "release_sha256": "36392493099749914a03f1851fc65a85dc7b7edcefeea751fb92e80b74725f34"
+    },
+    "docs/current/REVISION_RULE_11.md": {
+      "original_sha256": "6ba432af58880a94d6915beab8f7183af645b706bff37b959d4acdd6519bf270",
+      "release_sha256": "960e006c8335977e0295c028388f38f8179d913b6de2ca95043eafa80fab8047",
+      "note": "v1.2.0: workflow identifiers (branches, internal review and note files, tool and role names) replaced by bracketed placeholders; rules, grids, thresholds, seeds and decisions unchanged"
+    },
+    "docs/current/REVISION_RULE_11a.md": {
+      "original_sha256": "6d26fe9394c9bcba244065171812ddc6e5418689be89a13609ac16db4c077563",
+      "release_sha256": "f27570be368d7b652574b29ed8cc46c1000d61ad3cd1a527704ba52fca4f85f4",
+      "note": "v1.2.0: as REVISION_RULE_11.md"
+    },
+    "docs/current/REVISION_RULE_11b.md": {
+      "original_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e",
+      "release_sha256": "71d8870e0b9c7d636e55dd72d7292f0cdcb9bc5f60472aba4b23a8e4f68abeb4",
+      "note": "v1.2.0: as REVISION_RULE_11.md; one absolute path replaced by [absolute-path]"
+    },
+    "experiments/revision11_methods.py": {
+      "original_sha256": "c2515831c14e62436f737607e0e716256265c5d6b1bb282c62eca2a88be9e9e1",
+      "release_sha256": "ab050e158a0bbd6fb7e6a562d9ceff90603c4e59ee0830f0acd8af5fd40a32ed",
+      "note": "v1.2.0: check_rules accepts the redacted rule copies listed here (rule_matches); provenance hashes src/ffanc_norm/pcg_wls.py instead of the renamed epcg.py"
+    },
+    "experiments/revision11_pipeline.py": {
+      "original_sha256": "685854914bd3a841c2a1ad5d8cb9f8c98ecf5f1c5e7bd57b78c087c1b8c266c1",
+      "release_sha256": "c7002f66251400cf172e568a0cef87af8f1e0a2fdc67d2599b655ced11a00224",
+      "note": "v1.2.0: default push branch name neutralized"
+    },
+    "paper/v2/make_detector_aggregates.py": {
+      "original_sha256": "44ae0d5d8aa04960850859aa8f23fef0030355d71013df13e20fafb34d3d1aa7",
+      "release_sha256": "a10a7eb7f8ed1a0119bcc1212f97a76ca42c6e28471a098f4f5dcb4d3c14fd0e",
+      "note": "v1.2.0: internal review file name removed; output directory tables_detector; --results-dir / --tex-dir options"
+    },
+    "tests/test_revision11.py": {
+      "original_sha256": "d65dc480c0469e72163370cf5992c0abb1e48f9304e986a8efef61707035bf16",
+      "release_sha256": "23eb8177cecfd7084d376d5aef04a4a9259c9e94846188aa138a40a2b5adf33b",
+      "note": "v1.2.0: rule checks through rule_matches; imports ffanc_norm.pcg_wls"
+    },
+    "results/eval_roomB_h/provenance.json": {
+      "original_sha256": "445b9227a1c1fa436ffde31905d34a933ea4db8cd14801a1078ec8985f2e93a1",
+      "release_sha256": "4fbf0a4b938379233ec9081acef0191116d908f9eba7e1dddfa29c7fc694862e",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/eval_roomC_h/provenance.json": {
+      "original_sha256": "aa7f592226f0a3be6eedb9e5ec771d851c52feb7c4f30f83a92eed5af5120867",
+      "release_sha256": "53cc9d2ef19ebe8a6cc680571f089c9e6f16500139d591c5dc304eef146033f9",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/eval_snr10_h/provenance.json": {
+      "original_sha256": "73ee69d7e0c53bc59103487567cc1d54e2775cd566b8cc7fcc0c7fcdba748611",
+      "release_sha256": "554f1b239680ec29ac58dcfec6c7ef3b198948913f59052436efcade6f6e1a21",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/final_eval_holdout_r11/provenance.json": {
+      "original_sha256": "82fe2fb75330863440f2c58be5e9c90d49134c4f6b093016eeb0efa6a3b88c68",
+      "release_sha256": "fec3302854293bb99ac4d11af1ac220531224d1d3f6cb5fdfb65e9420d75e221",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_ablation_holdout/provenance.json": {
+      "original_sha256": "0428128269e368c455e7dcf7e873a96eb900b23ca5e04e3df1000e9187fc912b",
+      "release_sha256": "6e510c2da36011a69a703178778bba0325b7ddae269e3841456d9908aeefd126",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/protocol_r11_sel/provenance_B1.json": {
+      "original_sha256": "08aef09b85a09d1e0e532ab969a8403256f87a55fcdb42288ebf2ac3e8ed5023",
+      "release_sha256": "7731fe07299935948f72679e4fb3d13997af168b0fff7213f8cd5a2c8255457a",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/protocol_r11_sel/provenance_B1_resume1.json": {
+      "original_sha256": "0533d15fbbf8a3a8bd8cdfc647c12a3ec1c67e98253ac6faadf0b3a0bd9d1db6",
+      "release_sha256": "69b1c41d2dcf30a1b5d607c919d0a331c6ba4067a58bfe84458e269387828b28",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/protocol_r11_sel/provenance_B2.json": {
+      "original_sha256": "3b5c4eb7bd45cca23c9f551947c3da644d9a60a6af7ca548088900e28c144e84",
+      "release_sha256": "9fd618de919fc4387893908a564f8982c6656a084ecda227f043c1928440f562",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/protocol_r11_sel/provenance_C.json": {
+      "original_sha256": "e41513b10efbf9c4f5496045792191699f862f67906adb91de4b0675f6e39541",
+      "release_sha256": "9bdfb675b49618054fc25758b8d7cf32d7527bbf7ab99e06cdbcb37ef9588931",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/protocol_r11_sel/provenance_C_resume1.json": {
+      "original_sha256": "bebd5bdf2cb653a0a379b7446f3926f00ae947f7548c2988cc1ae51118c956cb",
+      "release_sha256": "d34827d9cc556ba8f67a005db86c68a75acac335b6da28f689909cc0d38d272b",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_preflight/env_A.json": {
+      "original_sha256": "a96c72e7f5b6184caa85b64033ece8cef1c063cb4e4253b822abbc95b36eb83f",
+      "release_sha256": "44eddee4a0de405ffbd25492899fd85750fa388ceae3b483698d6bf21ac963a1",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_preflight/env_C.json": {
+      "original_sha256": "94f0d55d9d5f7e1fd5c049e3df237c8ddc160651bd5118705d7baa70e8353aa2",
+      "release_sha256": "d6473ab5b4f54b5aaaabcc54678c9ef519cc968ac636a375662b5b91ece39f3d",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_preflight/smoke_A.json": {
+      "original_sha256": "8da973ba716e228207b6504508ac4c418b83ceda87f0b6d4ab33e32b94c7e05e",
+      "release_sha256": "8d43eb9576968da4c37d8ce87911da815737e858f3dc840ff3f24ddaed8ff8a2",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_preflight/smoke_B.json": {
+      "original_sha256": "6a2ed1c7e76cdb021da4262f9f615f03bcfff704cfa909c62d510daf5810ac75",
+      "release_sha256": "b24e099850a3f261c85cb73d613a20c9cdeae70e144c987bcb0395e660a283bf",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/r11_preflight/smoke_C.json": {
+      "original_sha256": "4c8a1a631b0c74ad1d9bc6ec5d5c5683ee205c210316ce5f23f11e24b7de8465",
+      "release_sha256": "d5ab94e76ebd5808b3109e31e6bd8e32e2f7dd49520e1d6b101b4d90961eace7",
+      "note": "v1.2.0: interpreter path (executable) replaced by [absolute-path]; machine fingerprint and all other fields unchanged"
+    },
+    "results/final_eval_meas_s_h/provenance.json": {
+      "original_sha256": "adf9f7f065d2f9ce7467a90f9f949712e1f4e2375a9918912d9abb37697d738a",
+      "release_sha256": "202b0c6db1785d026ec2b82ef19a11f1a232f380e5bb24f74b4282af112cf4e1",
+      "note": "v1.2.0: embedded Rule 8a text replaced by the public copy docs/current/REVISION_RULE_8a.md; interpreter path replaced by [absolute-path]"
+    },
+    "results/final_eval_meas_p_h/provenance.json": {
+      "original_sha256": "e7ad05e85da37a0b2ef615da122dab3d546ece3773f0ce4f188ad56a9247576b",
+      "release_sha256": "621a2b787206fcd9559766c07200e9fcd632ca83e715eaf7d94cdd965a6f530f",
+      "note": "v1.2.0: embedded Rule 8a text replaced by the public copy docs/current/REVISION_RULE_8a.md; interpreter path replaced by [absolute-path]"
+    },
+    "results/final_dev/final_config_v6_5.json": {
+      "original_sha256": "a20f24740244de6163b308511926165fce5b12d31a48ca3e5c72a6a1397cb083",
+      "release_sha256": "bcd692938c15686ec1de89b8b481bf78dbd3b5bc87bd071e705862b03d8e0cbd",
+      "note": "v1.2.0: internal review file reference replaced by [internal note omitted]; added because experiments/sweep_tradeoff.py (imported by final_eval.py and the Revision 11 runners) reads it"
     }
   }
 }

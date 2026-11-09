@@ -1,0 +1,4 @@
+{"room": "A", "noise": "ar1", "scen": "S7 rd abrupt", "seed": 300, "events": [[8064, 7996]]}
+{"room": "A", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 300, "events": [[8064, 7996]]}
+{"room": "A", "noise": "ar1", "scen": "S8 stationary", "seed": 300, "events": []}
+{"room": "A", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 300, "events": [[8064, 7996]]}

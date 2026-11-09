@@ -7,8 +7,8 @@ authors:
     affiliation: Meiji University
 license: [MIT, CC-BY-4.0]
 abstract: "Code is MIT-licensed; derived data are CC-BY-4.0. See LICENSE and the MeshRIR attribution in README."
-version: "v1.1.0"
-date-released: 2026-11-07
+version: "v1.2.0"
+date-released: 2026-11-09   # TODO(author): set to the release date of v1.2.0
 doi: "10.5281/zenodo.23965830"
 identifiers:
   - type: doi
@@ -17,6 +17,10 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23965831"
     description: "Version DOI of the Zenodo record for v1.0.0"
+# TODO(author): add the version DOI of Zenodo version v1.2.0 when it is published:
+#  - type: doi
+#    value: "10.5281/zenodo.<v1.2.0>"
+#    description: "Version DOI of the Zenodo record for v1.2.0 (Revision 11 records)"
 repository-code: "https://github.com/YosukeSugiura/pcg-ffanc"
 # Fill when the article is published:
 # preferred-citation:

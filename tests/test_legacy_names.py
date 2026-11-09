@@ -1,4 +1,4 @@
-"""Former names (E-PCG, before v1.1.0) still work and emit a DeprecationWarning; archived configurations are read
+"""Former names (E-PCG, before v1.2.0) still work and emit a DeprecationWarning; archived configurations are read
 unchanged and mapped to the current method key."""
 import hashlib
 import json

@@ -52,7 +52,7 @@ from ffanc_norm.benchmark_metrics import (  # noqa: E402
     ensemble_power_ratio_db,
     threshold_times_from_db_curve,
 )
-from ffanc_norm.fd_fxnlms import fd_block_gradient  # noqa: E402
+from ffanc_norm.fd_fxnlms import fd_block_gradient, fd_block_gradient_mod  # noqa: E402
 from ffanc_norm import naming as _naming  # noqa: E402
 from ffanc_norm.normalization import PowerTracker  # noqa: E402
 from ffanc_norm.simulation import causal_fir_block, right_aligned_history  # noqa: E402
@@ -1519,9 +1519,92 @@ def _cftf_run(S, xf, dhat, w, t_from, t_to, lam, M, stab=(1.5, 2.5, 1.0)):
     return w
 
 
+def _grow_taps(n, M):
+    """(2026-11-07, Revision 11-C) R-RLS 'det_grow' 'half': active regressor taps n samples after the run start / restart
+    (max(n // 2, 1) while n < 2M, then all M)."""
+    return max(n // 2, 1) if n < 2 * M else M
+
+
+def _cond_restart(params, hop_power, log, b, stop, tau, eps_post, H):
+    """(2026-11-07, Revision 11-C, REVISION_RULE_11 Sec. 4.3) RLS + det (cond.): restart decision at a shared event.
+
+    P_post = mean a priori residual power of the hop-start controller on [tau, stop); P_pre = mean of the a priori
+    residual powers of the last K hops that end at or before tau (hop powers accumulated in the RLS loop, the quantity
+    of the CUSUM q). Restart iff 10 log10(P_post / P_pre) >= theta. theta = -inf: always (RLS + det); theta = +inf: never
+    (plain RLS). No complete hop before tau (cannot occur after E-PCG's start-up delay): restart unless theta = +inf."""
+    th = float(params['det_cond_db']); K = int(params.get('det_cond_k', 32))
+    pre = hop_power[:tau // H][-K:]
+    p_post = float(np.mean(np.asarray(eps_post, float) ** 2)) if stop > tau else 0.0
+    p_pre = float(np.mean(pre)) if pre else None
+    if p_pre is not None and p_pre > 0.0 and p_post > 0.0:
+        ratio = float(10.0 * np.log10(p_post / p_pre))
+    else:
+        ratio = None
+    if th == np.inf:
+        restart = False
+    elif th == -np.inf:
+        restart = True
+    else:
+        restart = True if ratio is None else ratio >= th
+    log.append([int(b), int(stop), int(tau), ratio, len(pre), bool(restart)])
+    return restart
+
+
+def _sw_hop(S, params, b, xf_hist, Xf, err, den, M, N, H):
+    """(2026-11-07, Revision 11-B, REVISION_RULE_11 Sec. 3.4) one hop of SW-FBLMS ([6]-type switching).
+
+    Applies the gradient of the current mode (N: bin-normalized FBLMS = fd_block_gradient with mu_n; M: MFBLMS =
+    fd_block_gradient_mod with mu_m) and then decides the mode of the next hop. J(k) = error power of the new H
+    samples; J_m(k) = b J_m(k-1) + (1 - b) J(k), b = (1 - mu_n/2)^2 + mu_n^2/4, J_m initialized with J(0); dJ = J_m(k-1) -
+    J_m(k). N -> M: 0 <= dJ < sw_thr * J_m(k) (J_m decreasing by less than the relative threshold; Rule 11a Sec. 1.2:
+    no switch while J_m increases) and >= sw_dwell hops since the last switch. Z-A ('zeta'): zeta = smoothed
+    ||lags M..N-1 of IFFT(conj(X) E / D)||^2 / smoothed ||e||^2 (coefficient b; lags M..N-1 = the lags discarded by the
+    gradient constraint, causal lags M..N-H and circularly wrapped lags N-H+1..N-1, Rule 11a Sec. 5.5); entering M sets zeta_THR = 0
+    (uncalibrated); after sw_dwell hops in M a calibration phase of sw_dwell hops in N mode sets zeta_THR = max zeta and
+    returns to M; in M, zeta > zeta_THR and >= sw_dwell hops -> N. Z-B ('det'): M -> N at the shared events (in the
+    det_events block), zeta unused. S['step'] = mu g (the caller applies w -= step)."""
+    mode = S['mode']
+    if mode == 'M':
+        g = fd_block_gradient_mod(xf_hist, err, den, M); S['step'] = float(params['mu_m']) * g
+    else:                                               # 'N' and the Z-A calibration phase 'C' (NFBLMS updates)
+        g = fd_block_gradient(xf_hist, err, den, M); S['step'] = float(params['mu_n']) * g
+    S['modes'].append(mode)
+    bb = S['b']; J = float(np.mean(err ** 2))
+    Jm_old = S['Jm'] if S['Jm'] is not None else J
+    Jm = bb * Jm_old + (1.0 - bb) * J; S['Jm'] = Jm
+    dJ = Jm_old - Jm
+    zeta = None
+    if params['sw_detect'] == 'zeta':
+        e_frame = np.zeros(N); e_frame[-H:] = err
+        gf = np.fft.irfft(np.conj(Xf) * np.fft.rfft(e_frame) / den, n=N)
+        zn = float(gf[M:] @ gf[M:]); zd = float(err @ err)
+        S['zn'] = zn if S['zn'] is None else bb * S['zn'] + (1.0 - bb) * zn
+        S['zd'] = zd if S['zd'] is None else bb * S['zd'] + (1.0 - bb) * zd
+        zeta = S['zn'] / max(S['zd'], 1e-300)
+    S['dwell'] += 1
+    dw = int(params['sw_dwell'])
+    if mode == 'N':
+        if S['dwell'] >= dw and 0.0 <= dJ < float(params['sw_thr']) * Jm:     # (Rule 11a Sec. 1.2) sign condition
+            S['mode'] = 'M'; S['dwell'] = 0; S['zthr'] = None
+            S['log'].append([b, 'M', 'dJ'])
+    elif mode == 'M':
+        if params['sw_detect'] == 'zeta' and S['dwell'] >= dw:
+            if S['zthr'] is None:                       # uncalibrated (zeta_THR = 0): calibration phase in N mode
+                S['mode'] = 'C'; S['dwell'] = 0; S['zmax'] = 0.0
+                S['log'].append([b, 'C', 'calibrate'])
+            elif zeta > S['zthr']:
+                S['mode'] = 'N'; S['dwell'] = 0
+                S['log'].append([b, 'N', 'zeta'])
+    else:                                               # 'C'
+        S['zmax'] = max(S['zmax'], zeta)
+        if S['dwell'] >= dw:
+            S['zthr'] = S['zmax']; S['mode'] = 'M'; S['dwell'] = 0
+            S['log'].append([b, 'M', 'calibrated', S['zthr']])
+
+
 def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
         change_at: float | None = None) -> dict:
-    method = _naming.method_key(method)          # former keys 'E-PCG-F' / 'E-PCG' (before v1.1.0) are accepted
+    method = _naming.method_key(method)          # former keys 'E-PCG-F' / 'E-PCG' (before v1.2.0) are accepted
     N = int(cfg['fft_length']); H = int(cfg['hop_length']); M = int(cfg['controller_length'])
     fs = int(cfg['sample_rate'])
     x, d, v, p, s, eval_samples = _make_signals(cfg, seed, 1, eval_seconds)
@@ -1664,6 +1747,33 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
     _ev_total = [0]                                  # (review 2026-10-24, fix 3) events over the whole run incl. rebuilds
     restart = [0]; score_hist: list = []; reset_hops: list = []; loc_hist: list = []; flop_hist: list = []
     fd_restart = [None]   # (2026-10-30, review N1) hop sample of the last shared detection for 'fixed_binwise'
+    # (2026-11-07, Revision 11-C) R-RLS 'det_cond_db': conditional restart at a shared event; hop powers of the a priori
+    # residual (the CUSUM q quantity, before the log) and the decision log. Unused (empty) without the flag.
+    _cond = 'det_cond_db' in params and method == 'R-RLS'
+    _cond_hp: list = []; _cond_log: list = []
+    # (2026-11-07, Revision 11-C / Rule 11a Sec. 2.2) R-RLS 'det_grow': 'half': regressor truncated to max(n // 2, 1)
+    # taps for the first 2M samples after each restart (n = samples since the replay start tau); at the restart the
+    # coefficients outside the growing order are zeroed (w[1:] = 0, the sample-wise mirror of E-PCG's x0 * mask).
+    # 'det_grow_start': True also grows from the run start (version (ii), 'RLS + det + growth (from start)'; w = 0
+    # there). None = off.
+    _grow = params.get('det_grow') if method == 'R-RLS' else None
+    if _grow not in (None, 'half'):
+        raise ValueError(f'det_grow: {_grow!r}')
+    if _grow and 'cusum_h' in params:
+        raise ValueError('det_grow is not combined with RLS + CUSUM')
+    if params.get('det_grow_start') and not _grow:
+        raise ValueError('det_grow_start needs det_grow')
+    _grow0 = [0 if params.get('det_grow_start') else None]     # replay start of the growing order (None: no growth)
+    # (2026-11-07, Revision 11-B) 'SW-FBLMS' state ([6]-type switching between NFBLMS and MFBLMS)
+    _sw = None
+    if method == 'SW-FBLMS':
+        if params.get('sw_detect') not in ('zeta', 'det'):
+            raise ValueError("SW-FBLMS needs sw_detect 'zeta' (Z-A) or 'det' (Z-B)")
+        if params.get('sw_detect') == 'zeta' and params.get('det_events'):
+            raise ValueError("SW-FBLMS Z-A uses its own detector: no det_events")
+        _mu_n = float(params['mu_n'])
+        _sw = {'mode': 'N', 'dwell': 0, 'Jm': None, 'b': (1.0 - _mu_n / 2) ** 2 + _mu_n ** 2 / 4,
+               'zn': None, 'zd': None, 'zthr': None, 'zmax': 0.0, 'log': [], 'modes': []}
     _sid = {'on': False, 'log': []}
     w_raw = np.zeros(M); w_avg = np.zeros(M); n_avg = [0]; cum_pow = np.zeros(N // 2 + 1)
     pq_score: dict = {}
@@ -1793,6 +1903,10 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
                                       * float(np.mean(xf[:eval_samples] ** 2)) * M)}
                         if params.get('det_reset_w'):
                             w = np.zeros(M)
+                    elif _cond and not _cond_restart(params, _cond_hp, _cond_log, b, stop, _tau,
+                                                     dhat[_tau:stop] + fir_window(xf, w, _tau, stop), H):
+                        # (2026-11-07, Revision 11-C) RLS + det (cond.): the change is too small -> keep (no restart)
+                        continue
                     elif method in ('R-RLS', 'R-VFF'):
                         # (2026-10-30, review N2) 'det_replay' False: reset P only, no replay of [tau, stop);
                         # 'det_delta': regularization of the reset P (default: the initial 'delta')
@@ -1805,6 +1919,13 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
                             jp_from[0] = _tau
                         if params.get('det_reset_w'):
                             w = np.zeros(M)
+                        if _grow:
+                            _grow0[0] = _rls_from
+                            w = w.copy(); w[_grow_taps(1, M):] = 0.0   # (Rule 11a Sec. 2.2) w[1:] = 0 at the restart
+                    elif method == 'SW-FBLMS':
+                        # (2026-11-07, Revision 11-B, Z-B) M -> N at the shared event (immediately, no dwell)
+                        if _sw['mode'] != 'N':
+                            _sw['log'].append([b, 'N', 'event']); _sw['mode'] = 'N'; _sw['dwell'] = 0
                     elif method == 'fixed_binwise':
                         # (2026-10-30, review N1) FD-FxNLMS + restart: step boost after a detection, decaying to mu
                         fd_restart[0] = _tau
@@ -1816,12 +1937,18 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
             if change_at is not None and b + 1 >= switch_hop:
                 w = w_known2
         elif method == 'fixed_binwise':
-            g = fd_block_gradient(xf_hist, e[start:stop], power.denominator('binwise', b), M)
+            # (2026-11-07, Revision 11-B) 'mod': modified FBLMS gradient (constraint before normalization); default off
+            g = (fd_block_gradient_mod if params.get('mod') else fd_block_gradient)(
+                xf_hist, e[start:stop], power.denominator('binwise', b), M)
             mu_fd = params['mu']
             if fd_restart[0] is not None and params.get('det_boost'):
                 # (2026-10-30, review N1) mu_b = max(mu, s (N / H) / (b_since + 1)), b_since from tau // H (as V-SCHED)
                 mu_fd = max(mu_fd, float(params['det_boost']) * (N / H) / (b - fd_restart[0] // H + 1))
             w = w - mu_fd * g
+
+        elif method == 'SW-FBLMS':
+            _sw_hop(_sw, params, b, xf_hist, Xf, e[start:stop], power.denominator('binwise', b), M, N, H)
+            w = w - _sw['step']
 
         elif method == 'osp_binwise':
             # S_hat by block NLMS on the auxiliary noise: f = e - S_hat * u (d and S*y act as interference)
@@ -3027,16 +3154,21 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
             # (2026-11-03, review of 9-B) RLS + det replays [tau, stop) from the hop-start coefficients; keep them so a
             # CUSUM alarm at this hop restarts from the same state (not from w already updated on [start, stop))
             _w_hop0 = w.copy() if _cusum is not None else None
+            _cond_sq = 0.0
             for t in range(_rls_from, stop):
                 u = np.zeros(M)
                 m = min(M, t + 1)
                 if rls_pw[0] is not None:                   # (review N8) prewindowed restart: x_f = 0 before tau
                     m = max(0, min(m, t - rls_pw[0] + 1))   # (review) 0 before tau, e.g. with det_replay False
                 u[:m] = xf[t - m + 1:t + 1][::-1]
+                if _grow and _grow0[0] is not None and t - _grow0[0] + 1 < 2 * M:   # (Revision 11-C) growing order
+                    u[_grow_taps(t - _grow0[0] + 1, M):] = 0.0
                 eps = dhat[t] + u @ w
                 if _cusum is not None and t >= start:
                     _cusum_sq += float(eps * eps)
                     _cusum_count += 1
+                if _cond and t >= start:
+                    _cond_sq += float(eps * eps)
                 Pu = Prls @ u
                 k = Pu / (lam + u @ Pu)
                 if t >= jp_from[0]:
@@ -3050,6 +3182,8 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
                     lam = 1.0 - (1.0 - float(u @ k)) * eps * eps / (sigma0 * float(params['N0']))
                     lam = min(1.0, max(float(params.get('lam_min', 0.95)), lam))
 
+            if _cond:
+                _cond_hp.append(_cond_sq / H)                # a priori residual power of hop b (as CUSUM's q)
             if _cusum is not None:
                 _tau = _cusum.update(_cusum_sq, _cusum_count, b)
                 if _tau is not None:
@@ -3239,7 +3373,9 @@ def run(cfg: dict, seed: int, method: str, params: dict, eval_seconds: float,
         extra['path_provenance'] = _extra['meshrir']
     return {**extra, 'seed': seed, 'stable': stable, 'failure': failure, 'n_resets': n_resets[0], 'events_total': (_ev_total[0] if _ev_total[0] else len(reset_hops)), 'eb_hist': eb_hist, 'score_hist': score_hist,
             'log_evidence': log_evidence[0], 'rl_hist': rl_hist, 'reset_hops': reset_hops, 'loc_hist': loc_hist, 'flop_hist': flop_hist, 'sid_log': _sid['log'], 'ridge_excess': _rlog, 'dual_log': _dual, 'seq_log': _sid.get('seq_log', []), 'thA_log': _sid.get('thA_log', []), 'post_log': _sid.get('post_log', []), 'adapt_log': _sid.get('adapt_log', []), 'prior_log': _sid.get('prior_log', []), 'sub_log': _sid.get('sub_log', []), 's2pre_log': _sid.get('s2pre_log', []), 'cons_log': ((_sid.get('cons') or {}).get('log', [])), 'risk_log': ((_ep.members[_ep.ip] if hasattr(_ep, 'members') else _ep).risk_log if method == 'E-PCG-F' and _ep is not None and hasattr(_ep.members[_ep.ip] if hasattr(_ep, 'members') else _ep, 'risk_log') else []), 'mem_pi': (np.mean(_ep.pi_hist, 0).tolist() if method == 'E-PCG-F' and hasattr(_ep, 'pi_hist') and _ep.pi_hist else None), 'geom': (_extra.get('geom') if cfg.get('plant') == 'ism' else None),
-            'total_power': total_power, 'uncontrolled_power': uncontrolled_power}
+            'total_power': total_power, 'uncontrolled_power': uncontrolled_power,
+            **({'cond_log': _cond_log} if _cond else {}),
+            **({'sw_log': _sw['log'], 'sw_modes': _sw['modes']} if _sw is not None else {})}
 
 
 def summarize(runs, cfg, floor_db):

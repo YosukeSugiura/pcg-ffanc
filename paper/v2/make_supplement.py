@@ -5,6 +5,11 @@ Dependencies: numpy, scipy. Only supp_tables/ is written. Each generated file
 records its input paths; sources.json records their SHA-256 hashes.
 The proposed methods are read under their archived record labels (E-PCG, E-PCG bank); the written tables show
 PCG-WLS and PCG-WLS (multi-window) (ffanc_norm.naming).
+
+Since 2026-11-07 the supplementary material is a short two-column (IEEEtran) document. By default only the
+tables in KEEP are written, as floats (table / table*) instead of longtables; every table is still computed, so all
+consistency assertions against the archived summaries still run. `--all` writes every table in the former
+longtable layout (for the archive). Cell values are the same in both layouts.
 """
 import argparse
 import ast
@@ -29,6 +34,15 @@ ORDER = ["FD-FxNLMS", "leaky FD-FxNLMS", "convex FD-FxNLMS", "FDKF", "RLS",
 PROPOSED = (REC, REC_MW)
 DATASETS = ("final_eval", "final_eval_v2e", "eval_roomB", "eval_roomC", "eval_snr10", "final_eval_holdout", "eval_roomB_x2", "eval_roomC_x2", "eval_snr10_x2", "final_eval_meas_s_8a")
 SOURCES = set()
+# Tables written to the two-column supplement: file name -> indices of its sub-tables to keep (None = all).
+KEEP = {"gap.tex": [1, 2, 3, 4], "cg.tex": [1], "selection.tex": None, "r9_labels.tex": None,
+        "gap_check4a_spectrum.tex": None}
+LAYOUT = {"float": True}
+# Labels of the kept tables, in the order of the kept sub-tables.
+KEEP_LABELS = {"gap.tex": ["tab:gap-ar", "tab:gap-harm", "tab:win-ar", "tab:win-harm"], "cg.tex": ["tab:cg"],
+               "selection.tex": ["tab:selection"], "r9_labels.tex": ["tab:labels"],
+               "gap_check4a_spectrum.tex": ["tab:spectrum"]}
+WIDE = {"selection.tex"}   # kept tables set across both columns regardless of their column count
 SEEDS_TUNE = "tuning seeds 300--309"
 SEEDS_EVAL = "evaluation seeds 480--519"
 GAIN = r"(S8, $M=512$, " + SEEDS_TUNE + ")"
@@ -339,6 +353,8 @@ def publish_captions(name, body):
     for i, line in enumerate(lines):
         if pending and line == r"\caption{" + pending[0][0] + r"}\\":
             lines[i] = r"\caption{" + pending.pop(0)[1] + r"}\\"
+        elif pending and line.endswith(r"\caption{" + pending[0][0] + r"}"):
+            lines[i] = line[:-len(r"\caption{" + pending[0][0] + r"}")] + r"\caption{" + pending.pop(0)[1] + r"}"
     assert not pending, (name, pending)
     return "\n".join(lines)
 
@@ -421,18 +437,36 @@ def short(scen):
 
 
 def table(caption, headers, rows, weights=None):
-    """Fixed-width paragraph columns keep long source labels within the page."""
+    """Fixed-width paragraph columns keep long source labels within the page.
+    Float layout (default since 2026-11-07): table for at most 6 columns, table* otherwise; same cells."""
     n = len(headers)
     weights = weights or [1] * n
     widths = [w / sum(weights) for w in weights]
     spec = "".join(r">{\raggedright\arraybackslash}p{" +
                    f"\\dimexpr{w:.6f}\\linewidth-2\\tabcolsep\\relax" + "}" for w in widths)
     heading = " & ".join(tex(publish(h, HEADERS)) for h in headers) + r" \\ \midrule"
+    body = [" & ".join(tex(publish(c, CELLS)) for c in row) + r" \\" for row in rows]
+    if LAYOUT["float"]:
+        env = "table" if n <= 6 else "table*"
+        out = [r"\begin{" + env + r"}[!t]\centering\caption{" + tex(caption) + r"}", r"\scriptsize\setlength{\tabcolsep}{3pt}",
+               r"\begin{tabular}{" + spec + "}", r"\toprule", heading]
+        return "\n".join(out + body + [r"\bottomrule\end{tabular}", r"\end{" + env + "}", ""])
     out = [r"{\scriptsize\setlength{\tabcolsep}{3pt}", r"\begin{longtable}{" + spec + "}",
            r"\caption{" + tex(caption) + r"}\\", r"\toprule", heading, r"\endfirsthead",
            r"\toprule", heading, r"\endhead", r"\bottomrule\endfoot"]
-    out += [" & ".join(tex(publish(c, CELLS)) for c in row) + r" \\" for row in rows]
+    out += body
     return "\n".join(out + [r"\end{longtable}}", ""])
+
+
+def select_tables(body, keep):
+    """Keep the listed sub-tables (float layout) of a generated body; text outside tables is kept."""
+    if keep is None:
+        return body
+    parts = re.split(r"(\\begin\{table\*?\}.*?\\end\{table\*?\}\n)", body, flags=re.S)
+    tables = [i for i, p in enumerate(parts) if p.startswith(r"\begin{table")]
+    assert max(keep) < len(tables), (keep, len(tables))
+    drop = {tables[i] for i in range(len(tables)) if i not in keep}
+    return "".join(p for i, p in enumerate(parts) if i not in drop)
 
 
 def markdown_tables(path):
@@ -592,14 +626,26 @@ def measured_tables(write):
                                       [.5, 2, 3]), rule_paths + paths)
 
 
-def generate(out):
+def generate(out, write_all=False):
     out.mkdir(parents=True, exist_ok=True)
+    LAYOUT["float"] = not write_all
     generated = []
 
     def write(name, body, sources):
+        body = display_names(publish_captions(name, body))
+        if not write_all:
+            if name not in KEEP:
+                return
+            body = select_tables(body, KEEP[name])
+            labels = iter(KEEP_LABELS[name])
+            body = re.sub(r"(\\begin\{table\*?\}\[!t\]\\centering\\caption\{.*?\})\n",
+                          lambda m: m.group(1) + r"\label{" + next(labels) + "}\n", body)
+            assert next(labels, None) is None, (name, "labels")
+            if name in WIDE:
+                body = body.replace(r"\begin{table}[", r"\begin{table*}[").replace(r"\end{table}", r"\end{table*}")
         generated.append(name)
         (out / name).write_text("% Generated by make_supplement.py; do not edit.\n" +
-                               "".join(f"% Source: {s}\n" for s in sources) + display_names(publish_captions(name, body)))
+                               "".join(f"% Source: {s}\n" for s in sources) + body)
 
     counts = []
     for dataset in DATASETS:
@@ -696,7 +742,10 @@ def generate(out):
                 if name == "extra" and len(headers) > 8:
                     rows = [[r[0], h, v] for r in rows for h, v in zip(headers[1:], r[1:]) if v]
                     headers = [headers[0], "Quantity / condition", "Archived value"]
-                body += table(title, headers, rows, [2 if i == 0 else 1 for i in range(len(headers))])
+                weights = [2 if i == 0 else 1 for i in range(len(headers))]
+                if LAYOUT["float"] and name == "selection":
+                    weights = [1.2, 0.8, 2.4, 0.5, 4.2]          # two-column layout: room for the per-configuration scores
+                body += table(title, headers, rows, weights)
         write(name + ".tex", body, ["results/" + p for p in files])
 
     p = "results/cg_ratio/raw.json"
@@ -819,4 +868,6 @@ def generate(out):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
-    generate(parser.parse_args().output)
+    parser.add_argument("--all", action="store_true", help="write every table in the former longtable layout")
+    args = parser.parse_args()
+    generate(args.output, args.all)

@@ -2,19 +2,49 @@
 
 This directory contains the source, test suite, configurations, archived
 summaries and the inputs required to reproduce the manuscript's LaTeX tables.
-It is release v1.1.0.
+It is release v1.2.0.
 
 The result records are archived at Zenodo. To cite them, use the concept DOI
 https://doi.org/10.5281/zenodo.23965830. It covers all versions and resolves to the latest one.
 The v1.0.0 record has the version DOI https://doi.org/10.5281/zenodo.23965831 and holds the
-result archives listed in `ZENODO_MANIFEST.txt`. The underlying MeshRIR dataset is separately
-available and attributed at https://doi.org/10.5281/zenodo.5500451.
+result archives of section v1.0.0 of `ZENODO_MANIFEST.txt`. Zenodo version v1.2.0 adds the
+Revision 11 records (section v1.2.0); its version DOI is TODO (to be filled in when the version is
+published). The underlying MeshRIR dataset is separately available and attributed at
+https://doi.org/10.5281/zenodo.5500451.
+
+## Changes in v1.2.0
+
+Release v1.2.0 follows v1.0.0. The renaming prepared after v1.0.0 (commit c6a08bc, intended as v1.1.0) was not
+released separately and is part of v1.2.0.
+
+- Method name: E-PCG is called PCG-WLS (see "Method name" below); the former names still work.
+- Revision 11 (rules `docs/current/REVISION_RULE_11.md`, `11a.md`, `11b.md`): added baselines (MFBLMS, switching
+  FD-FxNLMS [6] with its own or the shared detector, RLS + det with conditional restart or growing order, and the
+  outer grid points of RLS, VFF-RLS, RLS + CUSUM, FD-FxNLMS, FDKF and FD-FxNLMS + det), the ablation of PCG-WLS, and the
+  holdout re-evaluation (seeds 800-839) of rooms B and C, SNR 10 dB and the measured paths M-S and M-P.
+  Code: `experiments/revision11_*.py`, the `mod` gradient (`ffanc_norm.fd_fxnlms.fd_block_gradient_mod`), the method
+  `SW-FBLMS`, the R-RLS flags `det_cond_db`, `det_cond_k`, `det_grow`, `det_grow_start`, and `solver='exact'` of
+  `PcgWlsConfig`; defaults are unchanged. Tests: `tests/test_revision11.py`.
+- Records in `results/`: `r11_preflight`, `protocol_r11_sel`, `final_eval_holdout_r11`, `r11_ablation_holdout`,
+  `eval_roomB_h`, `eval_roomC_h`, `eval_snr10_h`, `final_eval_meas_s_h`, `final_eval_meas_p_h`, the descriptive
+  `detector_aggregates` and the screening `conventional_limit_benchmark`. Inputs of the Revision 11 runners that were
+  missing before: `results/det_events/` (shared detections for tuning), `results/protocol_v2_sel_cusum/selected.json`,
+  `results/protocol/selected_design.json` and `results/final_dev/final_config_v6_5.json`.
+- Tables: `make_tables.py` writes the Revision 11 tables (`tables/ablation.tex`, `rooms_bc_h.tex`,
+  `snr_measured_h.tex`, `supp_tables/r11_*.tex`); `make_r11_values.py` writes `tables/r11_values.tex`;
+  `make_detector_aggregates.py` writes `results/detector_aggregates/` and `paper/v2/tables_detector/`.
+  The supplement is now a short two-column document: `make_supplement.py` writes only its tables to `supp_tables/`.
+  The former long-layout tables (identical to those of v1.0.0 and c6a08bc) are in `supp_tables_all/`
+  (`make_supplement.py --all --output paper/v2/supp_tables_all`). `make_r10_values.py` regenerates the long-layout
+  settings table in a temporary directory when `supp_tables/settings.tex` is absent.
+- `make_zenodo_archive.py` archives one manifest section (`--section`) and splits the archive (`--max-mib`).
 
 ## Method name
 
-The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.1.0.
-Earlier records use the former name E-PCG. These are the files under `results/`, the rule documents in
-`docs/current/`, and the v1.0.0 Zenodo record (DOI 10.5281/zenodo.23965831). The multi-window variant was called
+The method is called PCG-WLS (PCG for windowed least squares) in the paper and in this code from v1.2.0.
+Earlier records use the former name E-PCG. These are the files under `results/` (including the Revision 11 records,
+which use the same record labels), the rule documents in `docs/current/`, and the Zenodo records (v1.0.0 DOI
+10.5281/zenodo.23965831, and the Revision 11 records of version v1.2.0). The multi-window variant was called
 E-PCG (bank) and is now PCG-WLS (multi-window).
 
 The implementation is in `ffanc_norm.pcg_wls` (`PcgWls`, `PcgWlsConfig`) and `ffanc_norm.pcg_wls_mw`
@@ -38,6 +68,22 @@ promise that it reproduces every simulation bit for bit. Changing NumPy, SciPy,
 BLAS, or hardware can alter floating-point trajectories and prevent bitwise
 reproduction; use the archived summaries and rules for the conditions and scope.
 
+The room impulse responses of pyroomacoustics 0.10.1 also depend on its thread count. It is set by
+`PRA_NUM_THREADS` (default: the number of CPUs; `OMP_NUM_THREADS` has no effect on it). The image sources are summed
+in float32 in blocks per thread, so a different thread count changes the uncontrolled power by about 1e-7 to 1e-6
+relative, and the controlled trajectories follow. The records were made with 2 threads (v2e, 8a, 9-C, 9-D and the
+Revision 11 tuning and 11-D sets) or 3 threads (9-A, 9-B and the Revision 11 room-A holdout sets). Set
+`PRA_NUM_THREADS` to the value of the set you reproduce (Rule 11b). The Revision 11 environments were:
+
+| Revision 11 set | Python / NumPy / SciPy / pyroomacoustics | `PRA_NUM_THREADS` | Environment class (Rule 11b) |
+|---|---|---|---|
+| room-A holdout: `final_eval_holdout_r11`, `r11_ablation_holdout` | 3.12.14 / 2.3.5 / 1.17.0 / 0.10.1 | 3 | I (path A, joined with `final_eval_holdout`) |
+| tuning: `protocol_r11_sel` | 3.13.5 / 2.5.3 / 1.18.1 / 0.10.1 | 2 | I |
+| 11-D: `eval_roomB_h`, `eval_roomC_h`, `eval_snr10_h`, `final_eval_meas_s_h`, `final_eval_meas_p_h` | 3.13.5 / 2.5.3 / 1.18.1 / 0.10.1 | 2 | I |
+
+All Revision 11 sets ran on one machine (Intel Xeon Platinum 8573C, 3 CPUs, OpenBLAS core SkylakeX) with `RLS_FAST=1`
+and one BLAS thread per process; the fingerprint is in each `provenance.json` (`machine`).
+
 ## Reproduce tables without running an experiment
 
 From this directory:
@@ -47,12 +93,17 @@ python paper/v2/make_tables.py
 python paper/v2/make_supplement.py
 python paper/v2/make_r9_values.py
 python paper/v2/make_r10_values.py
+python paper/v2/make_r11_values.py
+python paper/v2/make_detector_aggregates.py --results-dir /tmp/det --tex-dir /tmp/det_tex   # compare with results/detector_aggregates
+python paper/v2/make_supplement.py --all --output /tmp/supp_all                          # compare with supp_tables_all
 ```
 
 The generated LaTeX tables under `paper/v2/tables/` and `supp_tables/` are
-included for comparison. `make_tables.py` also writes the merged tables used in
-the manuscript, `rooms_bc.tex` (rooms B and C) and `snr_measured.tex` (SNR 10 dB
-and MeshRIR). Generation recomputes the archived paired comparisons;
+included for comparison; they are byte-identical to the tables of the manuscript build (except `sources.json`, see
+below). `make_tables.py` also writes the merged tables used in the manuscript: `rooms_bc_h.tex` and
+`snr_measured_h.tex` (holdout seeds, Revision 11), the earlier `rooms_bc.tex` (rooms B and C) and `snr_measured.tex`
+(SNR 10 dB and MeshRIR), and `ablation.tex`. Without arguments `make_detector_aggregates.py` overwrites the archived
+`results/detector_aggregates/` (including its `provenance.json`); give other directories to compare. Generation recomputes the archived paired comparisons;
 the saved decisions are checked during the run. This procedure does not perform
 new simulations. The supplementary `sources.json` records hashes of the public
 copies of inputs and therefore differs from the original private source manifest.
@@ -62,17 +113,22 @@ some protocol and provenance copies. `REDACTION_MANIFEST.json` records both the
 original file digest and the digest of each redacted copy. The supplementary
 generator accepts either an exact original digest or this explicit mapping; it
 checks that the stored original digest agrees with the archived provenance and
-that the release copy has the listed digest. The mapping is not a substitute for
+that the release copy has the listed digest. The Revision 11 runners (`revision11_methods.check_rules`) accept the
+redacted copies of Rules 11, 11a and 11b in the same way. In the Revision 11 provenance copies only the interpreter path
+(`executable`) is replaced by `[absolute-path]` and embedded rule texts are replaced by the public rule copies; the
+machine fingerprint is kept. The mapping is not a substitute for
 possession of the original documents or independent verification of their contents.
 Numeric records, decisions, parameters, and scientific calculations are unchanged.
 
 ## Figures and large records
 
 Binary arrays, run-level files, logs and rendered figures are not included. The paths
-and byte sizes of the archived files are in `ZENODO_MANIFEST.txt`. They are in the v1.0.0
+and byte sizes of the archived files are in `ZENODO_MANIFEST.txt`. Section v1.0.0 is in the v1.0.0
 Zenodo record (https://doi.org/10.5281/zenodo.23965831) as `pcg-ffanc-results-part1.tar`
-and `pcg-ffanc-results-part2.tar`. Extract both into this directory to restore the listed
-paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
+and `pcg-ffanc-results-part2.tar`. Section v1.2.0 (Revision 11 run-level records, logs and one reference array) is in
+Zenodo version v1.2.0 (version DOI: TODO) as `pcg-ffanc-results-v1.2.0-part1.tar` and
+`pcg-ffanc-results-v1.2.0-part2.tar`; that version also carries the two v1.0.0 archives. Extract all of them into this
+directory to restore the listed paths. Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
 render the corresponding plots from stored inputs. The cost and secondary-path figures
 (`cost`, `shat`) need only files in this repository. The eigenvalue figure's
 original generator computes new signal realizations; it is not part of the
@@ -88,17 +144,22 @@ in `LICENSE`.
 
 The recorded holdout runs used Python 3.12.14; the room and measured-stationary runs used Python 3.13.18. The
 minimum supported Python version is 3.10. Install the package and test tools
-with `pip install -e '.[dev]'`; run the test suite using `pytest`. Install
-`pyroomacoustics==0.10.1` for the room simulations. The separate
+with `pip install -e '.[dev]'`; run the test suite with
+`RLS_FAST=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PRA_NUM_THREADS=2 pytest`
+(the Revision 11 tests check `PRA_NUM_THREADS`). Install
+`pyroomacoustics==0.10.1` for the room simulations. The Revision 11 room-A holdout runs used Python 3.12.14; the
+Revision 11 tuning and 11-D runs used Python 3.13.5 (see the table under Environment). The separate
 `requirements-numpy253.txt` lists the recorded direct versions for the
 NumPy 2.5.3 environment; it is not a fully resolved transitive lock file.
 A platform-specific lock should be resolved and verified before use. Do not
 expect bitwise equality across NumPy or BLAS versions.
 
 The provenance commit hashes refer to a development history that is not
-included in the public repository. See `CITATION.cff` for citation metadata.
+included in the public repository. The `scripts_sha256` of the Revision 11 provenance records hash the development
+copies of the scripts; the public copies of `prototype_new_algorithms.py` and `src/ffanc_norm/epcg.py` differ from them
+by the renaming, and the redacted or adapted copies are listed in `REDACTION_MANIFEST.json`. See `CITATION.cff` for citation metadata.
 To cite the result records, use the Zenodo concept DOI https://doi.org/10.5281/zenodo.23965830.
-The v1.0.0 record is https://doi.org/10.5281/zenodo.23965831.
+The v1.0.0 record is https://doi.org/10.5281/zenodo.23965831; the version DOI of v1.2.0 is TODO.
 
 The measured-path inputs use MeshRIR by Shoichi Koyama, Tomoya Nishida,
 Keisuke Kimura, Takumi Abe, Natsuki Ueno, and Jesper Brunnström: “MeshRIR:
@@ -114,6 +175,9 @@ https://doi.org/10.5281/zenodo.5500451 (CC BY 4.0).
 | Main, room, measured, cost and CUSUM tables | `paper/v2/make_tables.py` | `results/final_eval_holdout`, `eval_roomB_x2`, `eval_roomC_x2`, `eval_snr10_x2`, `final_eval_meas_*`, `extra_eval` and CUSUM summaries |
 | Supplementary tables | `paper/v2/make_supplement.py` | archived summaries and metrics in `results/`; detailed paths appear in each generated table and `sources.json` |
 | Revision 9 and 10 values | `paper/v2/make_r9_values.py`, `make_r10_values.py` | corresponding holdout, room, measured and `gap_check4*` summaries and numeric records |
+| Revision 11 values (`tables/r11_values.tex`) | `paper/v2/make_r11_values.py` | `results/final_eval_holdout_r11`, `r11_ablation_holdout`, `protocol_r11_sel`, `eval_{roomB,roomC,snr10}_h`, `final_eval_meas_{s,p}_h`, `final_eval_holdout` |
+| Ablation, holdout rooms and SNR/measured tables, added baselines, HL intervals | `paper/v2/make_tables.py` | the same Revision 11 records |
+| Detector delays and R2 failures (descriptive) | `paper/v2/make_detector_aggregates.py` | `results/final_eval_holdout/det_events_*.jsonl`, `results/eval_room{B,C}_x2/metrics.jsonl` |
 | Learning | `paper/v2/make_figures.py learning learning_all` | `results/final_eval_holdout/curves.npz` |
 | Excess | `paper/v2/make_figures.py excess` | `results/gap_check2/curves.npz` and optional `results/gap_check3/curves.npz` |
 | Cost | `paper/v2/make_figures.py cost` | `results/extra_eval/summary.md`, `results/final_eval_v2e/metrics.jsonl` |
@@ -121,7 +185,7 @@ https://doi.org/10.5281/zenodo.5500451 (CC BY 4.0).
 | Other time figures | `paper/v2/make_times_figures.py` | saved arrays listed by the generator |
 
 To prepare an archive after checking its sources, run
-`python make_zenodo_archive.py SOURCE_ROOT OUTPUT_TAR` from this directory.
+`python make_zenodo_archive.py SOURCE_ROOT OUTPUT_TAR [--section v1.2.0] [--max-mib 300]` from this directory.
 The script validates the manifest and sanitizes absolute filesystem paths in
 log copies; it leaves source files untouched. Review the archive and licensing
 before upload. The archived records are in the Zenodo record above, not in this repository.

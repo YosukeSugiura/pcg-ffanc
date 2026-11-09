@@ -1,0 +1,981 @@
+{
+ "python": "3.13.5",
+ "executable": "[absolute-path]",
+ "software": {
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "pyroomacoustics": "0.10.1"
+ },
+ "RLS_FAST": "1",
+ "threads": {
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "PRA_NUM_THREADS": "2"
+ },
+ "commit": "a00b3368933311547fa54296be49d7c8d9d28302",
+ "rows": [
+  {
+   "name": "E-PCG",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 47.61710920518935,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 1.5,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8192,
+     8076
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 47.973781426408635,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.25,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "leaky FD-FxNLMS",
+   "kind": "leaky_binwise",
+   "params": {
+    "mu": 0.35,
+    "leak": 0.01
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 48.612074445265925,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.26,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "convex FD-FxNLMS",
+   "kind": "convex_binwise",
+   "params": {
+    "mu_fast": 0.5,
+    "mu_slow": 0.2,
+    "mu_a": 1.0
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 48.8461692256189,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.27,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FDKF",
+   "kind": "C-FDKF",
+   "params": {
+    "P0": 10.0,
+    "gain_scale": 4.0,
+    "A": 0.9995
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 28.54517922115324,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.35,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9995,
+    "delta": 0.01
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 45.3541085972185,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 6.75,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "VFF-RLS",
+   "kind": "R-VFF",
+   "params": {
+    "N0": 500.0,
+    "lam_min": 0.9995,
+    "delta": 0.001
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 45.56991359865943,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 9.19,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS + det",
+   "kind": "V-SCHED",
+   "params": {
+    "denom": "cum",
+    "scale": 0.0625,
+    "mu_min": 0.2,
+    "det_reset_w": false
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 49.94201800859196,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.33,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 37.07680855515788,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 9.99,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS + restart",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3,
+    "det_boost": 0.125,
+    "det_reset_w": false
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 47.961473785258576,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.27,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "SFTF + det",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 39.4131170261751,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 1.04,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "SFTF-H + det",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "hybrid": 2048
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 38.03375137005612,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 2.8,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "CFTF + det",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "cov": true
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 37.04956513124031,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 1.36,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + CUSUM",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "cusum_h": 5,
+    "cusum_k": 32
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 44.48244510935086,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 3.83,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": [
+    [
+     8192,
+     7040
+    ],
+    [
+     8448,
+     8192
+    ],
+    [
+     8704,
+     8448
+    ],
+    [
+     8960,
+     8704
+    ],
+    [
+     9216,
+     8960
+    ],
+    [
+     9472,
+     9216
+    ],
+    [
+     9600,
+     9472
+    ],
+    [
+     9728,
+     9600
+    ],
+    [
+     9856,
+     9728
+    ],
+    [
+     9984,
+     9856
+    ],
+    [
+     10112,
+     9984
+    ],
+    [
+     10240,
+     10112
+    ],
+    [
+     10368,
+     10240
+    ],
+    [
+     10496,
+     10368
+    ],
+    [
+     10624,
+     10496
+    ],
+    [
+     10752,
+     10624
+    ],
+    [
+     10880,
+     10752
+    ],
+    [
+     11008,
+     10880
+    ],
+    [
+     11136,
+     11008
+    ],
+    [
+     11264,
+     11136
+    ],
+    [
+     11392,
+     11264
+    ],
+    [
+     11520,
+     11392
+    ],
+    [
+     11648,
+     11520
+    ],
+    [
+     11776,
+     11648
+    ],
+    [
+     11904,
+     11776
+    ],
+    [
+     12032,
+     11904
+    ],
+    [
+     12160,
+     12032
+    ]
+   ]
+  },
+  {
+   "name": "E-PCG bank",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "mem_bank": [
+     12,
+     48,
+     1000
+    ],
+    "mem_cheap": [
+     "share",
+     "nodetect",
+     "fftmin",
+     "sharescore",
+     "doze"
+    ],
+    "cg_stat_tol": 0.1,
+    "mem_primary": 48,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 43.603718296467804,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.8,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8192,
+     8076
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3,
+    "mod": true
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 46.77287495802113,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.2,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS + det",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true,
+    "det_boost": 0.0625,
+    "det_reset_w": false
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 44.08041283598281,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.29,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS [6]",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "zeta"
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 41.34713864455748,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.33,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": [
+    [
+     20,
+     "M",
+     "dJ"
+    ],
+    [
+     24,
+     "C",
+     "calibrate"
+    ],
+    [
+     28,
+     "M",
+     "calibrated",
+     0.007372358236505275
+    ],
+    [
+     32,
+     "N",
+     "zeta"
+    ],
+    [
+     39,
+     "M",
+     "dJ"
+    ],
+    [
+     43,
+     "C",
+     "calibrate"
+    ],
+    [
+     47,
+     "M",
+     "calibrated",
+     0.013409898040907359
+    ],
+    [
+     52,
+     "N",
+     "zeta"
+    ],
+    [
+     59,
+     "M",
+     "dJ"
+    ],
+    [
+     63,
+     "C",
+     "calibrate"
+    ],
+    [
+     67,
+     "M",
+     "calibrated",
+     0.012225804023056522
+    ],
+    [
+     78,
+     "N",
+     "zeta"
+    ],
+    [
+     91,
+     "M",
+     "dJ"
+    ],
+    [
+     95,
+     "C",
+     "calibrate"
+    ],
+    [
+     99,
+     "M",
+     "calibrated",
+     0.009242610898203362
+    ]
+   ],
+   "sw_hops": {
+    "N": 48,
+    "M": 213,
+    "C": 16
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS + det",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "det"
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 42.588637313711565,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.32,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": [
+    [
+     20,
+     "M",
+     "dJ"
+    ],
+    [
+     63,
+     "N",
+     "event"
+    ],
+    [
+     69,
+     "M",
+     "dJ"
+    ]
+   ],
+   "sw_hops": {
+    "N": 28,
+    "M": 243,
+    "C": 0
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det (cond.)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_cond_db": 4.0,
+    "det_cond_k": 32
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 37.07680855515788,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 9.66,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": [
+    [
+     63,
+     8192,
+     8076,
+     14.071347419759938,
+     32,
+     true
+    ]
+   ],
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half"
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 37.74100995364157,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 9.9,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth (from start)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half",
+    "det_grow_start": true
+   },
+   "room": "C",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 37.879268195682286,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 9.88,
+   "n_events": 1,
+   "restart_hops": [
+    63
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  }
+ ]
+}

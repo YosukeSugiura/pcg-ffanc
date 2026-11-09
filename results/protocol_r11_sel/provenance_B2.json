@@ -1,0 +1,92 @@
+{
+  "commit": "a7e94bf1c539934919a504b8aebb4fcafc72aea3",
+  "git_status_porcelain": " M results/r11_pipeline/select_B1.log\n?? results/r11_pipeline/holdout_ablation.done\n?? results/r11_pipeline/lock\n?? results/r11_pipeline/select_B1.done\n?? results/r11_pipeline/select_B2.log\n?? results/r11_pipeline/select_B2.running\n",
+  "rule": "docs/current/REVISION_RULE_11.md",
+  "rule_sha256": "6ba432af58880a94d6915beab8f7183af645b706bff37b959d4acdd6519bf270",
+  "rule11a": "docs/current/REVISION_RULE_11a.md",
+  "rule11a_sha256": "6d26fe9394c9bcba244065171812ddc6e5418689be89a13609ac16db4c077563",
+  "rule11b": "docs/current/REVISION_RULE_11b.md",
+  "rule11b_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e",
+  "holdout_base": "envA",
+  "machine": {
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "cpu_count": 3,
+    "cpu_flags_sha256": "16a7227851bbd0d54c1a76b00030c349f39b11fe7860f6e2de2e0b7e1261be4c",
+    "PRA_NUM_THREADS": "2",
+    "pra_num_threads": 2,
+    "openblas_corename": "SkylakeX",
+    "numpy_blas": {
+      "name": "scipy-openblas",
+      "version": "0.3.34.106.0",
+      "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+    },
+    "python": "3.13.5",
+    "executable": "[absolute-path]"
+  },
+  "pra_threads": 2,
+  "env_class": "I",
+  "tuning_events_source": "cache",
+  "outer_reference": {
+    "RLS": "recorded",
+    "VFF-RLS": "recorded",
+    "SFTF-H + det": "recorded",
+    "FD-FxNLMS": "recorded",
+    "leaky FD-FxNLMS": "recorded",
+    "FDKF": "recorded",
+    "FD-FxNLMS + det": "recorded",
+    "RLS + CUSUM": "rerun"
+  },
+  "python": "3.13.5",
+  "software": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pyroomacoustics": "0.10.1"
+  },
+  "RLS_FAST": "1",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "written": "2026-11-07T13:47:20+0000",
+  "scripts_sha256": {
+    "experiments/revision11_methods.py": "c2515831c14e62436f737607e0e716256265c5d6b1bb282c62eca2a88be9e9e1",
+    "experiments/prototype_new_algorithms.py": "44bb3c9cc544841b555b60e7903921589de61661287fb9c777fe6792c88971a0",
+    "src/ffanc_norm/fd_fxnlms.py": "18899884623e3afeebc94ddcb4996936104154bf73e7c19901d6caf8e089b114",
+    "src/ffanc_norm/epcg.py": "a13c7859d43c667b7cc982dc1eb8a4b116df063664d25fbda466530eca17aba0",
+    "experiments/revision11_select.py": "c2b1225b0ec2f1039d3197a16c185915862969363b79987c810e8176fb0ff0be"
+  },
+  "stage": "tuning B2",
+  "seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619
+  ]
+}
