@@ -61,7 +61,17 @@ generators show the new names. The renaming changes no numerical result.
 
 ## Environment
 
-Install Python and `pip install -r requirements-lock.txt`. Table generation uses
+Create a virtual environment and install the locked requirements:
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements-lock.txt
+pip install -e '.[dev]'          # add ',opt' for the optional optimizer tests: '.[dev,opt]'
+pip install pyroomacoustics==0.10.1
+```
+
+Table generation uses
 NumPy and SciPy; Matplotlib is needed for plots. The original experiment sets
 were not all run in one numerical environment: holdout and CUSUM selection used
 NumPy 2.3.5 / SciPy 1.17.0, while the additional rooms and measured stationary
@@ -94,6 +104,11 @@ One simulation run (room A, AR(1) noise, 30 cm source move, holdout seed 800, 5 
 RLS_FAST=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PRA_NUM_THREADS=3 python -c "import sys; sys.path[:0] = ['src', 'experiments']; import eval_v2 as ev; r = ev.D.P.run(ev.cfg_of('A', 'ar1', 'S2 src 30cm'), 800, 'PCG-WLS-F', dict(ev.MAIN), 5.0, ev.D.CH); print(r['stable'], r['reset_hops'])"
 ```
 
+The run prints `True [62]`: the stability flag, and the hop at which the detector reset the window (the stored
+holdout record for this key has its event at sample 8064, and 8064 // 128 - 1 = 62). With other library versions or
+another `PRA_NUM_THREADS`, the floating-point values can differ slightly (see above), but the event hop is expected to
+be the same.
+
 The Revision 11 jobs are run with `experiments/revision11_pipeline.py` (see its docstring; git operations are off
 unless `R11_GIT=1`). The preflight `experiments/revision11_preflight.py regress` compares against a development commit
 (b3058bf) that is not public, so it cannot be re-run from this repository; its result is
@@ -120,8 +135,8 @@ below). `make_tables.py` also writes the merged tables used in the manuscript: `
 `snr_measured_h.tex` (holdout seeds, Revision 11), the earlier `rooms_bc.tex` (rooms B and C) and `snr_measured.tex`
 (SNR 10 dB and MeshRIR), and `ablation.tex`. Without arguments `make_detector_aggregates.py` overwrites the archived
 `results/detector_aggregates/` (including its `provenance.json`); give other directories to compare. The JSON and
-Markdown outputs are byte-identical; the regenerated `provenance.json` differs in the commit and, with another NumPy,
-in the recorded version. Generation recomputes the archived paired comparisons;
+Markdown outputs are byte-identical; the regenerated `provenance.json` differs in the commit and, with another Python or
+NumPy, in the recorded versions. Generation recomputes the archived paired comparisons;
 the saved decisions are checked during the run. This procedure does not perform
 new simulations. The supplementary `sources.json` records hashes of the public
 copies of inputs and therefore differs from the original private source manifest.
