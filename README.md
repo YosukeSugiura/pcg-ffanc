@@ -8,8 +8,7 @@ The result records are archived at Zenodo. To cite them, use the concept DOI
 https://doi.org/10.5281/zenodo.23965830. It covers all versions and resolves to the latest one.
 The v1.0.0 record has the version DOI https://doi.org/10.5281/zenodo.23965831 and holds the
 result archives of section v1.0.0 of `ZENODO_MANIFEST.txt`. Zenodo version v1.2.0 adds the
-Revision 11 records (section v1.2.0); its version DOI is TODO (to be filled in when the version is
-published). Zenodo version v1.2.0 holds two kinds of files: the source zip of code release v1.2.0 (this repository at
+Revision 11 records (section v1.2.0); its version DOI is https://doi.org/10.5281/zenodo.24103221. Zenodo version v1.2.0 holds two kinds of files: the source zip of code release v1.2.0 (this repository at
 tag v1.2.0, including the summaries, metrics and provenance under `results/`) and the tar archives of the run-level
 records and logs listed in `ZENODO_MANIFEST.txt`. The underlying MeshRIR dataset is separately available and attributed at
 https://doi.org/10.5281/zenodo.5500451.
@@ -161,7 +160,7 @@ Binary arrays, run-level files, logs and rendered figures are not included here.
 and byte sizes of the archived files are in `ZENODO_MANIFEST.txt`. Section v1.0.0 is in the v1.0.0
 Zenodo record (https://doi.org/10.5281/zenodo.23965831) as `pcg-ffanc-results-part1.tar`
 and `pcg-ffanc-results-part2.tar`. Section v1.2.0 (Revision 11 run-level records, logs and one reference array) is in
-Zenodo version v1.2.0 (version DOI: TODO) as `pcg-ffanc-results-v1.2.0-part1.tar` and
+Zenodo version v1.2.0 (version DOI: https://doi.org/10.5281/zenodo.24103221) as `pcg-ffanc-results-v1.2.0-part1.tar` and
 `pcg-ffanc-results-v1.2.0-part2.tar`; that version also carries the two v1.0.0 archives. Extract all of them into this
 directory to restore the listed paths (the reference array `results/r11_preflight/ref_localize_roomB_ar1_S8_480.npz`
 of the `localize` check was made on the development machine, not on the machine of the Revision 11 runs). Then `python paper/v2/make_figures.py learning learning_all excess cost shat` can
@@ -199,7 +198,7 @@ included in the public repository. The `scripts_sha256` of the Revision 11 prove
 copies of the scripts; the public copies of `prototype_new_algorithms.py` and `src/ffanc_norm/epcg.py` differ from them
 by the renaming, and the redacted or adapted copies are listed in `REDACTION_MANIFEST.json`. See `CITATION.cff` for citation metadata.
 To cite the result records, use the Zenodo concept DOI https://doi.org/10.5281/zenodo.23965830.
-The v1.0.0 record is https://doi.org/10.5281/zenodo.23965831; the version DOI of v1.2.0 is TODO.
+The v1.0.0 record is https://doi.org/10.5281/zenodo.23965831; the version DOI of v1.2.0 is https://doi.org/10.5281/zenodo.24103221.
 
 The measured-path inputs use MeshRIR by Shoichi Koyama, Tomoya Nishida,
 Keisuke Kimura, Takumi Abe, Natsuki Ueno, and Jesper Brunnström: “MeshRIR:

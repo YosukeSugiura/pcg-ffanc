@@ -385,7 +385,7 @@ results/ringbuf_history_access/access/main_harmonic_S8_304.jsonl.gz	24219
 # Zenodo version v1.2.0 also holds the source zip of code release v1.2.0 (the repository at tag v1.2.0, e.g.
 # git archive --format=zip --prefix=pcg-ffanc-v1.2.0/ -o pcg-ffanc-v1.2.0.zip v1.2.0), which contains the summaries,
 # metrics and provenance under results/; the tar archives hold only the run-level records and logs listed below.
-# Version DOI of Zenodo v1.2.0: TODO
+# Version DOI of Zenodo v1.2.0: 10.5281/zenodo.24103221
 results/r11_ablation_holdout/job_hold_ablation.log	0
 results/r11_ablation_holdout/runs_0.jsonl	20405488
 results/r11_ablation_holdout/runs_1.jsonl	20402917
