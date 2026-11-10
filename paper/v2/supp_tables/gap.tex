@@ -2,96 +2,49 @@
 % Source: results/gap_check/summary.md
 % Source: results/gap_check2/summary.md
 % Source: results/gap_check3/summary.md
-{\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.181818\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.090909\linewidth-2\tabcolsep\relax}}
-\caption{Idealized averaged-gain analysis: eigenvalues of $\mathbf K\Rx$ for the filtered reference and predicted asymptotic excess per seed (S8, $M=512$, $N=2M$, tuning seeds 300--309)}\\
-\toprule
-noise & seed & $\min_i\lambda_i$ & q05 & median & q95 & max & fraction $<1/2$ & $\rho$, commuting (dB) & $\rho$, Lyapunov (dB) \\ \midrule
-\endfirsthead
-\toprule
-noise & seed & $\min_i\lambda_i$ & q05 & median & q95 & max & fraction $<1/2$ & $\rho$, commuting (dB) & $\rho$, Lyapunov (dB) \\ \midrule
-\endhead
-\bottomrule\endfoot
-AR(1) & 300 & 0.897 & 0.932 & 0.992 & 1.061 & 8.79 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 301 & 0.910 & 0.932 & 0.988 & 1.060 & 9.63 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 302 & 0.910 & 0.931 & 0.990 & 1.070 & 9.11 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 303 & 0.905 & 0.931 & 0.990 & 1.057 & 8.70 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 304 & 0.910 & 0.932 & 0.991 & 1.062 & 9.52 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 305 & 0.896 & 0.926 & 0.987 & 1.062 & 9.49 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 306 & 0.893 & 0.924 & 0.985 & 1.064 & 9.59 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 307 & 0.891 & 0.929 & 0.987 & 1.064 & 9.78 & 0.000 & 0.08 & 0.08 \\
-AR(1) & 308 & 0.910 & 0.931 & 0.992 & 1.063 & 9.01 & 0.000 & 0.07 & 0.07 \\
-AR(1) & 309 & 0.891 & 0.938 & 0.992 & 1.063 & 9.34 & 0.000 & 0.07 & 0.07 \\
-harmonic & 300 & 0.102 & 0.165 & 0.881 & 7.577 & 44.47 & 0.197 & inf & n/a \\
-harmonic & 301 & 0.096 & 0.182 & 0.935 & 6.843 & 43.92 & 0.197 & inf & n/a \\
-harmonic & 302 & 0.097 & 0.169 & 0.881 & 6.714 & 42.68 & 0.199 & inf & n/a \\
-harmonic & 303 & 0.096 & 0.159 & 0.916 & 6.563 & 45.46 & 0.195 & inf & n/a \\
-harmonic & 304 & 0.099 & 0.168 & 0.877 & 7.188 & 43.44 & 0.199 & inf & n/a \\
-harmonic & 305 & 0.093 & 0.170 & 0.881 & 6.938 & 43.28 & 0.193 & inf & n/a \\
-harmonic & 306 & 0.097 & 0.174 & 0.851 & 6.823 & 43.09 & 0.199 & inf & n/a \\
-harmonic & 307 & 0.092 & 0.167 & 0.833 & 6.501 & 40.67 & 0.195 & inf & n/a \\
-harmonic & 308 & 0.097 & 0.178 & 0.916 & 7.158 & 43.62 & 0.195 & inf & n/a \\
-harmonic & 309 & 0.102 & 0.174 & 0.864 & 7.432 & 44.26 & 0.195 & inf & n/a \\
-\end{longtable}}
-{\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}}
-\caption{Excess over the oracle floor relative to exact growing-window LS by hop range, AR(1) noise (S8, $M=512$, tuning seeds 300--309)}\\
+\begin{table}[!t]\centering\caption{Excess over the oracle floor relative to exact growing-window LS by hop range, AR(1) noise (S8, $M=512$, tuning seeds 300--309)}\label{tab:gap-ar}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}}
 \toprule
 method & hops 1-8 & hops 8-32 & hops 32-100 & hops 100-312 \\ \midrule
-\endfirsthead
-\toprule
-method & hops 1-8 & hops 8-32 & hops 32-100 & hops 100-312 \\ \midrule
-\endhead
-\bottomrule\endfoot
 exact LS (RLS, $\lambda=1$) & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB \\
 FD-FxNLMS, $\mu=0.2$ & -1.00 dB & +8.03 dB & +6.47 dB & +5.39 dB \\
 FD-FxNLMS, $\mu=0.5$ & -0.48 dB & +5.79 dB & +4.81 dB & +8.02 dB \\
 PCG-WLS & -4.15 dB & -0.21 dB & +0.79 dB & +4.39 dB \\
-\end{longtable}}
-{\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}}
-\caption{Excess over the oracle floor relative to exact growing-window LS by hop range, harmonic noise (S8, $M=512$, tuning seeds 300--309)}\\
+\bottomrule\end{tabular}
+\end{table}
+\begin{table}[!t]\centering\caption{Excess over the oracle floor relative to exact growing-window LS by hop range, harmonic noise (S8, $M=512$, tuning seeds 300--309)}\label{tab:gap-harm}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{\dimexpr0.333333\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.166667\linewidth-2\tabcolsep\relax}}
 \toprule
 method & hops 1-8 & hops 8-32 & hops 32-100 & hops 100-312 \\ \midrule
-\endfirsthead
-\toprule
-method & hops 1-8 & hops 8-32 & hops 32-100 & hops 100-312 \\ \midrule
-\endhead
-\bottomrule\endfoot
 exact LS (RLS, $\lambda=1$) & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB \\
 FD-FxNLMS, $\mu=0.2$ & +3.15 dB & +10.08 dB & +7.25 dB & +7.88 dB \\
 FD-FxNLMS, $\mu=0.5$ & +1.41 dB & +5.84 dB & +8.65 dB & +11.74 dB \\
 PCG-WLS & -1.98 dB & +0.71 dB & +0.90 dB & +4.31 dB \\
-\end{longtable}}
-{\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.285714\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}}
-\caption{PCG-WLS and exact LS on the same 48-hop window: excess over the oracle floor relative to offline window LS by hop range, AR(1) noise (S8, $M=512$, tuning seeds 300--309)}\\
+\bottomrule\end{tabular}
+\end{table}
+\begin{table}[!t]\centering\caption{PCG-WLS and exact LS on the same 48-hop window: excess over the oracle floor relative to offline window LS by hop range, AR(1) noise (S8, $M=512$, tuning seeds 300--309)}\label{tab:win-ar}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{\dimexpr0.285714\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}}
 \toprule
 curve & hops 1-8 & hops 8-48 & hops 48-100 & hops 100-200 & hops 200-312 \\ \midrule
-\endfirsthead
-\toprule
-curve & hops 1-8 & hops 8-48 & hops 48-100 & hops 100-200 & hops 200-312 \\ \midrule
-\endhead
-\bottomrule\endfoot
 offline growing LS & +0.00 dB & +0.00 dB & -1.35 dB & -3.94 dB & -5.46 dB \\
 offline window LS & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB \\
 predicted window ($\sigma^2\tr(\Rx\G_{\rm win}^{-1})$) & +5.38 dB & +0.01 dB & -0.31 dB & -0.90 dB & -0.66 dB \\
 simulated exact LS (RLS, $\lambda=1$) & -22.01 dB & +0.04 dB & -1.41 dB & -3.93 dB & -5.48 dB \\
 simulated PCG-WLS & -26.16 dB & -0.11 dB & -0.21 dB & -0.30 dB & -0.23 dB \\
-\end{longtable}}
-{\scriptsize\setlength{\tabcolsep}{3pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr0.285714\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}}
-\caption{PCG-WLS and exact LS on the same 48-hop window: excess over the oracle floor relative to offline window LS by hop range, harmonic noise (S8, $M=512$, tuning seeds 300--309)}\\
+\bottomrule\end{tabular}
+\end{table}
+\begin{table}[!t]\centering\caption{PCG-WLS and exact LS on the same 48-hop window: excess over the oracle floor relative to offline window LS by hop range, harmonic noise (S8, $M=512$, tuning seeds 300--309)}\label{tab:win-harm}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{\dimexpr0.285714\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.142857\linewidth-2\tabcolsep\relax}}
 \toprule
 curve & hops 1-8 & hops 8-48 & hops 48-100 & hops 100-200 & hops 200-312 \\ \midrule
-\endfirsthead
-\toprule
-curve & hops 1-8 & hops 8-48 & hops 48-100 & hops 100-200 & hops 200-312 \\ \midrule
-\endhead
-\bottomrule\endfoot
 offline growing LS & +0.00 dB & +0.00 dB & -1.58 dB & -4.19 dB & -5.80 dB \\
 offline window LS & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB & +0.00 dB \\
 predicted window ($\sigma^2\tr(\Rx\G_{\rm win}^{-1})$) & +8.98 dB & -0.40 dB & -0.44 dB & -0.60 dB & -0.48 dB \\
 simulated exact LS (RLS, $\lambda=1$) & -22.27 dB & -1.37 dB & -1.82 dB & -4.24 dB & -5.84 dB \\
 simulated PCG-WLS & -24.25 dB & -0.72 dB & -0.71 dB & -0.64 dB & -0.73 dB \\
-\end{longtable}}
+\bottomrule\end{tabular}
+\end{table}

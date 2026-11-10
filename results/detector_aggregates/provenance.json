@@ -1,0 +1,12 @@
+{
+ "script": "paper/v2/make_detector_aggregates.py",
+ "commit": "26c0ad97dce78bea3762e52a34c6234c8674ed93",
+ "python": "3.13.18",
+ "numpy": "2.5.3",
+ "inputs_sha256": {
+  "results/eval_roomB_x2/metrics.jsonl": "9c26b8f3f3186cae205e113df2ffa591ab20154b8c3ee7a41e94ed23a600c2af",
+  "results/eval_roomC_x2/metrics.jsonl": "eb627c0e79783e19a745d9ef2d4b307f29440bc3ac9b12c7a0de75163d8952ec",
+  "results/final_eval_holdout/det_events_0.jsonl": "7b8691ec90020b94d3d819abac93fce6bad87c0781f5c5aedf977d0b9eb2a5fb",
+  "results/final_eval_holdout/det_events_1.jsonl": "35bfd79915e3387d1b584378c63ec86975d1a33344e5a40a589eebe49a558c0e"
+ }
+}

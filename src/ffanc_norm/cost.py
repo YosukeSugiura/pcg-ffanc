@@ -64,7 +64,7 @@ def pcg_wls_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> 
 
 
 def epcg_model(M: int, H: int, kd: int, k_main: int, detect: bool = True) -> float:
-    """Deprecated alias of `pcg_wls_model` (the method was called E-PCG before v1.1.0)."""
+    """Deprecated alias of `pcg_wls_model` (the method was called E-PCG before v1.2.0)."""
     warnings.warn("cost.epcg_model is deprecated; use cost.pcg_wls_model", DeprecationWarning, stacklevel=2)
     return pcg_wls_model(M, H, kd, k_main, detect)
 

@@ -1,0 +1,178 @@
+{
+  "commit": "05800dab2249efb869a5ddcac1661b7cf4d0d619",
+  "git_status_porcelain": "?? results/r11_pipeline/holdout_ablation.done\n?? results/r11_pipeline/holdout_new.log\n?? results/r11_pipeline/holdout_new.running\n?? results/r11_pipeline/lock\n?? results/r11_pipeline/select_B1.done\n?? results/r11_pipeline/select_B2.done\n?? results/r11_pipeline/select_C.done\n",
+  "rule": "docs/current/REVISION_RULE_11.md",
+  "rule_sha256": "6ba432af58880a94d6915beab8f7183af645b706bff37b959d4acdd6519bf270",
+  "rule11a": "docs/current/REVISION_RULE_11a.md",
+  "rule11a_sha256": "6d26fe9394c9bcba244065171812ddc6e5418689be89a13609ac16db4c077563",
+  "rule11b": "docs/current/REVISION_RULE_11b.md",
+  "rule11b_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e",
+  "holdout_base": "envA",
+  "machine": {
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "cpu_count": 3,
+    "cpu_flags_sha256": "16a7227851bbd0d54c1a76b00030c349f39b11fe7860f6e2de2e0b7e1261be4c",
+    "PRA_NUM_THREADS": "3",
+    "pra_num_threads": 3,
+    "openblas_corename": "SkylakeX",
+    "numpy_blas": {
+      "name": "scipy-openblas",
+      "version": "0.3.30",
+      "openblas configuration": "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+    },
+    "python": "3.12.14",
+    "executable": "[absolute-path]"
+  },
+  "pra_threads": 3,
+  "env_class": "I",
+  "tuning_events_source": "cache",
+  "outer_reference": {
+    "RLS": "recorded",
+    "VFF-RLS": "recorded",
+    "SFTF-H + det": "recorded",
+    "FD-FxNLMS": "recorded",
+    "leaky FD-FxNLMS": "recorded",
+    "FDKF": "recorded",
+    "FD-FxNLMS + det": "recorded",
+    "RLS + CUSUM": "rerun"
+  },
+  "python": "3.12.14",
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pyroomacoustics": "0.10.1"
+  },
+  "RLS_FAST": "1",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "written": "2026-11-08T03:43:05+0000",
+  "scripts_sha256": {
+    "experiments/revision11_methods.py": "c2515831c14e62436f737607e0e716256265c5d6b1bb282c62eca2a88be9e9e1",
+    "experiments/prototype_new_algorithms.py": "44bb3c9cc544841b555b60e7903921589de61661287fb9c777fe6792c88971a0",
+    "src/ffanc_norm/fd_fxnlms.py": "18899884623e3afeebc94ddcb4996936104154bf73e7c19901d6caf8e089b114",
+    "src/ffanc_norm/epcg.py": "a13c7859d43c667b7cc982dc1eb8a4b116df063664d25fbda466530eca17aba0",
+    "experiments/revision11_holdout.py": "ba60ec7fa37f497b4a38b1bc93934d4cb9c6627c28fe7ab56eebc8ffb86a426e"
+  },
+  "stage": "holdout new",
+  "seeds": [
+    800,
+    839
+  ],
+  "methods": {
+    "MFBLMS": [
+      "fixed_binwise",
+      {
+        "mu": 0.05,
+        "mod": true
+      }
+    ],
+    "MFBLMS + det": [
+      "fixed_binwise",
+      {
+        "mu": 0.05,
+        "mod": true,
+        "det_boost": 0.0625,
+        "det_reset_w": false
+      }
+    ],
+    "switching FD-FxNLMS [6]": [
+      "SW-FBLMS",
+      {
+        "mu_n": 0.3,
+        "mu_m": 0.05,
+        "sw_thr": 0.01,
+        "sw_dwell": 4,
+        "sw_detect": "zeta"
+      }
+    ],
+    "switching FD-FxNLMS + det": [
+      "SW-FBLMS",
+      {
+        "mu_n": 0.3,
+        "mu_m": 0.05,
+        "sw_thr": 0.01,
+        "sw_dwell": 8,
+        "sw_detect": "det"
+      }
+    ],
+    "RLS + det (cond.)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_cond_db": 1.0,
+        "det_cond_k": 32
+      }
+    ],
+    "RLS + det + growth": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_grow": "half"
+      }
+    ],
+    "RLS + det + growth (from start)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "det_reset_w": false,
+        "det_grow": "half",
+        "det_grow_start": true
+      }
+    ],
+    "RLS (extended grid)": [
+      "R-RLS",
+      {
+        "lam": 0.9993,
+        "delta": 0.01
+      }
+    ],
+    "VFF-RLS (extended grid)": [
+      "R-VFF",
+      {
+        "N0": 125.0,
+        "lam_min": 0.9995,
+        "delta": 0.001
+      }
+    ],
+    "RLS + CUSUM (extended grid)": [
+      "R-RLS",
+      {
+        "lam": 0.9999,
+        "delta": 0.01,
+        "cusum_h": 5,
+        "cusum_k": 64
+      }
+    ],
+    "FD-FxNLMS (extended grid)": [
+      "fixed_binwise",
+      {
+        "mu": 0.32
+      }
+    ],
+    "FDKF (extended grid)": [
+      "C-FDKF",
+      {
+        "P0": 3.0,
+        "gain_scale": 4.0,
+        "A": 0.9995
+      }
+    ],
+    "FD-FxNLMS + det (extended grid)": [
+      "V-SCHED",
+      {
+        "denom": "cum",
+        "scale": 0.03125,
+        "mu_min": 0.2,
+        "det_reset_w": false
+      }
+    ]
+  }
+}

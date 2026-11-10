@@ -28,7 +28,7 @@ _sel = json.loads((ROOT / 'results/protocol_final_sel/selected.json').read_text(
 BASE = ['FD-FxNLMS', 'leaky FD-FxNLMS', 'convex FD-FxNLMS', 'RLS', 'VFF-RLS', 'FDKF']
 METH = {m: (_sel['grids'][m][0], _sel['grids'][m][1][_sel['selected'][m]]) for m in BASE}
 # 'E-PCG' and 'E-PCG bank' are the record labels of PCG-WLS and PCG-WLS (multi-window) in results/ (names before
-# v1.1.0). They are kept so that runs resume from and compare with the archived records (see ffanc_norm.naming).
+# v1.2.0). They are kept so that runs resume from and compare with the archived records (see ffanc_norm.naming).
 # The saved configurations carry the former method key 'E-PCG-F'; load_config maps it to 'PCG-WLS-F'.
 for _lab, _f in (('E-PCG', 'final_config_core_main.json'), ('E-PCG bank', 'final_config_core_final.json')):
     _c = N.load_config(ROOT / 'results/final_dev' / _f)

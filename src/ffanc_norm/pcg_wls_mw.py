@@ -1,6 +1,6 @@
 """PCG-WLS (multi-window): memory-length aggregation for PCG-WLS under continuous movement (does not change PcgWls).
 
-The variant was called E-PCG (bank) or memory bank before v1.1.0 (ffanc_norm.epcg_bank is the deprecated alias).
+The variant was called E-PCG (bank) or memory bank before v1.2.0 (ffanc_norm.epcg_bank is the deprecated alias).
 
 A set of K PCG-WLS solvers that differ only in the window length L_hops (memory). Before each hop the controller
 of every member is scored by its honest one-step predictive (virtual) residual on the new hop,

@@ -1,4 +1,5 @@
 # Candidate archive contents, repository-relative paths and bytes.
+# Entries before the line "#@ section v1.2.0" form section v1.0.0 (make_zenodo_archive.py --section).
 # Archived at https://doi.org/10.5281/zenodo.23965831 as pcg-ffanc-results-part1.tar and pcg-ffanc-results-part2.tar (logs sanitized by make_zenodo_archive.py).
 # Rejected preflight outputs are excluded.
 results/band_epcg_M512_a.log	1258
@@ -375,3 +376,79 @@ results/ringbuf_history_access/access/main_harmonic_S8_301.jsonl.gz	24042
 results/ringbuf_history_access/access/main_harmonic_S8_302.jsonl.gz	24214
 results/ringbuf_history_access/access/main_harmonic_S8_303.jsonl.gz	24172
 results/ringbuf_history_access/access/main_harmonic_S8_304.jsonl.gz	24219
+
+#@ section v1.2.0
+# Revision 11 records added in v1.2.0 (code release v1.2.0). Archived in Zenodo version v1.2.0 as
+# pcg-ffanc-results-v1.2.0-part1.tar and pcg-ffanc-results-v1.2.0-part2.tar (logs sanitized by make_zenodo_archive.py;
+# create them with: python make_zenodo_archive.py SOURCE_ROOT pcg-ffanc-results-v1.2.0.tar --section v1.2.0 --max-mib 300).
+# The v1.0.0 files above are unchanged and are carried over into Zenodo version v1.2.0.
+# Zenodo version v1.2.0 also holds the source zip of code release v1.2.0 (the repository at tag v1.2.0, e.g.
+# git archive --format=zip --prefix=pcg-ffanc-v1.2.0/ -o pcg-ffanc-v1.2.0.zip v1.2.0), which contains the summaries,
+# metrics and provenance under results/; the tar archives hold only the run-level records and logs listed below.
+# Version DOI of Zenodo v1.2.0: 10.5281/zenodo.24103221
+results/r11_ablation_holdout/job_hold_ablation.log	0
+results/r11_ablation_holdout/runs_0.jsonl	20405488
+results/r11_ablation_holdout/runs_1.jsonl	20402917
+results/r11_ablation_holdout/worker_hold_ablation_0.log	196
+results/r11_ablation_holdout/worker_hold_ablation_1.log	196
+results/protocol_r11_sel/job_sel_B1_0.log	0
+results/protocol_r11_sel/job_sel_B1_1.log	0
+results/protocol_r11_sel/job_sel_B2_0.log	0
+results/protocol_r11_sel/job_sel_B2_1.log	0
+results/protocol_r11_sel/job_sel_C_0.log	0
+results/protocol_r11_sel/job_sel_C_1.log	0
+results/protocol_r11_sel/job_sel_E0_B2.log	0
+results/protocol_r11_sel/job_sel_E0_C.log	0
+results/protocol_r11_sel/runs_B1_0.jsonl	315989
+results/protocol_r11_sel/runs_B1_1.jsonl	77937
+results/protocol_r11_sel/runs_B2_0.jsonl	1253668
+results/protocol_r11_sel/runs_B2_1.jsonl	1316294
+results/protocol_r11_sel/runs_C_0.jsonl	1755655
+results/protocol_r11_sel/runs_C_1.jsonl	788075
+results/protocol_r11_sel/worker_sel_B1_0_0.log	88
+results/protocol_r11_sel/worker_sel_B1_0_1.log	63
+results/protocol_r11_sel/worker_sel_B1_1_0.log	19
+results/protocol_r11_sel/worker_sel_B1_1_1.log	19
+results/protocol_r11_sel/worker_sel_B2_0_0.log	358
+results/protocol_r11_sel/worker_sel_B2_0_1.log	329
+results/protocol_r11_sel/worker_sel_B2_1_0.log	19
+results/protocol_r11_sel/worker_sel_B2_1_1.log	19
+results/protocol_r11_sel/worker_sel_C_0_0.log	462
+results/protocol_r11_sel/worker_sel_C_0_1.log	218
+results/protocol_r11_sel/worker_sel_C_1_0.log	18
+results/protocol_r11_sel/worker_sel_C_1_1.log	45
+results/protocol_r11_sel/worker_sel_E0_B2_0.log	57
+results/protocol_r11_sel/worker_sel_E0_B2_1.log	57
+results/protocol_r11_sel/worker_sel_E0_C_0.log	114
+results/protocol_r11_sel/worker_sel_E0_C_1.log	114
+results/final_eval_holdout_r11/job_hold_new.log	0
+results/final_eval_holdout_r11/runs_0.jsonl	51388503
+results/final_eval_holdout_r11/runs_1.jsonl	51392819
+results/final_eval_holdout_r11/worker_hold_new_0.log	433
+results/final_eval_holdout_r11/worker_hold_new_1.log	433
+results/eval_roomB_h/job_rooms_roomB.log	0
+results/eval_roomB_h/runs_0.jsonl	56639109
+results/eval_roomB_h/runs_1.jsonl	56729284
+results/eval_roomB_h/worker_rooms_roomB_0.log	4200
+results/eval_roomB_h/worker_rooms_roomB_1.log	4200
+results/eval_roomC_h/job_rooms_roomC.log	0
+results/eval_roomC_h/runs_0.jsonl	55083129
+results/eval_roomC_h/runs_1.jsonl	55117657
+results/eval_roomC_h/worker_rooms_roomC_0.log	4200
+results/eval_roomC_h/worker_rooms_roomC_1.log	4200
+results/eval_snr10_h/job_rooms_snr10.log	0
+results/eval_snr10_h/runs_0.jsonl	29020110
+results/eval_snr10_h/runs_1.jsonl	29014735
+results/eval_snr10_h/worker_rooms_snr10_0.log	2040
+results/eval_snr10_h/worker_rooms_snr10_1.log	2040
+results/final_eval_meas_s_h/job_meas_meas_s.log	0
+results/final_eval_meas_s_h/runs_0.jsonl	15399998
+results/final_eval_meas_s_h/runs_1.jsonl	15478944
+results/final_eval_meas_s_h/worker_meas_meas_s_0.log	1060
+results/final_eval_meas_s_h/worker_meas_meas_s_1.log	1060
+results/final_eval_meas_p_h/job_meas_meas_p.log	0
+results/final_eval_meas_p_h/runs_0.jsonl	15397643
+results/final_eval_meas_p_h/runs_1.jsonl	15379931
+results/final_eval_meas_p_h/worker_meas_meas_p_0.log	980
+results/final_eval_meas_p_h/worker_meas_meas_p_1.log	980
+results/r11_preflight/ref_localize_roomB_ar1_S8_480.npz	635994

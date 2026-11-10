@@ -1,0 +1,400 @@
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "events": [[9728, 9600]]}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "events": [[8704, 8636]]}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "events": [[8832, 8752]]}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "events": [[8960, 8880]]}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "events": [[8320, 8264]]}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 484, "events": [[9728, 9600]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 485, "events": [[13440, 13312]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 486, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 487, "events": [[10880, 10788]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 490, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 491, "events": [[11264, 11160]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 492, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 493, "events": [[10752, 10624]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 498, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 499, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 500, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 501, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 502, "events": [[12288, 12232]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 503, "events": [[12544, 12416]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 508, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 509, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 514, "events": []}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 515, "events": [[10496, 10416]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 516, "events": [[10496, 10368]]}
+{"room": "B", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 517, "events": [[11904, 11848]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 484, "events": [[8192, 8124]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 485, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 486, "events": [[9088, 8960]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 487, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 490, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 491, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 492, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 493, "events": [[8320, 8216]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 498, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 499, "events": [[8576, 8532]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 500, "events": [[8320, 8192]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 501, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 502, "events": [[8960, 8868]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 503, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 508, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 509, "events": [[8448, 8428]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 514, "events": [[8320, 8252]]}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 515, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 516, "events": []}
+{"room": "B", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 517, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "events": []}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "events": [[8192, 8160]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "events": [[8192, 8172]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "events": [[8320, 8300]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "events": [[8192, 8088]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 484, "events": [[9088, 9068]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 485, "events": [[8960, 8832]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 486, "events": [[9344, 9264]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 487, "events": [[10112, 10044]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 490, "events": [[8960, 8916], [12160, 12044]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 491, "events": [[10496, 10440]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 492, "events": [[9344, 9300]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 493, "events": [[8960, 8880], [11264, 11232]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 498, "events": [[9216, 9112]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 499, "events": [[9344, 9216]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 500, "events": [[9856, 9728]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 501, "events": [[9728, 9612]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 502, "events": [[9344, 9228]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 503, "events": [[8960, 8844]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 508, "events": [[9344, 9216]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 509, "events": [[9728, 9612]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 514, "events": [[9088, 9032]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 515, "events": [[9344, 9228]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 516, "events": [[11136, 11080]]}
+{"room": "B", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 517, "events": [[11008, 10880]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 484, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 485, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 486, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 487, "events": [[8192, 8100]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 490, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 491, "events": [[8192, 8112]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 492, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 493, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 498, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 499, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 500, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 501, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 502, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 503, "events": [[8192, 8076]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 508, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 509, "events": [[8064, 7996]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 514, "events": [[8192, 8064]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 515, "events": [[8192, 8100]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 516, "events": [[8192, 8160]]}
+{"room": "B", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 517, "events": [[8192, 8064]]}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "events": [[9088, 8984]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "events": [[8832, 8704]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "events": [[8576, 8484]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "events": [[8576, 8460]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "events": [[8832, 8740]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "events": [[9088, 9020]]}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 484, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 485, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 486, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 487, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 490, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 491, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 492, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 493, "events": [[10368, 10252], [13184, 13056]]}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 498, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 499, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 500, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 501, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 502, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 503, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 508, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 509, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 514, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 515, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 516, "events": []}
+{"room": "C", "noise": "ar1", "scen": "S5 src 30cm cont", "seed": 517, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 484, "events": [[8576, 8544]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 485, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 486, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 487, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 490, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 491, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 492, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 493, "events": [[8704, 8612]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 498, "events": [[8576, 8520]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 499, "events": [[8448, 8356]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 500, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 501, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 502, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 503, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 508, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 509, "events": [[8448, 8428]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 514, "events": [[8832, 8716]]}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 515, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 516, "events": []}
+{"room": "C", "noise": "ar1", "scen": "R2 rig 30cm", "seed": 517, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "events": [[8192, 8160]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "events": [[8192, 8076]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "events": [[8320, 8300]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "events": [[8192, 8124]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "events": [[8064, 7996]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "events": [[8192, 8172]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "events": [[8192, 8172]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "events": [[8192, 8100]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "events": [[8192, 8088]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "events": [[8576, 8508]]}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "events": [[8448, 8416]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 484, "events": [[8960, 8940]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 485, "events": [[8960, 8832]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 486, "events": [[9344, 9288]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 487, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 490, "events": [[9344, 9276]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 491, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 492, "events": [[10496, 10392]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 493, "events": [[9088, 8996], [11264, 11172]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 498, "events": [[9600, 9544]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 499, "events": [[9344, 9216]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 500, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 501, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 502, "events": [[9216, 9100]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 503, "events": [[8960, 8832]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 508, "events": [[9344, 9216]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 509, "events": [[9728, 9648]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 514, "events": [[9088, 9068]]}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 515, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 516, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "S5 src 30cm cont", "seed": 517, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 484, "events": [[8192, 8076]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 485, "events": [[8064, 7996]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 486, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 487, "events": [[8192, 8124]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 490, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 491, "events": [[8192, 8136]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 492, "events": [[8192, 8088]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 493, "events": [[8064, 7996]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 498, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 499, "events": [[8064, 7996]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 500, "events": [[8192, 8136]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 501, "events": [[9088, 9008]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 502, "events": [[8192, 8148]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 503, "events": [[8192, 8064]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 508, "events": [[8064, 7996], [9344, 9216]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 509, "events": [[8064, 7996]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 514, "events": [[8192, 8088]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 515, "events": []}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 516, "events": [[8704, 8576]]}
+{"room": "C", "noise": "harmonic", "scen": "R2 rig 30cm", "seed": 517, "events": [[8320, 8240]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 484, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 485, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 486, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 487, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 490, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 491, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 492, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 493, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 498, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 499, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 500, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 501, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 502, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 503, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 508, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 509, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 514, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 515, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 516, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S8 stationary", "seed": 517, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 484, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 485, "events": [[8320, 8288]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 486, "events": [[8448, 8320]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 487, "events": [[8448, 8320]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 490, "events": [[8192, 8112]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 491, "events": [[8320, 8216]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 492, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 493, "events": [[8320, 8240]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 498, "events": [[8448, 8380]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 499, "events": [[8704, 8600]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 500, "events": [[8704, 8636]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 501, "events": [[8192, 8076]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 502, "events": [[8320, 8252]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 503, "events": [[8448, 8416]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 508, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 509, "events": [[8320, 8300]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 514, "events": []}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 515, "events": [[8320, 8252]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 516, "events": [[8448, 8404]]}
+{"room": "A_snr10", "noise": "ar1", "scen": "S2 src 30cm", "seed": 517, "events": [[8576, 8556]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 480, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 481, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 482, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 483, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 488, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 489, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 494, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 495, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 496, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 497, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 504, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 505, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 506, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 507, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 510, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 511, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 512, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 513, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 518, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S8 stationary", "seed": 519, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 484, "events": [[8576, 8496]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 485, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 486, "events": [[8320, 8300]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 487, "events": [[8448, 8368]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 490, "events": [[8192, 8076]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 491, "events": [[8320, 8264]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 492, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 493, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 498, "events": [[8320, 8204]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 499, "events": [[8704, 8624]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 500, "events": [[8448, 8356]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 501, "events": [[8192, 8076]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 502, "events": [[8192, 8100]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 503, "events": [[8448, 8380]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 508, "events": [[8192, 8064]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 509, "events": [[8320, 8216]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 514, "events": []}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 515, "events": [[8320, 8300]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 516, "events": [[8320, 8252]]}
+{"room": "A_snr10", "noise": "harmonic", "scen": "S2 src 30cm", "seed": 517, "events": [[8320, 8204]]}

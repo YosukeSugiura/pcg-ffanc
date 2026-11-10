@@ -34,7 +34,18 @@ events = [json.loads(line) for path in sorted((root/'results/final_eval_holdout'
 stationary = [r for r in events if r['scen'] == 'S8 stationary']
 assert len(stationary) == len({(r['noise'],r['seed']) for r in stationary}) and stationary
 values.update(StationaryRuns=str(len(stationary)), StationaryEvents=str(sum(len(r['events']) for r in stationary)))
-settings = (root/'paper/v2/supp_tables/settings.tex').read_text()
+settings_path = root/'paper/v2/supp_tables/settings.tex'
+if not settings_path.exists():
+    # The two-column supplement (make_supplement.py default since 2026-11-07) no longer writes settings.tex; regenerate
+    # the former long-layout tables (make_supplement.py --all) in a temporary directory and read it from there.
+    import sys
+    import tempfile
+    sys.path.insert(0, str(root/'paper/v2'))
+    import make_supplement
+    _tmp = Path(tempfile.mkdtemp(prefix='supp_all_'))
+    make_supplement.generate(_tmp, write_all=True)
+    settings_path = _tmp/'settings.tex'
+settings = settings_path.read_text()
 settings_line = next(line for line in settings.splitlines() if line.startswith('FD-FxNLMS + det &'))
 floor = re.search(r'\\mu_\{\\min\}=([0-9.]+)', settings_line)
 j = re.search(r'^\$J\$ \(hops in the stage-2 score test\) & ([0-9]+)', settings, re.M)

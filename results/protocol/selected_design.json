@@ -1,0 +1,14 @@
+{
+ "E-PCG (proposed)": 5,
+ "E-PCG v2 (bound + score fix)": 5,
+ "FD-FxNLMS": 0,
+ "FD-FxNLMS + bound prox (proposed rule)": 1,
+ "FD-FxNLMS + spec (proposed rule)": 0,
+ "FDKF": 2,
+ "OSP FD-FxNLMS (Eriksson)": 0,
+ "RLS": 2,
+ "VFF-RLS": 4,
+ "convex FD-FxNLMS": 5,
+ "leaky FD-FxNLMS": 1,
+ "E-PCG v2 light": 0
+}

@@ -1,0 +1,173 @@
+{
+  "environment": "A",
+  "python": "3.12.14",
+  "executable": "[absolute-path]",
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pyroomacoustics": "0.10.1"
+  },
+  "RLS_FAST": "1",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PRA_NUM_THREADS": "3"
+  },
+  "commit": "a00b3368933311547fa54296be49d7c8d9d28302",
+  "machine": {
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "cpu_count": 3,
+    "cpu_flags_sha256": "16a7227851bbd0d54c1a76b00030c349f39b11fe7860f6e2de2e0b7e1261be4c",
+    "PRA_NUM_THREADS": "3",
+    "pra_num_threads": 3,
+    "openblas_corename": "SkylakeX",
+    "numpy_blas": {
+      "name": "scipy-openblas",
+      "version": "0.3.30",
+      "openblas configuration": "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64"
+    },
+    "python": "3.12.14",
+    "executable": "[absolute-path]"
+  },
+  "cases": [
+    {
+      "method": "E-PCG",
+      "noise": "ar1",
+      "scen": "S8 stationary",
+      "seed": 800,
+      "checks": {
+        "tp": true,
+        "up": true,
+        "flag_stable": true,
+        "hops_full": true,
+        "events": true
+      },
+      "size": {
+        "up_max_rel": 0.0,
+        "up_max_abs": 0.0,
+        "tp_max_rel": 0.0,
+        "tp_max_abs": 0.0,
+        "tp_max_db": 0.0,
+        "tp_finite": true,
+        "events_diff": {
+          "n_new": 0,
+          "n_saved": 0,
+          "first_mismatch": null
+        }
+      },
+      "wall_s": 0.39,
+      "n_events": 0
+    },
+    {
+      "method": "E-PCG",
+      "noise": "ar1",
+      "scen": "S8 stationary",
+      "seed": 839,
+      "checks": {
+        "tp": true,
+        "up": true,
+        "flag_stable": true,
+        "hops_full": true,
+        "events": true
+      },
+      "size": {
+        "up_max_rel": 0.0,
+        "up_max_abs": 0.0,
+        "tp_max_rel": 0.0,
+        "tp_max_abs": 0.0,
+        "tp_max_db": 0.0,
+        "tp_finite": true,
+        "events_diff": {
+          "n_new": 0,
+          "n_saved": 0,
+          "first_mismatch": null
+        }
+      },
+      "wall_s": 0.39,
+      "n_events": 0
+    },
+    {
+      "method": "E-PCG",
+      "noise": "harmonic",
+      "scen": "R3 rig 30cm cont",
+      "seed": 800,
+      "checks": {
+        "tp": true,
+        "up": true,
+        "flag_stable": true,
+        "hops_full": true,
+        "events": true
+      },
+      "size": {
+        "up_max_rel": 0.0,
+        "up_max_abs": 0.0,
+        "tp_max_rel": 0.0,
+        "tp_max_abs": 0.0,
+        "tp_max_db": 0.0,
+        "tp_finite": true,
+        "events_diff": {
+          "n_new": 3,
+          "n_saved": 3,
+          "first_mismatch": null
+        }
+      },
+      "wall_s": 1.18,
+      "n_events": 3
+    },
+    {
+      "method": "E-PCG",
+      "noise": "harmonic",
+      "scen": "R3 rig 30cm cont",
+      "seed": 839,
+      "checks": {
+        "tp": true,
+        "up": true,
+        "flag_stable": true,
+        "hops_full": true,
+        "events": true
+      },
+      "size": {
+        "up_max_rel": 0.0,
+        "up_max_abs": 0.0,
+        "tp_max_rel": 0.0,
+        "tp_max_abs": 0.0,
+        "tp_max_db": 0.0,
+        "tp_finite": true,
+        "events_diff": {
+          "n_new": 2,
+          "n_saved": 2,
+          "first_mismatch": null
+        }
+      },
+      "wall_s": 0.93,
+      "n_events": 2
+    },
+    {
+      "method": "RLS + det",
+      "noise": "harmonic",
+      "scen": "R3 rig 30cm cont",
+      "seed": 800,
+      "checks": {
+        "tp": true,
+        "up": true,
+        "flag_stable": true,
+        "hops_full": true
+      },
+      "size": {
+        "up_max_rel": 0.0,
+        "up_max_abs": 0.0,
+        "tp_max_rel": 0.0,
+        "tp_max_abs": 0.0,
+        "tp_max_db": 0.0,
+        "tp_finite": true
+      },
+      "wall_s": 10.57,
+      "n_events": 3
+    }
+  ],
+  "class": "I",
+  "pass": true,
+  "up_rel_tol": 1e-09,
+  "rule11b_sha256": "2e12b3cde994ac28cfc4cbc4f0248161dc2bc111e9a280fdafae83ddd548663e"
+}

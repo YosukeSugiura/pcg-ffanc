@@ -1,0 +1,2876 @@
+{
+ "python": "3.13.5",
+ "executable": "[absolute-path]",
+ "software": {
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "pyroomacoustics": "0.10.1"
+ },
+ "RLS_FAST": "1",
+ "threads": {
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "PRA_NUM_THREADS": "2"
+ },
+ "commit": "a00b3368933311547fa54296be49d7c8d9d28302",
+ "rows": [
+  {
+   "name": "E-PCG",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.839073771077691,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.744665968887961,
+    "A2": -16.085716279886345
+   },
+   "wall_s": 0.39,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.594264840262433,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.579689984829955,
+    "A2": -16.085716279886284
+   },
+   "wall_s": 0.39,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.839073771077691,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.744665968887961,
+    "A2": -16.085716279886345
+   },
+   "wall_s": 0.39,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (no detector)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": false,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.842461662987157,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.744665968887961,
+    "A2": -16.091027308737505
+   },
+   "wall_s": 0.26,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order, restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.594264840262433,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.579689984829955,
+    "A2": -16.085716279886284
+   },
+   "wall_s": 0.39,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (exact solver)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true,
+    "solver": "exact"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.805078724230704,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.581428625957967,
+    "A2": -16.09109516046763
+   },
+   "wall_s": 12.11,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.982450887553416,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.2572266652876785,
+    "A2": -16.216217406613247
+   },
+   "wall_s": 0.1,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.524020115941576,
+   "metrics": {
+    "fail": 0,
+    "A1": -9.951930787821079,
+    "A2": -15.489924401317738
+   },
+   "wall_s": 0.1,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS [6]",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "zeta"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.688015076677162,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.838206854165286,
+    "A2": -16.23931885336788
+   },
+   "wall_s": 0.11,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": [
+    [
+     34,
+     "M",
+     "dJ"
+    ],
+    [
+     38,
+     "C",
+     "calibrate"
+    ],
+    [
+     42,
+     "M",
+     "calibrated",
+     0.006236316740222726
+    ],
+    [
+     98,
+     "N",
+     "zeta"
+    ],
+    [
+     138,
+     "M",
+     "dJ"
+    ],
+    [
+     142,
+     "C",
+     "calibrate"
+    ],
+    [
+     146,
+     "M",
+     "calibrated",
+     0.006932424719884675
+    ]
+   ],
+   "sw_hops": {
+    "N": 75,
+    "M": 229,
+    "C": 8
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS + det",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "det"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.687440399351832,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.838206854165286,
+    "A2": -16.231278215932758
+   },
+   "wall_s": 0.1,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": [
+    [
+     34,
+     "M",
+     "dJ"
+    ]
+   ],
+   "sw_hops": {
+    "N": 35,
+    "M": 277,
+    "C": 0
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det (cond.)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_cond_db": 4.0,
+    "det_cond_k": 32
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.776618755357015,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.74599540609174,
+    "A2": -16.367149313151703
+   },
+   "wall_s": 9.32,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": [],
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.776618755357015,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.74599540609174,
+    "A2": -16.367149313151703
+   },
+   "wall_s": 9.14,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth (from start)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half",
+    "det_grow_start": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.742412490720604,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.60836090545241,
+    "A2": -16.366977951741617
+   },
+   "wall_s": 9.11,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS + det",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true,
+    "det_boost": 0.0625,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.982450887553416,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.2572266652876785,
+    "A2": -16.216217406613247
+   },
+   "wall_s": 0.13,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9993,
+    "delta": 0.01
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.241219789004337,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.547126175504673,
+    "A2": -15.642404486700006
+   },
+   "wall_s": 9.21,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "VFF-RLS [outer 1]",
+   "kind": "R-VFF",
+   "params": {
+    "N0": 250.0,
+    "lam_min": 0.9995,
+    "delta": 0.001
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.909870757127386,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.468152316799868,
+    "A2": -15.957969130348054
+   },
+   "wall_s": 12.86,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "SFTF-H + det [outer 1]",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "hybrid": 4096
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.782633509633946,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.771709654248504,
+    "A2": -16.367149968572665
+   },
+   "wall_s": 0.79,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + CUSUM [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "cusum_h": 3,
+    "cusum_k": 64
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.633839571463684,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.74599540609174,
+    "A2": -16.042178086898865
+   },
+   "wall_s": 10.71,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": [
+    [
+     28288,
+     25216
+    ],
+    [
+     29568,
+     28288
+    ],
+    [
+     31616,
+     29568
+    ]
+   ]
+  },
+  {
+   "name": "FD-FxNLMS [outer 1]",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.32
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.60615085685379,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.001191333857465,
+    "A2": -16.002413931477783
+   },
+   "wall_s": 0.09,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "leaky FD-FxNLMS [outer 1]",
+   "kind": "leaky_binwise",
+   "params": {
+    "mu": 0.35,
+    "leak": 0.03
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.997184576545386,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.705243391056607,
+    "A2": -12.716854077837878
+   },
+   "wall_s": 0.09,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FDKF [outer 1]",
+   "kind": "C-FDKF",
+   "params": {
+    "P0": 3.0,
+    "gain_scale": 4.0,
+    "A": 0.9995
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.743398698045343,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.2558346789006025,
+    "A2": -14.918930532167895
+   },
+   "wall_s": 0.11,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS + det [outer 1]",
+   "kind": "V-SCHED",
+   "params": {
+    "denom": "cum",
+    "scale": 0.03125,
+    "mu_min": 0.2,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S8 stationary",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.063436905340446,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.698934587735103,
+    "A2": -16.179501638073013
+   },
+   "wall_s": 0.11,
+   "n_events": 0,
+   "restart_hops": [],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "E-PCG",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.260300403893698,
+   "metrics": {
+    "fail": 0,
+    "A1": -15.069185962884657,
+    "A2": -17.350299214652797
+   },
+   "wall_s": 0.52,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.572448190035296,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.767619353714338,
+    "A2": -17.35029777106005
+   },
+   "wall_s": 0.47,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.224039234139628,
+   "metrics": {
+    "fail": 0,
+    "A1": -14.85408437127764,
+    "A2": -17.35086123050757
+   },
+   "wall_s": 0.39,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (no detector)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": false,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.099809873036158,
+   "metrics": {
+    "fail": 0,
+    "A1": -8.4074363154498,
+    "A2": -17.044770882228075
+   },
+   "wall_s": 0.27,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order, restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.733575787983703,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.738037684248895,
+    "A2": -17.35086128567566
+   },
+   "wall_s": 0.4,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (exact solver)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true,
+    "solver": "exact"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.224710659382914,
+   "metrics": {
+    "fail": 0,
+    "A1": -15.028622004946952,
+    "A2": -17.352615806198372
+   },
+   "wall_s": 14.31,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -11.700000338466246,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.978714536429047,
+    "A2": -15.038054811336623
+   },
+   "wall_s": 0.11,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.968111447050912,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.046520783713893,
+    "A2": -16.82545237588405
+   },
+   "wall_s": 0.12,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS [6]",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "zeta"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.90925317970499,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.827052944112268,
+    "A2": -14.922611574727409
+   },
+   "wall_s": 0.12,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": [
+    [
+     34,
+     "M",
+     "dJ"
+    ],
+    [
+     38,
+     "C",
+     "calibrate"
+    ],
+    [
+     42,
+     "M",
+     "calibrated",
+     0.006236316740222726
+    ],
+    [
+     310,
+     "N",
+     "zeta"
+    ]
+   ],
+   "sw_hops": {
+    "N": 36,
+    "M": 272,
+    "C": 4
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS + det",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "det"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.002748654878772,
+   "metrics": {
+    "fail": 0,
+    "A1": -9.449079354049685,
+    "A2": -15.999093722433742
+   },
+   "wall_s": 0.11,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": [
+    [
+     34,
+     "M",
+     "dJ"
+    ],
+    [
+     62,
+     "N",
+     "event"
+    ],
+    [
+     73,
+     "M",
+     "dJ"
+    ]
+   ],
+   "sw_hops": {
+    "N": 47,
+    "M": 265,
+    "C": 0
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det (cond.)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_cond_db": 4.0,
+    "det_cond_k": 32
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.736000219069018,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.945635443300565,
+    "A2": -17.543851602799855
+   },
+   "wall_s": 11.7,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": [
+    [
+     62,
+     8064,
+     7996,
+     12.877725691789246,
+     32,
+     true
+    ]
+   ],
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half"
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.697139365912307,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.7900406795814,
+    "A2": -17.541834643783034
+   },
+   "wall_s": 9.06,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth (from start)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half",
+    "det_grow_start": true
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.669058839550061,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.790271795036086,
+    "A2": -17.54183457074315
+   },
+   "wall_s": 9.22,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS + det",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true,
+    "det_boost": 0.0625,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -11.945119460936617,
+   "metrics": {
+    "fail": 0,
+    "A1": -8.501416783072916,
+    "A2": -15.333905378825932
+   },
+   "wall_s": 0.12,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9993,
+    "delta": 0.01
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.870730933506644,
+   "metrics": {
+    "fail": 0,
+    "A1": -11.04222635334224,
+    "A2": -16.91838056218172
+   },
+   "wall_s": 9.26,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "VFF-RLS [outer 1]",
+   "kind": "R-VFF",
+   "params": {
+    "N0": 250.0,
+    "lam_min": 0.9995,
+    "delta": 0.001
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.240710360097637,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.088002957206431,
+    "A2": -17.12724058221424
+   },
+   "wall_s": 13.24,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "SFTF-H + det [outer 1]",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "hybrid": 4096
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.740883735861061,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.945643287820745,
+    "A2": -17.54326504230734
+   },
+   "wall_s": 5.12,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + CUSUM [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "cusum_h": 3,
+    "cusum_k": 64
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.387555082033504,
+   "metrics": {
+    "fail": 0,
+    "A1": -11.985831692447347,
+    "A2": -17.320401980241424
+   },
+   "wall_s": 11.18,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": [
+    [
+     8448,
+     8192
+    ],
+    [
+     8960,
+     8448
+    ],
+    [
+     28544,
+     25344
+    ],
+    [
+     30464,
+     28672
+    ],
+    [
+     32128,
+     30592
+    ]
+   ]
+  },
+  {
+   "name": "FD-FxNLMS [outer 1]",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.32
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -14.723167222531625,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.08348197502524,
+    "A2": -17.114969325919184
+   },
+   "wall_s": 0.1,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "leaky FD-FxNLMS [outer 1]",
+   "kind": "leaky_binwise",
+   "params": {
+    "mu": 0.35,
+    "leak": 0.03
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.602599644003547,
+   "metrics": {
+    "fail": 0,
+    "A1": -9.643835977791328,
+    "A2": -13.456474041831514
+   },
+   "wall_s": 0.1,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FDKF [outer 1]",
+   "kind": "C-FDKF",
+   "params": {
+    "P0": 3.0,
+    "gain_scale": 4.0,
+    "A": 0.9995
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -11.656032436086454,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.782153042987389,
+    "A2": -14.859958432715427
+   },
+   "wall_s": 0.11,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS + det [outer 1]",
+   "kind": "V-SCHED",
+   "params": {
+    "denom": "cum",
+    "scale": 0.03125,
+    "mu_min": 0.2,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "ar1",
+   "scen": "S2 src 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.768130775000705,
+   "metrics": {
+    "fail": 0,
+    "A1": -9.218018195065465,
+    "A2": -16.54339122145246
+   },
+   "wall_s": 0.11,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "E-PCG",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.65173312086654,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.706731119449277,
+    "A2": -18.250303017209728
+   },
+   "wall_s": 0.47,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.23290979101358,
+   "metrics": {
+    "fail": 0,
+    "A1": -9.51375675258554,
+    "A2": -18.219412635185947
+   },
+   "wall_s": 0.52,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.483960624510875,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.908121333319148,
+    "A2": -18.252905540068845
+   },
+   "wall_s": 0.45,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (no detector)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": false,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -11.838210420592523,
+   "metrics": {
+    "fail": 0,
+    "A1": -3.403702715915303,
+    "A2": -17.251288930482055
+   },
+   "wall_s": 0.34,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (fixed order, restart)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "restart",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.547583147814494,
+   "metrics": {
+    "fail": 0,
+    "A1": -4.350566064623658,
+    "A2": -18.141329797971068
+   },
+   "wall_s": 0.45,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "PCG-WLS (exact solver)",
+   "kind": "E-PCG-F",
+   "params": {
+    "k": 8,
+    "L_hops": 48,
+    "ridge": 0.001,
+    "detect": true,
+    "J": 6,
+    "localize": true,
+    "loc_step": 12,
+    "k_first": 16,
+    "k_first_hops": 6,
+    "k_steady": 4,
+    "k_hops": 24,
+    "det_stat": "sandwich",
+    "kd": 16,
+    "det_fa": 1e-07,
+    "branch_hops": 0,
+    "adapt": "weight",
+    "screen_fa": 0.01,
+    "score_unreg": true,
+    "steady_every": 1,
+    "cg_stat_tol": 0.1,
+    "cg_stat_mindof": "M",
+    "grow_len": "half",
+    "pre_window": "bartlett_s",
+    "cg_stat_exactJ": true,
+    "weight_consistent": true,
+    "fixes_1028": true,
+    "det_C_pre": true,
+    "solver": "exact"
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.621300510578983,
+   "metrics": {
+    "fail": 0,
+    "A1": -13.694566197426601,
+    "A2": -18.239436826314098
+   },
+   "wall_s": 14.45,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": [
+    [
+     8064,
+     7996
+    ]
+   ],
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -11.755857667144042,
+   "metrics": {
+    "fail": 0,
+    "A1": -6.018193331630495,
+    "A2": -15.66177153055266
+   },
+   "wall_s": 0.14,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.3,
+    "mod": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": 21.73597994506503,
+   "metrics": {
+    "fail": 1,
+    "A1": 0.0,
+    "A2": 0.0
+   },
+   "wall_s": 0.13,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS [6]",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "zeta"
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.725223778058158,
+   "metrics": {
+    "fail": 0,
+    "A1": -6.7120934415735825,
+    "A2": -17.71247662172079
+   },
+   "wall_s": 0.15,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": [
+    [
+     22,
+     "M",
+     "dJ"
+    ],
+    [
+     26,
+     "C",
+     "calibrate"
+    ],
+    [
+     30,
+     "M",
+     "calibrated",
+     0.031187714478741198
+    ],
+    [
+     35,
+     "N",
+     "zeta"
+    ],
+    [
+     43,
+     "M",
+     "dJ"
+    ],
+    [
+     47,
+     "C",
+     "calibrate"
+    ],
+    [
+     51,
+     "M",
+     "calibrated",
+     0.032276359101071635
+    ],
+    [
+     58,
+     "N",
+     "zeta"
+    ],
+    [
+     67,
+     "M",
+     "dJ"
+    ],
+    [
+     71,
+     "C",
+     "calibrate"
+    ],
+    [
+     75,
+     "M",
+     "calibrated",
+     0.00499822956098764
+    ],
+    [
+     79,
+     "N",
+     "zeta"
+    ],
+    [
+     94,
+     "M",
+     "dJ"
+    ],
+    [
+     98,
+     "C",
+     "calibrate"
+    ],
+    [
+     102,
+     "M",
+     "calibrated",
+     0.02434583421934004
+    ],
+    [
+     110,
+     "N",
+     "zeta"
+    ],
+    [
+     120,
+     "M",
+     "dJ"
+    ],
+    [
+     124,
+     "C",
+     "calibrate"
+    ],
+    [
+     128,
+     "M",
+     "calibrated",
+     0.031177797474314924
+    ],
+    [
+     160,
+     "N",
+     "zeta"
+    ],
+    [
+     164,
+     "M",
+     "dJ"
+    ],
+    [
+     168,
+     "C",
+     "calibrate"
+    ],
+    [
+     172,
+     "M",
+     "calibrated",
+     0.029462620739475337
+    ],
+    [
+     176,
+     "N",
+     "zeta"
+    ],
+    [
+     182,
+     "M",
+     "dJ"
+    ],
+    [
+     186,
+     "C",
+     "calibrate"
+    ],
+    [
+     190,
+     "M",
+     "calibrated",
+     0.030078108323106305
+    ],
+    [
+     200,
+     "N",
+     "zeta"
+    ],
+    [
+     206,
+     "M",
+     "dJ"
+    ],
+    [
+     210,
+     "C",
+     "calibrate"
+    ],
+    [
+     214,
+     "M",
+     "calibrated",
+     0.03028234668229638
+    ],
+    [
+     221,
+     "N",
+     "zeta"
+    ],
+    [
+     235,
+     "M",
+     "dJ"
+    ],
+    [
+     239,
+     "C",
+     "calibrate"
+    ],
+    [
+     243,
+     "M",
+     "calibrated",
+     0.03015851199167018
+    ],
+    [
+     250,
+     "N",
+     "zeta"
+    ],
+    [
+     255,
+     "M",
+     "dJ"
+    ],
+    [
+     259,
+     "C",
+     "calibrate"
+    ],
+    [
+     263,
+     "M",
+     "calibrated",
+     0.04103979177302202
+    ],
+    [
+     285,
+     "N",
+     "zeta"
+    ],
+    [
+     290,
+     "M",
+     "dJ"
+    ],
+    [
+     294,
+     "C",
+     "calibrate"
+    ],
+    [
+     298,
+     "M",
+     "calibrated",
+     0.031681420577788874
+    ],
+    [
+     308,
+     "N",
+     "zeta"
+    ]
+   ],
+   "sw_hops": {
+    "N": 108,
+    "M": 160,
+    "C": 44
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "switching FD-FxNLMS + det",
+   "kind": "SW-FBLMS",
+   "params": {
+    "mu_n": 0.3,
+    "mu_m": 0.1,
+    "sw_thr": 0.03,
+    "sw_dwell": 4,
+    "sw_detect": "det"
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.29146238603456,
+   "metrics": {
+    "fail": 0,
+    "A1": -6.445764080934149,
+    "A2": -16.650800100244794
+   },
+   "wall_s": 0.14,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": [
+    [
+     22,
+     "M",
+     "dJ"
+    ],
+    [
+     62,
+     "N",
+     "event"
+    ],
+    [
+     67,
+     "M",
+     "dJ"
+    ]
+   ],
+   "sw_hops": {
+    "N": 29,
+    "M": 283,
+    "C": 0
+   },
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det (cond.)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_cond_db": 4.0,
+    "det_cond_k": 32
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.313944786625193,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.587361331369367,
+    "A2": -18.394181203286095
+   },
+   "wall_s": 9.9,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": [
+    [
+     62,
+     8064,
+     7996,
+     19.49174643980682,
+     32,
+     true
+    ]
+   ],
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half"
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.823043087467353,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.802650627904075,
+    "A2": -18.392832589426295
+   },
+   "wall_s": 11.84,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + det + growth (from start)",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "det_grow": "half",
+    "det_grow_start": true
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.856487067692836,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.804082224983826,
+    "A2": -18.392834081046743
+   },
+   "wall_s": 13.46,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "MFBLMS + det",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.1,
+    "mod": true,
+    "det_boost": 0.0625,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.401822664193114,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.8787919809495826,
+    "A2": -15.791563956135162
+   },
+   "wall_s": 0.17,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9993,
+    "delta": 0.01
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.816647884891164,
+   "metrics": {
+    "fail": 0,
+    "A1": -6.580923693863645,
+    "A2": -17.78517141911265
+   },
+   "wall_s": 12.45,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "VFF-RLS [outer 1]",
+   "kind": "R-VFF",
+   "params": {
+    "N0": 250.0,
+    "lam_min": 0.9995,
+    "delta": 0.001
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.58317209085449,
+   "metrics": {
+    "fail": 0,
+    "A1": -5.296356039207938,
+    "A2": -17.79807324683676
+   },
+   "wall_s": 15.34,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "SFTF-H + det [outer 1]",
+   "kind": "R-SFTF",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "det_reset_w": false,
+    "hybrid": 4096
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -16.31882112918142,
+   "metrics": {
+    "fail": 0,
+    "A1": -12.58742417641133,
+    "A2": -18.39419702927135
+   },
+   "wall_s": 6.14,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "RLS + CUSUM [outer 1]",
+   "kind": "R-RLS",
+   "params": {
+    "lam": 0.9999,
+    "delta": 0.01,
+    "cusum_h": 3,
+    "cusum_k": 64
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -15.59296566515271,
+   "metrics": {
+    "fail": 0,
+    "A1": -10.11251382303616,
+    "A2": -18.394758342219824
+   },
+   "wall_s": 12.62,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": [
+    [
+     8320,
+     8192
+    ],
+    [
+     8704,
+     8320
+    ]
+   ]
+  },
+  {
+   "name": "FD-FxNLMS [outer 1]",
+   "kind": "fixed_binwise",
+   "params": {
+    "mu": 0.32
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.827623790042285,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.11780106074802,
+    "A2": -17.353221318926877
+   },
+   "wall_s": 0.15,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "leaky FD-FxNLMS [outer 1]",
+   "kind": "leaky_binwise",
+   "params": {
+    "mu": 0.35,
+    "leak": 0.03
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -13.278642696175744,
+   "metrics": {
+    "fail": 0,
+    "A1": -7.801748801754869,
+    "A2": -15.342464500055454
+   },
+   "wall_s": 0.14,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FDKF [outer 1]",
+   "kind": "C-FDKF",
+   "params": {
+    "P0": 3.0,
+    "gain_scale": 4.0,
+    "A": 0.9995
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -10.592455745201514,
+   "metrics": {
+    "fail": 0,
+    "A1": -3.9036554921353317,
+    "A2": -15.615465575989838
+   },
+   "wall_s": 0.17,
+   "n_events": null,
+   "restart_hops": null,
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  },
+  {
+   "name": "FD-FxNLMS + det [outer 1]",
+   "kind": "V-SCHED",
+   "params": {
+    "denom": "cum",
+    "scale": 0.03125,
+    "mu_min": 0.2,
+    "det_reset_w": false
+   },
+   "room": "A",
+   "noise": "harmonic",
+   "scen": "R2 rig 30cm",
+   "seed": 300,
+   "finite": true,
+   "complete": true,
+   "NR_dB": -12.510091555505552,
+   "metrics": {
+    "fail": 0,
+    "A1": -5.52863997632619,
+    "A2": -17.079746699919813
+   },
+   "wall_s": 0.16,
+   "n_events": 1,
+   "restart_hops": [
+    62
+   ],
+   "cond_log": null,
+   "sw_log": null,
+   "sw_hops": null,
+   "detections": null,
+   "events_own": null
+  }
+ ]
+}

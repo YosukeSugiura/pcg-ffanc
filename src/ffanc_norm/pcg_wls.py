@@ -1,6 +1,6 @@
 """PCG-WLS: PCG for windowed least squares, exact-covariance frequency-domain form for feedforward ANC.
 
-Production form. The method was called E-PCG before v1.1.0 (ffanc_norm.epcg is the deprecated alias).
+Production form. The method was called E-PCG before v1.2.0 (ffanc_norm.epcg is the deprecated alias).
 
 Per hop (H new samples) the controller is the ridge-regularized least-squares
 solution on the window [t0, stop) of the virtual-residual regression
@@ -196,6 +196,10 @@ class PcgWlsConfig:
     det_risk_exact: bool = False   # bias of the ridge on the UNregularized target W_T: (lambda/(P+lambda))^2 (exact Whittle);
                                    # the det_risk / det_risk_v2 runs used (lambda/P)^2 (G4 form, valid only for the applied
                                    # regularized W) on W_T -> switching cost overestimated where lambda >> P (bug, kept for records)
+    # (2026-11-07, Revision 11-A G5) solver of every _pcg call: 'pcg' (default, unchanged) or 'exact' (the same
+    # regularized windowed normal equations solved directly: dense operator from batched FFTs + LU solve; on the
+    # grow_len subspace the leading meff x meff block). Iteration counts and statistical stopping do not apply.
+    solver: str = 'pcg'
     branch_hops: int = 0           # max trial length in hops (0 = off; used with adapt='restart')
     branch_fa: float = 1e-3        # confirmation test level (rolling back a true change costs a re-detection)
 
@@ -460,6 +464,8 @@ class PcgWls:
         """Warm-started PCG on (X^T X + ridge I) x = b, circulant preconditioner (or preconditioned Richardson).
         meff < M (grow_len): PCG on the subspace of the first meff taps (projected operator and preconditioner)."""
         M, n2 = self.cfg.M, self.n2
+        if self.cfg.solver == 'exact' and not richardson:
+            return self._exact_solve(Cf, ta, ridge, b, use_reg, meff)
         if meff is not None and meff < M:
             msk = np.zeros(M); msk[:meff] = 1.0
             x0 = x0 * msk; b = b * msk; Gx0 = None
@@ -532,6 +538,37 @@ class PcgWls:
             z = Minv(res); rz_new = float(res @ z)
             pv = z + (rz_new / (rz + 1e-300)) * pv; rz = rz_new
         self.fft.direct_flops += 12.0 * M * (self.last_its + 1)
+        return x
+
+    def _exact_solve(self, Cf, ta, ridge, b, use_reg, meff):
+        """(Revision 11-A G5) direct solve of the system that _pcg iterates on: (G + ridge I [+ Lambda]) x = b with G the
+        operator of _apply (windowed X^T X incl. edges, possibly weighted). The dense matrix is built column-wise with
+        batched FFTs of the identity (same operator as the PCG matvec, up to rounding); meff < M: leading block, other
+        taps 0 (the limit of the masked PCG). Flops are counted analytically (2 batched FFT passes + LU)."""
+        M, n2 = self.cfg.M, self.n2
+        U = np.fft.rfft(np.eye(M), n2, axis=0)                  # (M+1, M): DFT of the unit vectors
+        acc = Cf[:, None] * U
+
+        def edge(E):
+            zu = np.fft.irfft(U * E[:, None], n2, axis=0)[M - 1:2 * M - 2]
+            return self.rot[:, None] * np.fft.rfft(zu, n2, axis=0) * np.conj(E)[:, None]
+        if isinstance(ta, (list, tuple)):
+            for coef, tb in ta:
+                if tb > 0 and coef != 0.0:
+                    acc = acc + coef * edge(self._edge_fft(tb))
+        elif ta > 0:
+            acc = acc + edge(self._edge_fft(ta))
+        acc = acc - edge(self._edge_fft(self.stop))
+        lam = self._robust_reg(Cf) if use_reg else None
+        if lam is not None:
+            acc = acc + lam[:, None] * U
+        A = np.fft.irfft(acc, n2, axis=0)[:M] + ridge * np.eye(M)
+        A = 0.5 * (A + A.T)                                      # symmetric by construction; remove rounding asymmetry
+        m = M if (meff is None or meff >= M) else int(meff)
+        x = np.zeros(M)
+        x[:m] = np.linalg.solve(A[:m, :m], np.asarray(b, float)[:m])
+        self.fft.direct_flops += 8.0 * M * fft_flops(n2) / 2 + (2.0 / 3.0) * m ** 3 + 2.0 * m * m
+        self.last_its = 0
         return x
 
     def _sandwich_q(self, g, gam, CJ, iters, qthr=np.inf, Cpre=None, ta=None):
