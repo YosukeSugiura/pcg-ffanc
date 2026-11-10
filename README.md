@@ -39,7 +39,7 @@ The supplementary material of the paper lists the result directory of every repo
 
 ## Installation
 
-Python 3.10 or later. Create a virtual environment and install the package with the locked requirements:
+Python 3.11 or later (the package installs on 3.10, but the MeshRIR check below uses `hashlib.file_digest`). Create a virtual environment and install the package with the locked requirements:
 
 ```sh
 python3 -m venv .venv
